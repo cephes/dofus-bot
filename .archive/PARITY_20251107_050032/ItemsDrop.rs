@@ -1,0 +1,31 @@
+//! Generated parser for ItemsDrop
+//! 
+//! This file was automatically generated from Go schema definitions.
+//! Manual modifications may be overwritten.
+
+use crate::retroproto_parsers::parser::common_decode;
+
+#[derive(Debug, Clone, Default, serde::Serialize, serde:: Deserialize)]
+pub struct ItemsDrop {
+    /// Dofus ID
+    pub id: i64,
+    pub quantity: i64,
+}
+
+pub fn parse_ItemsDrop(payload: &str) -> Result<ItemsDrop, String> {
+    let mut i = 0;
+    let _fields = common_decode::split_fields(payload);
+    
+    // Parse fields with safe defaults
+        let id = common_decode::parse_i64(_fields.get(i).unwrap_or(&"0"));
+        i += 1;
+        let quantity = common_decode::parse_i64(_fields.get(i).unwrap_or(&"0"));
+        i += 1;
+    
+    // Create struct instance
+    let result = ItemsDrop {
+        id,
+        quantity,    };
+    
+    Ok(result)
+}

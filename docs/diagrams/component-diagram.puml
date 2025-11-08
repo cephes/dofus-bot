@@ -1,0 +1,46 @@
+@startuml
+' Component diagram: Dofus Retro bot platform (compact)
+
+package "User Interface" {
+  [Electron UI\n(Svelte)] as UI
+  [Local CLI] as CLI
+}
+
+package "Orchestrator (Python - FastAPI)" {
+  [FastAPI Orchestrator] as Orch
+  database "SQLite (encrypted)" as DB
+  [Scheduler] as Scheduler
+  folder "plugins/" as Plugins
+}
+
+package "Core Engine (Rust)" {
+  [MITM Proxy] as MITM
+  [Packet Parser\nRust Engine] as Core
+  [Lua VM\n(embedded)] as LuaVM
+}
+
+package "Sandbox Runners" {
+  [Python Sandbox Runner\n(container/subprocess)] as PySandbox
+  [UI Automation Worker\n(OpenCV + Input sim)] as UIWorker
+}
+
+UI --> Orch : HTTP/gRPC (control)
+CLI --> Orch : CLI commands (local)
+Orch --> DB : SQL (local)
+Orch --> Scheduler : schedule requests
+Orch --> PySandbox : RPC (Unix socket / gRPC)
+Orch --> Core : IPC (gRPC / stdin-json)
+Orch --> LuaVM : in-process call / binding
+Core --> MITM : attach / inject packets
+MITM --> "Dofus Client" : intercept packets
+UIWorker --> "Dofus Client" : input simulation
+Orch --> UIWorker : tasks (vision triggers)
+Plugins --> Orch : local plugin files
+Orch <---> UI : WebSocket for logs/telemetry (local-only)
+
+note right of PySandbox
+  Network: disabled by default
+  Filesystem: restricted
+end note
+
+@enduml

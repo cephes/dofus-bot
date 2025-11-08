@@ -1,0 +1,25 @@
+//! Generated parser for JobXP
+//! 
+//! This file was automatically generated from Go schema definitions.
+//! Manual modifications may be overwritten.
+
+use crate::retroproto_parsers::parser::common_decode;
+use serde::{Serialize, Deserialize};
+
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
+pub struct JobXP {
+
+}
+
+pub fn parse_JobXP(payload: &str) -> Result<JobXP, String> {
+    let fields = common_decode::split_fields(payload);
+    
+    // Parse fields with safe defaults
+
+    
+    // Create struct instance
+    let result = JobXP { ..Default::default() };
+    
+    Ok(result)
+}
+

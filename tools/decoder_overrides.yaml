@@ -1,0 +1,16 @@
+# Decoder Overrides for Go to Rust Type Mapping
+# 
+# This file allows manual overrides for field type mappings and decoder hints.
+# Format:
+# field_name.rust_type:
+#   rust_type: "SpecificRustType"
+#   decoder_hint: "csv|segment|pair|etc"
+#   comment: "Optional comment"
+#
+# Example:
+# account_id.rust_type:
+#   rust_type: "u64"
+#   decoder_hint: "i64"
+#   comment: "Account ID as unsigned 64-bit"
+
+{}

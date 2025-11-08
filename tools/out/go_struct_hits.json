@@ -1,0 +1,770 @@
+{
+  "GameActions": [
+    {
+      "path": "third_party\\retroproto\\msgcli\\gameactionssendactions.go",
+      "line": 14,
+      "context": "type GameActionsSendActions struct {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgcli\\gameactionssendactions.go",
+      "line": 16,
+      "context": "ActionMovement        GameActionsSendActionsActionMovement",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgcli\\gameactionssendactions.go",
+      "line": 17,
+      "context": "ActionChallenge       GameActionsSendActionsActionChallenge",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgcli\\gameactionssendactions.go",
+      "line": 18,
+      "context": "ActionChallengeAccept GameActionsSendActionsActionChallengeAccept",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgcli\\gameactionssendactions.go",
+      "line": 19,
+      "context": "ActionChallengeRefuse GameActionsSendActionsActionChallengeRefuse",
+      "score": 60
+    }
+  ],
+  "ExchangeCraftPublicMode": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\exchangecraftpublicmode.go",
+      "line": 11,
+      "context": "type ExchangeCraftPublicMode struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\exchangecraftpublicmode.go",
+      "line": 13,
+      "context": "func NewExchangeCraftPublicMode(extra string) (ExchangeCraftPublicMode, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\exchangecraftpublicmode.go",
+      "line": 14,
+      "context": "var m ExchangeCraftPublicMode",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\exchangecraftpublicmode.go",
+      "line": 17,
+      "context": "return ExchangeCraftPublicMode{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\exchangecraftpublicmode.go",
+      "line": 23,
+      "context": "func (m ExchangeCraftPublicMode) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameReady": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameready.go",
+      "line": 11,
+      "context": "type GameReady struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameready.go",
+      "line": 13,
+      "context": "func NewGameReady(extra string) (GameReady, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameready.go",
+      "line": 14,
+      "context": "var m GameReady",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameready.go",
+      "line": 17,
+      "context": "return GameReady{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameready.go",
+      "line": 23,
+      "context": "func (m GameReady) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "BasicsDate": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicsdate.go",
+      "line": 11,
+      "context": "type BasicsDate struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicsdate.go",
+      "line": 17,
+      "context": "func NewBasicsDate(extra string) (BasicsDate, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicsdate.go",
+      "line": 18,
+      "context": "var m BasicsDate",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicsdate.go",
+      "line": 21,
+      "context": "return BasicsDate{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicsdate.go",
+      "line": 27,
+      "context": "func (m BasicsDate) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "AccountAddCharacter": [
+    {
+      "path": "third_party\\retroproto\\msgcli\\accountaddcharacter.go",
+      "line": 11,
+      "context": "type AccountAddCharacter struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgcli\\accountaddcharacter.go",
+      "line": 20,
+      "context": "func NewAccountAddCharacter(extra string) (AccountAddCharacter, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgcli\\accountaddcharacter.go",
+      "line": 21,
+      "context": "var m AccountAddCharacter",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgcli\\accountaddcharacter.go",
+      "line": 24,
+      "context": "return AccountAddCharacter{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgcli\\accountaddcharacter.go",
+      "line": 30,
+      "context": "func (m AccountAddCharacter) MessageId() retroproto.MsgCliId {",
+      "score": 60
+    }
+  ],
+  "GameEffect": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameeffect.go",
+      "line": 11,
+      "context": "type GameEffect struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameeffect.go",
+      "line": 13,
+      "context": "func NewGameEffect(extra string) (GameEffect, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameeffect.go",
+      "line": 14,
+      "context": "var m GameEffect",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameeffect.go",
+      "line": 17,
+      "context": "return GameEffect{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameeffect.go",
+      "line": 23,
+      "context": "func (m GameEffect) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameActionsStart": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameactionsstart.go",
+      "line": 11,
+      "context": "type GameActionsStart struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameactionsstart.go",
+      "line": 13,
+      "context": "func NewGameActionsStart(extra string) (GameActionsStart, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameactionsstart.go",
+      "line": 14,
+      "context": "var m GameActionsStart",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameactionsstart.go",
+      "line": 17,
+      "context": "return GameActionsStart{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameactionsstart.go",
+      "line": 23,
+      "context": "func (m GameActionsStart) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "BasicsNothing": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicsnothing.go",
+      "line": 9,
+      "context": "type BasicsNothing struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicsnothing.go",
+      "line": 11,
+      "context": "func NewBasicsNothing(extra string) (BasicsNothing, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicsnothing.go",
+      "line": 12,
+      "context": "var m BasicsNothing",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicsnothing.go",
+      "line": 15,
+      "context": "return BasicsNothing{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicsnothing.go",
+      "line": 21,
+      "context": "func (m BasicsNothing) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameActionsFinish": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameactionsfinish.go",
+      "line": 11,
+      "context": "type GameActionsFinish struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameactionsfinish.go",
+      "line": 13,
+      "context": "func NewGameActionsFinish(extra string) (GameActionsFinish, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameactionsfinish.go",
+      "line": 14,
+      "context": "var m GameActionsFinish",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameactionsfinish.go",
+      "line": 17,
+      "context": "return GameActionsFinish{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameactionsfinish.go",
+      "line": 23,
+      "context": "func (m GameActionsFinish) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameTurnMiddle": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnmiddle.go",
+      "line": 11,
+      "context": "type GameTurnMiddle struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnmiddle.go",
+      "line": 13,
+      "context": "func NewGameTurnMiddle(extra string) (GameTurnMiddle, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnmiddle.go",
+      "line": 14,
+      "context": "var m GameTurnMiddle",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnmiddle.go",
+      "line": 17,
+      "context": "return GameTurnMiddle{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnmiddle.go",
+      "line": 23,
+      "context": "func (m GameTurnMiddle) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameTurnReady": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnready.go",
+      "line": 11,
+      "context": "type GameTurnReady struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnready.go",
+      "line": 13,
+      "context": "func NewGameTurnReady(extra string) (GameTurnReady, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnready.go",
+      "line": 14,
+      "context": "var m GameTurnReady",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnready.go",
+      "line": 17,
+      "context": "return GameTurnReady{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnready.go",
+      "line": 23,
+      "context": "func (m GameTurnReady) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameTurnStart": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnstart.go",
+      "line": 11,
+      "context": "type GameTurnStart struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnstart.go",
+      "line": 13,
+      "context": "func NewGameTurnStart(extra string) (GameTurnStart, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnstart.go",
+      "line": 14,
+      "context": "var m GameTurnStart",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnstart.go",
+      "line": 17,
+      "context": "return GameTurnStart{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnstart.go",
+      "line": 23,
+      "context": "func (m GameTurnStart) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameTurnFinish": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnfinish.go",
+      "line": 11,
+      "context": "type GameTurnFinish struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnfinish.go",
+      "line": 13,
+      "context": "func NewGameTurnFinish(extra string) (GameTurnFinish, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnfinish.go",
+      "line": 14,
+      "context": "var m GameTurnFinish",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnfinish.go",
+      "line": 17,
+      "context": "return GameTurnFinish{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnfinish.go",
+      "line": 23,
+      "context": "func (m GameTurnFinish) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GamePlayersCoordinates": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameplayerscoordinates.go",
+      "line": 11,
+      "context": "type GamePlayersCoordinates struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameplayerscoordinates.go",
+      "line": 13,
+      "context": "func NewGamePlayersCoordinates(extra string) (GamePlayersCoordinates, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameplayerscoordinates.go",
+      "line": 14,
+      "context": "var m GamePlayersCoordinates",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameplayerscoordinates.go",
+      "line": 17,
+      "context": "return GamePlayersCoordinates{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameplayerscoordinates.go",
+      "line": 23,
+      "context": "func (m GamePlayersCoordinates) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "BasicsTime": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicstime.go",
+      "line": 11,
+      "context": "type BasicsTime struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicstime.go",
+      "line": 15,
+      "context": "func NewBasicsTime(extra string) (BasicsTime, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicstime.go",
+      "line": 16,
+      "context": "var m BasicsTime",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicstime.go",
+      "line": 19,
+      "context": "return BasicsTime{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\basicstime.go",
+      "line": 25,
+      "context": "func (m BasicsTime) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameMapLoaded": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamemaploaded.go",
+      "line": 9,
+      "context": "type GameMapLoaded struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamemaploaded.go",
+      "line": 11,
+      "context": "func NewGameMapLoaded(extra string) (GameMapLoaded, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamemaploaded.go",
+      "line": 12,
+      "context": "var m GameMapLoaded",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamemaploaded.go",
+      "line": 15,
+      "context": "return GameMapLoaded{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamemaploaded.go",
+      "line": 21,
+      "context": "func (m GameMapLoaded) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameSetPlayerPosition": [
+    {
+      "path": "third_party\\retroproto\\msgcli\\gamesetplayerposition.go",
+      "line": 11,
+      "context": "type GameSetPlayerPosition struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgcli\\gamesetplayerposition.go",
+      "line": 13,
+      "context": "func NewGameSetPlayerPosition(extra string) (GameSetPlayerPosition, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgcli\\gamesetplayerposition.go",
+      "line": 14,
+      "context": "var m GameSetPlayerPosition",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgcli\\gamesetplayerposition.go",
+      "line": 17,
+      "context": "return GameSetPlayerPosition{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgcli\\gamesetplayerposition.go",
+      "line": 23,
+      "context": "func (m GameSetPlayerPosition) MessageId() retroproto.MsgCliId {",
+      "score": 60
+    }
+  ],
+  "AksServerWillDisconnect": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\aksserverwilldisconnect.go",
+      "line": 9,
+      "context": "type AksServerWillDisconnect struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\aksserverwilldisconnect.go",
+      "line": 11,
+      "context": "func NewAksServerWillDisconnect(extra string) (AksServerWillDisconnect, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\aksserverwilldisconnect.go",
+      "line": 12,
+      "context": "var m AksServerWillDisconnect",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\aksserverwilldisconnect.go",
+      "line": 15,
+      "context": "return AksServerWillDisconnect{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\aksserverwilldisconnect.go",
+      "line": 21,
+      "context": "func (m AksServerWillDisconnect) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameEnd": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameend.go",
+      "line": 11,
+      "context": "type GameEnd struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameend.go",
+      "line": 13,
+      "context": "func NewGameEnd(extra string) (GameEnd, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameend.go",
+      "line": 14,
+      "context": "var m GameEnd",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameend.go",
+      "line": 17,
+      "context": "return GameEnd{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameend.go",
+      "line": 23,
+      "context": "func (m GameEnd) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameFightChallenge": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamefightchallenge.go",
+      "line": 11,
+      "context": "type GameFightChallenge struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamefightchallenge.go",
+      "line": 13,
+      "context": "func NewGameFightChallenge(extra string) (GameFightChallenge, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamefightchallenge.go",
+      "line": 14,
+      "context": "var m GameFightChallenge",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamefightchallenge.go",
+      "line": 17,
+      "context": "return GameFightChallenge{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamefightchallenge.go",
+      "line": 23,
+      "context": "func (m GameFightChallenge) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameStartToPlay": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamestarttoplay.go",
+      "line": 11,
+      "context": "type GameStartToPlay struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamestarttoplay.go",
+      "line": 13,
+      "context": "func NewGameStartToPlay(extra string) (GameStartToPlay, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamestarttoplay.go",
+      "line": 14,
+      "context": "var m GameStartToPlay",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamestarttoplay.go",
+      "line": 17,
+      "context": "return GameStartToPlay{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gamestarttoplay.go",
+      "line": 23,
+      "context": "func (m GameStartToPlay) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "GameTurnList": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnlist.go",
+      "line": 11,
+      "context": "type GameTurnList struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnlist.go",
+      "line": 13,
+      "context": "func NewGameTurnList(extra string) (GameTurnList, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnlist.go",
+      "line": 14,
+      "context": "var m GameTurnList",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnlist.go",
+      "line": 17,
+      "context": "return GameTurnList{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\gameturnlist.go",
+      "line": 23,
+      "context": "func (m GameTurnList) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "HousesLockedProperty": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\houseslockedproperty.go",
+      "line": 11,
+      "context": "type HousesLockedProperty struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\houseslockedproperty.go",
+      "line": 13,
+      "context": "func NewHousesLockedProperty(extra string) (HousesLockedProperty, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\houseslockedproperty.go",
+      "line": 14,
+      "context": "var m HousesLockedProperty",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\houseslockedproperty.go",
+      "line": 17,
+      "context": "return HousesLockedProperty{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\houseslockedproperty.go",
+      "line": 23,
+      "context": "func (m HousesLockedProperty) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ],
+  "InfosLifeRestoreTimerStart": [
+    {
+      "path": "third_party\\retroproto\\msgsvr\\infosliferestoretimerstart.go",
+      "line": 10,
+      "context": "type InfosLifeRestoreTimerStart struct {",
+      "score": 100
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\infosliferestoretimerstart.go",
+      "line": 14,
+      "context": "func NewInfosLifeRestoreTimerStart(extra string) (InfosLifeRestoreTimerStart, error) {",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\infosliferestoretimerstart.go",
+      "line": 15,
+      "context": "var m InfosLifeRestoreTimerStart",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\infosliferestoretimerstart.go",
+      "line": 18,
+      "context": "return InfosLifeRestoreTimerStart{}, fmt.Errorf(\"could not deserialize message: %w\", err)",
+      "score": 60
+    },
+    {
+      "path": "third_party\\retroproto\\msgsvr\\infosliferestoretimerstart.go",
+      "line": 24,
+      "context": "func (m InfosLifeRestoreTimerStart) MessageId() retroproto.MsgSvrId {",
+      "score": 60
+    }
+  ]
+}

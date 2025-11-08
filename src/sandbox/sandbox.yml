@@ -1,0 +1,4 @@
+cpu_shares: 50
+memory_limit_mb: 128
+wall_time_limit_s: 60
+network: false

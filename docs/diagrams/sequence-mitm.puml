@@ -1,0 +1,31 @@
+@startuml Sequence Diagram - MITM Flow
+participant "Dofus Client" as Client
+participant "MITM Proxy" as Proxy
+participant "Rust Parser" as Parser
+participant "Python Orchestrator" as Orchestrator
+participant "Script API" as API
+participant "Lua VM" as Lua
+participant "Decision" as Decision
+participant "Action" as Action
+participant "Dofus Server" as Server
+
+Client -> Proxy: Game Packet
+Proxy -> Parser: Forward Packet
+Parser -> Orchestrator: Parsed Data
+Orchestrator -> API: Expose Data
+API -> Lua: Script Execution
+Lua -> Decision: Evaluate Logic
+Decision -> Action: Generate Response
+Action -> Orchestrator: Action Command
+Orchestrator -> Proxy: Inject/Modify Packet
+Proxy -> Server: Modified Packet
+Server -> Proxy: Server Response
+Proxy -> Parser: Response Packet
+Parser -> Orchestrator: Parsed Response
+Orchestrator -> API: Update State
+API -> Lua: Notify Script
+Lua -> Decision: Process Response
+Decision -> Action: Next Action
+Action -> Orchestrator: Continue Loop
+
+@enduml

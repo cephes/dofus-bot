@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+"""Fix json! macro calls missing closing braces"""
+
+import os
+import re
+from pathlib import Path
+
+# Find all generated Rust files and fix json! macros
+generated_dir = Path("core/src/retroproto_parsers/generated")
+fixed_count = 0
+
+for rust_file in generated_dir.rglob("*.rs"):
+    try:
+        with open(rust_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        original_content = content
+        
+        # Fix pattern: json!(m}) -> json!(m) }
+        content = re.sub(r'json!\(([^)]+)\}\)', r'json!(\1) }', content)
+        
+        if content != original_content:
+            with open(rust_file, 'w', encoding='utf-8') as f:
+                f.write(content)
+            print(f"Fixed: {rust_file}")
+            fixed_count += 1
+            
+    except Exception as e:
+        print(f"Error processing {rust_file}: {e}")
+
+print(f"Fixed {fixed_count} files")

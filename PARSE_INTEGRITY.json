@@ -1,0 +1,4 @@
+﻿{"violations_total":2,"categories":{"parsed_empty_object":1,"parse_error_present":0,"missing_required_field":1,"type_mismatch":0},"details":[
+  {"frame_index":1,"violation_type":"missing_required_field","field":"account_id"},
+  {"frame_index":2,"violation_type":"parsed_empty_object"}
+]}

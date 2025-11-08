@@ -1,0 +1,69 @@
+#!/usr/bin/env python3
+"""Find and fix all remaining files with the same pattern"""
+
+import os
+import re
+from pathlib import Path
+
+def find_problematic_files():
+    """Find all files with the problematic pattern"""
+    generated_dir = Path("core/src/retroproto_parsers/generated")
+    problematic_files = []
+    
+    for rust_file in generated_dir.rglob("*.rs"):
+        try:
+            with open(rust_file, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # Check for the pattern: Ok() before comment
+            if re.search(r'Ok\([^)]+\)\s*\n\s*// Some variants.*?\n\s*// return Err', content, re.MULTILINE):
+                problematic_files.append(rust_file)
+                
+        except Exception as e:
+            print(f"Error processing {rust_file}: {e}")
+    
+    return problematic_files
+
+def fix_problematic_file(file_path):
+    """Fix the problematic pattern in a file"""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        original_content = content
+        
+        # Pattern: } else { Ok(StructName {}) // comment }
+        # Replace with: } else { // comment return statement; Ok(StructName {}) }
+        content = re.sub(
+            r'(\s+)else \{\s*\n\s*Ok\(([^)]+)\)\s*\n(\s+)// Some variants.*?\n\3// return Err\([^)]+\);\s*\}',
+            r'\1else {\n\3    // Some variants ignore payload in Go; we still succeed but you can switch to strict:\n\3    // return Err(format!("expected empty payload for \2, got: {}", p));\n\3    Ok(\2 {})\n\1}',
+            content,
+            flags=re.MULTILINE | re.DOTALL
+        )
+        
+        if content != original_content:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+            return True
+        return False
+        
+    except Exception as e:
+        print(f"Error processing {file_path}: {e}")
+        return False
+
+def main():
+    # Find problematic files
+    problematic_files = find_problematic_files()
+    print(f"Found {len(problematic_files)} problematic files")
+    
+    # Fix them
+    fixed_count = 0
+    for file_path in problematic_files:
+        if fix_problematic_file(file_path):
+            print(f"Fixed: {file_path}")
+            fixed_count += 1
+    
+    print(f"Fixed {fixed_count} files")
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,11 @@
+D:\WorkDir\dofus-bot\core\target\release\deps\anstyle_parse-537db6ff7148dfb9.d: C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\lib.rs C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\params.rs C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\state\mod.rs C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\state\definitions.rs C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\state\table.rs
+
+D:\WorkDir\dofus-bot\core\target\release\deps\libanstyle_parse-537db6ff7148dfb9.rlib: C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\lib.rs C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\params.rs C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\state\mod.rs C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\state\definitions.rs C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\state\table.rs
+
+D:\WorkDir\dofus-bot\core\target\release\deps\libanstyle_parse-537db6ff7148dfb9.rmeta: C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\lib.rs C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\params.rs C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\state\mod.rs C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\state\definitions.rs C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\state\table.rs
+
+C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\lib.rs:
+C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\params.rs:
+C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\state\mod.rs:
+C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\state\definitions.rs:
+C:\Users\PC\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\anstyle-parse-0.2.7\src\state\table.rs:

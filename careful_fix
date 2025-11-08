@@ -1,0 +1,65 @@
+import os
+import re
+from pathlib import Path
+
+# Fix the missing function declaration syntax properly
+generated_dir = Path("core/src/retroproto_parsers/generated")
+fixed_count = 0
+
+for rust_file in generated_dir.rglob("*.rs"):
+    try:
+        with open(rust_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        original_content = content
+        
+        # Fix specific patterns that are causing issues
+        
+        # Fix duplicate lines that get removed
+        lines = content.split('\n')
+        clean_lines = []
+        seen_lines = set()
+        
+        for line in lines:
+            # Keep function declarations intact
+            if line.strip().startswith('pub fn '):
+                if 'fn parse_' in line and '{' in line:
+                    # This is a complete function, keep it
+                    clean_lines.append(line)
+                    seen_lines.add(line.strip())
+                elif 'fn parse_' in line and '{' not in line:
+                    # This is a function declaration, keep it
+                    clean_lines.append(line)
+                    seen_lines.add(line.strip())
+                else:
+                    # Other function declarations
+                    clean_lines.append(line)
+                    seen_lines.add(line.strip())
+            else:
+                # For other lines, avoid duplicates but don't remove critical content
+                stripped = line.strip()
+                if stripped and stripped not in seen_lines:
+                    clean_lines.append(line)
+                    seen_lines.add(stripped)
+                elif not stripped:  # Keep empty lines
+                    clean_lines.append(line)
+        
+        content = '\n'.join(clean_lines)
+        
+        # Fix any remaining syntax issues
+        # Remove extra closing braces that are not part of proper functions
+        content = re.sub(r'(\}\s*){2,}', '}\n', content)
+        
+        # Ensure proper spacing
+        content = re.sub(r'\n{3,}', '\n\n', content)
+        
+        if content != original_content:
+            with open(rust_file, 'w', encoding='utf-8') as f:
+                f.write(content)
+            print(f"Fixed: {rust_file}")
+            fixed_count += 1
+            
+    except Exception as e:
+        print(f"Error processing {rust_file}: {e}")
+
+print(f"Fixed {fixed_count} files")

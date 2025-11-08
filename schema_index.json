@@ -1,0 +1,5325 @@
+{
+  "scanned_at": "2025-11-07T01:25:18Z",
+  "total_structs": 504,
+  "structs": {
+    "AccountAddCharacter": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountaddcharacter.go",
+      "struct_name": "AccountAddCharacter",
+      "fields": [
+        {
+          "name": "Name",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Class",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Sex",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Color1",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Color2",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Color3",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 123
+    },
+    "AccountAskCharacterMigration": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountaskcharactermigration.go",
+      "struct_name": "AccountAskCharacterMigration",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountAttributeGiftToCharacter": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountattributegifttocharacter.go",
+      "struct_name": "AccountAttributeGiftToCharacter",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountBoost": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountboost.go",
+      "struct_name": "AccountBoost",
+      "fields": [
+        {
+          "name": "CharacteristicId",
+          "go_type": "retrotyp",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "retrotyp"
+        },
+        {
+          "name": "Amount",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 61
+    },
+    "AccountConfiguredPort": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountconfiguredport.go",
+      "struct_name": "AccountConfiguredPort",
+      "fields": [
+        {
+          "name": "Port",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "AccountCredential": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountcredential.go",
+      "struct_name": "AccountCredential",
+      "fields": [
+        {
+          "name": "Username",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Hash",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "CryptoMethod",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 67
+    },
+    "AccountDeleteCharacter": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountdeletecharacter.go",
+      "struct_name": "AccountDeleteCharacter",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "SecretAnswer",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 56
+    },
+    "AccountDeleteCharacterMigration": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountdeletecharactermigration.go",
+      "struct_name": "AccountDeleteCharacterMigration",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountGetCharacters": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountgetcharacters.go",
+      "struct_name": "AccountGetCharacters",
+      "fields": [],
+      "line_count": 36
+    },
+    "AccountGetCharactersForced": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountgetcharactersforced.go",
+      "struct_name": "AccountGetCharactersForced",
+      "fields": [],
+      "line_count": 36
+    },
+    "AccountGetGifts": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountgetgifts.go",
+      "struct_name": "AccountGetGifts",
+      "fields": [
+        {
+          "name": "Lang",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 40
+    },
+    "AccountGetRandomCharacterName": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountgetrandomcharactername.go",
+      "struct_name": "AccountGetRandomCharacterName",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountGetServersList": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountgetserverslist.go",
+      "struct_name": "AccountGetServersList",
+      "fields": [],
+      "line_count": 36
+    },
+    "AccountQueuePosition": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountqueueposition.go",
+      "struct_name": "AccountQueuePosition",
+      "fields": [],
+      "line_count": 36
+    },
+    "AccountRequestRegionalVersion": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountrequestregionalversion.go",
+      "struct_name": "AccountRequestRegionalVersion",
+      "fields": [],
+      "line_count": 36
+    },
+    "AccountRequestRescue": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountrequestrescue.go",
+      "struct_name": "AccountRequestRescue",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountResetCharacter": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountresetcharacter.go",
+      "struct_name": "AccountResetCharacter",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountSearchForFriend": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountsearchforfriend.go",
+      "struct_name": "AccountSearchForFriend",
+      "fields": [
+        {
+          "name": "Pseudo",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 40
+    },
+    "AccountSendIdentity": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountsendidentity.go",
+      "struct_name": "AccountSendIdentity",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 40
+    },
+    "AccountSendTicket": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountsendticket.go",
+      "struct_name": "AccountSendTicket",
+      "fields": [
+        {
+          "name": "Ticket",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 40
+    },
+    "AccountSetCharacter": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountsetcharacter.go",
+      "struct_name": "AccountSetCharacter",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "AccountSetNickname": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountsetnickname.go",
+      "struct_name": "AccountSetNickname",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountSetServer": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountsetserver.go",
+      "struct_name": "AccountSetServer",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "AccountUseKey": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountusekey.go",
+      "struct_name": "AccountUseKey",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "AccountValidCharacterMigration": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountvalidcharactermigration.go",
+      "struct_name": "AccountValidCharacterMigration",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountVersion": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountversion.go",
+      "struct_name": "AccountVersion",
+      "fields": [
+        {
+          "name": "Major",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Minor",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Patch",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Beta",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Streaming",
+          "go_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "bool"
+        },
+        {
+          "name": "Electron",
+          "go_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "bool"
+        }
+      ],
+      "line_count": 102
+    },
+    "AksPing": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\aksping.go",
+      "struct_name": "AksPing",
+      "fields": [],
+      "line_count": 38
+    },
+    "AksQuickPing": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\aksquickping.go",
+      "struct_name": "AksQuickPing",
+      "fields": [],
+      "line_count": 38
+    },
+    "AksRPong": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\aksrpong.go",
+      "struct_name": "AksRPong",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsAuthorizedCommand": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsauthorizedcommand.go",
+      "struct_name": "BasicsAuthorizedCommand",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsAuthorizedKickCommand": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsauthorizedkickcommand.go",
+      "struct_name": "BasicsAuthorizedKickCommand",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsAuthorizedMoveCommand": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsauthorizedmovecommand.go",
+      "struct_name": "BasicsAuthorizedMoveCommand",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsAway": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsaway.go",
+      "struct_name": "BasicsAway",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsFileCheckAnswer": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsfilecheckanswer.go",
+      "struct_name": "BasicsFileCheckAnswer",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsGetDate": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsgetdate.go",
+      "struct_name": "BasicsGetDate",
+      "fields": [],
+      "line_count": 36
+    },
+    "BasicsInvisible": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsinvisible.go",
+      "struct_name": "BasicsInvisible",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsKick": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicskick.go",
+      "struct_name": "BasicsKick",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsRequestAveragePing": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsrequestaverageping.go",
+      "struct_name": "BasicsRequestAveragePing",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsSanctionMe": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicssanctionme.go",
+      "struct_name": "BasicsSanctionMe",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsWhoIs": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicswhois.go",
+      "struct_name": "BasicsWhoIs",
+      "fields": [],
+      "line_count": 38
+    },
+    "ChatReportMessage": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\chatreportmessage.go",
+      "struct_name": "ChatReportMessage",
+      "fields": [],
+      "line_count": 38
+    },
+    "ChatRequestSubscribeChannelAdd": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\chatrequestsubscribechanneladd.go",
+      "struct_name": "ChatRequestSubscribeChannelAdd",
+      "fields": [
+        {
+          "name": "Channels",
+          "go_type": "rune",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]rune"
+        }
+      ],
+      "line_count": 50
+    },
+    "ChatRequestSubscribeChannelRemove": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\chatrequestsubscribechannelremove.go",
+      "struct_name": "ChatRequestSubscribeChannelRemove",
+      "fields": [
+        {
+          "name": "Channels",
+          "go_type": "rune",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]rune"
+        }
+      ],
+      "line_count": 50
+    },
+    "ChatSend": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\chatsend.go",
+      "struct_name": "ChatSend",
+      "fields": [
+        {
+          "name": "ChatChannel",
+          "go_type": "dofustyp",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "dofustyp"
+        },
+        {
+          "name": "PrivateReceiver",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Message",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Params",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 91
+    },
+    "ChatUseSmiley": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\chatusesmiley.go",
+      "struct_name": "ChatUseSmiley",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestGetAlignedBonus": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestgetalignedbonus.go",
+      "struct_name": "ConquestGetAlignedBonus",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismFightJoin": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestprismfightjoin.go",
+      "struct_name": "ConquestPrismFightJoin",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismFightLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestprismfightleave.go",
+      "struct_name": "ConquestPrismFightLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismInfosJoin": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestprisminfosjoin.go",
+      "struct_name": "ConquestPrismInfosJoin",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismInfosLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestprisminfosleave.go",
+      "struct_name": "ConquestPrismInfosLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestRequestBalance": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestrequestbalance.go",
+      "struct_name": "ConquestRequestBalance",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestSwitchPlaces": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestswitchplaces.go",
+      "struct_name": "ConquestSwitchPlaces",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestWorldInfosJoin": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestworldinfosjoin.go",
+      "struct_name": "ConquestWorldInfosJoin",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestWorldInfosLave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestworldinfoslave.go",
+      "struct_name": "ConquestWorldInfosLave",
+      "fields": [],
+      "line_count": 38
+    },
+    "DialogBeginning": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\dialogbeginning.go",
+      "struct_name": "DialogBeginning",
+      "fields": [
+        {
+          "name": "NPCId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 44
+    },
+    "DialogCreate": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\dialogcreate.go",
+      "struct_name": "DialogCreate",
+      "fields": [
+        {
+          "name": "NPCId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 44
+    },
+    "DialogRequestLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\dialogrequestleave.go",
+      "struct_name": "DialogRequestLeave",
+      "fields": [],
+      "line_count": 36
+    },
+    "DialogResponse": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\dialogresponse.go",
+      "struct_name": "DialogResponse",
+      "fields": [
+        {
+          "name": "Question",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Answer",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 58
+    },
+    "DocumentsRequestLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\documentsrequestleave.go",
+      "struct_name": "DocumentsRequestLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "EmotesSetDirection": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\emotessetdirection.go",
+      "struct_name": "EmotesSetDirection",
+      "fields": [
+        {
+          "name": "Dir",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "EmotesUseEmote": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\emotesuseemote.go",
+      "struct_name": "EmotesUseEmote",
+      "fields": [],
+      "line_count": 38
+    },
+    "EnemiesAddEnemy": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\enemiesaddenemy.go",
+      "struct_name": "EnemiesAddEnemy",
+      "fields": [],
+      "line_count": 38
+    },
+    "EnemiesGetEnemiesList": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\enemiesgetenemieslist.go",
+      "struct_name": "EnemiesGetEnemiesList",
+      "fields": [],
+      "line_count": 38
+    },
+    "EnemiesRemoveEnemy": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\enemiesremoveenemy.go",
+      "struct_name": "EnemiesRemoveEnemy",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeAccept": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeaccept.go",
+      "struct_name": "ExchangeAccept",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeBigStoreBuy": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangebigstorebuy.go",
+      "struct_name": "ExchangeBigStoreBuy",
+      "fields": [
+        {
+          "name": "ItemId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "QuantityIndex",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Price",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 65
+    },
+    "ExchangeBigStoreItemList": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangebigstoreitemlist.go",
+      "struct_name": "ExchangeBigStoreItemList",
+      "fields": [
+        {
+          "name": "ItemTemplateId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 44
+    },
+    "ExchangeBigStoreSearch": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangebigstoresearch.go",
+      "struct_name": "ExchangeBigStoreSearch",
+      "fields": [
+        {
+          "name": "ItemType",
+          "go_type": "retrotyp",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "retrotyp"
+        },
+        {
+          "name": "TemplateId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 60
+    },
+    "ExchangeBigStoreType": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangebigstoretype.go",
+      "struct_name": "ExchangeBigStoreType",
+      "fields": [
+        {
+          "name": "ItemType",
+          "go_type": "retrotyp",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "retrotyp"
+        }
+      ],
+      "line_count": 46
+    },
+    "ExchangeGetCrafterForJob": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangegetcrafterforjob.go",
+      "struct_name": "ExchangeGetCrafterForJob",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeGetItemMiddlePriceInBigStore": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangegetitemmiddlepriceinbigstore.go",
+      "struct_name": "ExchangeGetItemMiddlePriceInBigStore",
+      "fields": [
+        {
+          "name": "TemplateId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "ExchangeKillMount": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangekillmount.go",
+      "struct_name": "ExchangeKillMount",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeKillMountInPark": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangekillmountinpark.go",
+      "struct_name": "ExchangeKillMountInPark",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeleave.go",
+      "struct_name": "ExchangeLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeMovementBuy": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangemovementbuy.go",
+      "struct_name": "ExchangeMovementBuy",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeMovementItems": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangemovementitems.go",
+      "struct_name": "ExchangeMovementItems",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeMovementKamas": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangemovementkamas.go",
+      "struct_name": "ExchangeMovementKamas",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeMovementPay": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangemovementpay.go",
+      "struct_name": "ExchangeMovementPay",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeMovementSell": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangemovementsell.go",
+      "struct_name": "ExchangeMovementSell",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeOfflineExchange": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeofflineexchange.go",
+      "struct_name": "ExchangeOfflineExchange",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangePutInCertificateFromShed": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeputincertificatefromshed.go",
+      "struct_name": "ExchangePutInCertificateFromShed",
+      "fields": [
+        {
+          "name": "MountId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "ExchangePutInInventoryFromShed": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeputininventoryfromshed.go",
+      "struct_name": "ExchangePutInInventoryFromShed",
+      "fields": [
+        {
+          "name": "MountId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "ExchangePutInMountParkFromShed": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeputinmountparkfromshed.go",
+      "struct_name": "ExchangePutInMountParkFromShed",
+      "fields": [
+        {
+          "name": "MountId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "ExchangePutInShedFromCertificate": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeputinshedfromcertificate.go",
+      "struct_name": "ExchangePutInShedFromCertificate",
+      "fields": [
+        {
+          "name": "CertificateId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "ExchangePutInShedFromInventory": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeputinshedfrominventory.go",
+      "struct_name": "ExchangePutInShedFromInventory",
+      "fields": [
+        {
+          "name": "MountId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "ExchangePutInShedFromMountPark": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeputinshedfrommountpark.go",
+      "struct_name": "ExchangePutInShedFromMountPark",
+      "fields": [
+        {
+          "name": "MountId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "ExchangeRepeatCraft": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangerepeatcraft.go",
+      "struct_name": "ExchangeRepeatCraft",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeReplayCraft": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangereplaycraft.go",
+      "struct_name": "ExchangeReplayCraft",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeRequest": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangerequest.go",
+      "struct_name": "ExchangeRequest",
+      "fields": [
+        {
+          "name": "Type",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Cell",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 81
+    },
+    "ExchangeRequestAskOfflineExchange": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangerequestaskofflineexchange.go",
+      "struct_name": "ExchangeRequestAskOfflineExchange",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeRequestReady": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangerequestready.go",
+      "struct_name": "ExchangeRequestReady",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeSetPublicMode": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangesetpublicmode.go",
+      "struct_name": "ExchangeSetPublicMode",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeShop": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeshop.go",
+      "struct_name": "ExchangeShop",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeStopRepeatCraft": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangestoprepeatcraft.go",
+      "struct_name": "ExchangeStopRepeatCraft",
+      "fields": [],
+      "line_count": 38
+    },
+    "FightsBlockJoiner": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\fightsblockjoiner.go",
+      "struct_name": "FightsBlockJoiner",
+      "fields": [],
+      "line_count": 38
+    },
+    "FightsBlockJoinerExceptParty": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\fightsblockjoinerexceptparty.go",
+      "struct_name": "FightsBlockJoinerExceptParty",
+      "fields": [],
+      "line_count": 38
+    },
+    "FightsBlockSpectators": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\fightsblockspectators.go",
+      "struct_name": "FightsBlockSpectators",
+      "fields": [],
+      "line_count": 38
+    },
+    "FightsGetDetails": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\fightsgetdetails.go",
+      "struct_name": "FightsGetDetails",
+      "fields": [],
+      "line_count": 38
+    },
+    "FightsGetList": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\fightsgetlist.go",
+      "struct_name": "FightsGetList",
+      "fields": [],
+      "line_count": 38
+    },
+    "FightsNeedHelp": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\fightsneedhelp.go",
+      "struct_name": "FightsNeedHelp",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsAddFriend": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendsaddfriend.go",
+      "struct_name": "FriendsAddFriend",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsCompass": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendscompass.go",
+      "struct_name": "FriendsCompass",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsGetFriendsList": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendsgetfriendslist.go",
+      "struct_name": "FriendsGetFriendsList",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsJoin": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendsjoin.go",
+      "struct_name": "FriendsJoin",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsJoinFriend": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendsjoinfriend.go",
+      "struct_name": "FriendsJoinFriend",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsRemoveFriend": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendsremovefriend.go",
+      "struct_name": "FriendsRemoveFriend",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsSetNotifyWhenConnect": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendssetnotifywhenconnect.go",
+      "struct_name": "FriendsSetNotifyWhenConnect",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameActionAck": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameactionack.go",
+      "struct_name": "GameActionAck",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "GameActionCancel": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameactioncancel.go",
+      "struct_name": "GameActionCancel",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Params",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 57
+    },
+    "GameActionsSendActions": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameactionssendactions.go",
+      "struct_name": "GameActionsSendActions",
+      "fields": [
+        {
+          "name": "ActionType",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "ActionMovement",
+          "go_type": "GameActionsSendActionsActionMovement",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "GameActionsSendActionsActionMovement"
+        },
+        {
+          "name": "ActionChallenge",
+          "go_type": "GameActionsSendActionsActionChallenge",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "GameActionsSendActionsActionChallenge"
+        },
+        {
+          "name": "ActionChallengeAccept",
+          "go_type": "GameActionsSendActionsActionChallengeAccept",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "GameActionsSendActionsActionChallengeAccept"
+        },
+        {
+          "name": "ActionChallengeRefuse",
+          "go_type": "GameActionsSendActionsActionChallengeRefuse",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "GameActionsSendActionsActionChallengeRefuse"
+        }
+      ],
+      "line_count": 126
+    },
+    "GameAskDisablePVPMode": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameaskdisablepvpmode.go",
+      "struct_name": "GameAskDisablePVPMode",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameCreate": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamecreate.go",
+      "struct_name": "GameCreate",
+      "fields": [
+        {
+          "name": "Type",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 48
+    },
+    "GameEnabledPVPMode": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameenabledpvpmode.go",
+      "struct_name": "GameEnabledPVPMode",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameFreeMySoul": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamefreemysoul.go",
+      "struct_name": "GameFreeMySoul",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameGetExtraInformations": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamegetextrainformations.go",
+      "struct_name": "GameGetExtraInformations",
+      "fields": [],
+      "line_count": 36
+    },
+    "GameGetMapData": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamegetmapdata.go",
+      "struct_name": "GameGetMapData",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameRequestLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamerequestleave.go",
+      "struct_name": "GameRequestLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameRequestReady": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamerequestready.go",
+      "struct_name": "GameRequestReady",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameSetFlag": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamesetflag.go",
+      "struct_name": "GameSetFlag",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameSetPlayerPosition": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamesetplayerposition.go",
+      "struct_name": "GameSetPlayerPosition",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameShowFightChallengeTarget": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameshowfightchallengetarget.go",
+      "struct_name": "GameShowFightChallengeTarget",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameTurnEnd": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameturnend.go",
+      "struct_name": "GameTurnEnd",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameTurnOk": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameturnok.go",
+      "struct_name": "GameTurnOk",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildAcceptInvitation": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildacceptinvitation.go",
+      "struct_name": "GuildAcceptInvitation",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildBan": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildban.go",
+      "struct_name": "GuildBan",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildBoostCharacteristic": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildboostcharacteristic.go",
+      "struct_name": "GuildBoostCharacteristic",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildBoostSpell": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildboostspell.go",
+      "struct_name": "GuildBoostSpell",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildChangeMemberProfile": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildchangememberprofile.go",
+      "struct_name": "GuildChangeMemberProfile",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildCreate": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildcreate.go",
+      "struct_name": "GuildCreate",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildGetInfosBoosts": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildgetinfosboosts.go",
+      "struct_name": "GuildGetInfosBoosts",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildGetInfosGeneral": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildgetinfosgeneral.go",
+      "struct_name": "GuildGetInfosGeneral",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildGetInfosGuildHouses": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildgetinfosguildhouses.go",
+      "struct_name": "GuildGetInfosGuildHouses",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildGetInfosMembers": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildgetinfosmembers.go",
+      "struct_name": "GuildGetInfosMembers",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildGetInfosMountPark": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildgetinfosmountpark.go",
+      "struct_name": "GuildGetInfosMountPark",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildGetInfosTaxCollector": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildgetinfostaxcollector.go",
+      "struct_name": "GuildGetInfosTaxCollector",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildHireTaxCollector": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildhiretaxcollector.go",
+      "struct_name": "GuildHireTaxCollector",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildInvite": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildinvite.go",
+      "struct_name": "GuildInvite",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildJoinTaxCollector": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildjointaxcollector.go",
+      "struct_name": "GuildJoinTaxCollector",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildLeaveTaxCollector": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildleavetaxcollector.go",
+      "struct_name": "GuildLeaveTaxCollector",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildLeaveTaxInterface": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildleavetaxinterface.go",
+      "struct_name": "GuildLeaveTaxInterface",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildRefuseInvitation": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildrefuseinvitation.go",
+      "struct_name": "GuildRefuseInvitation",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildRemoveTaxCollector": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildremovetaxcollector.go",
+      "struct_name": "GuildRemoveTaxCollector",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildRequestLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildrequestleave.go",
+      "struct_name": "GuildRequestLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildTeleportToGuildFarm": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildteleporttoguildfarm.go",
+      "struct_name": "GuildTeleportToGuildFarm",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildTeleportToGuildHouse": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildteleporttoguildhouse.go",
+      "struct_name": "GuildTeleportToGuildHouse",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesBuy": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\housesbuy.go",
+      "struct_name": "HousesBuy",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesKick": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\houseskick.go",
+      "struct_name": "HousesKick",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesRequestLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\housesrequestleave.go",
+      "struct_name": "HousesRequestLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesSell": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\housessell.go",
+      "struct_name": "HousesSell",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesShare": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\housesshare.go",
+      "struct_name": "HousesShare",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesState": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\housesstate.go",
+      "struct_name": "HousesState",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesUnShare": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\housesunshare.go",
+      "struct_name": "HousesUnShare",
+      "fields": [],
+      "line_count": 38
+    },
+    "InfosGetMaps": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\infosgetmaps.go",
+      "struct_name": "InfosGetMaps",
+      "fields": [],
+      "line_count": 38
+    },
+    "InfosSendScreenInfo": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\infossendscreeninfo.go",
+      "struct_name": "InfosSendScreenInfo",
+      "fields": [
+        {
+          "name": "Width",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Height",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "DisplayState",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 65
+    },
+    "ItemsDestroy": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsdestroy.go",
+      "struct_name": "ItemsDestroy",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Quantity",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 58
+    },
+    "ItemsDissociate": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsdissociate.go",
+      "struct_name": "ItemsDissociate",
+      "fields": [],
+      "line_count": 38
+    },
+    "ItemsDrop": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsdrop.go",
+      "struct_name": "ItemsDrop",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Quantity",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 58
+    },
+    "ItemsFeed": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsfeed.go",
+      "struct_name": "ItemsFeed",
+      "fields": [],
+      "line_count": 38
+    },
+    "ItemsRequestMovement": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsrequestmovement.go",
+      "struct_name": "ItemsRequestMovement",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Position",
+          "go_type": "retrotyp",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "retrotyp"
+        },
+        {
+          "name": "Quantity",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 78
+    },
+    "ItemsSetSkin": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemssetskin.go",
+      "struct_name": "ItemsSetSkin",
+      "fields": [],
+      "line_count": 38
+    },
+    "ItemsUseConfirm": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsuseconfirm.go",
+      "struct_name": "ItemsUseConfirm",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "SpriteId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Cell",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 76
+    },
+    "ItemsUseNoConfirm": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsusenoconfirm.go",
+      "struct_name": "ItemsUseNoConfirm",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "SpriteId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Cell",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 76
+    },
+    "JobChangeJobStats": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\jobchangejobstats.go",
+      "struct_name": "JobChangeJobStats",
+      "fields": [],
+      "line_count": 38
+    },
+    "KeyRequestLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\keyrequestleave.go",
+      "struct_name": "KeyRequestLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "KeySendKey": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\keysendkey.go",
+      "struct_name": "KeySendKey",
+      "fields": [],
+      "line_count": 38
+    },
+    "MountCastrate": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountcastrate.go",
+      "struct_name": "MountCastrate",
+      "fields": [],
+      "line_count": 36
+    },
+    "MountFree": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountfree.go",
+      "struct_name": "MountFree",
+      "fields": [],
+      "line_count": 36
+    },
+    "MountMountParkSell": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountmountparksell.go",
+      "struct_name": "MountMountParkSell",
+      "fields": [],
+      "line_count": 38
+    },
+    "MountParkMountData": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountparkmountdata.go",
+      "struct_name": "MountParkMountData",
+      "fields": [],
+      "line_count": 38
+    },
+    "MountRemoveObjectInPark": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountremoveobjectinpark.go",
+      "struct_name": "MountRemoveObjectInPark",
+      "fields": [],
+      "line_count": 38
+    },
+    "MountRename": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountrename.go",
+      "struct_name": "MountRename",
+      "fields": [
+        {
+          "name": "Name",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 39
+    },
+    "MountRequestData": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountrequestdata.go",
+      "struct_name": "MountRequestData",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Validity",
+          "go_type": "time",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "time"
+        }
+      ],
+      "line_count": 63
+    },
+    "MountRequestLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountrequestleave.go",
+      "struct_name": "MountRequestLeave",
+      "fields": [],
+      "line_count": 36
+    },
+    "MountRequestMountParkBuy": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountrequestmountparkbuy.go",
+      "struct_name": "MountRequestMountParkBuy",
+      "fields": [],
+      "line_count": 38
+    },
+    "MountRide": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountride.go",
+      "struct_name": "MountRide",
+      "fields": [],
+      "line_count": 36
+    },
+    "MountSetXP": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountsetxp.go",
+      "struct_name": "MountSetXP",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyAcceptInvitation": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partyacceptinvitation.go",
+      "struct_name": "PartyAcceptInvitation",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyFollowAll": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partyfollowall.go",
+      "struct_name": "PartyFollowAll",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyInvite": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partyinvite.go",
+      "struct_name": "PartyInvite",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyRefuseInvitation": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partyrefuseinvitation.go",
+      "struct_name": "PartyRefuseInvitation",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyRequestFollow": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partyrequestfollow.go",
+      "struct_name": "PartyRequestFollow",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyRequestLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partyrequestleave.go",
+      "struct_name": "PartyRequestLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyWhere": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partywhere.go",
+      "struct_name": "PartyWhere",
+      "fields": [],
+      "line_count": 38
+    },
+    "QuestGetList": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\questgetlist.go",
+      "struct_name": "QuestGetList",
+      "fields": [],
+      "line_count": 38
+    },
+    "QuestGetStep": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\questgetstep.go",
+      "struct_name": "QuestGetStep",
+      "fields": [],
+      "line_count": 38
+    },
+    "SpellsBoost": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\spellsboost.go",
+      "struct_name": "SpellsBoost",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "SpellsForget": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\spellsforget.go",
+      "struct_name": "SpellsForget",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "SpellsMoveToUsed": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\spellsmovetoused.go",
+      "struct_name": "SpellsMoveToUsed",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Position",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 58
+    },
+    "SubwayPrismUse": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\subwayprismuse.go",
+      "struct_name": "SubwayPrismUse",
+      "fields": [],
+      "line_count": 38
+    },
+    "SubwayRequestLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\subwayrequestleave.go",
+      "struct_name": "SubwayRequestLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "SubwayRequestPrismLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\subwayrequestprismleave.go",
+      "struct_name": "SubwayRequestPrismLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "SubwayUse": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\subwayuse.go",
+      "struct_name": "SubwayUse",
+      "fields": [],
+      "line_count": 38
+    },
+    "TutorialEnd": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\tutorialend.go",
+      "struct_name": "TutorialEnd",
+      "fields": [],
+      "line_count": 38
+    },
+    "WaypointsRequestLeave": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\waypointsrequestleave.go",
+      "struct_name": "WaypointsRequestLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "WaypointsUse": {
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\waypointsuse.go",
+      "struct_name": "WaypointsUse",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountCharacterAddError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacteradderror.go",
+      "struct_name": "AccountCharacterAddError",
+      "fields": [
+        {
+          "name": "Reason",
+          "go_type": "rune",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "rune"
+        }
+      ],
+      "line_count": 44
+    },
+    "AccountCharacterAddSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacteraddsuccess.go",
+      "struct_name": "AccountCharacterAddSuccess",
+      "fields": [],
+      "line_count": 36
+    },
+    "AccountCharacterDeleteError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacterdeleteerror.go",
+      "struct_name": "AccountCharacterDeleteError",
+      "fields": [],
+      "line_count": 36
+    },
+    "AccountCharacterDeleteSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacterdeletesuccess.go",
+      "struct_name": "AccountCharacterDeleteSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountCharacterMigrationAskConfirm": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharactermigrationaskconfirm.go",
+      "struct_name": "AccountCharacterMigrationAskConfirm",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountCharacterMigrationError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharactermigrationerror.go",
+      "struct_name": "AccountCharacterMigrationError",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountCharacterMigrationSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharactermigrationsuccess.go",
+      "struct_name": "AccountCharacterMigrationSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountCharacterNameGeneratedError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacternamegeneratederror.go",
+      "struct_name": "AccountCharacterNameGeneratedError",
+      "fields": [
+        {
+          "name": "Reason",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "AccountCharacterNameGeneratedSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacternamegeneratedsuccess.go",
+      "struct_name": "AccountCharacterNameGeneratedSuccess",
+      "fields": [
+        {
+          "name": "Name",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 40
+    },
+    "AccountCharacterSelectedError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacterselectederror.go",
+      "struct_name": "AccountCharacterSelectedError",
+      "fields": [],
+      "line_count": 36
+    },
+    "AccountCharacterSelectedSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacterselectedsuccess.go",
+      "struct_name": "AccountCharacterSelectedSuccess",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Name",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Level",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "ClassId",
+          "go_type": "retrotyp",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "retrotyp"
+        },
+        {
+          "name": "Sex",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "GFXId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Color1",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Color2",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Color3",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Items",
+          "go_type": "typ",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]typ"
+        }
+      ],
+      "line_count": 126
+    },
+    "AccountCharactersListError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacterslisterror.go",
+      "struct_name": "AccountCharactersListError",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountCharactersListSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacterslistsuccess.go",
+      "struct_name": "AccountCharactersListSuccess",
+      "fields": [
+        {
+          "name": "Subscription",
+          "go_type": "time",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "time"
+        },
+        {
+          "name": "CharactersCount",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Characters",
+          "go_type": "typ",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]typ"
+        }
+      ],
+      "line_count": 104
+    },
+    "AccountCommunity": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcommunity.go",
+      "struct_name": "AccountCommunity",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "AccountFriendServerList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountfriendserverlist.go",
+      "struct_name": "AccountFriendServerList",
+      "fields": [
+        {
+          "name": "ServersCharacters",
+          "go_type": "typ",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]typ"
+        }
+      ],
+      "line_count": 73
+    },
+    "AccountGiftsList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountgiftslist.go",
+      "struct_name": "AccountGiftsList",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountGiftStoredError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountgiftstorederror.go",
+      "struct_name": "AccountGiftStoredError",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountGiftStoredSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountgiftstoredsuccess.go",
+      "struct_name": "AccountGiftStoredSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountHosts": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accounthosts.go",
+      "struct_name": "AccountHosts",
+      "fields": [
+        {
+          "name": "Value",
+          "go_type": "typ",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]typ"
+        }
+      ],
+      "line_count": 61
+    },
+    "AccountKey": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountkey.go",
+      "struct_name": "AccountKey",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountLoginError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountloginerror.go",
+      "struct_name": "AccountLoginError",
+      "fields": [
+        {
+          "name": "Reason",
+          "go_type": "rune",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "rune"
+        },
+        {
+          "name": "Extra",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 51
+    },
+    "AccountLoginSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountloginsuccess.go",
+      "struct_name": "AccountLoginSuccess",
+      "fields": [
+        {
+          "name": "Authorized",
+          "go_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "bool"
+        }
+      ],
+      "line_count": 54
+    },
+    "AccountMiniClipInfo": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountminiclipinfo.go",
+      "struct_name": "AccountMiniClipInfo",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountNewLevel": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountnewlevel.go",
+      "struct_name": "AccountNewLevel",
+      "fields": [
+        {
+          "name": "Level",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "AccountNewQueue": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountnewqueue.go",
+      "struct_name": "AccountNewQueue",
+      "fields": [
+        {
+          "name": "Position",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "TotalAbo",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "TotalNonAbo",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Subscriber",
+          "go_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "bool"
+        },
+        {
+          "name": "QueueId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 94
+    },
+    "AccountPseudo": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountpseudo.go",
+      "struct_name": "AccountPseudo",
+      "fields": [
+        {
+          "name": "Value",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 40
+    },
+    "AccountQueue": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountqueue.go",
+      "struct_name": "AccountQueue",
+      "fields": [
+        {
+          "name": "Position",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "AccountRegionalVersion": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountregionalversion.go",
+      "struct_name": "AccountRegionalVersion",
+      "fields": [
+        {
+          "name": "Value",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "AccountRescue": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountrescue.go",
+      "struct_name": "AccountRescue",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountRestrictions": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountrestrictions.go",
+      "struct_name": "AccountRestrictions",
+      "fields": [
+        {
+          "name": "Restrictions",
+          "go_type": "typ",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "typ"
+        }
+      ],
+      "line_count": 39
+    },
+    "AccountSecretQuestion": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountsecretquestion.go",
+      "struct_name": "AccountSecretQuestion",
+      "fields": [
+        {
+          "name": "Value",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 44
+    },
+    "AccountSelectServerError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountselectservererror.go",
+      "struct_name": "AccountSelectServerError",
+      "fields": [
+        {
+          "name": "Reason",
+          "go_type": "rune",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "rune"
+        },
+        {
+          "name": "Extra",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 51
+    },
+    "AccountSelectServerPlainSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountselectserverplainsuccess.go",
+      "struct_name": "AccountSelectServerPlainSuccess",
+      "fields": [
+        {
+          "name": "Host",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Port",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Ticket",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 59
+    },
+    "AccountSelectServerSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountselectserversuccess.go",
+      "struct_name": "AccountSelectServerSuccess",
+      "fields": [
+        {
+          "name": "Host",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Port",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Ticket",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 53
+    },
+    "AccountServersListError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountserverslisterror.go",
+      "struct_name": "AccountServersListError",
+      "fields": [],
+      "line_count": 38
+    },
+    "AccountServersListSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountserverslistsuccess.go",
+      "struct_name": "AccountServersListSuccess",
+      "fields": [
+        {
+          "name": "Subscription",
+          "go_type": "time",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "time"
+        },
+        {
+          "name": "ServersCharacters",
+          "go_type": "typ",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]typ"
+        }
+      ],
+      "line_count": 91
+    },
+    "AccountStats": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountstats.go",
+      "struct_name": "AccountStats",
+      "fields": [
+        {
+          "name": "XP",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "XPLow",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "XPHigh",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Kama",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "BonusPoints",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "BonusPointsSpell",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Alignment",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "FakeAlignment",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "AlignmentLevel",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Grade",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Honour",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Disgrace",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "AlignmentEnabled",
+          "go_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "bool"
+        },
+        {
+          "name": "LP",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "LPMax",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Energy",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "EnergyMax",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Initiative",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Discernment",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Characteristics",
+          "go_type": "map",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "map"
+        }
+      ],
+      "line_count": 380
+    },
+    "AccountTicketResponseError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountticketresponseerror.go",
+      "struct_name": "AccountTicketResponseError",
+      "fields": [],
+      "line_count": 36
+    },
+    "AccountTicketResponseSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountticketresponsesuccess.go",
+      "struct_name": "AccountTicketResponseSuccess",
+      "fields": [
+        {
+          "name": "KeyId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "AksHelloConnect": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\akshelloconnect.go",
+      "struct_name": "AksHelloConnect",
+      "fields": [
+        {
+          "name": "Salt",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 40
+    },
+    "AksHelloGame": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\akshellogame.go",
+      "struct_name": "AksHelloGame",
+      "fields": [],
+      "line_count": 36
+    },
+    "AksPong": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\akspong.go",
+      "struct_name": "AksPong",
+      "fields": [],
+      "line_count": 36
+    },
+    "AksQuickPong": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\aksquickpong.go",
+      "struct_name": "AksQuickPong",
+      "fields": [],
+      "line_count": 36
+    },
+    "AksRPing": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\aksrping.go",
+      "struct_name": "AksRPing",
+      "fields": [
+        {
+          "name": "Value",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 40
+    },
+    "AksServerMessage": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\aksservermessage.go",
+      "struct_name": "AksServerMessage",
+      "fields": [
+        {
+          "name": "Value",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 41
+    },
+    "AksServerWillDisconnect": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\aksserverwilldisconnect.go",
+      "struct_name": "AksServerWillDisconnect",
+      "fields": [],
+      "line_count": 36
+    },
+    "BasicsAuthorizedCommandClear": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedcommandclear.go",
+      "struct_name": "BasicsAuthorizedCommandClear",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsAuthorizedCommandError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedcommanderror.go",
+      "struct_name": "BasicsAuthorizedCommandError",
+      "fields": [],
+      "line_count": 36
+    },
+    "BasicsAuthorizedCommandPrompt": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedcommandprompt.go",
+      "struct_name": "BasicsAuthorizedCommandPrompt",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsAuthorizedCommandSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedcommandsuccess.go",
+      "struct_name": "BasicsAuthorizedCommandSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsAuthorizedInterfaceClose": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedinterfaceclose.go",
+      "struct_name": "BasicsAuthorizedInterfaceClose",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsAuthorizedInterfaceOpen": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedinterfaceopen.go",
+      "struct_name": "BasicsAuthorizedInterfaceOpen",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsAuthorizedLine": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedline.go",
+      "struct_name": "BasicsAuthorizedLine",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsAveragePing": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsaverageping.go",
+      "struct_name": "BasicsAveragePing",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsDate": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsdate.go",
+      "struct_name": "BasicsDate",
+      "fields": [
+        {
+          "name": "Year",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Month",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Day",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 65
+    },
+    "BasicsFileCheck": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsfilecheck.go",
+      "struct_name": "BasicsFileCheck",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsNothing": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsnothing.go",
+      "struct_name": "BasicsNothing",
+      "fields": [],
+      "line_count": 36
+    },
+    "BasicsSubscriberRestrictionAdd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicssubscriberrestrictionadd.go",
+      "struct_name": "BasicsSubscriberRestrictionAdd",
+      "fields": [
+        {
+          "name": "DialogId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "BasicsSubscriberRestrictionRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicssubscriberrestrictionremove.go",
+      "struct_name": "BasicsSubscriberRestrictionRemove",
+      "fields": [],
+      "line_count": 36
+    },
+    "BasicsTime": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicstime.go",
+      "struct_name": "BasicsTime",
+      "fields": [
+        {
+          "name": "Value",
+          "go_type": "time",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "time"
+        }
+      ],
+      "line_count": 57
+    },
+    "BasicsWhoIsError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicswhoiserror.go",
+      "struct_name": "BasicsWhoIsError",
+      "fields": [],
+      "line_count": 38
+    },
+    "BasicsWhoIsSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicswhoissuccess.go",
+      "struct_name": "BasicsWhoIsSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "ChatMessageError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\chatmessageerror.go",
+      "struct_name": "ChatMessageError",
+      "fields": [
+        {
+          "name": "Reason",
+          "go_type": "rune",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "rune"
+        }
+      ],
+      "line_count": 46
+    },
+    "ChatMessageSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\chatmessagesuccess.go",
+      "struct_name": "ChatMessageSuccess",
+      "fields": [
+        {
+          "name": "ChatChannel",
+          "go_type": "dofustyp",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "dofustyp"
+        },
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "PrivateTo",
+          "go_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "bool"
+        },
+        {
+          "name": "Name",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Message",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Params",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 89
+    },
+    "ChatServerMessage": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\chatservermessage.go",
+      "struct_name": "ChatServerMessage",
+      "fields": [
+        {
+          "name": "Message",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 39
+    },
+    "ChatSmiley": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\chatsmiley.go",
+      "struct_name": "ChatSmiley",
+      "fields": [],
+      "line_count": 38
+    },
+    "ChatSubscribeChannelAdd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\chatsubscribechanneladd.go",
+      "struct_name": "ChatSubscribeChannelAdd",
+      "fields": [
+        {
+          "name": "Channels",
+          "go_type": "rune",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]rune"
+        }
+      ],
+      "line_count": 50
+    },
+    "ChatSubscribeChannelRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\chatsubscribechannelremove.go",
+      "struct_name": "ChatSubscribeChannelRemove",
+      "fields": [
+        {
+          "name": "Channels",
+          "go_type": "rune",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]rune"
+        }
+      ],
+      "line_count": 50
+    },
+    "ConquestAreaAlignmentChanged": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestareaalignmentchanged.go",
+      "struct_name": "ConquestAreaAlignmentChanged",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestConquestBalance": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestconquestbalance.go",
+      "struct_name": "ConquestConquestBalance",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestConquestBonus": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestconquestbonus.go",
+      "struct_name": "ConquestConquestBonus",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismAttacked": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismattacked.go",
+      "struct_name": "ConquestPrismAttacked",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismDead": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismdead.go",
+      "struct_name": "ConquestPrismDead",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismFightAddEnemyAdd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismfightaddenemyadd.go",
+      "struct_name": "ConquestPrismFightAddEnemyAdd",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismFightAddEnemyRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismfightaddenemyremove.go",
+      "struct_name": "ConquestPrismFightAddEnemyRemove",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismFightAddPlayerAdd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismfightaddplayeradd.go",
+      "struct_name": "ConquestPrismFightAddPlayerAdd",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismFightAddPlayerRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismfightaddplayerremove.go",
+      "struct_name": "ConquestPrismFightAddPlayerRemove",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismInfosClosing": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprisminfosclosing.go",
+      "struct_name": "ConquestPrismInfosClosing",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismInfosJoined": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprisminfosjoined.go",
+      "struct_name": "ConquestPrismInfosJoined",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestPrismSurvived": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismsurvived.go",
+      "struct_name": "ConquestPrismSurvived",
+      "fields": [],
+      "line_count": 38
+    },
+    "ConquestWorldData": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestworlddata.go",
+      "struct_name": "ConquestWorldData",
+      "fields": [],
+      "line_count": 38
+    },
+    "DialogCreateError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\dialogcreateerror.go",
+      "struct_name": "DialogCreateError",
+      "fields": [],
+      "line_count": 36
+    },
+    "DialogCreateSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\dialogcreatesuccess.go",
+      "struct_name": "DialogCreateSuccess",
+      "fields": [
+        {
+          "name": "NPCId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 44
+    },
+    "DialogCustomAction": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\dialogcustomaction.go",
+      "struct_name": "DialogCustomAction",
+      "fields": [],
+      "line_count": 38
+    },
+    "DialogLeave": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\dialogleave.go",
+      "struct_name": "DialogLeave",
+      "fields": [],
+      "line_count": 36
+    },
+    "DialogPause": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\dialogpause.go",
+      "struct_name": "DialogPause",
+      "fields": [],
+      "line_count": 36
+    },
+    "DialogQuestion": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\dialogquestion.go",
+      "struct_name": "DialogQuestion",
+      "fields": [
+        {
+          "name": "Question",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "QuestionParams",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]string"
+        },
+        {
+          "name": "Answers",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]int"
+        }
+      ],
+      "line_count": 87
+    },
+    "DocumentsCreateError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\documentscreateerror.go",
+      "struct_name": "DocumentsCreateError",
+      "fields": [],
+      "line_count": 38
+    },
+    "DocumentsCreateSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\documentscreatesuccess.go",
+      "struct_name": "DocumentsCreateSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "DocumentsLeave": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\documentsleave.go",
+      "struct_name": "DocumentsLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "EmotesAdd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\emotesadd.go",
+      "struct_name": "EmotesAdd",
+      "fields": [],
+      "line_count": 38
+    },
+    "EmotesDirection": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\emotesdirection.go",
+      "struct_name": "EmotesDirection",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Dir",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 59
+    },
+    "EmotesList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\emoteslist.go",
+      "struct_name": "EmotesList",
+      "fields": [
+        {
+          "name": "Emotes",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]int"
+        }
+      ],
+      "line_count": 98
+    },
+    "EmotesRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\emotesremove.go",
+      "struct_name": "EmotesRemove",
+      "fields": [],
+      "line_count": 38
+    },
+    "EmotesUseError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\emotesuseerror.go",
+      "struct_name": "EmotesUseError",
+      "fields": [],
+      "line_count": 38
+    },
+    "EmotesUseSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\emotesusesuccess.go",
+      "struct_name": "EmotesUseSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "EnemiesAddEnemyError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\enemiesaddenemyerror.go",
+      "struct_name": "EnemiesAddEnemyError",
+      "fields": [],
+      "line_count": 38
+    },
+    "EnemiesAddEnemySuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\enemiesaddenemysuccess.go",
+      "struct_name": "EnemiesAddEnemySuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "EnemiesEnemiesList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\enemiesenemieslist.go",
+      "struct_name": "EnemiesEnemiesList",
+      "fields": [],
+      "line_count": 38
+    },
+    "EnemiesRemoveEnemyError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\enemiesremoveenemyerror.go",
+      "struct_name": "EnemiesRemoveEnemyError",
+      "fields": [],
+      "line_count": 38
+    },
+    "EnemiesRemoveEnemySuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\enemiesremoveenemysuccess.go",
+      "struct_name": "EnemiesRemoveEnemySuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeAskOfflineExchange": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangeaskofflineexchange.go",
+      "struct_name": "ExchangeAskOfflineExchange",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeBigStoreItemMiddlePriceInBigStore": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoreitemmiddlepriceinbigstore.go",
+      "struct_name": "ExchangeBigStoreItemMiddlePriceInBigStore",
+      "fields": [
+        {
+          "name": "TemplateId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Price",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 58
+    },
+    "ExchangeBigStoreItemsList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoreitemslist.go",
+      "struct_name": "ExchangeBigStoreItemsList",
+      "fields": [
+        {
+          "name": "TemplateId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Items",
+          "go_type": "typ",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]typ"
+        }
+      ],
+      "line_count": 73
+    },
+    "ExchangeBigStoreItemsMovementAdd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoreitemsmovementadd.go",
+      "struct_name": "ExchangeBigStoreItemsMovementAdd",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeBigStoreItemsMovementRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoreitemsmovementremove.go",
+      "struct_name": "ExchangeBigStoreItemsMovementRemove",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeBigStoreTypeItemsList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoretypeitemslist.go",
+      "struct_name": "ExchangeBigStoreTypeItemsList",
+      "fields": [
+        {
+          "name": "ItemType",
+          "go_type": "retrotyp",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "retrotyp"
+        },
+        {
+          "name": "ItemTemplateIds",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]int"
+        }
+      ],
+      "line_count": 71
+    },
+    "ExchangeBigStoreTypeItemsMovementAdd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoretypeitemsmovementadd.go",
+      "struct_name": "ExchangeBigStoreTypeItemsMovementAdd",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeBigStoreTypeItemsMovementRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoretypeitemsmovementremove.go",
+      "struct_name": "ExchangeBigStoreTypeItemsMovementRemove",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeBuyError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebuyerror.go",
+      "struct_name": "ExchangeBuyError",
+      "fields": [],
+      "line_count": 36
+    },
+    "ExchangeBuySuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebuysuccess.go",
+      "struct_name": "ExchangeBuySuccess",
+      "fields": [],
+      "line_count": 36
+    },
+    "ExchangeCoopMovementError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecoopmovementerror.go",
+      "struct_name": "ExchangeCoopMovementError",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeCoopMovementSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecoopmovementsuccess.go",
+      "struct_name": "ExchangeCoopMovementSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeCrafterReferenceAdd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecrafterreferenceadd.go",
+      "struct_name": "ExchangeCrafterReferenceAdd",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeCrafterReferenceRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecrafterreferenceremove.go",
+      "struct_name": "ExchangeCrafterReferenceRemove",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeCraftError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecrafterror.go",
+      "struct_name": "ExchangeCraftError",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeCraftLoop": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecraftloop.go",
+      "struct_name": "ExchangeCraftLoop",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeCraftLoopEnd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecraftloopend.go",
+      "struct_name": "ExchangeCraftLoopEnd",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeCraftPublicMode": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecraftpublicmode.go",
+      "struct_name": "ExchangeCraftPublicMode",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeCraftSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecraftsuccess.go",
+      "struct_name": "ExchangeCraftSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeCreateError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecreateerror.go",
+      "struct_name": "ExchangeCreateError",
+      "fields": [],
+      "line_count": 36
+    },
+    "ExchangeCreateSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecreatesuccess.go",
+      "struct_name": "ExchangeCreateSuccess",
+      "fields": [
+        {
+          "name": "Type",
+          "go_type": "retrotyp",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "retrotyp"
+        },
+        {
+          "name": "NPCBuy",
+          "go_type": "ExchangeCreateSuccessNPCBuy",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "ExchangeCreateSuccessNPCBuy"
+        },
+        {
+          "name": "Paddock",
+          "go_type": "ExchangeCreateSuccessPaddock",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "ExchangeCreateSuccessPaddock"
+        }
+      ],
+      "line_count": 189
+    },
+    "ExchangeLeaveError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangeleaveerror.go",
+      "struct_name": "ExchangeLeaveError",
+      "fields": [],
+      "line_count": 36
+    },
+    "ExchangeLeaveSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangeleavesuccess.go",
+      "struct_name": "ExchangeLeaveSuccess",
+      "fields": [
+        {
+          "name": "TypePlayerExchange",
+          "go_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "bool"
+        }
+      ],
+      "line_count": 44
+    },
+    "ExchangeList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangelist.go",
+      "struct_name": "ExchangeList",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeLocalDistantError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangelocaldistanterror.go",
+      "struct_name": "ExchangeLocalDistantError",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeLocalDistantSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangelocaldistantsuccess.go",
+      "struct_name": "ExchangeLocalDistantSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeLocalMovementError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangelocalmovementerror.go",
+      "struct_name": "ExchangeLocalMovementError",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeLocalMovementSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangelocalmovementsuccess.go",
+      "struct_name": "ExchangeLocalMovementSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeMountPark": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangemountpark.go",
+      "struct_name": "ExchangeMountPark",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeMountPods": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangemountpods.go",
+      "struct_name": "ExchangeMountPods",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeMountStorageAdd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangemountstorageadd.go",
+      "struct_name": "ExchangeMountStorageAdd",
+      "fields": [
+        {
+          "name": "Data",
+          "go_type": "typ",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "typ"
+        },
+        {
+          "name": "NewBorn",
+          "go_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "bool"
+        }
+      ],
+      "line_count": 50
+    },
+    "ExchangeMountStorageRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangemountstorageremove.go",
+      "struct_name": "ExchangeMountStorageRemove",
+      "fields": [
+        {
+          "name": "MountId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 45
+    },
+    "ExchangePayMovementError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangepaymovementerror.go",
+      "struct_name": "ExchangePayMovementError",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangePayMovementSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangepaymovementsuccess.go",
+      "struct_name": "ExchangePayMovementSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangePlayerShopMovementError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangeplayershopmovementerror.go",
+      "struct_name": "ExchangePlayerShopMovementError",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangePlayerShopMovementSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangeplayershopmovementsuccess.go",
+      "struct_name": "ExchangePlayerShopMovementSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeReady": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangeready.go",
+      "struct_name": "ExchangeReady",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeRequestError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangerequesterror.go",
+      "struct_name": "ExchangeRequestError",
+      "fields": [
+        {
+          "name": "Reason",
+          "go_type": "rune",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "rune"
+        }
+      ],
+      "line_count": 44
+    },
+    "ExchangeRequestSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangerequestsuccess.go",
+      "struct_name": "ExchangeRequestSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeSearchError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangesearcherror.go",
+      "struct_name": "ExchangeSearchError",
+      "fields": [],
+      "line_count": 36
+    },
+    "ExchangeSearchSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangesearchsuccess.go",
+      "struct_name": "ExchangeSearchSuccess",
+      "fields": [],
+      "line_count": 36
+    },
+    "ExchangeSellError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangesellerror.go",
+      "struct_name": "ExchangeSellError",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeSellSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangesellsuccess.go",
+      "struct_name": "ExchangeSellSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeStorageMovementError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangestoragemovementerror.go",
+      "struct_name": "ExchangeStorageMovementError",
+      "fields": [],
+      "line_count": 38
+    },
+    "ExchangeStorageMovementSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangestoragemovementsuccess.go",
+      "struct_name": "ExchangeStorageMovementSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "FightsCount": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\fightscount.go",
+      "struct_name": "FightsCount",
+      "fields": [
+        {
+          "name": "Value",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "FightsDetails": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\fightsdetails.go",
+      "struct_name": "FightsDetails",
+      "fields": [],
+      "line_count": 38
+    },
+    "FightsList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\fightslist.go",
+      "struct_name": "FightsList",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsAddFriendError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsaddfrienderror.go",
+      "struct_name": "FriendsAddFriendError",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsAddFriendSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsaddfriendsuccess.go",
+      "struct_name": "FriendsAddFriendSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsFriendsList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsfriendslist.go",
+      "struct_name": "FriendsFriendsList",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsNotifyChange": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsnotifychange.go",
+      "struct_name": "FriendsNotifyChange",
+      "fields": [
+        {
+          "name": "Notify",
+          "go_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "bool"
+        }
+      ],
+      "line_count": 45
+    },
+    "FriendsRemoveFriendError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsremovefrienderror.go",
+      "struct_name": "FriendsRemoveFriendError",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsRemoveFriendSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsremovefriendsuccess.go",
+      "struct_name": "FriendsRemoveFriendSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "FriendsSpouse": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsspouse.go",
+      "struct_name": "FriendsSpouse",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameActions": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameactions.go",
+      "struct_name": "GameActions",
+      "fields": [
+        {
+          "name": "ActionType",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "ActionMovement",
+          "go_type": "GameActionsActionMovement",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "GameActionsActionMovement"
+        },
+        {
+          "name": "ActionLoadGameMap",
+          "go_type": "GameActionsActionLoadGameMap",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "GameActionsActionLoadGameMap"
+        },
+        {
+          "name": "ActionChallenge",
+          "go_type": "GameActionsActionChallenge",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "GameActionsActionChallenge"
+        },
+        {
+          "name": "ActionChallengeAccept",
+          "go_type": "GameActionsActionChallengeAccept",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "GameActionsActionChallengeAccept"
+        },
+        {
+          "name": "ActionChallengeRefuse",
+          "go_type": "GameActionsActionChallengeRefuse",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "GameActionsActionChallengeRefuse"
+        },
+        {
+          "name": "ActionChallengeJoin",
+          "go_type": "GameActionsActionChallengeJoin",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "GameActionsActionChallengeJoin"
+        }
+      ],
+      "line_count": 125
+    },
+    "GameActionsFinish": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameactionsfinish.go",
+      "struct_name": "GameActionsFinish",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameActionsStart": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameactionsstart.go",
+      "struct_name": "GameActionsStart",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameCellData": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamecelldata.go",
+      "struct_name": "GameCellData",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameCellObject": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamecellobject.go",
+      "struct_name": "GameCellObject",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameChallenge": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamechallenge.go",
+      "struct_name": "GameChallenge",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameClearAllEffect": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameclearalleffect.go",
+      "struct_name": "GameClearAllEffect",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameCreateError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamecreateerror.go",
+      "struct_name": "GameCreateError",
+      "fields": [],
+      "line_count": 36
+    },
+    "GameCreateSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamecreatesuccess.go",
+      "struct_name": "GameCreateSuccess",
+      "fields": [
+        {
+          "name": "Type",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 51
+    },
+    "GameEffect": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameeffect.go",
+      "struct_name": "GameEffect",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameEnd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameend.go",
+      "struct_name": "GameEnd",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameExtraClip": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameextraclip.go",
+      "struct_name": "GameExtraClip",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameFightChallenge": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamefightchallenge.go",
+      "struct_name": "GameFightChallenge",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameFightChallengeUpdateError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamefightchallengeupdateerror.go",
+      "struct_name": "GameFightChallengeUpdateError",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameFightChallengeUpdateSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamefightchallengeupdatesuccess.go",
+      "struct_name": "GameFightChallengeUpdateSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameFightOption": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamefightoption.go",
+      "struct_name": "GameFightOption",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameFlag": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameflag.go",
+      "struct_name": "GameFlag",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameFrameObject2": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameframeobject2.go",
+      "struct_name": "GameFrameObject2",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameFrameObjectExternal": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameframeobjectexternal.go",
+      "struct_name": "GameFrameObjectExternal",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameGameOver": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamegameover.go",
+      "struct_name": "GameGameOver",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameJoin": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamejoin.go",
+      "struct_name": "GameJoin",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameLeave": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameleave.go",
+      "struct_name": "GameLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameMapData": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamemapdata.go",
+      "struct_name": "GameMapData",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Name",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        },
+        {
+          "name": "Key",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 60
+    },
+    "GameMapLoaded": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamemaploaded.go",
+      "struct_name": "GameMapLoaded",
+      "fields": [],
+      "line_count": 36
+    },
+    "GameMovement": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamemovement.go",
+      "struct_name": "GameMovement",
+      "fields": [
+        {
+          "name": "Sprites",
+          "go_type": "GameMovementSprite",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]GameMovementSprite"
+        }
+      ],
+      "line_count": 1766
+    },
+    "GameMovementRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamemovementremove.go",
+      "struct_name": "GameMovementRemove",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "GamePlayersCoordinates": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameplayerscoordinates.go",
+      "struct_name": "GamePlayersCoordinates",
+      "fields": [],
+      "line_count": 38
+    },
+    "GamePositionStart": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamepositionstart.go",
+      "struct_name": "GamePositionStart",
+      "fields": [],
+      "line_count": 38
+    },
+    "GamePVP": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamepvp.go",
+      "struct_name": "GamePVP",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameReady": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameready.go",
+      "struct_name": "GameReady",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameStartToPlay": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamestarttoplay.go",
+      "struct_name": "GameStartToPlay",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameTeam": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameteam.go",
+      "struct_name": "GameTeam",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameTurnFinish": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameturnfinish.go",
+      "struct_name": "GameTurnFinish",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameTurnList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameturnlist.go",
+      "struct_name": "GameTurnList",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameTurnMiddle": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameturnmiddle.go",
+      "struct_name": "GameTurnMiddle",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameTurnReady": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameturnready.go",
+      "struct_name": "GameTurnReady",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameTurnStart": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameturnstart.go",
+      "struct_name": "GameTurnStart",
+      "fields": [],
+      "line_count": 38
+    },
+    "GameZoneData": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamezonedata.go",
+      "struct_name": "GameZoneData",
+      "fields": [],
+      "line_count": 38
+    },
+    "GildBanError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gildbanerror.go",
+      "struct_name": "GildBanError",
+      "fields": [],
+      "line_count": 38
+    },
+    "GildBanSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gildbansuccess.go",
+      "struct_name": "GildBanSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "GildHireTaxCollectorError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gildhiretaxcollectorerror.go",
+      "struct_name": "GildHireTaxCollectorError",
+      "fields": [],
+      "line_count": 38
+    },
+    "GildHireTaxCollectorSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gildhiretaxcollectorsuccess.go",
+      "struct_name": "GildHireTaxCollectorSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "GildTaxCollectorAttacked": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gildtaxcollectorattacked.go",
+      "struct_name": "GildTaxCollectorAttacked",
+      "fields": [],
+      "line_count": 38
+    },
+    "GildTaxCollectorInfo": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gildtaxcollectorinfo.go",
+      "struct_name": "GildTaxCollectorInfo",
+      "fields": [],
+      "line_count": 38
+    },
+    "GildUserInterfaceOpen": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gilduserinterfaceopen.go",
+      "struct_name": "GildUserInterfaceOpen",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildCreateError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildcreateerror.go",
+      "struct_name": "GuildCreateError",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildCreateSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildcreatesuccess.go",
+      "struct_name": "GuildCreateSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildInfosBoosts": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfosboosts.go",
+      "struct_name": "GuildInfosBoosts",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildInfosGeneral": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfosgeneral.go",
+      "struct_name": "GuildInfosGeneral",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildInfosHouses": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfoshouses.go",
+      "struct_name": "GuildInfosHouses",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildInfosMembers": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfosmembers.go",
+      "struct_name": "GuildInfosMembers",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildInfosMountPark": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfosmountpark.go",
+      "struct_name": "GuildInfosMountPark",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildInfosTaxCollectorsAttackers": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfostaxcollectorsattackers.go",
+      "struct_name": "GuildInfosTaxCollectorsAttackers",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildInfosTaxCollectorsMovement": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfostaxcollectorsmovement.go",
+      "struct_name": "GuildInfosTaxCollectorsMovement",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildInfosTaxCollectorsPlayers": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfostaxcollectorsplayers.go",
+      "struct_name": "GuildInfosTaxCollectorsPlayers",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildJoinDistantSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildjoindistantsuccess.go",
+      "struct_name": "GuildJoinDistantSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildJoinError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildjoinerror.go",
+      "struct_name": "GuildJoinError",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildJoinSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildjoinsuccess.go",
+      "struct_name": "GuildJoinSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildLeave": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildleave.go",
+      "struct_name": "GuildLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildNew": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildnew.go",
+      "struct_name": "GuildNew",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildRequestDistant": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildrequestdistant.go",
+      "struct_name": "GuildRequestDistant",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildRequestLocal": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildrequestlocal.go",
+      "struct_name": "GuildRequestLocal",
+      "fields": [],
+      "line_count": 38
+    },
+    "GuildStats": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildstats.go",
+      "struct_name": "GuildStats",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesBuyError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housesbuyerror.go",
+      "struct_name": "HousesBuyError",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesBuySuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housesbuysuccess.go",
+      "struct_name": "HousesBuySuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesCreate": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housescreate.go",
+      "struct_name": "HousesCreate",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesGuildInfos": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housesguildinfos.go",
+      "struct_name": "HousesGuildInfos",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesLeave": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housesleave.go",
+      "struct_name": "HousesLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesListAdd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\houseslistadd.go",
+      "struct_name": "HousesListAdd",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesListRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\houseslistremove.go",
+      "struct_name": "HousesListRemove",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesLockedProperty": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\houseslockedproperty.go",
+      "struct_name": "HousesLockedProperty",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesProperties": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housesproperties.go",
+      "struct_name": "HousesProperties",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesSellError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housessellerror.go",
+      "struct_name": "HousesSellError",
+      "fields": [],
+      "line_count": 38
+    },
+    "HousesSellSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housessellsuccess.go",
+      "struct_name": "HousesSellSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "InfosCompass": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infoscompass.go",
+      "struct_name": "InfosCompass",
+      "fields": [],
+      "line_count": 38
+    },
+    "InfosInfoCoordinatesPHighlight": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infosinfocoordinatesphighlight.go",
+      "struct_name": "InfosInfoCoordinatesPHighlight",
+      "fields": [],
+      "line_count": 38
+    },
+    "InfosInfoMaps": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infosinfomaps.go",
+      "struct_name": "InfosInfoMaps",
+      "fields": [],
+      "line_count": 38
+    },
+    "InfosLifeRestoreTimerFinish": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infosliferestoretimerfinish.go",
+      "struct_name": "InfosLifeRestoreTimerFinish",
+      "fields": [
+        {
+          "name": "Restored",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "InfosLifeRestoreTimerStart": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infosliferestoretimerstart.go",
+      "struct_name": "InfosLifeRestoreTimerStart",
+      "fields": [
+        {
+          "name": "Interval",
+          "go_type": "time",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "time"
+        }
+      ],
+      "line_count": 54
+    },
+    "InfosMessage": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infosmessage.go",
+      "struct_name": "InfosMessage",
+      "fields": [
+        {
+          "name": "ChatId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Messages",
+          "go_type": "typ",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]typ"
+        }
+      ],
+      "line_count": 73
+    },
+    "InfosQuantity": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infosquantity.go",
+      "struct_name": "InfosQuantity",
+      "fields": [],
+      "line_count": 38
+    },
+    "ItemsAccessories": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsaccessories.go",
+      "struct_name": "ItemsAccessories",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Accessories",
+          "go_type": "typ",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "typ"
+        }
+      ],
+      "line_count": 63
+    },
+    "ItemsAddError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsadderror.go",
+      "struct_name": "ItemsAddError",
+      "fields": [
+        {
+          "name": "Reason",
+          "go_type": "rune",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "rune"
+        }
+      ],
+      "line_count": 47
+    },
+    "ItemsAddSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsaddsuccess.go",
+      "struct_name": "ItemsAddSuccess",
+      "fields": [
+        {
+          "name": "Items",
+          "go_type": "ItemsAddSuccessItem",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]ItemsAddSuccessItem"
+        }
+      ],
+      "line_count": 139
+    },
+    "ItemsChange": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemschange.go",
+      "struct_name": "ItemsChange",
+      "fields": [],
+      "line_count": 38
+    },
+    "ItemsDropError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsdroperror.go",
+      "struct_name": "ItemsDropError",
+      "fields": [],
+      "line_count": 38
+    },
+    "ItemsDropSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsdropsuccess.go",
+      "struct_name": "ItemsDropSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "ItemsItemFound": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsitemfound.go",
+      "struct_name": "ItemsItemFound",
+      "fields": [],
+      "line_count": 38
+    },
+    "ItemsItemSetAdd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsitemsetadd.go",
+      "struct_name": "ItemsItemSetAdd",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "ItemsTemplatesIds",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]int"
+        },
+        {
+          "name": "Effects",
+          "go_type": "retrotyp",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]retrotyp"
+        }
+      ],
+      "line_count": 82
+    },
+    "ItemsItemSetRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsitemsetremove.go",
+      "struct_name": "ItemsItemSetRemove",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 50
+    },
+    "ItemsItemUseCondition": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsitemusecondition.go",
+      "struct_name": "ItemsItemUseCondition",
+      "fields": [],
+      "line_count": 38
+    },
+    "ItemsMovement": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsmovement.go",
+      "struct_name": "ItemsMovement",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Position",
+          "go_type": "retrotyp",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "retrotyp"
+        }
+      ],
+      "line_count": 62
+    },
+    "ItemsQuantity": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsquantity.go",
+      "struct_name": "ItemsQuantity",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Quantity",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 58
+    },
+    "ItemsRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsremove.go",
+      "struct_name": "ItemsRemove",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "ItemsTool": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemstool.go",
+      "struct_name": "ItemsTool",
+      "fields": [
+        {
+          "name": "JobId",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "ItemsWeight": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsweight.go",
+      "struct_name": "ItemsWeight",
+      "fields": [
+        {
+          "name": "Current",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Max",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 62
+    },
+    "JobLevel": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\joblevel.go",
+      "struct_name": "JobLevel",
+      "fields": [],
+      "line_count": 38
+    },
+    "JobOptions": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\joboptions.go",
+      "struct_name": "JobOptions",
+      "fields": [],
+      "line_count": 38
+    },
+    "JobRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\jobremove.go",
+      "struct_name": "JobRemove",
+      "fields": [],
+      "line_count": 38
+    },
+    "JobSkills": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\jobskills.go",
+      "struct_name": "JobSkills",
+      "fields": [],
+      "line_count": 38
+    },
+    "JobXP": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\jobxp.go",
+      "struct_name": "JobXP",
+      "fields": [],
+      "line_count": 38
+    },
+    "KeyCreate": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\keycreate.go",
+      "struct_name": "KeyCreate",
+      "fields": [],
+      "line_count": 38
+    },
+    "KeyKeyError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\keykeyerror.go",
+      "struct_name": "KeyKeyError",
+      "fields": [],
+      "line_count": 38
+    },
+    "KeyKeySuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\keykeysuccess.go",
+      "struct_name": "KeyKeySuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "KeyLeave": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\keyleave.go",
+      "struct_name": "KeyLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "MountData": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountdata.go",
+      "struct_name": "MountData",
+      "fields": [
+        {
+          "name": "Data",
+          "go_type": "typ",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "typ"
+        }
+      ],
+      "line_count": 39
+    },
+    "MountEquipError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountequiperror.go",
+      "struct_name": "MountEquipError",
+      "fields": [
+        {
+          "name": "Reason",
+          "go_type": "rune",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "rune"
+        }
+      ],
+      "line_count": 43
+    },
+    "MountEquipSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountequipsuccess.go",
+      "struct_name": "MountEquipSuccess",
+      "fields": [
+        {
+          "name": "Data",
+          "go_type": "typ",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "typ"
+        }
+      ],
+      "line_count": 39
+    },
+    "MountLeave": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountleave.go",
+      "struct_name": "MountLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "MountMountPark": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountmountpark.go",
+      "struct_name": "MountMountPark",
+      "fields": [],
+      "line_count": 38
+    },
+    "MountMountParkBuy": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountmountparkbuy.go",
+      "struct_name": "MountMountParkBuy",
+      "fields": [],
+      "line_count": 38
+    },
+    "MountName": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountname.go",
+      "struct_name": "MountName",
+      "fields": [
+        {
+          "name": "Name",
+          "go_type": "string",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "string"
+        }
+      ],
+      "line_count": 39
+    },
+    "MountRidingState": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountridingstate.go",
+      "struct_name": "MountRidingState",
+      "fields": [
+        {
+          "name": "Riding",
+          "go_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "bool"
+        }
+      ],
+      "line_count": 54
+    },
+    "MountUnequip": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountunequip.go",
+      "struct_name": "MountUnequip",
+      "fields": [],
+      "line_count": 36
+    },
+    "MountXP": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountxp.go",
+      "struct_name": "MountXP",
+      "fields": [
+        {
+          "name": "Percent",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "PartyAccept": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyaccept.go",
+      "struct_name": "PartyAccept",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyCreateError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partycreateerror.go",
+      "struct_name": "PartyCreateError",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyCreateSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partycreatesuccess.go",
+      "struct_name": "PartyCreateSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyFollowError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyfollowerror.go",
+      "struct_name": "PartyFollowError",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyFollowSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyfollowsuccess.go",
+      "struct_name": "PartyFollowSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyInviteError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyinviteerror.go",
+      "struct_name": "PartyInviteError",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyInviteSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyinvitesuccess.go",
+      "struct_name": "PartyInviteSuccess",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyLeader": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyleader.go",
+      "struct_name": "PartyLeader",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyLeave": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyleave.go",
+      "struct_name": "PartyLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyMovement": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partymovement.go",
+      "struct_name": "PartyMovement",
+      "fields": [],
+      "line_count": 38
+    },
+    "PartyRefuse": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyrefuse.go",
+      "struct_name": "PartyRefuse",
+      "fields": [],
+      "line_count": 38
+    },
+    "QuestsList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\questslist.go",
+      "struct_name": "QuestsList",
+      "fields": [],
+      "line_count": 38
+    },
+    "QuestsStep": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\questsstep.go",
+      "struct_name": "QuestsStep",
+      "fields": [],
+      "line_count": 38
+    },
+    "SpecializationChange": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\specializationchange.go",
+      "struct_name": "SpecializationChange",
+      "fields": [
+        {
+          "name": "Value",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "SpecializationSet": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\specializationset.go",
+      "struct_name": "SpecializationSet",
+      "fields": [
+        {
+          "name": "Value",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "SpellsChangeOption": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellschangeoption.go",
+      "struct_name": "SpellsChangeOption",
+      "fields": [
+        {
+          "name": "CanUseSeeAllSpell",
+          "go_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "bool"
+        }
+      ],
+      "line_count": 45
+    },
+    "SpellsList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellslist.go",
+      "struct_name": "SpellsList",
+      "fields": [
+        {
+          "name": "Spells",
+          "go_type": "retro",
+          "is_pointer": false,
+          "is_slice": true,
+          "full_type": "[]retro"
+        }
+      ],
+      "line_count": 91
+    },
+    "SpellsSpellBoost": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellsspellboost.go",
+      "struct_name": "SpellsSpellBoost",
+      "fields": [],
+      "line_count": 38
+    },
+    "SpellsSpellForgetClose": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellsspellforgetclose.go",
+      "struct_name": "SpellsSpellForgetClose",
+      "fields": [],
+      "line_count": 36
+    },
+    "SpellsSpellForgetShow": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellsspellforgetshow.go",
+      "struct_name": "SpellsSpellForgetShow",
+      "fields": [],
+      "line_count": 36
+    },
+    "SpellsUpgradeSpellError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellsupgradespellerror.go",
+      "struct_name": "SpellsUpgradeSpellError",
+      "fields": [],
+      "line_count": 36
+    },
+    "SpellsUpgradeSpellSuccess": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellsupgradespellsuccess.go",
+      "struct_name": "SpellsUpgradeSpellSuccess",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        },
+        {
+          "name": "Level",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 58
+    },
+    "StoragesListAdd": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\storageslistadd.go",
+      "struct_name": "StoragesListAdd",
+      "fields": [],
+      "line_count": 38
+    },
+    "StoragesListRemove": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\storageslistremove.go",
+      "struct_name": "StoragesListRemove",
+      "fields": [],
+      "line_count": 38
+    },
+    "StoragesLockedProperty": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\storageslockedproperty.go",
+      "struct_name": "StoragesLockedProperty",
+      "fields": [],
+      "line_count": 38
+    },
+    "SubareasAlignmentModification": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subareasalignmentmodification.go",
+      "struct_name": "SubareasAlignmentModification",
+      "fields": [],
+      "line_count": 38
+    },
+    "SubareasList": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subareaslist.go",
+      "struct_name": "SubareasList",
+      "fields": [],
+      "line_count": 38
+    },
+    "SubwayCreate": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subwaycreate.go",
+      "struct_name": "SubwayCreate",
+      "fields": [],
+      "line_count": 38
+    },
+    "SubwayLeave": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subwayleave.go",
+      "struct_name": "SubwayLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "SubwayPrismCreate": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subwayprismcreate.go",
+      "struct_name": "SubwayPrismCreate",
+      "fields": [],
+      "line_count": 38
+    },
+    "SubwayPrismLeave": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subwayprismleave.go",
+      "struct_name": "SubwayPrismLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "SubwayUseError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subwayuseerror.go",
+      "struct_name": "SubwayUseError",
+      "fields": [],
+      "line_count": 38
+    },
+    "TutorialCreate": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\tutorialcreate.go",
+      "struct_name": "TutorialCreate",
+      "fields": [],
+      "line_count": 38
+    },
+    "TutorialGameBegin": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\tutorialgamebegin.go",
+      "struct_name": "TutorialGameBegin",
+      "fields": [],
+      "line_count": 38
+    },
+    "TutorialShowTip": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\tutorialshowtip.go",
+      "struct_name": "TutorialShowTip",
+      "fields": [
+        {
+          "name": "Id",
+          "go_type": "int",
+          "is_pointer": false,
+          "is_slice": false,
+          "full_type": "int"
+        }
+      ],
+      "line_count": 49
+    },
+    "WaypointsCreate": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\waypointscreate.go",
+      "struct_name": "WaypointsCreate",
+      "fields": [],
+      "line_count": 38
+    },
+    "WaypointsLeave": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\waypointsleave.go",
+      "struct_name": "WaypointsLeave",
+      "fields": [],
+      "line_count": 38
+    },
+    "WaypointsUseError": {
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\waypointsuseerror.go",
+      "struct_name": "WaypointsUseError",
+      "fields": [],
+      "line_count": 38
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@startuml Sandbox Flow Diagram
+skinparam backgroundColor #FEFEFE
+skinparam componentStyle uml2
+
+package "Lua Sandbox (Embedded VM)" as LuaSandbox {
+  component [Lua VM] as LuaVM
+  component [Resource Limits] as LuaLimits
+  component [No Network Access] as LuaNet
+  component [Isolated Filesystem] as LuaFS
+}
+
+package "Python Sandbox (Container/Subprocess)" as PySandbox {
+  component [Python Runner] as PyRunner
+  component [Resource Limits] as PyLimits
+  component [Network Policy (No Network by Default)] as PyNet
+  component [Filesystem Exposure (Controlled)] as PyFS
+}
+
+component [Orchestrator (Mediation Layer)] as Orchestrator
+
+LuaVM --> LuaLimits : Enforce CPU/Memory
+LuaVM --> LuaNet : Block Network
+LuaVM --> LuaFS : Restricted Access
+PyRunner --> PyLimits : Enforce CPU/Memory
+PyRunner --> PyNet : Controlled Network
+PyRunner --> PyFS : Sandboxed Paths
+
+Orchestrator --> LuaVM : Direct API Calls
+Orchestrator --> PyRunner : Subprocess/Container Management
+Orchestrator --> Orchestrator : Mediation & Security
+
+note right of LuaSandbox
+  Embedded VM provides tight integration.
+  Resource limits prevent abuse.
+  No network for security.
+  Filesystem isolation.
+end note
+
+note right of PySandbox
+  Container/subprocess for stronger isolation.
+  Configurable network policies.
+  Controlled filesystem exposure.
+  Higher overhead but more secure.
+end note
+
+note as Mediation
+  Orchestrator acts as gatekeeper.
+  Validates inputs/outputs.
+  Enforces policies across sandboxes.
+end note
+
+@enduml

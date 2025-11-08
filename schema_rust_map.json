@@ -1,0 +1,6040 @@
+{
+  "generated_at": "2025-11-07T01:25:54Z",
+  "total_structs": 504,
+  "overrides_used": 0,
+  "structs": {
+    "AccountAddCharacter": {
+      "struct_name": "AccountAddCharacter",
+      "rust_struct_name": "AccountAddCharacter",
+      "fields": [
+        {
+          "name_go": "Name",
+          "name_rust": "name",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Name/label"
+        },
+        {
+          "name_go": "Class",
+          "name_rust": "class",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Sex",
+          "name_rust": "sex",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Color1",
+          "name_rust": "color1",
+          "go_type": "string",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Color value"
+        },
+        {
+          "name_go": "Color2",
+          "name_rust": "color2",
+          "go_type": "string",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Color value"
+        },
+        {
+          "name_go": "Color3",
+          "name_rust": "color3",
+          "go_type": "string",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Color value"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountaddcharacter.go"
+    },
+    "AccountAskCharacterMigration": {
+      "struct_name": "AccountAskCharacterMigration",
+      "rust_struct_name": "AccountAskCharacterMigration",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountaskcharactermigration.go"
+    },
+    "AccountAttributeGiftToCharacter": {
+      "struct_name": "AccountAttributeGiftToCharacter",
+      "rust_struct_name": "AccountAttributeGiftToCharacter",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountattributegifttocharacter.go"
+    },
+    "AccountBoost": {
+      "struct_name": "AccountBoost",
+      "rust_struct_name": "AccountBoost",
+      "fields": [
+        {
+          "name_go": "CharacteristicId",
+          "name_rust": "characteristic_id",
+          "go_type": "retrotyp",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Amount",
+          "name_rust": "amount",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Numeric value"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountboost.go"
+    },
+    "AccountConfiguredPort": {
+      "struct_name": "AccountConfiguredPort",
+      "rust_struct_name": "AccountConfiguredPort",
+      "fields": [
+        {
+          "name_go": "Port",
+          "name_rust": "port",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountconfiguredport.go"
+    },
+    "AccountCredential": {
+      "struct_name": "AccountCredential",
+      "rust_struct_name": "AccountCredential",
+      "fields": [
+        {
+          "name_go": "Username",
+          "name_rust": "username",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Name/label"
+        },
+        {
+          "name_go": "Hash",
+          "name_rust": "hash",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        },
+        {
+          "name_go": "CryptoMethod",
+          "name_rust": "crypto_method",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountcredential.go"
+    },
+    "AccountDeleteCharacter": {
+      "struct_name": "AccountDeleteCharacter",
+      "rust_struct_name": "AccountDeleteCharacter",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "SecretAnswer",
+          "name_rust": "secret_answer",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountdeletecharacter.go"
+    },
+    "AccountDeleteCharacterMigration": {
+      "struct_name": "AccountDeleteCharacterMigration",
+      "rust_struct_name": "AccountDeleteCharacterMigration",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountdeletecharactermigration.go"
+    },
+    "AccountGetCharacters": {
+      "struct_name": "AccountGetCharacters",
+      "rust_struct_name": "AccountGetCharacters",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountgetcharacters.go"
+    },
+    "AccountGetCharactersForced": {
+      "struct_name": "AccountGetCharactersForced",
+      "rust_struct_name": "AccountGetCharactersForced",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountgetcharactersforced.go"
+    },
+    "AccountGetGifts": {
+      "struct_name": "AccountGetGifts",
+      "rust_struct_name": "AccountGetGifts",
+      "fields": [
+        {
+          "name_go": "Lang",
+          "name_rust": "lang",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountgetgifts.go"
+    },
+    "AccountGetRandomCharacterName": {
+      "struct_name": "AccountGetRandomCharacterName",
+      "rust_struct_name": "AccountGetRandomCharacterName",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountgetrandomcharactername.go"
+    },
+    "AccountGetServersList": {
+      "struct_name": "AccountGetServersList",
+      "rust_struct_name": "AccountGetServersList",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountgetserverslist.go"
+    },
+    "AccountQueuePosition": {
+      "struct_name": "AccountQueuePosition",
+      "rust_struct_name": "AccountQueuePosition",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountqueueposition.go"
+    },
+    "AccountRequestRegionalVersion": {
+      "struct_name": "AccountRequestRegionalVersion",
+      "rust_struct_name": "AccountRequestRegionalVersion",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountrequestregionalversion.go"
+    },
+    "AccountRequestRescue": {
+      "struct_name": "AccountRequestRescue",
+      "rust_struct_name": "AccountRequestRescue",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountrequestrescue.go"
+    },
+    "AccountResetCharacter": {
+      "struct_name": "AccountResetCharacter",
+      "rust_struct_name": "AccountResetCharacter",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountresetcharacter.go"
+    },
+    "AccountSearchForFriend": {
+      "struct_name": "AccountSearchForFriend",
+      "rust_struct_name": "AccountSearchForFriend",
+      "fields": [
+        {
+          "name_go": "Pseudo",
+          "name_rust": "pseudo",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountsearchforfriend.go"
+    },
+    "AccountSendIdentity": {
+      "struct_name": "AccountSendIdentity",
+      "rust_struct_name": "AccountSendIdentity",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "string",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountsendidentity.go"
+    },
+    "AccountSendTicket": {
+      "struct_name": "AccountSendTicket",
+      "rust_struct_name": "AccountSendTicket",
+      "fields": [
+        {
+          "name_go": "Ticket",
+          "name_rust": "ticket",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountsendticket.go"
+    },
+    "AccountSetCharacter": {
+      "struct_name": "AccountSetCharacter",
+      "rust_struct_name": "AccountSetCharacter",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountsetcharacter.go"
+    },
+    "AccountSetNickname": {
+      "struct_name": "AccountSetNickname",
+      "rust_struct_name": "AccountSetNickname",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountsetnickname.go"
+    },
+    "AccountSetServer": {
+      "struct_name": "AccountSetServer",
+      "rust_struct_name": "AccountSetServer",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountsetserver.go"
+    },
+    "AccountUseKey": {
+      "struct_name": "AccountUseKey",
+      "rust_struct_name": "AccountUseKey",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountusekey.go"
+    },
+    "AccountValidCharacterMigration": {
+      "struct_name": "AccountValidCharacterMigration",
+      "rust_struct_name": "AccountValidCharacterMigration",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountvalidcharactermigration.go"
+    },
+    "AccountVersion": {
+      "struct_name": "AccountVersion",
+      "rust_struct_name": "AccountVersion",
+      "fields": [
+        {
+          "name_go": "Major",
+          "name_rust": "major",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Minor",
+          "name_rust": "minor",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Patch",
+          "name_rust": "patch",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Beta",
+          "name_rust": "beta",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Streaming",
+          "name_rust": "streaming",
+          "go_type": "bool",
+          "rust_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "bool",
+          "comment": ""
+        },
+        {
+          "name_go": "Electron",
+          "name_rust": "electron",
+          "go_type": "bool",
+          "rust_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "bool",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\accountversion.go"
+    },
+    "AksPing": {
+      "struct_name": "AksPing",
+      "rust_struct_name": "AksPing",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\aksping.go"
+    },
+    "AksQuickPing": {
+      "struct_name": "AksQuickPing",
+      "rust_struct_name": "AksQuickPing",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\aksquickping.go"
+    },
+    "AksRPong": {
+      "struct_name": "AksRPong",
+      "rust_struct_name": "AksRPong",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\aksrpong.go"
+    },
+    "BasicsAuthorizedCommand": {
+      "struct_name": "BasicsAuthorizedCommand",
+      "rust_struct_name": "BasicsAuthorizedCommand",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsauthorizedcommand.go"
+    },
+    "BasicsAuthorizedKickCommand": {
+      "struct_name": "BasicsAuthorizedKickCommand",
+      "rust_struct_name": "BasicsAuthorizedKickCommand",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsauthorizedkickcommand.go"
+    },
+    "BasicsAuthorizedMoveCommand": {
+      "struct_name": "BasicsAuthorizedMoveCommand",
+      "rust_struct_name": "BasicsAuthorizedMoveCommand",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsauthorizedmovecommand.go"
+    },
+    "BasicsAway": {
+      "struct_name": "BasicsAway",
+      "rust_struct_name": "BasicsAway",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsaway.go"
+    },
+    "BasicsFileCheckAnswer": {
+      "struct_name": "BasicsFileCheckAnswer",
+      "rust_struct_name": "BasicsFileCheckAnswer",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsfilecheckanswer.go"
+    },
+    "BasicsGetDate": {
+      "struct_name": "BasicsGetDate",
+      "rust_struct_name": "BasicsGetDate",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsgetdate.go"
+    },
+    "BasicsInvisible": {
+      "struct_name": "BasicsInvisible",
+      "rust_struct_name": "BasicsInvisible",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsinvisible.go"
+    },
+    "BasicsKick": {
+      "struct_name": "BasicsKick",
+      "rust_struct_name": "BasicsKick",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicskick.go"
+    },
+    "BasicsRequestAveragePing": {
+      "struct_name": "BasicsRequestAveragePing",
+      "rust_struct_name": "BasicsRequestAveragePing",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicsrequestaverageping.go"
+    },
+    "BasicsSanctionMe": {
+      "struct_name": "BasicsSanctionMe",
+      "rust_struct_name": "BasicsSanctionMe",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicssanctionme.go"
+    },
+    "BasicsWhoIs": {
+      "struct_name": "BasicsWhoIs",
+      "rust_struct_name": "BasicsWhoIs",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\basicswhois.go"
+    },
+    "ChatReportMessage": {
+      "struct_name": "ChatReportMessage",
+      "rust_struct_name": "ChatReportMessage",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\chatreportmessage.go"
+    },
+    "ChatRequestSubscribeChannelAdd": {
+      "struct_name": "ChatRequestSubscribeChannelAdd",
+      "rust_struct_name": "ChatRequestSubscribeChannelAdd",
+      "fields": [
+        {
+          "name_go": "Channels",
+          "name_rust": "channels",
+          "go_type": "rune",
+          "rust_type": "Vec<rune>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\chatrequestsubscribechanneladd.go"
+    },
+    "ChatRequestSubscribeChannelRemove": {
+      "struct_name": "ChatRequestSubscribeChannelRemove",
+      "rust_struct_name": "ChatRequestSubscribeChannelRemove",
+      "fields": [
+        {
+          "name_go": "Channels",
+          "name_rust": "channels",
+          "go_type": "rune",
+          "rust_type": "Vec<rune>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\chatrequestsubscribechannelremove.go"
+    },
+    "ChatSend": {
+      "struct_name": "ChatSend",
+      "rust_struct_name": "ChatSend",
+      "fields": [
+        {
+          "name_go": "ChatChannel",
+          "name_rust": "chat_channel",
+          "go_type": "dofustyp",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type dofustyp"
+        },
+        {
+          "name_go": "PrivateReceiver",
+          "name_rust": "private_receiver",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        },
+        {
+          "name_go": "Message",
+          "name_rust": "message",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Text message"
+        },
+        {
+          "name_go": "Params",
+          "name_rust": "params",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\chatsend.go"
+    },
+    "ChatUseSmiley": {
+      "struct_name": "ChatUseSmiley",
+      "rust_struct_name": "ChatUseSmiley",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\chatusesmiley.go"
+    },
+    "ConquestGetAlignedBonus": {
+      "struct_name": "ConquestGetAlignedBonus",
+      "rust_struct_name": "ConquestGetAlignedBonus",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestgetalignedbonus.go"
+    },
+    "ConquestPrismFightJoin": {
+      "struct_name": "ConquestPrismFightJoin",
+      "rust_struct_name": "ConquestPrismFightJoin",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestprismfightjoin.go"
+    },
+    "ConquestPrismFightLeave": {
+      "struct_name": "ConquestPrismFightLeave",
+      "rust_struct_name": "ConquestPrismFightLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestprismfightleave.go"
+    },
+    "ConquestPrismInfosJoin": {
+      "struct_name": "ConquestPrismInfosJoin",
+      "rust_struct_name": "ConquestPrismInfosJoin",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestprisminfosjoin.go"
+    },
+    "ConquestPrismInfosLeave": {
+      "struct_name": "ConquestPrismInfosLeave",
+      "rust_struct_name": "ConquestPrismInfosLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestprisminfosleave.go"
+    },
+    "ConquestRequestBalance": {
+      "struct_name": "ConquestRequestBalance",
+      "rust_struct_name": "ConquestRequestBalance",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestrequestbalance.go"
+    },
+    "ConquestSwitchPlaces": {
+      "struct_name": "ConquestSwitchPlaces",
+      "rust_struct_name": "ConquestSwitchPlaces",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestswitchplaces.go"
+    },
+    "ConquestWorldInfosJoin": {
+      "struct_name": "ConquestWorldInfosJoin",
+      "rust_struct_name": "ConquestWorldInfosJoin",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestworldinfosjoin.go"
+    },
+    "ConquestWorldInfosLave": {
+      "struct_name": "ConquestWorldInfosLave",
+      "rust_struct_name": "ConquestWorldInfosLave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\conquestworldinfoslave.go"
+    },
+    "DialogBeginning": {
+      "struct_name": "DialogBeginning",
+      "rust_struct_name": "DialogBeginning",
+      "fields": [
+        {
+          "name_go": "NPCId",
+          "name_rust": "npc_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\dialogbeginning.go"
+    },
+    "DialogCreate": {
+      "struct_name": "DialogCreate",
+      "rust_struct_name": "DialogCreate",
+      "fields": [
+        {
+          "name_go": "NPCId",
+          "name_rust": "npc_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\dialogcreate.go"
+    },
+    "DialogRequestLeave": {
+      "struct_name": "DialogRequestLeave",
+      "rust_struct_name": "DialogRequestLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\dialogrequestleave.go"
+    },
+    "DialogResponse": {
+      "struct_name": "DialogResponse",
+      "rust_struct_name": "DialogResponse",
+      "fields": [
+        {
+          "name_go": "Question",
+          "name_rust": "question",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Answer",
+          "name_rust": "answer",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\dialogresponse.go"
+    },
+    "DocumentsRequestLeave": {
+      "struct_name": "DocumentsRequestLeave",
+      "rust_struct_name": "DocumentsRequestLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\documentsrequestleave.go"
+    },
+    "EmotesSetDirection": {
+      "struct_name": "EmotesSetDirection",
+      "rust_struct_name": "EmotesSetDirection",
+      "fields": [
+        {
+          "name_go": "Dir",
+          "name_rust": "dir",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\emotessetdirection.go"
+    },
+    "EmotesUseEmote": {
+      "struct_name": "EmotesUseEmote",
+      "rust_struct_name": "EmotesUseEmote",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\emotesuseemote.go"
+    },
+    "EnemiesAddEnemy": {
+      "struct_name": "EnemiesAddEnemy",
+      "rust_struct_name": "EnemiesAddEnemy",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\enemiesaddenemy.go"
+    },
+    "EnemiesGetEnemiesList": {
+      "struct_name": "EnemiesGetEnemiesList",
+      "rust_struct_name": "EnemiesGetEnemiesList",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\enemiesgetenemieslist.go"
+    },
+    "EnemiesRemoveEnemy": {
+      "struct_name": "EnemiesRemoveEnemy",
+      "rust_struct_name": "EnemiesRemoveEnemy",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\enemiesremoveenemy.go"
+    },
+    "ExchangeAccept": {
+      "struct_name": "ExchangeAccept",
+      "rust_struct_name": "ExchangeAccept",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeaccept.go"
+    },
+    "ExchangeBigStoreBuy": {
+      "struct_name": "ExchangeBigStoreBuy",
+      "rust_struct_name": "ExchangeBigStoreBuy",
+      "fields": [
+        {
+          "name_go": "ItemId",
+          "name_rust": "item_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "QuantityIndex",
+          "name_rust": "quantity_index",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Price",
+          "name_rust": "price",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangebigstorebuy.go"
+    },
+    "ExchangeBigStoreItemList": {
+      "struct_name": "ExchangeBigStoreItemList",
+      "rust_struct_name": "ExchangeBigStoreItemList",
+      "fields": [
+        {
+          "name_go": "ItemTemplateId",
+          "name_rust": "item_template_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangebigstoreitemlist.go"
+    },
+    "ExchangeBigStoreSearch": {
+      "struct_name": "ExchangeBigStoreSearch",
+      "rust_struct_name": "ExchangeBigStoreSearch",
+      "fields": [
+        {
+          "name_go": "ItemType",
+          "name_rust": "item_type",
+          "go_type": "retrotyp",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type retrotyp"
+        },
+        {
+          "name_go": "TemplateId",
+          "name_rust": "template_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangebigstoresearch.go"
+    },
+    "ExchangeBigStoreType": {
+      "struct_name": "ExchangeBigStoreType",
+      "rust_struct_name": "ExchangeBigStoreType",
+      "fields": [
+        {
+          "name_go": "ItemType",
+          "name_rust": "item_type",
+          "go_type": "retrotyp",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type retrotyp"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangebigstoretype.go"
+    },
+    "ExchangeGetCrafterForJob": {
+      "struct_name": "ExchangeGetCrafterForJob",
+      "rust_struct_name": "ExchangeGetCrafterForJob",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangegetcrafterforjob.go"
+    },
+    "ExchangeGetItemMiddlePriceInBigStore": {
+      "struct_name": "ExchangeGetItemMiddlePriceInBigStore",
+      "rust_struct_name": "ExchangeGetItemMiddlePriceInBigStore",
+      "fields": [
+        {
+          "name_go": "TemplateId",
+          "name_rust": "template_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangegetitemmiddlepriceinbigstore.go"
+    },
+    "ExchangeKillMount": {
+      "struct_name": "ExchangeKillMount",
+      "rust_struct_name": "ExchangeKillMount",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangekillmount.go"
+    },
+    "ExchangeKillMountInPark": {
+      "struct_name": "ExchangeKillMountInPark",
+      "rust_struct_name": "ExchangeKillMountInPark",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangekillmountinpark.go"
+    },
+    "ExchangeLeave": {
+      "struct_name": "ExchangeLeave",
+      "rust_struct_name": "ExchangeLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeleave.go"
+    },
+    "ExchangeMovementBuy": {
+      "struct_name": "ExchangeMovementBuy",
+      "rust_struct_name": "ExchangeMovementBuy",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangemovementbuy.go"
+    },
+    "ExchangeMovementItems": {
+      "struct_name": "ExchangeMovementItems",
+      "rust_struct_name": "ExchangeMovementItems",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangemovementitems.go"
+    },
+    "ExchangeMovementKamas": {
+      "struct_name": "ExchangeMovementKamas",
+      "rust_struct_name": "ExchangeMovementKamas",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangemovementkamas.go"
+    },
+    "ExchangeMovementPay": {
+      "struct_name": "ExchangeMovementPay",
+      "rust_struct_name": "ExchangeMovementPay",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangemovementpay.go"
+    },
+    "ExchangeMovementSell": {
+      "struct_name": "ExchangeMovementSell",
+      "rust_struct_name": "ExchangeMovementSell",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangemovementsell.go"
+    },
+    "ExchangeOfflineExchange": {
+      "struct_name": "ExchangeOfflineExchange",
+      "rust_struct_name": "ExchangeOfflineExchange",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeofflineexchange.go"
+    },
+    "ExchangePutInCertificateFromShed": {
+      "struct_name": "ExchangePutInCertificateFromShed",
+      "rust_struct_name": "ExchangePutInCertificateFromShed",
+      "fields": [
+        {
+          "name_go": "MountId",
+          "name_rust": "mount_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeputincertificatefromshed.go"
+    },
+    "ExchangePutInInventoryFromShed": {
+      "struct_name": "ExchangePutInInventoryFromShed",
+      "rust_struct_name": "ExchangePutInInventoryFromShed",
+      "fields": [
+        {
+          "name_go": "MountId",
+          "name_rust": "mount_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeputininventoryfromshed.go"
+    },
+    "ExchangePutInMountParkFromShed": {
+      "struct_name": "ExchangePutInMountParkFromShed",
+      "rust_struct_name": "ExchangePutInMountParkFromShed",
+      "fields": [
+        {
+          "name_go": "MountId",
+          "name_rust": "mount_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeputinmountparkfromshed.go"
+    },
+    "ExchangePutInShedFromCertificate": {
+      "struct_name": "ExchangePutInShedFromCertificate",
+      "rust_struct_name": "ExchangePutInShedFromCertificate",
+      "fields": [
+        {
+          "name_go": "CertificateId",
+          "name_rust": "certificate_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeputinshedfromcertificate.go"
+    },
+    "ExchangePutInShedFromInventory": {
+      "struct_name": "ExchangePutInShedFromInventory",
+      "rust_struct_name": "ExchangePutInShedFromInventory",
+      "fields": [
+        {
+          "name_go": "MountId",
+          "name_rust": "mount_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeputinshedfrominventory.go"
+    },
+    "ExchangePutInShedFromMountPark": {
+      "struct_name": "ExchangePutInShedFromMountPark",
+      "rust_struct_name": "ExchangePutInShedFromMountPark",
+      "fields": [
+        {
+          "name_go": "MountId",
+          "name_rust": "mount_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeputinshedfrommountpark.go"
+    },
+    "ExchangeRepeatCraft": {
+      "struct_name": "ExchangeRepeatCraft",
+      "rust_struct_name": "ExchangeRepeatCraft",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangerepeatcraft.go"
+    },
+    "ExchangeReplayCraft": {
+      "struct_name": "ExchangeReplayCraft",
+      "rust_struct_name": "ExchangeReplayCraft",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangereplaycraft.go"
+    },
+    "ExchangeRequest": {
+      "struct_name": "ExchangeRequest",
+      "rust_struct_name": "ExchangeRequest",
+      "fields": [
+        {
+          "name_go": "Type",
+          "name_rust": "type",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Cell",
+          "name_rust": "cell",
+          "go_type": "int",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Map cell number"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangerequest.go"
+    },
+    "ExchangeRequestAskOfflineExchange": {
+      "struct_name": "ExchangeRequestAskOfflineExchange",
+      "rust_struct_name": "ExchangeRequestAskOfflineExchange",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangerequestaskofflineexchange.go"
+    },
+    "ExchangeRequestReady": {
+      "struct_name": "ExchangeRequestReady",
+      "rust_struct_name": "ExchangeRequestReady",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangerequestready.go"
+    },
+    "ExchangeSetPublicMode": {
+      "struct_name": "ExchangeSetPublicMode",
+      "rust_struct_name": "ExchangeSetPublicMode",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangesetpublicmode.go"
+    },
+    "ExchangeShop": {
+      "struct_name": "ExchangeShop",
+      "rust_struct_name": "ExchangeShop",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangeshop.go"
+    },
+    "ExchangeStopRepeatCraft": {
+      "struct_name": "ExchangeStopRepeatCraft",
+      "rust_struct_name": "ExchangeStopRepeatCraft",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\exchangestoprepeatcraft.go"
+    },
+    "FightsBlockJoiner": {
+      "struct_name": "FightsBlockJoiner",
+      "rust_struct_name": "FightsBlockJoiner",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\fightsblockjoiner.go"
+    },
+    "FightsBlockJoinerExceptParty": {
+      "struct_name": "FightsBlockJoinerExceptParty",
+      "rust_struct_name": "FightsBlockJoinerExceptParty",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\fightsblockjoinerexceptparty.go"
+    },
+    "FightsBlockSpectators": {
+      "struct_name": "FightsBlockSpectators",
+      "rust_struct_name": "FightsBlockSpectators",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\fightsblockspectators.go"
+    },
+    "FightsGetDetails": {
+      "struct_name": "FightsGetDetails",
+      "rust_struct_name": "FightsGetDetails",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\fightsgetdetails.go"
+    },
+    "FightsGetList": {
+      "struct_name": "FightsGetList",
+      "rust_struct_name": "FightsGetList",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\fightsgetlist.go"
+    },
+    "FightsNeedHelp": {
+      "struct_name": "FightsNeedHelp",
+      "rust_struct_name": "FightsNeedHelp",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\fightsneedhelp.go"
+    },
+    "FriendsAddFriend": {
+      "struct_name": "FriendsAddFriend",
+      "rust_struct_name": "FriendsAddFriend",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendsaddfriend.go"
+    },
+    "FriendsCompass": {
+      "struct_name": "FriendsCompass",
+      "rust_struct_name": "FriendsCompass",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendscompass.go"
+    },
+    "FriendsGetFriendsList": {
+      "struct_name": "FriendsGetFriendsList",
+      "rust_struct_name": "FriendsGetFriendsList",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendsgetfriendslist.go"
+    },
+    "FriendsJoin": {
+      "struct_name": "FriendsJoin",
+      "rust_struct_name": "FriendsJoin",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendsjoin.go"
+    },
+    "FriendsJoinFriend": {
+      "struct_name": "FriendsJoinFriend",
+      "rust_struct_name": "FriendsJoinFriend",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendsjoinfriend.go"
+    },
+    "FriendsRemoveFriend": {
+      "struct_name": "FriendsRemoveFriend",
+      "rust_struct_name": "FriendsRemoveFriend",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendsremovefriend.go"
+    },
+    "FriendsSetNotifyWhenConnect": {
+      "struct_name": "FriendsSetNotifyWhenConnect",
+      "rust_struct_name": "FriendsSetNotifyWhenConnect",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\friendssetnotifywhenconnect.go"
+    },
+    "GameActionAck": {
+      "struct_name": "GameActionAck",
+      "rust_struct_name": "GameActionAck",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameactionack.go"
+    },
+    "GameActionCancel": {
+      "struct_name": "GameActionCancel",
+      "rust_struct_name": "GameActionCancel",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Params",
+          "name_rust": "params",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameactioncancel.go"
+    },
+    "GameActionsSendActions": {
+      "struct_name": "GameActionsSendActions",
+      "rust_struct_name": "GameActionsSendActions",
+      "fields": [
+        {
+          "name_go": "ActionType",
+          "name_rust": "action_type",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "ActionMovement",
+          "name_rust": "action_movement",
+          "go_type": "GameActionsSendActionsActionMovement",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type GameActionsSendActionsActionMovement"
+        },
+        {
+          "name_go": "ActionChallenge",
+          "name_rust": "action_challenge",
+          "go_type": "GameActionsSendActionsActionChallenge",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type GameActionsSendActionsActionChallenge"
+        },
+        {
+          "name_go": "ActionChallengeAccept",
+          "name_rust": "action_challenge_accept",
+          "go_type": "GameActionsSendActionsActionChallengeAccept",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type GameActionsSendActionsActionChallengeAccept"
+        },
+        {
+          "name_go": "ActionChallengeRefuse",
+          "name_rust": "action_challenge_refuse",
+          "go_type": "GameActionsSendActionsActionChallengeRefuse",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type GameActionsSendActionsActionChallengeRefuse"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameactionssendactions.go"
+    },
+    "GameAskDisablePVPMode": {
+      "struct_name": "GameAskDisablePVPMode",
+      "rust_struct_name": "GameAskDisablePVPMode",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameaskdisablepvpmode.go"
+    },
+    "GameCreate": {
+      "struct_name": "GameCreate",
+      "rust_struct_name": "GameCreate",
+      "fields": [
+        {
+          "name_go": "Type",
+          "name_rust": "type",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamecreate.go"
+    },
+    "GameEnabledPVPMode": {
+      "struct_name": "GameEnabledPVPMode",
+      "rust_struct_name": "GameEnabledPVPMode",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameenabledpvpmode.go"
+    },
+    "GameFreeMySoul": {
+      "struct_name": "GameFreeMySoul",
+      "rust_struct_name": "GameFreeMySoul",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamefreemysoul.go"
+    },
+    "GameGetExtraInformations": {
+      "struct_name": "GameGetExtraInformations",
+      "rust_struct_name": "GameGetExtraInformations",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamegetextrainformations.go"
+    },
+    "GameGetMapData": {
+      "struct_name": "GameGetMapData",
+      "rust_struct_name": "GameGetMapData",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamegetmapdata.go"
+    },
+    "GameRequestLeave": {
+      "struct_name": "GameRequestLeave",
+      "rust_struct_name": "GameRequestLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamerequestleave.go"
+    },
+    "GameRequestReady": {
+      "struct_name": "GameRequestReady",
+      "rust_struct_name": "GameRequestReady",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamerequestready.go"
+    },
+    "GameSetFlag": {
+      "struct_name": "GameSetFlag",
+      "rust_struct_name": "GameSetFlag",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamesetflag.go"
+    },
+    "GameSetPlayerPosition": {
+      "struct_name": "GameSetPlayerPosition",
+      "rust_struct_name": "GameSetPlayerPosition",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gamesetplayerposition.go"
+    },
+    "GameShowFightChallengeTarget": {
+      "struct_name": "GameShowFightChallengeTarget",
+      "rust_struct_name": "GameShowFightChallengeTarget",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameshowfightchallengetarget.go"
+    },
+    "GameTurnEnd": {
+      "struct_name": "GameTurnEnd",
+      "rust_struct_name": "GameTurnEnd",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameturnend.go"
+    },
+    "GameTurnOk": {
+      "struct_name": "GameTurnOk",
+      "rust_struct_name": "GameTurnOk",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\gameturnok.go"
+    },
+    "GuildAcceptInvitation": {
+      "struct_name": "GuildAcceptInvitation",
+      "rust_struct_name": "GuildAcceptInvitation",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildacceptinvitation.go"
+    },
+    "GuildBan": {
+      "struct_name": "GuildBan",
+      "rust_struct_name": "GuildBan",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildban.go"
+    },
+    "GuildBoostCharacteristic": {
+      "struct_name": "GuildBoostCharacteristic",
+      "rust_struct_name": "GuildBoostCharacteristic",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildboostcharacteristic.go"
+    },
+    "GuildBoostSpell": {
+      "struct_name": "GuildBoostSpell",
+      "rust_struct_name": "GuildBoostSpell",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildboostspell.go"
+    },
+    "GuildChangeMemberProfile": {
+      "struct_name": "GuildChangeMemberProfile",
+      "rust_struct_name": "GuildChangeMemberProfile",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildchangememberprofile.go"
+    },
+    "GuildCreate": {
+      "struct_name": "GuildCreate",
+      "rust_struct_name": "GuildCreate",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildcreate.go"
+    },
+    "GuildGetInfosBoosts": {
+      "struct_name": "GuildGetInfosBoosts",
+      "rust_struct_name": "GuildGetInfosBoosts",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildgetinfosboosts.go"
+    },
+    "GuildGetInfosGeneral": {
+      "struct_name": "GuildGetInfosGeneral",
+      "rust_struct_name": "GuildGetInfosGeneral",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildgetinfosgeneral.go"
+    },
+    "GuildGetInfosGuildHouses": {
+      "struct_name": "GuildGetInfosGuildHouses",
+      "rust_struct_name": "GuildGetInfosGuildHouses",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildgetinfosguildhouses.go"
+    },
+    "GuildGetInfosMembers": {
+      "struct_name": "GuildGetInfosMembers",
+      "rust_struct_name": "GuildGetInfosMembers",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildgetinfosmembers.go"
+    },
+    "GuildGetInfosMountPark": {
+      "struct_name": "GuildGetInfosMountPark",
+      "rust_struct_name": "GuildGetInfosMountPark",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildgetinfosmountpark.go"
+    },
+    "GuildGetInfosTaxCollector": {
+      "struct_name": "GuildGetInfosTaxCollector",
+      "rust_struct_name": "GuildGetInfosTaxCollector",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildgetinfostaxcollector.go"
+    },
+    "GuildHireTaxCollector": {
+      "struct_name": "GuildHireTaxCollector",
+      "rust_struct_name": "GuildHireTaxCollector",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildhiretaxcollector.go"
+    },
+    "GuildInvite": {
+      "struct_name": "GuildInvite",
+      "rust_struct_name": "GuildInvite",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildinvite.go"
+    },
+    "GuildJoinTaxCollector": {
+      "struct_name": "GuildJoinTaxCollector",
+      "rust_struct_name": "GuildJoinTaxCollector",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildjointaxcollector.go"
+    },
+    "GuildLeaveTaxCollector": {
+      "struct_name": "GuildLeaveTaxCollector",
+      "rust_struct_name": "GuildLeaveTaxCollector",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildleavetaxcollector.go"
+    },
+    "GuildLeaveTaxInterface": {
+      "struct_name": "GuildLeaveTaxInterface",
+      "rust_struct_name": "GuildLeaveTaxInterface",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildleavetaxinterface.go"
+    },
+    "GuildRefuseInvitation": {
+      "struct_name": "GuildRefuseInvitation",
+      "rust_struct_name": "GuildRefuseInvitation",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildrefuseinvitation.go"
+    },
+    "GuildRemoveTaxCollector": {
+      "struct_name": "GuildRemoveTaxCollector",
+      "rust_struct_name": "GuildRemoveTaxCollector",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildremovetaxcollector.go"
+    },
+    "GuildRequestLeave": {
+      "struct_name": "GuildRequestLeave",
+      "rust_struct_name": "GuildRequestLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildrequestleave.go"
+    },
+    "GuildTeleportToGuildFarm": {
+      "struct_name": "GuildTeleportToGuildFarm",
+      "rust_struct_name": "GuildTeleportToGuildFarm",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildteleporttoguildfarm.go"
+    },
+    "GuildTeleportToGuildHouse": {
+      "struct_name": "GuildTeleportToGuildHouse",
+      "rust_struct_name": "GuildTeleportToGuildHouse",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\guildteleporttoguildhouse.go"
+    },
+    "HousesBuy": {
+      "struct_name": "HousesBuy",
+      "rust_struct_name": "HousesBuy",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\housesbuy.go"
+    },
+    "HousesKick": {
+      "struct_name": "HousesKick",
+      "rust_struct_name": "HousesKick",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\houseskick.go"
+    },
+    "HousesRequestLeave": {
+      "struct_name": "HousesRequestLeave",
+      "rust_struct_name": "HousesRequestLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\housesrequestleave.go"
+    },
+    "HousesSell": {
+      "struct_name": "HousesSell",
+      "rust_struct_name": "HousesSell",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\housessell.go"
+    },
+    "HousesShare": {
+      "struct_name": "HousesShare",
+      "rust_struct_name": "HousesShare",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\housesshare.go"
+    },
+    "HousesState": {
+      "struct_name": "HousesState",
+      "rust_struct_name": "HousesState",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\housesstate.go"
+    },
+    "HousesUnShare": {
+      "struct_name": "HousesUnShare",
+      "rust_struct_name": "HousesUnShare",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\housesunshare.go"
+    },
+    "InfosGetMaps": {
+      "struct_name": "InfosGetMaps",
+      "rust_struct_name": "InfosGetMaps",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\infosgetmaps.go"
+    },
+    "InfosSendScreenInfo": {
+      "struct_name": "InfosSendScreenInfo",
+      "rust_struct_name": "InfosSendScreenInfo",
+      "fields": [
+        {
+          "name_go": "Width",
+          "name_rust": "width",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Height",
+          "name_rust": "height",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "DisplayState",
+          "name_rust": "display_state",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\infossendscreeninfo.go"
+    },
+    "ItemsDestroy": {
+      "struct_name": "ItemsDestroy",
+      "rust_struct_name": "ItemsDestroy",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Quantity",
+          "name_rust": "quantity",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsdestroy.go"
+    },
+    "ItemsDissociate": {
+      "struct_name": "ItemsDissociate",
+      "rust_struct_name": "ItemsDissociate",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsdissociate.go"
+    },
+    "ItemsDrop": {
+      "struct_name": "ItemsDrop",
+      "rust_struct_name": "ItemsDrop",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Quantity",
+          "name_rust": "quantity",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsdrop.go"
+    },
+    "ItemsFeed": {
+      "struct_name": "ItemsFeed",
+      "rust_struct_name": "ItemsFeed",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsfeed.go"
+    },
+    "ItemsRequestMovement": {
+      "struct_name": "ItemsRequestMovement",
+      "rust_struct_name": "ItemsRequestMovement",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Position",
+          "name_rust": "position",
+          "go_type": "retrotyp",
+          "rust_type": "Vec<i64>",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "csv",
+          "comment": "Position list"
+        },
+        {
+          "name_go": "Quantity",
+          "name_rust": "quantity",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsrequestmovement.go"
+    },
+    "ItemsSetSkin": {
+      "struct_name": "ItemsSetSkin",
+      "rust_struct_name": "ItemsSetSkin",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemssetskin.go"
+    },
+    "ItemsUseConfirm": {
+      "struct_name": "ItemsUseConfirm",
+      "rust_struct_name": "ItemsUseConfirm",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "SpriteId",
+          "name_rust": "sprite_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Cell",
+          "name_rust": "cell",
+          "go_type": "int",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Map cell number"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsuseconfirm.go"
+    },
+    "ItemsUseNoConfirm": {
+      "struct_name": "ItemsUseNoConfirm",
+      "rust_struct_name": "ItemsUseNoConfirm",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "SpriteId",
+          "name_rust": "sprite_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Cell",
+          "name_rust": "cell",
+          "go_type": "int",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Map cell number"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\itemsusenoconfirm.go"
+    },
+    "JobChangeJobStats": {
+      "struct_name": "JobChangeJobStats",
+      "rust_struct_name": "JobChangeJobStats",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\jobchangejobstats.go"
+    },
+    "KeyRequestLeave": {
+      "struct_name": "KeyRequestLeave",
+      "rust_struct_name": "KeyRequestLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\keyrequestleave.go"
+    },
+    "KeySendKey": {
+      "struct_name": "KeySendKey",
+      "rust_struct_name": "KeySendKey",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\keysendkey.go"
+    },
+    "MountCastrate": {
+      "struct_name": "MountCastrate",
+      "rust_struct_name": "MountCastrate",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountcastrate.go"
+    },
+    "MountFree": {
+      "struct_name": "MountFree",
+      "rust_struct_name": "MountFree",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountfree.go"
+    },
+    "MountMountParkSell": {
+      "struct_name": "MountMountParkSell",
+      "rust_struct_name": "MountMountParkSell",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountmountparksell.go"
+    },
+    "MountParkMountData": {
+      "struct_name": "MountParkMountData",
+      "rust_struct_name": "MountParkMountData",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountparkmountdata.go"
+    },
+    "MountRemoveObjectInPark": {
+      "struct_name": "MountRemoveObjectInPark",
+      "rust_struct_name": "MountRemoveObjectInPark",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountremoveobjectinpark.go"
+    },
+    "MountRename": {
+      "struct_name": "MountRename",
+      "rust_struct_name": "MountRename",
+      "fields": [
+        {
+          "name_go": "Name",
+          "name_rust": "name",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Name/label"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountrename.go"
+    },
+    "MountRequestData": {
+      "struct_name": "MountRequestData",
+      "rust_struct_name": "MountRequestData",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Validity",
+          "name_rust": "validity",
+          "go_type": "time",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountrequestdata.go"
+    },
+    "MountRequestLeave": {
+      "struct_name": "MountRequestLeave",
+      "rust_struct_name": "MountRequestLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountrequestleave.go"
+    },
+    "MountRequestMountParkBuy": {
+      "struct_name": "MountRequestMountParkBuy",
+      "rust_struct_name": "MountRequestMountParkBuy",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountrequestmountparkbuy.go"
+    },
+    "MountRide": {
+      "struct_name": "MountRide",
+      "rust_struct_name": "MountRide",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountride.go"
+    },
+    "MountSetXP": {
+      "struct_name": "MountSetXP",
+      "rust_struct_name": "MountSetXP",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\mountsetxp.go"
+    },
+    "PartyAcceptInvitation": {
+      "struct_name": "PartyAcceptInvitation",
+      "rust_struct_name": "PartyAcceptInvitation",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partyacceptinvitation.go"
+    },
+    "PartyFollowAll": {
+      "struct_name": "PartyFollowAll",
+      "rust_struct_name": "PartyFollowAll",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partyfollowall.go"
+    },
+    "PartyInvite": {
+      "struct_name": "PartyInvite",
+      "rust_struct_name": "PartyInvite",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partyinvite.go"
+    },
+    "PartyRefuseInvitation": {
+      "struct_name": "PartyRefuseInvitation",
+      "rust_struct_name": "PartyRefuseInvitation",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partyrefuseinvitation.go"
+    },
+    "PartyRequestFollow": {
+      "struct_name": "PartyRequestFollow",
+      "rust_struct_name": "PartyRequestFollow",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partyrequestfollow.go"
+    },
+    "PartyRequestLeave": {
+      "struct_name": "PartyRequestLeave",
+      "rust_struct_name": "PartyRequestLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partyrequestleave.go"
+    },
+    "PartyWhere": {
+      "struct_name": "PartyWhere",
+      "rust_struct_name": "PartyWhere",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\partywhere.go"
+    },
+    "QuestGetList": {
+      "struct_name": "QuestGetList",
+      "rust_struct_name": "QuestGetList",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\questgetlist.go"
+    },
+    "QuestGetStep": {
+      "struct_name": "QuestGetStep",
+      "rust_struct_name": "QuestGetStep",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\questgetstep.go"
+    },
+    "SpellsBoost": {
+      "struct_name": "SpellsBoost",
+      "rust_struct_name": "SpellsBoost",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\spellsboost.go"
+    },
+    "SpellsForget": {
+      "struct_name": "SpellsForget",
+      "rust_struct_name": "SpellsForget",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\spellsforget.go"
+    },
+    "SpellsMoveToUsed": {
+      "struct_name": "SpellsMoveToUsed",
+      "rust_struct_name": "SpellsMoveToUsed",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Position",
+          "name_rust": "position",
+          "go_type": "int",
+          "rust_type": "Vec<i64>",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "csv",
+          "comment": "Position list"
+        }
+      ],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\spellsmovetoused.go"
+    },
+    "SubwayPrismUse": {
+      "struct_name": "SubwayPrismUse",
+      "rust_struct_name": "SubwayPrismUse",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\subwayprismuse.go"
+    },
+    "SubwayRequestLeave": {
+      "struct_name": "SubwayRequestLeave",
+      "rust_struct_name": "SubwayRequestLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\subwayrequestleave.go"
+    },
+    "SubwayRequestPrismLeave": {
+      "struct_name": "SubwayRequestPrismLeave",
+      "rust_struct_name": "SubwayRequestPrismLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\subwayrequestprismleave.go"
+    },
+    "SubwayUse": {
+      "struct_name": "SubwayUse",
+      "rust_struct_name": "SubwayUse",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\subwayuse.go"
+    },
+    "TutorialEnd": {
+      "struct_name": "TutorialEnd",
+      "rust_struct_name": "TutorialEnd",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\tutorialend.go"
+    },
+    "WaypointsRequestLeave": {
+      "struct_name": "WaypointsRequestLeave",
+      "rust_struct_name": "WaypointsRequestLeave",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\waypointsrequestleave.go"
+    },
+    "WaypointsUse": {
+      "struct_name": "WaypointsUse",
+      "rust_struct_name": "WaypointsUse",
+      "fields": [],
+      "package": "msgcli",
+      "file_path": "third_party\\retroproto\\msgcli\\waypointsuse.go"
+    },
+    "AccountCharacterAddError": {
+      "struct_name": "AccountCharacterAddError",
+      "rust_struct_name": "AccountCharacterAddError",
+      "fields": [
+        {
+          "name_go": "Reason",
+          "name_rust": "reason",
+          "go_type": "rune",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type rune"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacteradderror.go"
+    },
+    "AccountCharacterAddSuccess": {
+      "struct_name": "AccountCharacterAddSuccess",
+      "rust_struct_name": "AccountCharacterAddSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacteraddsuccess.go"
+    },
+    "AccountCharacterDeleteError": {
+      "struct_name": "AccountCharacterDeleteError",
+      "rust_struct_name": "AccountCharacterDeleteError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacterdeleteerror.go"
+    },
+    "AccountCharacterDeleteSuccess": {
+      "struct_name": "AccountCharacterDeleteSuccess",
+      "rust_struct_name": "AccountCharacterDeleteSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacterdeletesuccess.go"
+    },
+    "AccountCharacterMigrationAskConfirm": {
+      "struct_name": "AccountCharacterMigrationAskConfirm",
+      "rust_struct_name": "AccountCharacterMigrationAskConfirm",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharactermigrationaskconfirm.go"
+    },
+    "AccountCharacterMigrationError": {
+      "struct_name": "AccountCharacterMigrationError",
+      "rust_struct_name": "AccountCharacterMigrationError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharactermigrationerror.go"
+    },
+    "AccountCharacterMigrationSuccess": {
+      "struct_name": "AccountCharacterMigrationSuccess",
+      "rust_struct_name": "AccountCharacterMigrationSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharactermigrationsuccess.go"
+    },
+    "AccountCharacterNameGeneratedError": {
+      "struct_name": "AccountCharacterNameGeneratedError",
+      "rust_struct_name": "AccountCharacterNameGeneratedError",
+      "fields": [
+        {
+          "name_go": "Reason",
+          "name_rust": "reason",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacternamegeneratederror.go"
+    },
+    "AccountCharacterNameGeneratedSuccess": {
+      "struct_name": "AccountCharacterNameGeneratedSuccess",
+      "rust_struct_name": "AccountCharacterNameGeneratedSuccess",
+      "fields": [
+        {
+          "name_go": "Name",
+          "name_rust": "name",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Name/label"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacternamegeneratedsuccess.go"
+    },
+    "AccountCharacterSelectedError": {
+      "struct_name": "AccountCharacterSelectedError",
+      "rust_struct_name": "AccountCharacterSelectedError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacterselectederror.go"
+    },
+    "AccountCharacterSelectedSuccess": {
+      "struct_name": "AccountCharacterSelectedSuccess",
+      "rust_struct_name": "AccountCharacterSelectedSuccess",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Name",
+          "name_rust": "name",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Name/label"
+        },
+        {
+          "name_go": "Level",
+          "name_rust": "level",
+          "go_type": "int",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Level"
+        },
+        {
+          "name_go": "ClassId",
+          "name_rust": "class_id",
+          "go_type": "retrotyp",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Sex",
+          "name_rust": "sex",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "GFXId",
+          "name_rust": "gfx_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Color1",
+          "name_rust": "color1",
+          "go_type": "string",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Color value"
+        },
+        {
+          "name_go": "Color2",
+          "name_rust": "color2",
+          "go_type": "string",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Color value"
+        },
+        {
+          "name_go": "Color3",
+          "name_rust": "color3",
+          "go_type": "string",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Color value"
+        },
+        {
+          "name_go": "Items",
+          "name_rust": "items",
+          "go_type": "typ",
+          "rust_type": "Vec<typ>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacterselectedsuccess.go"
+    },
+    "AccountCharactersListError": {
+      "struct_name": "AccountCharactersListError",
+      "rust_struct_name": "AccountCharactersListError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacterslisterror.go"
+    },
+    "AccountCharactersListSuccess": {
+      "struct_name": "AccountCharactersListSuccess",
+      "rust_struct_name": "AccountCharactersListSuccess",
+      "fields": [
+        {
+          "name_go": "Subscription",
+          "name_rust": "subscription",
+          "go_type": "time",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type time"
+        },
+        {
+          "name_go": "CharactersCount",
+          "name_rust": "characters_count",
+          "go_type": "int",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Count/number"
+        },
+        {
+          "name_go": "Characters",
+          "name_rust": "characters",
+          "go_type": "typ",
+          "rust_type": "Vec<typ>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcharacterslistsuccess.go"
+    },
+    "AccountCommunity": {
+      "struct_name": "AccountCommunity",
+      "rust_struct_name": "AccountCommunity",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountcommunity.go"
+    },
+    "AccountFriendServerList": {
+      "struct_name": "AccountFriendServerList",
+      "rust_struct_name": "AccountFriendServerList",
+      "fields": [
+        {
+          "name_go": "ServersCharacters",
+          "name_rust": "servers_characters",
+          "go_type": "typ",
+          "rust_type": "Vec<typ>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountfriendserverlist.go"
+    },
+    "AccountGiftsList": {
+      "struct_name": "AccountGiftsList",
+      "rust_struct_name": "AccountGiftsList",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountgiftslist.go"
+    },
+    "AccountGiftStoredError": {
+      "struct_name": "AccountGiftStoredError",
+      "rust_struct_name": "AccountGiftStoredError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountgiftstorederror.go"
+    },
+    "AccountGiftStoredSuccess": {
+      "struct_name": "AccountGiftStoredSuccess",
+      "rust_struct_name": "AccountGiftStoredSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountgiftstoredsuccess.go"
+    },
+    "AccountHosts": {
+      "struct_name": "AccountHosts",
+      "rust_struct_name": "AccountHosts",
+      "fields": [
+        {
+          "name_go": "Value",
+          "name_rust": "value",
+          "go_type": "typ",
+          "rust_type": "Vec<typ>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accounthosts.go"
+    },
+    "AccountKey": {
+      "struct_name": "AccountKey",
+      "rust_struct_name": "AccountKey",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountkey.go"
+    },
+    "AccountLoginError": {
+      "struct_name": "AccountLoginError",
+      "rust_struct_name": "AccountLoginError",
+      "fields": [
+        {
+          "name_go": "Reason",
+          "name_rust": "reason",
+          "go_type": "rune",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type rune"
+        },
+        {
+          "name_go": "Extra",
+          "name_rust": "extra",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountloginerror.go"
+    },
+    "AccountLoginSuccess": {
+      "struct_name": "AccountLoginSuccess",
+      "rust_struct_name": "AccountLoginSuccess",
+      "fields": [
+        {
+          "name_go": "Authorized",
+          "name_rust": "authorized",
+          "go_type": "bool",
+          "rust_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "bool",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountloginsuccess.go"
+    },
+    "AccountMiniClipInfo": {
+      "struct_name": "AccountMiniClipInfo",
+      "rust_struct_name": "AccountMiniClipInfo",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountminiclipinfo.go"
+    },
+    "AccountNewLevel": {
+      "struct_name": "AccountNewLevel",
+      "rust_struct_name": "AccountNewLevel",
+      "fields": [
+        {
+          "name_go": "Level",
+          "name_rust": "level",
+          "go_type": "int",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Level"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountnewlevel.go"
+    },
+    "AccountNewQueue": {
+      "struct_name": "AccountNewQueue",
+      "rust_struct_name": "AccountNewQueue",
+      "fields": [
+        {
+          "name_go": "Position",
+          "name_rust": "position",
+          "go_type": "int",
+          "rust_type": "Vec<i64>",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "csv",
+          "comment": "Position list"
+        },
+        {
+          "name_go": "TotalAbo",
+          "name_rust": "total_abo",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "TotalNonAbo",
+          "name_rust": "total_non_abo",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Subscriber",
+          "name_rust": "subscriber",
+          "go_type": "bool",
+          "rust_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "bool",
+          "comment": ""
+        },
+        {
+          "name_go": "QueueId",
+          "name_rust": "queue_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountnewqueue.go"
+    },
+    "AccountPseudo": {
+      "struct_name": "AccountPseudo",
+      "rust_struct_name": "AccountPseudo",
+      "fields": [
+        {
+          "name_go": "Value",
+          "name_rust": "value",
+          "go_type": "string",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Numeric value"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountpseudo.go"
+    },
+    "AccountQueue": {
+      "struct_name": "AccountQueue",
+      "rust_struct_name": "AccountQueue",
+      "fields": [
+        {
+          "name_go": "Position",
+          "name_rust": "position",
+          "go_type": "int",
+          "rust_type": "Vec<i64>",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "csv",
+          "comment": "Position list"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountqueue.go"
+    },
+    "AccountRegionalVersion": {
+      "struct_name": "AccountRegionalVersion",
+      "rust_struct_name": "AccountRegionalVersion",
+      "fields": [
+        {
+          "name_go": "Value",
+          "name_rust": "value",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Numeric value"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountregionalversion.go"
+    },
+    "AccountRescue": {
+      "struct_name": "AccountRescue",
+      "rust_struct_name": "AccountRescue",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountrescue.go"
+    },
+    "AccountRestrictions": {
+      "struct_name": "AccountRestrictions",
+      "rust_struct_name": "AccountRestrictions",
+      "fields": [
+        {
+          "name_go": "Restrictions",
+          "name_rust": "restrictions",
+          "go_type": "typ",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type typ"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountrestrictions.go"
+    },
+    "AccountSecretQuestion": {
+      "struct_name": "AccountSecretQuestion",
+      "rust_struct_name": "AccountSecretQuestion",
+      "fields": [
+        {
+          "name_go": "Value",
+          "name_rust": "value",
+          "go_type": "string",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Numeric value"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountsecretquestion.go"
+    },
+    "AccountSelectServerError": {
+      "struct_name": "AccountSelectServerError",
+      "rust_struct_name": "AccountSelectServerError",
+      "fields": [
+        {
+          "name_go": "Reason",
+          "name_rust": "reason",
+          "go_type": "rune",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type rune"
+        },
+        {
+          "name_go": "Extra",
+          "name_rust": "extra",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountselectservererror.go"
+    },
+    "AccountSelectServerPlainSuccess": {
+      "struct_name": "AccountSelectServerPlainSuccess",
+      "rust_struct_name": "AccountSelectServerPlainSuccess",
+      "fields": [
+        {
+          "name_go": "Host",
+          "name_rust": "host",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        },
+        {
+          "name_go": "Port",
+          "name_rust": "port",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        },
+        {
+          "name_go": "Ticket",
+          "name_rust": "ticket",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountselectserverplainsuccess.go"
+    },
+    "AccountSelectServerSuccess": {
+      "struct_name": "AccountSelectServerSuccess",
+      "rust_struct_name": "AccountSelectServerSuccess",
+      "fields": [
+        {
+          "name_go": "Host",
+          "name_rust": "host",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        },
+        {
+          "name_go": "Port",
+          "name_rust": "port",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        },
+        {
+          "name_go": "Ticket",
+          "name_rust": "ticket",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountselectserversuccess.go"
+    },
+    "AccountServersListError": {
+      "struct_name": "AccountServersListError",
+      "rust_struct_name": "AccountServersListError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountserverslisterror.go"
+    },
+    "AccountServersListSuccess": {
+      "struct_name": "AccountServersListSuccess",
+      "rust_struct_name": "AccountServersListSuccess",
+      "fields": [
+        {
+          "name_go": "Subscription",
+          "name_rust": "subscription",
+          "go_type": "time",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type time"
+        },
+        {
+          "name_go": "ServersCharacters",
+          "name_rust": "servers_characters",
+          "go_type": "typ",
+          "rust_type": "Vec<typ>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountserverslistsuccess.go"
+    },
+    "AccountStats": {
+      "struct_name": "AccountStats",
+      "rust_struct_name": "AccountStats",
+      "fields": [
+        {
+          "name_go": "XP",
+          "name_rust": "xp",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Experience points"
+        },
+        {
+          "name_go": "XPLow",
+          "name_rust": "xp_low",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Experience points"
+        },
+        {
+          "name_go": "XPHigh",
+          "name_rust": "xp_high",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Experience points"
+        },
+        {
+          "name_go": "Kama",
+          "name_rust": "kama",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "BonusPoints",
+          "name_rust": "bonus_points",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "BonusPointsSpell",
+          "name_rust": "bonus_points_spell",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Alignment",
+          "name_rust": "alignment",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "FakeAlignment",
+          "name_rust": "fake_alignment",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "AlignmentLevel",
+          "name_rust": "alignment_level",
+          "go_type": "int",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Level"
+        },
+        {
+          "name_go": "Grade",
+          "name_rust": "grade",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Honour",
+          "name_rust": "honour",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Disgrace",
+          "name_rust": "disgrace",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "AlignmentEnabled",
+          "name_rust": "alignment_enabled",
+          "go_type": "bool",
+          "rust_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "bool",
+          "comment": "Boolean flag"
+        },
+        {
+          "name_go": "LP",
+          "name_rust": "lp",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "LPMax",
+          "name_rust": "lp_max",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Energy",
+          "name_rust": "energy",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "EnergyMax",
+          "name_rust": "energy_max",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Initiative",
+          "name_rust": "initiative",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Discernment",
+          "name_rust": "discernment",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Characteristics",
+          "name_rust": "characteristics",
+          "go_type": "map",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type map"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountstats.go"
+    },
+    "AccountTicketResponseError": {
+      "struct_name": "AccountTicketResponseError",
+      "rust_struct_name": "AccountTicketResponseError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountticketresponseerror.go"
+    },
+    "AccountTicketResponseSuccess": {
+      "struct_name": "AccountTicketResponseSuccess",
+      "rust_struct_name": "AccountTicketResponseSuccess",
+      "fields": [
+        {
+          "name_go": "KeyId",
+          "name_rust": "key_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\accountticketresponsesuccess.go"
+    },
+    "AksHelloConnect": {
+      "struct_name": "AksHelloConnect",
+      "rust_struct_name": "AksHelloConnect",
+      "fields": [
+        {
+          "name_go": "Salt",
+          "name_rust": "salt",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\akshelloconnect.go"
+    },
+    "AksHelloGame": {
+      "struct_name": "AksHelloGame",
+      "rust_struct_name": "AksHelloGame",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\akshellogame.go"
+    },
+    "AksPong": {
+      "struct_name": "AksPong",
+      "rust_struct_name": "AksPong",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\akspong.go"
+    },
+    "AksQuickPong": {
+      "struct_name": "AksQuickPong",
+      "rust_struct_name": "AksQuickPong",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\aksquickpong.go"
+    },
+    "AksRPing": {
+      "struct_name": "AksRPing",
+      "rust_struct_name": "AksRPing",
+      "fields": [
+        {
+          "name_go": "Value",
+          "name_rust": "value",
+          "go_type": "string",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Numeric value"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\aksrping.go"
+    },
+    "AksServerMessage": {
+      "struct_name": "AksServerMessage",
+      "rust_struct_name": "AksServerMessage",
+      "fields": [
+        {
+          "name_go": "Value",
+          "name_rust": "value",
+          "go_type": "string",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Numeric value"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\aksservermessage.go"
+    },
+    "AksServerWillDisconnect": {
+      "struct_name": "AksServerWillDisconnect",
+      "rust_struct_name": "AksServerWillDisconnect",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\aksserverwilldisconnect.go"
+    },
+    "BasicsAuthorizedCommandClear": {
+      "struct_name": "BasicsAuthorizedCommandClear",
+      "rust_struct_name": "BasicsAuthorizedCommandClear",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedcommandclear.go"
+    },
+    "BasicsAuthorizedCommandError": {
+      "struct_name": "BasicsAuthorizedCommandError",
+      "rust_struct_name": "BasicsAuthorizedCommandError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedcommanderror.go"
+    },
+    "BasicsAuthorizedCommandPrompt": {
+      "struct_name": "BasicsAuthorizedCommandPrompt",
+      "rust_struct_name": "BasicsAuthorizedCommandPrompt",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedcommandprompt.go"
+    },
+    "BasicsAuthorizedCommandSuccess": {
+      "struct_name": "BasicsAuthorizedCommandSuccess",
+      "rust_struct_name": "BasicsAuthorizedCommandSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedcommandsuccess.go"
+    },
+    "BasicsAuthorizedInterfaceClose": {
+      "struct_name": "BasicsAuthorizedInterfaceClose",
+      "rust_struct_name": "BasicsAuthorizedInterfaceClose",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedinterfaceclose.go"
+    },
+    "BasicsAuthorizedInterfaceOpen": {
+      "struct_name": "BasicsAuthorizedInterfaceOpen",
+      "rust_struct_name": "BasicsAuthorizedInterfaceOpen",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedinterfaceopen.go"
+    },
+    "BasicsAuthorizedLine": {
+      "struct_name": "BasicsAuthorizedLine",
+      "rust_struct_name": "BasicsAuthorizedLine",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsauthorizedline.go"
+    },
+    "BasicsAveragePing": {
+      "struct_name": "BasicsAveragePing",
+      "rust_struct_name": "BasicsAveragePing",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsaverageping.go"
+    },
+    "BasicsDate": {
+      "struct_name": "BasicsDate",
+      "rust_struct_name": "BasicsDate",
+      "fields": [
+        {
+          "name_go": "Year",
+          "name_rust": "year",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Month",
+          "name_rust": "month",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Day",
+          "name_rust": "day",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsdate.go"
+    },
+    "BasicsFileCheck": {
+      "struct_name": "BasicsFileCheck",
+      "rust_struct_name": "BasicsFileCheck",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsfilecheck.go"
+    },
+    "BasicsNothing": {
+      "struct_name": "BasicsNothing",
+      "rust_struct_name": "BasicsNothing",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicsnothing.go"
+    },
+    "BasicsSubscriberRestrictionAdd": {
+      "struct_name": "BasicsSubscriberRestrictionAdd",
+      "rust_struct_name": "BasicsSubscriberRestrictionAdd",
+      "fields": [
+        {
+          "name_go": "DialogId",
+          "name_rust": "dialog_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicssubscriberrestrictionadd.go"
+    },
+    "BasicsSubscriberRestrictionRemove": {
+      "struct_name": "BasicsSubscriberRestrictionRemove",
+      "rust_struct_name": "BasicsSubscriberRestrictionRemove",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicssubscriberrestrictionremove.go"
+    },
+    "BasicsTime": {
+      "struct_name": "BasicsTime",
+      "rust_struct_name": "BasicsTime",
+      "fields": [
+        {
+          "name_go": "Value",
+          "name_rust": "value",
+          "go_type": "time",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Numeric value"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicstime.go"
+    },
+    "BasicsWhoIsError": {
+      "struct_name": "BasicsWhoIsError",
+      "rust_struct_name": "BasicsWhoIsError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicswhoiserror.go"
+    },
+    "BasicsWhoIsSuccess": {
+      "struct_name": "BasicsWhoIsSuccess",
+      "rust_struct_name": "BasicsWhoIsSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\basicswhoissuccess.go"
+    },
+    "ChatMessageError": {
+      "struct_name": "ChatMessageError",
+      "rust_struct_name": "ChatMessageError",
+      "fields": [
+        {
+          "name_go": "Reason",
+          "name_rust": "reason",
+          "go_type": "rune",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type rune"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\chatmessageerror.go"
+    },
+    "ChatMessageSuccess": {
+      "struct_name": "ChatMessageSuccess",
+      "rust_struct_name": "ChatMessageSuccess",
+      "fields": [
+        {
+          "name_go": "ChatChannel",
+          "name_rust": "chat_channel",
+          "go_type": "dofustyp",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type dofustyp"
+        },
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "PrivateTo",
+          "name_rust": "private_to",
+          "go_type": "bool",
+          "rust_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "bool",
+          "comment": ""
+        },
+        {
+          "name_go": "Name",
+          "name_rust": "name",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Name/label"
+        },
+        {
+          "name_go": "Message",
+          "name_rust": "message",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Text message"
+        },
+        {
+          "name_go": "Params",
+          "name_rust": "params",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\chatmessagesuccess.go"
+    },
+    "ChatServerMessage": {
+      "struct_name": "ChatServerMessage",
+      "rust_struct_name": "ChatServerMessage",
+      "fields": [
+        {
+          "name_go": "Message",
+          "name_rust": "message",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Text message"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\chatservermessage.go"
+    },
+    "ChatSmiley": {
+      "struct_name": "ChatSmiley",
+      "rust_struct_name": "ChatSmiley",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\chatsmiley.go"
+    },
+    "ChatSubscribeChannelAdd": {
+      "struct_name": "ChatSubscribeChannelAdd",
+      "rust_struct_name": "ChatSubscribeChannelAdd",
+      "fields": [
+        {
+          "name_go": "Channels",
+          "name_rust": "channels",
+          "go_type": "rune",
+          "rust_type": "Vec<rune>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\chatsubscribechanneladd.go"
+    },
+    "ChatSubscribeChannelRemove": {
+      "struct_name": "ChatSubscribeChannelRemove",
+      "rust_struct_name": "ChatSubscribeChannelRemove",
+      "fields": [
+        {
+          "name_go": "Channels",
+          "name_rust": "channels",
+          "go_type": "rune",
+          "rust_type": "Vec<rune>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\chatsubscribechannelremove.go"
+    },
+    "ConquestAreaAlignmentChanged": {
+      "struct_name": "ConquestAreaAlignmentChanged",
+      "rust_struct_name": "ConquestAreaAlignmentChanged",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestareaalignmentchanged.go"
+    },
+    "ConquestConquestBalance": {
+      "struct_name": "ConquestConquestBalance",
+      "rust_struct_name": "ConquestConquestBalance",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestconquestbalance.go"
+    },
+    "ConquestConquestBonus": {
+      "struct_name": "ConquestConquestBonus",
+      "rust_struct_name": "ConquestConquestBonus",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestconquestbonus.go"
+    },
+    "ConquestPrismAttacked": {
+      "struct_name": "ConquestPrismAttacked",
+      "rust_struct_name": "ConquestPrismAttacked",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismattacked.go"
+    },
+    "ConquestPrismDead": {
+      "struct_name": "ConquestPrismDead",
+      "rust_struct_name": "ConquestPrismDead",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismdead.go"
+    },
+    "ConquestPrismFightAddEnemyAdd": {
+      "struct_name": "ConquestPrismFightAddEnemyAdd",
+      "rust_struct_name": "ConquestPrismFightAddEnemyAdd",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismfightaddenemyadd.go"
+    },
+    "ConquestPrismFightAddEnemyRemove": {
+      "struct_name": "ConquestPrismFightAddEnemyRemove",
+      "rust_struct_name": "ConquestPrismFightAddEnemyRemove",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismfightaddenemyremove.go"
+    },
+    "ConquestPrismFightAddPlayerAdd": {
+      "struct_name": "ConquestPrismFightAddPlayerAdd",
+      "rust_struct_name": "ConquestPrismFightAddPlayerAdd",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismfightaddplayeradd.go"
+    },
+    "ConquestPrismFightAddPlayerRemove": {
+      "struct_name": "ConquestPrismFightAddPlayerRemove",
+      "rust_struct_name": "ConquestPrismFightAddPlayerRemove",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismfightaddplayerremove.go"
+    },
+    "ConquestPrismInfosClosing": {
+      "struct_name": "ConquestPrismInfosClosing",
+      "rust_struct_name": "ConquestPrismInfosClosing",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprisminfosclosing.go"
+    },
+    "ConquestPrismInfosJoined": {
+      "struct_name": "ConquestPrismInfosJoined",
+      "rust_struct_name": "ConquestPrismInfosJoined",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprisminfosjoined.go"
+    },
+    "ConquestPrismSurvived": {
+      "struct_name": "ConquestPrismSurvived",
+      "rust_struct_name": "ConquestPrismSurvived",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestprismsurvived.go"
+    },
+    "ConquestWorldData": {
+      "struct_name": "ConquestWorldData",
+      "rust_struct_name": "ConquestWorldData",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\conquestworlddata.go"
+    },
+    "DialogCreateError": {
+      "struct_name": "DialogCreateError",
+      "rust_struct_name": "DialogCreateError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\dialogcreateerror.go"
+    },
+    "DialogCreateSuccess": {
+      "struct_name": "DialogCreateSuccess",
+      "rust_struct_name": "DialogCreateSuccess",
+      "fields": [
+        {
+          "name_go": "NPCId",
+          "name_rust": "npc_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\dialogcreatesuccess.go"
+    },
+    "DialogCustomAction": {
+      "struct_name": "DialogCustomAction",
+      "rust_struct_name": "DialogCustomAction",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\dialogcustomaction.go"
+    },
+    "DialogLeave": {
+      "struct_name": "DialogLeave",
+      "rust_struct_name": "DialogLeave",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\dialogleave.go"
+    },
+    "DialogPause": {
+      "struct_name": "DialogPause",
+      "rust_struct_name": "DialogPause",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\dialogpause.go"
+    },
+    "DialogQuestion": {
+      "struct_name": "DialogQuestion",
+      "rust_struct_name": "DialogQuestion",
+      "fields": [
+        {
+          "name_go": "Question",
+          "name_rust": "question",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "QuestionParams",
+          "name_rust": "question_params",
+          "go_type": "string",
+          "rust_type": "Vec<String>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv",
+          "comment": "CSV list"
+        },
+        {
+          "name_go": "Answers",
+          "name_rust": "answers",
+          "go_type": "int",
+          "rust_type": "Vec<i64>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_i64",
+          "comment": "CSV list of integers"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\dialogquestion.go"
+    },
+    "DocumentsCreateError": {
+      "struct_name": "DocumentsCreateError",
+      "rust_struct_name": "DocumentsCreateError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\documentscreateerror.go"
+    },
+    "DocumentsCreateSuccess": {
+      "struct_name": "DocumentsCreateSuccess",
+      "rust_struct_name": "DocumentsCreateSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\documentscreatesuccess.go"
+    },
+    "DocumentsLeave": {
+      "struct_name": "DocumentsLeave",
+      "rust_struct_name": "DocumentsLeave",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\documentsleave.go"
+    },
+    "EmotesAdd": {
+      "struct_name": "EmotesAdd",
+      "rust_struct_name": "EmotesAdd",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\emotesadd.go"
+    },
+    "EmotesDirection": {
+      "struct_name": "EmotesDirection",
+      "rust_struct_name": "EmotesDirection",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Dir",
+          "name_rust": "dir",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\emotesdirection.go"
+    },
+    "EmotesList": {
+      "struct_name": "EmotesList",
+      "rust_struct_name": "EmotesList",
+      "fields": [
+        {
+          "name_go": "Emotes",
+          "name_rust": "emotes",
+          "go_type": "int",
+          "rust_type": "Vec<i64>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_i64",
+          "comment": "CSV list of integers"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\emoteslist.go"
+    },
+    "EmotesRemove": {
+      "struct_name": "EmotesRemove",
+      "rust_struct_name": "EmotesRemove",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\emotesremove.go"
+    },
+    "EmotesUseError": {
+      "struct_name": "EmotesUseError",
+      "rust_struct_name": "EmotesUseError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\emotesuseerror.go"
+    },
+    "EmotesUseSuccess": {
+      "struct_name": "EmotesUseSuccess",
+      "rust_struct_name": "EmotesUseSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\emotesusesuccess.go"
+    },
+    "EnemiesAddEnemyError": {
+      "struct_name": "EnemiesAddEnemyError",
+      "rust_struct_name": "EnemiesAddEnemyError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\enemiesaddenemyerror.go"
+    },
+    "EnemiesAddEnemySuccess": {
+      "struct_name": "EnemiesAddEnemySuccess",
+      "rust_struct_name": "EnemiesAddEnemySuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\enemiesaddenemysuccess.go"
+    },
+    "EnemiesEnemiesList": {
+      "struct_name": "EnemiesEnemiesList",
+      "rust_struct_name": "EnemiesEnemiesList",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\enemiesenemieslist.go"
+    },
+    "EnemiesRemoveEnemyError": {
+      "struct_name": "EnemiesRemoveEnemyError",
+      "rust_struct_name": "EnemiesRemoveEnemyError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\enemiesremoveenemyerror.go"
+    },
+    "EnemiesRemoveEnemySuccess": {
+      "struct_name": "EnemiesRemoveEnemySuccess",
+      "rust_struct_name": "EnemiesRemoveEnemySuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\enemiesremoveenemysuccess.go"
+    },
+    "ExchangeAskOfflineExchange": {
+      "struct_name": "ExchangeAskOfflineExchange",
+      "rust_struct_name": "ExchangeAskOfflineExchange",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangeaskofflineexchange.go"
+    },
+    "ExchangeBigStoreItemMiddlePriceInBigStore": {
+      "struct_name": "ExchangeBigStoreItemMiddlePriceInBigStore",
+      "rust_struct_name": "ExchangeBigStoreItemMiddlePriceInBigStore",
+      "fields": [
+        {
+          "name_go": "TemplateId",
+          "name_rust": "template_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Price",
+          "name_rust": "price",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoreitemmiddlepriceinbigstore.go"
+    },
+    "ExchangeBigStoreItemsList": {
+      "struct_name": "ExchangeBigStoreItemsList",
+      "rust_struct_name": "ExchangeBigStoreItemsList",
+      "fields": [
+        {
+          "name_go": "TemplateId",
+          "name_rust": "template_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Items",
+          "name_rust": "items",
+          "go_type": "typ",
+          "rust_type": "Vec<typ>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoreitemslist.go"
+    },
+    "ExchangeBigStoreItemsMovementAdd": {
+      "struct_name": "ExchangeBigStoreItemsMovementAdd",
+      "rust_struct_name": "ExchangeBigStoreItemsMovementAdd",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoreitemsmovementadd.go"
+    },
+    "ExchangeBigStoreItemsMovementRemove": {
+      "struct_name": "ExchangeBigStoreItemsMovementRemove",
+      "rust_struct_name": "ExchangeBigStoreItemsMovementRemove",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoreitemsmovementremove.go"
+    },
+    "ExchangeBigStoreTypeItemsList": {
+      "struct_name": "ExchangeBigStoreTypeItemsList",
+      "rust_struct_name": "ExchangeBigStoreTypeItemsList",
+      "fields": [
+        {
+          "name_go": "ItemType",
+          "name_rust": "item_type",
+          "go_type": "retrotyp",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type retrotyp"
+        },
+        {
+          "name_go": "ItemTemplateIds",
+          "name_rust": "item_template_ids",
+          "go_type": "int",
+          "rust_type": "Vec<i64>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_i64",
+          "comment": "CSV list of integers"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoretypeitemslist.go"
+    },
+    "ExchangeBigStoreTypeItemsMovementAdd": {
+      "struct_name": "ExchangeBigStoreTypeItemsMovementAdd",
+      "rust_struct_name": "ExchangeBigStoreTypeItemsMovementAdd",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoretypeitemsmovementadd.go"
+    },
+    "ExchangeBigStoreTypeItemsMovementRemove": {
+      "struct_name": "ExchangeBigStoreTypeItemsMovementRemove",
+      "rust_struct_name": "ExchangeBigStoreTypeItemsMovementRemove",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebigstoretypeitemsmovementremove.go"
+    },
+    "ExchangeBuyError": {
+      "struct_name": "ExchangeBuyError",
+      "rust_struct_name": "ExchangeBuyError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebuyerror.go"
+    },
+    "ExchangeBuySuccess": {
+      "struct_name": "ExchangeBuySuccess",
+      "rust_struct_name": "ExchangeBuySuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangebuysuccess.go"
+    },
+    "ExchangeCoopMovementError": {
+      "struct_name": "ExchangeCoopMovementError",
+      "rust_struct_name": "ExchangeCoopMovementError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecoopmovementerror.go"
+    },
+    "ExchangeCoopMovementSuccess": {
+      "struct_name": "ExchangeCoopMovementSuccess",
+      "rust_struct_name": "ExchangeCoopMovementSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecoopmovementsuccess.go"
+    },
+    "ExchangeCrafterReferenceAdd": {
+      "struct_name": "ExchangeCrafterReferenceAdd",
+      "rust_struct_name": "ExchangeCrafterReferenceAdd",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecrafterreferenceadd.go"
+    },
+    "ExchangeCrafterReferenceRemove": {
+      "struct_name": "ExchangeCrafterReferenceRemove",
+      "rust_struct_name": "ExchangeCrafterReferenceRemove",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecrafterreferenceremove.go"
+    },
+    "ExchangeCraftError": {
+      "struct_name": "ExchangeCraftError",
+      "rust_struct_name": "ExchangeCraftError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecrafterror.go"
+    },
+    "ExchangeCraftLoop": {
+      "struct_name": "ExchangeCraftLoop",
+      "rust_struct_name": "ExchangeCraftLoop",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecraftloop.go"
+    },
+    "ExchangeCraftLoopEnd": {
+      "struct_name": "ExchangeCraftLoopEnd",
+      "rust_struct_name": "ExchangeCraftLoopEnd",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecraftloopend.go"
+    },
+    "ExchangeCraftPublicMode": {
+      "struct_name": "ExchangeCraftPublicMode",
+      "rust_struct_name": "ExchangeCraftPublicMode",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecraftpublicmode.go"
+    },
+    "ExchangeCraftSuccess": {
+      "struct_name": "ExchangeCraftSuccess",
+      "rust_struct_name": "ExchangeCraftSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecraftsuccess.go"
+    },
+    "ExchangeCreateError": {
+      "struct_name": "ExchangeCreateError",
+      "rust_struct_name": "ExchangeCreateError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecreateerror.go"
+    },
+    "ExchangeCreateSuccess": {
+      "struct_name": "ExchangeCreateSuccess",
+      "rust_struct_name": "ExchangeCreateSuccess",
+      "fields": [
+        {
+          "name_go": "Type",
+          "name_rust": "type",
+          "go_type": "retrotyp",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type retrotyp"
+        },
+        {
+          "name_go": "NPCBuy",
+          "name_rust": "npc_buy",
+          "go_type": "ExchangeCreateSuccessNPCBuy",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type ExchangeCreateSuccessNPCBuy"
+        },
+        {
+          "name_go": "Paddock",
+          "name_rust": "paddock",
+          "go_type": "ExchangeCreateSuccessPaddock",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type ExchangeCreateSuccessPaddock"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangecreatesuccess.go"
+    },
+    "ExchangeLeaveError": {
+      "struct_name": "ExchangeLeaveError",
+      "rust_struct_name": "ExchangeLeaveError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangeleaveerror.go"
+    },
+    "ExchangeLeaveSuccess": {
+      "struct_name": "ExchangeLeaveSuccess",
+      "rust_struct_name": "ExchangeLeaveSuccess",
+      "fields": [
+        {
+          "name_go": "TypePlayerExchange",
+          "name_rust": "type_player_exchange",
+          "go_type": "bool",
+          "rust_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "bool",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangeleavesuccess.go"
+    },
+    "ExchangeList": {
+      "struct_name": "ExchangeList",
+      "rust_struct_name": "ExchangeList",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangelist.go"
+    },
+    "ExchangeLocalDistantError": {
+      "struct_name": "ExchangeLocalDistantError",
+      "rust_struct_name": "ExchangeLocalDistantError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangelocaldistanterror.go"
+    },
+    "ExchangeLocalDistantSuccess": {
+      "struct_name": "ExchangeLocalDistantSuccess",
+      "rust_struct_name": "ExchangeLocalDistantSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangelocaldistantsuccess.go"
+    },
+    "ExchangeLocalMovementError": {
+      "struct_name": "ExchangeLocalMovementError",
+      "rust_struct_name": "ExchangeLocalMovementError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangelocalmovementerror.go"
+    },
+    "ExchangeLocalMovementSuccess": {
+      "struct_name": "ExchangeLocalMovementSuccess",
+      "rust_struct_name": "ExchangeLocalMovementSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangelocalmovementsuccess.go"
+    },
+    "ExchangeMountPark": {
+      "struct_name": "ExchangeMountPark",
+      "rust_struct_name": "ExchangeMountPark",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangemountpark.go"
+    },
+    "ExchangeMountPods": {
+      "struct_name": "ExchangeMountPods",
+      "rust_struct_name": "ExchangeMountPods",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangemountpods.go"
+    },
+    "ExchangeMountStorageAdd": {
+      "struct_name": "ExchangeMountStorageAdd",
+      "rust_struct_name": "ExchangeMountStorageAdd",
+      "fields": [
+        {
+          "name_go": "Data",
+          "name_rust": "data",
+          "go_type": "typ",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type typ"
+        },
+        {
+          "name_go": "NewBorn",
+          "name_rust": "new_born",
+          "go_type": "bool",
+          "rust_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "bool",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangemountstorageadd.go"
+    },
+    "ExchangeMountStorageRemove": {
+      "struct_name": "ExchangeMountStorageRemove",
+      "rust_struct_name": "ExchangeMountStorageRemove",
+      "fields": [
+        {
+          "name_go": "MountId",
+          "name_rust": "mount_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangemountstorageremove.go"
+    },
+    "ExchangePayMovementError": {
+      "struct_name": "ExchangePayMovementError",
+      "rust_struct_name": "ExchangePayMovementError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangepaymovementerror.go"
+    },
+    "ExchangePayMovementSuccess": {
+      "struct_name": "ExchangePayMovementSuccess",
+      "rust_struct_name": "ExchangePayMovementSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangepaymovementsuccess.go"
+    },
+    "ExchangePlayerShopMovementError": {
+      "struct_name": "ExchangePlayerShopMovementError",
+      "rust_struct_name": "ExchangePlayerShopMovementError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangeplayershopmovementerror.go"
+    },
+    "ExchangePlayerShopMovementSuccess": {
+      "struct_name": "ExchangePlayerShopMovementSuccess",
+      "rust_struct_name": "ExchangePlayerShopMovementSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangeplayershopmovementsuccess.go"
+    },
+    "ExchangeReady": {
+      "struct_name": "ExchangeReady",
+      "rust_struct_name": "ExchangeReady",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangeready.go"
+    },
+    "ExchangeRequestError": {
+      "struct_name": "ExchangeRequestError",
+      "rust_struct_name": "ExchangeRequestError",
+      "fields": [
+        {
+          "name_go": "Reason",
+          "name_rust": "reason",
+          "go_type": "rune",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type rune"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangerequesterror.go"
+    },
+    "ExchangeRequestSuccess": {
+      "struct_name": "ExchangeRequestSuccess",
+      "rust_struct_name": "ExchangeRequestSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangerequestsuccess.go"
+    },
+    "ExchangeSearchError": {
+      "struct_name": "ExchangeSearchError",
+      "rust_struct_name": "ExchangeSearchError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangesearcherror.go"
+    },
+    "ExchangeSearchSuccess": {
+      "struct_name": "ExchangeSearchSuccess",
+      "rust_struct_name": "ExchangeSearchSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangesearchsuccess.go"
+    },
+    "ExchangeSellError": {
+      "struct_name": "ExchangeSellError",
+      "rust_struct_name": "ExchangeSellError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangesellerror.go"
+    },
+    "ExchangeSellSuccess": {
+      "struct_name": "ExchangeSellSuccess",
+      "rust_struct_name": "ExchangeSellSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangesellsuccess.go"
+    },
+    "ExchangeStorageMovementError": {
+      "struct_name": "ExchangeStorageMovementError",
+      "rust_struct_name": "ExchangeStorageMovementError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangestoragemovementerror.go"
+    },
+    "ExchangeStorageMovementSuccess": {
+      "struct_name": "ExchangeStorageMovementSuccess",
+      "rust_struct_name": "ExchangeStorageMovementSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\exchangestoragemovementsuccess.go"
+    },
+    "FightsCount": {
+      "struct_name": "FightsCount",
+      "rust_struct_name": "FightsCount",
+      "fields": [
+        {
+          "name_go": "Value",
+          "name_rust": "value",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Numeric value"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\fightscount.go"
+    },
+    "FightsDetails": {
+      "struct_name": "FightsDetails",
+      "rust_struct_name": "FightsDetails",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\fightsdetails.go"
+    },
+    "FightsList": {
+      "struct_name": "FightsList",
+      "rust_struct_name": "FightsList",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\fightslist.go"
+    },
+    "FriendsAddFriendError": {
+      "struct_name": "FriendsAddFriendError",
+      "rust_struct_name": "FriendsAddFriendError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsaddfrienderror.go"
+    },
+    "FriendsAddFriendSuccess": {
+      "struct_name": "FriendsAddFriendSuccess",
+      "rust_struct_name": "FriendsAddFriendSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsaddfriendsuccess.go"
+    },
+    "FriendsFriendsList": {
+      "struct_name": "FriendsFriendsList",
+      "rust_struct_name": "FriendsFriendsList",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsfriendslist.go"
+    },
+    "FriendsNotifyChange": {
+      "struct_name": "FriendsNotifyChange",
+      "rust_struct_name": "FriendsNotifyChange",
+      "fields": [
+        {
+          "name_go": "Notify",
+          "name_rust": "notify",
+          "go_type": "bool",
+          "rust_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "bool",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsnotifychange.go"
+    },
+    "FriendsRemoveFriendError": {
+      "struct_name": "FriendsRemoveFriendError",
+      "rust_struct_name": "FriendsRemoveFriendError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsremovefrienderror.go"
+    },
+    "FriendsRemoveFriendSuccess": {
+      "struct_name": "FriendsRemoveFriendSuccess",
+      "rust_struct_name": "FriendsRemoveFriendSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsremovefriendsuccess.go"
+    },
+    "FriendsSpouse": {
+      "struct_name": "FriendsSpouse",
+      "rust_struct_name": "FriendsSpouse",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\friendsspouse.go"
+    },
+    "GameActions": {
+      "struct_name": "GameActions",
+      "rust_struct_name": "GameActions",
+      "fields": [
+        {
+          "name_go": "ActionType",
+          "name_rust": "action_type",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "ActionMovement",
+          "name_rust": "action_movement",
+          "go_type": "GameActionsActionMovement",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type GameActionsActionMovement"
+        },
+        {
+          "name_go": "ActionLoadGameMap",
+          "name_rust": "action_load_game_map",
+          "go_type": "GameActionsActionLoadGameMap",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type GameActionsActionLoadGameMap"
+        },
+        {
+          "name_go": "ActionChallenge",
+          "name_rust": "action_challenge",
+          "go_type": "GameActionsActionChallenge",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type GameActionsActionChallenge"
+        },
+        {
+          "name_go": "ActionChallengeAccept",
+          "name_rust": "action_challenge_accept",
+          "go_type": "GameActionsActionChallengeAccept",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type GameActionsActionChallengeAccept"
+        },
+        {
+          "name_go": "ActionChallengeRefuse",
+          "name_rust": "action_challenge_refuse",
+          "go_type": "GameActionsActionChallengeRefuse",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type GameActionsActionChallengeRefuse"
+        },
+        {
+          "name_go": "ActionChallengeJoin",
+          "name_rust": "action_challenge_join",
+          "go_type": "GameActionsActionChallengeJoin",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type GameActionsActionChallengeJoin"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameactions.go"
+    },
+    "GameActionsFinish": {
+      "struct_name": "GameActionsFinish",
+      "rust_struct_name": "GameActionsFinish",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameactionsfinish.go"
+    },
+    "GameActionsStart": {
+      "struct_name": "GameActionsStart",
+      "rust_struct_name": "GameActionsStart",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameactionsstart.go"
+    },
+    "GameCellData": {
+      "struct_name": "GameCellData",
+      "rust_struct_name": "GameCellData",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamecelldata.go"
+    },
+    "GameCellObject": {
+      "struct_name": "GameCellObject",
+      "rust_struct_name": "GameCellObject",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamecellobject.go"
+    },
+    "GameChallenge": {
+      "struct_name": "GameChallenge",
+      "rust_struct_name": "GameChallenge",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamechallenge.go"
+    },
+    "GameClearAllEffect": {
+      "struct_name": "GameClearAllEffect",
+      "rust_struct_name": "GameClearAllEffect",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameclearalleffect.go"
+    },
+    "GameCreateError": {
+      "struct_name": "GameCreateError",
+      "rust_struct_name": "GameCreateError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamecreateerror.go"
+    },
+    "GameCreateSuccess": {
+      "struct_name": "GameCreateSuccess",
+      "rust_struct_name": "GameCreateSuccess",
+      "fields": [
+        {
+          "name_go": "Type",
+          "name_rust": "type",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamecreatesuccess.go"
+    },
+    "GameEffect": {
+      "struct_name": "GameEffect",
+      "rust_struct_name": "GameEffect",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameeffect.go"
+    },
+    "GameEnd": {
+      "struct_name": "GameEnd",
+      "rust_struct_name": "GameEnd",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameend.go"
+    },
+    "GameExtraClip": {
+      "struct_name": "GameExtraClip",
+      "rust_struct_name": "GameExtraClip",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameextraclip.go"
+    },
+    "GameFightChallenge": {
+      "struct_name": "GameFightChallenge",
+      "rust_struct_name": "GameFightChallenge",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamefightchallenge.go"
+    },
+    "GameFightChallengeUpdateError": {
+      "struct_name": "GameFightChallengeUpdateError",
+      "rust_struct_name": "GameFightChallengeUpdateError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamefightchallengeupdateerror.go"
+    },
+    "GameFightChallengeUpdateSuccess": {
+      "struct_name": "GameFightChallengeUpdateSuccess",
+      "rust_struct_name": "GameFightChallengeUpdateSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamefightchallengeupdatesuccess.go"
+    },
+    "GameFightOption": {
+      "struct_name": "GameFightOption",
+      "rust_struct_name": "GameFightOption",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamefightoption.go"
+    },
+    "GameFlag": {
+      "struct_name": "GameFlag",
+      "rust_struct_name": "GameFlag",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameflag.go"
+    },
+    "GameFrameObject2": {
+      "struct_name": "GameFrameObject2",
+      "rust_struct_name": "GameFrameObject2",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameframeobject2.go"
+    },
+    "GameFrameObjectExternal": {
+      "struct_name": "GameFrameObjectExternal",
+      "rust_struct_name": "GameFrameObjectExternal",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameframeobjectexternal.go"
+    },
+    "GameGameOver": {
+      "struct_name": "GameGameOver",
+      "rust_struct_name": "GameGameOver",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamegameover.go"
+    },
+    "GameJoin": {
+      "struct_name": "GameJoin",
+      "rust_struct_name": "GameJoin",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamejoin.go"
+    },
+    "GameLeave": {
+      "struct_name": "GameLeave",
+      "rust_struct_name": "GameLeave",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameleave.go"
+    },
+    "GameMapData": {
+      "struct_name": "GameMapData",
+      "rust_struct_name": "GameMapData",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Name",
+          "name_rust": "name",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Name/label"
+        },
+        {
+          "name_go": "Key",
+          "name_rust": "key",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamemapdata.go"
+    },
+    "GameMapLoaded": {
+      "struct_name": "GameMapLoaded",
+      "rust_struct_name": "GameMapLoaded",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamemaploaded.go"
+    },
+    "GameMovement": {
+      "struct_name": "GameMovement",
+      "rust_struct_name": "GameMovement",
+      "fields": [
+        {
+          "name_go": "Sprites",
+          "name_rust": "sprites",
+          "go_type": "GameMovementSprite",
+          "rust_type": "Vec<GameMovementSprite>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamemovement.go"
+    },
+    "GameMovementRemove": {
+      "struct_name": "GameMovementRemove",
+      "rust_struct_name": "GameMovementRemove",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamemovementremove.go"
+    },
+    "GamePlayersCoordinates": {
+      "struct_name": "GamePlayersCoordinates",
+      "rust_struct_name": "GamePlayersCoordinates",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameplayerscoordinates.go"
+    },
+    "GamePositionStart": {
+      "struct_name": "GamePositionStart",
+      "rust_struct_name": "GamePositionStart",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamepositionstart.go"
+    },
+    "GamePVP": {
+      "struct_name": "GamePVP",
+      "rust_struct_name": "GamePVP",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamepvp.go"
+    },
+    "GameReady": {
+      "struct_name": "GameReady",
+      "rust_struct_name": "GameReady",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameready.go"
+    },
+    "GameStartToPlay": {
+      "struct_name": "GameStartToPlay",
+      "rust_struct_name": "GameStartToPlay",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamestarttoplay.go"
+    },
+    "GameTeam": {
+      "struct_name": "GameTeam",
+      "rust_struct_name": "GameTeam",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameteam.go"
+    },
+    "GameTurnFinish": {
+      "struct_name": "GameTurnFinish",
+      "rust_struct_name": "GameTurnFinish",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameturnfinish.go"
+    },
+    "GameTurnList": {
+      "struct_name": "GameTurnList",
+      "rust_struct_name": "GameTurnList",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameturnlist.go"
+    },
+    "GameTurnMiddle": {
+      "struct_name": "GameTurnMiddle",
+      "rust_struct_name": "GameTurnMiddle",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameturnmiddle.go"
+    },
+    "GameTurnReady": {
+      "struct_name": "GameTurnReady",
+      "rust_struct_name": "GameTurnReady",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameturnready.go"
+    },
+    "GameTurnStart": {
+      "struct_name": "GameTurnStart",
+      "rust_struct_name": "GameTurnStart",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gameturnstart.go"
+    },
+    "GameZoneData": {
+      "struct_name": "GameZoneData",
+      "rust_struct_name": "GameZoneData",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gamezonedata.go"
+    },
+    "GildBanError": {
+      "struct_name": "GildBanError",
+      "rust_struct_name": "GildBanError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gildbanerror.go"
+    },
+    "GildBanSuccess": {
+      "struct_name": "GildBanSuccess",
+      "rust_struct_name": "GildBanSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gildbansuccess.go"
+    },
+    "GildHireTaxCollectorError": {
+      "struct_name": "GildHireTaxCollectorError",
+      "rust_struct_name": "GildHireTaxCollectorError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gildhiretaxcollectorerror.go"
+    },
+    "GildHireTaxCollectorSuccess": {
+      "struct_name": "GildHireTaxCollectorSuccess",
+      "rust_struct_name": "GildHireTaxCollectorSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gildhiretaxcollectorsuccess.go"
+    },
+    "GildTaxCollectorAttacked": {
+      "struct_name": "GildTaxCollectorAttacked",
+      "rust_struct_name": "GildTaxCollectorAttacked",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gildtaxcollectorattacked.go"
+    },
+    "GildTaxCollectorInfo": {
+      "struct_name": "GildTaxCollectorInfo",
+      "rust_struct_name": "GildTaxCollectorInfo",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gildtaxcollectorinfo.go"
+    },
+    "GildUserInterfaceOpen": {
+      "struct_name": "GildUserInterfaceOpen",
+      "rust_struct_name": "GildUserInterfaceOpen",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\gilduserinterfaceopen.go"
+    },
+    "GuildCreateError": {
+      "struct_name": "GuildCreateError",
+      "rust_struct_name": "GuildCreateError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildcreateerror.go"
+    },
+    "GuildCreateSuccess": {
+      "struct_name": "GuildCreateSuccess",
+      "rust_struct_name": "GuildCreateSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildcreatesuccess.go"
+    },
+    "GuildInfosBoosts": {
+      "struct_name": "GuildInfosBoosts",
+      "rust_struct_name": "GuildInfosBoosts",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfosboosts.go"
+    },
+    "GuildInfosGeneral": {
+      "struct_name": "GuildInfosGeneral",
+      "rust_struct_name": "GuildInfosGeneral",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfosgeneral.go"
+    },
+    "GuildInfosHouses": {
+      "struct_name": "GuildInfosHouses",
+      "rust_struct_name": "GuildInfosHouses",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfoshouses.go"
+    },
+    "GuildInfosMembers": {
+      "struct_name": "GuildInfosMembers",
+      "rust_struct_name": "GuildInfosMembers",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfosmembers.go"
+    },
+    "GuildInfosMountPark": {
+      "struct_name": "GuildInfosMountPark",
+      "rust_struct_name": "GuildInfosMountPark",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfosmountpark.go"
+    },
+    "GuildInfosTaxCollectorsAttackers": {
+      "struct_name": "GuildInfosTaxCollectorsAttackers",
+      "rust_struct_name": "GuildInfosTaxCollectorsAttackers",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfostaxcollectorsattackers.go"
+    },
+    "GuildInfosTaxCollectorsMovement": {
+      "struct_name": "GuildInfosTaxCollectorsMovement",
+      "rust_struct_name": "GuildInfosTaxCollectorsMovement",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfostaxcollectorsmovement.go"
+    },
+    "GuildInfosTaxCollectorsPlayers": {
+      "struct_name": "GuildInfosTaxCollectorsPlayers",
+      "rust_struct_name": "GuildInfosTaxCollectorsPlayers",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildinfostaxcollectorsplayers.go"
+    },
+    "GuildJoinDistantSuccess": {
+      "struct_name": "GuildJoinDistantSuccess",
+      "rust_struct_name": "GuildJoinDistantSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildjoindistantsuccess.go"
+    },
+    "GuildJoinError": {
+      "struct_name": "GuildJoinError",
+      "rust_struct_name": "GuildJoinError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildjoinerror.go"
+    },
+    "GuildJoinSuccess": {
+      "struct_name": "GuildJoinSuccess",
+      "rust_struct_name": "GuildJoinSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildjoinsuccess.go"
+    },
+    "GuildLeave": {
+      "struct_name": "GuildLeave",
+      "rust_struct_name": "GuildLeave",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildleave.go"
+    },
+    "GuildNew": {
+      "struct_name": "GuildNew",
+      "rust_struct_name": "GuildNew",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildnew.go"
+    },
+    "GuildRequestDistant": {
+      "struct_name": "GuildRequestDistant",
+      "rust_struct_name": "GuildRequestDistant",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildrequestdistant.go"
+    },
+    "GuildRequestLocal": {
+      "struct_name": "GuildRequestLocal",
+      "rust_struct_name": "GuildRequestLocal",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildrequestlocal.go"
+    },
+    "GuildStats": {
+      "struct_name": "GuildStats",
+      "rust_struct_name": "GuildStats",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\guildstats.go"
+    },
+    "HousesBuyError": {
+      "struct_name": "HousesBuyError",
+      "rust_struct_name": "HousesBuyError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housesbuyerror.go"
+    },
+    "HousesBuySuccess": {
+      "struct_name": "HousesBuySuccess",
+      "rust_struct_name": "HousesBuySuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housesbuysuccess.go"
+    },
+    "HousesCreate": {
+      "struct_name": "HousesCreate",
+      "rust_struct_name": "HousesCreate",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housescreate.go"
+    },
+    "HousesGuildInfos": {
+      "struct_name": "HousesGuildInfos",
+      "rust_struct_name": "HousesGuildInfos",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housesguildinfos.go"
+    },
+    "HousesLeave": {
+      "struct_name": "HousesLeave",
+      "rust_struct_name": "HousesLeave",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housesleave.go"
+    },
+    "HousesListAdd": {
+      "struct_name": "HousesListAdd",
+      "rust_struct_name": "HousesListAdd",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\houseslistadd.go"
+    },
+    "HousesListRemove": {
+      "struct_name": "HousesListRemove",
+      "rust_struct_name": "HousesListRemove",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\houseslistremove.go"
+    },
+    "HousesLockedProperty": {
+      "struct_name": "HousesLockedProperty",
+      "rust_struct_name": "HousesLockedProperty",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\houseslockedproperty.go"
+    },
+    "HousesProperties": {
+      "struct_name": "HousesProperties",
+      "rust_struct_name": "HousesProperties",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housesproperties.go"
+    },
+    "HousesSellError": {
+      "struct_name": "HousesSellError",
+      "rust_struct_name": "HousesSellError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housessellerror.go"
+    },
+    "HousesSellSuccess": {
+      "struct_name": "HousesSellSuccess",
+      "rust_struct_name": "HousesSellSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\housessellsuccess.go"
+    },
+    "InfosCompass": {
+      "struct_name": "InfosCompass",
+      "rust_struct_name": "InfosCompass",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infoscompass.go"
+    },
+    "InfosInfoCoordinatesPHighlight": {
+      "struct_name": "InfosInfoCoordinatesPHighlight",
+      "rust_struct_name": "InfosInfoCoordinatesPHighlight",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infosinfocoordinatesphighlight.go"
+    },
+    "InfosInfoMaps": {
+      "struct_name": "InfosInfoMaps",
+      "rust_struct_name": "InfosInfoMaps",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infosinfomaps.go"
+    },
+    "InfosLifeRestoreTimerFinish": {
+      "struct_name": "InfosLifeRestoreTimerFinish",
+      "rust_struct_name": "InfosLifeRestoreTimerFinish",
+      "fields": [
+        {
+          "name_go": "Restored",
+          "name_rust": "restored",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infosliferestoretimerfinish.go"
+    },
+    "InfosLifeRestoreTimerStart": {
+      "struct_name": "InfosLifeRestoreTimerStart",
+      "rust_struct_name": "InfosLifeRestoreTimerStart",
+      "fields": [
+        {
+          "name_go": "Interval",
+          "name_rust": "interval",
+          "go_type": "time",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type time"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infosliferestoretimerstart.go"
+    },
+    "InfosMessage": {
+      "struct_name": "InfosMessage",
+      "rust_struct_name": "InfosMessage",
+      "fields": [
+        {
+          "name_go": "ChatId",
+          "name_rust": "chat_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Messages",
+          "name_rust": "messages",
+          "go_type": "typ",
+          "rust_type": "Vec<typ>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infosmessage.go"
+    },
+    "InfosQuantity": {
+      "struct_name": "InfosQuantity",
+      "rust_struct_name": "InfosQuantity",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\infosquantity.go"
+    },
+    "ItemsAccessories": {
+      "struct_name": "ItemsAccessories",
+      "rust_struct_name": "ItemsAccessories",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Accessories",
+          "name_rust": "accessories",
+          "go_type": "typ",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type typ"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsaccessories.go"
+    },
+    "ItemsAddError": {
+      "struct_name": "ItemsAddError",
+      "rust_struct_name": "ItemsAddError",
+      "fields": [
+        {
+          "name_go": "Reason",
+          "name_rust": "reason",
+          "go_type": "rune",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type rune"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsadderror.go"
+    },
+    "ItemsAddSuccess": {
+      "struct_name": "ItemsAddSuccess",
+      "rust_struct_name": "ItemsAddSuccess",
+      "fields": [
+        {
+          "name_go": "Items",
+          "name_rust": "items",
+          "go_type": "ItemsAddSuccessItem",
+          "rust_type": "Vec<ItemsAddSuccessItem>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsaddsuccess.go"
+    },
+    "ItemsChange": {
+      "struct_name": "ItemsChange",
+      "rust_struct_name": "ItemsChange",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemschange.go"
+    },
+    "ItemsDropError": {
+      "struct_name": "ItemsDropError",
+      "rust_struct_name": "ItemsDropError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsdroperror.go"
+    },
+    "ItemsDropSuccess": {
+      "struct_name": "ItemsDropSuccess",
+      "rust_struct_name": "ItemsDropSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsdropsuccess.go"
+    },
+    "ItemsItemFound": {
+      "struct_name": "ItemsItemFound",
+      "rust_struct_name": "ItemsItemFound",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsitemfound.go"
+    },
+    "ItemsItemSetAdd": {
+      "struct_name": "ItemsItemSetAdd",
+      "rust_struct_name": "ItemsItemSetAdd",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "ItemsTemplatesIds",
+          "name_rust": "items_templates_ids",
+          "go_type": "int",
+          "rust_type": "Vec<i64>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_i64",
+          "comment": "CSV list of integers"
+        },
+        {
+          "name_go": "Effects",
+          "name_rust": "effects",
+          "go_type": "retrotyp",
+          "rust_type": "Vec<retrotyp>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsitemsetadd.go"
+    },
+    "ItemsItemSetRemove": {
+      "struct_name": "ItemsItemSetRemove",
+      "rust_struct_name": "ItemsItemSetRemove",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsitemsetremove.go"
+    },
+    "ItemsItemUseCondition": {
+      "struct_name": "ItemsItemUseCondition",
+      "rust_struct_name": "ItemsItemUseCondition",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsitemusecondition.go"
+    },
+    "ItemsMovement": {
+      "struct_name": "ItemsMovement",
+      "rust_struct_name": "ItemsMovement",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Position",
+          "name_rust": "position",
+          "go_type": "retrotyp",
+          "rust_type": "Vec<i64>",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "csv",
+          "comment": "Position list"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsmovement.go"
+    },
+    "ItemsQuantity": {
+      "struct_name": "ItemsQuantity",
+      "rust_struct_name": "ItemsQuantity",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Quantity",
+          "name_rust": "quantity",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsquantity.go"
+    },
+    "ItemsRemove": {
+      "struct_name": "ItemsRemove",
+      "rust_struct_name": "ItemsRemove",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsremove.go"
+    },
+    "ItemsTool": {
+      "struct_name": "ItemsTool",
+      "rust_struct_name": "ItemsTool",
+      "fields": [
+        {
+          "name_go": "JobId",
+          "name_rust": "job_id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemstool.go"
+    },
+    "ItemsWeight": {
+      "struct_name": "ItemsWeight",
+      "rust_struct_name": "ItemsWeight",
+      "fields": [
+        {
+          "name_go": "Current",
+          "name_rust": "current",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        },
+        {
+          "name_go": "Max",
+          "name_rust": "max",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\itemsweight.go"
+    },
+    "JobLevel": {
+      "struct_name": "JobLevel",
+      "rust_struct_name": "JobLevel",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\joblevel.go"
+    },
+    "JobOptions": {
+      "struct_name": "JobOptions",
+      "rust_struct_name": "JobOptions",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\joboptions.go"
+    },
+    "JobRemove": {
+      "struct_name": "JobRemove",
+      "rust_struct_name": "JobRemove",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\jobremove.go"
+    },
+    "JobSkills": {
+      "struct_name": "JobSkills",
+      "rust_struct_name": "JobSkills",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\jobskills.go"
+    },
+    "JobXP": {
+      "struct_name": "JobXP",
+      "rust_struct_name": "JobXP",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\jobxp.go"
+    },
+    "KeyCreate": {
+      "struct_name": "KeyCreate",
+      "rust_struct_name": "KeyCreate",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\keycreate.go"
+    },
+    "KeyKeyError": {
+      "struct_name": "KeyKeyError",
+      "rust_struct_name": "KeyKeyError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\keykeyerror.go"
+    },
+    "KeyKeySuccess": {
+      "struct_name": "KeyKeySuccess",
+      "rust_struct_name": "KeyKeySuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\keykeysuccess.go"
+    },
+    "KeyLeave": {
+      "struct_name": "KeyLeave",
+      "rust_struct_name": "KeyLeave",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\keyleave.go"
+    },
+    "MountData": {
+      "struct_name": "MountData",
+      "rust_struct_name": "MountData",
+      "fields": [
+        {
+          "name_go": "Data",
+          "name_rust": "data",
+          "go_type": "typ",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type typ"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountdata.go"
+    },
+    "MountEquipError": {
+      "struct_name": "MountEquipError",
+      "rust_struct_name": "MountEquipError",
+      "fields": [
+        {
+          "name_go": "Reason",
+          "name_rust": "reason",
+          "go_type": "rune",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type rune"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountequiperror.go"
+    },
+    "MountEquipSuccess": {
+      "struct_name": "MountEquipSuccess",
+      "rust_struct_name": "MountEquipSuccess",
+      "fields": [
+        {
+          "name_go": "Data",
+          "name_rust": "data",
+          "go_type": "typ",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Unknown type typ"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountequipsuccess.go"
+    },
+    "MountLeave": {
+      "struct_name": "MountLeave",
+      "rust_struct_name": "MountLeave",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountleave.go"
+    },
+    "MountMountPark": {
+      "struct_name": "MountMountPark",
+      "rust_struct_name": "MountMountPark",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountmountpark.go"
+    },
+    "MountMountParkBuy": {
+      "struct_name": "MountMountParkBuy",
+      "rust_struct_name": "MountMountParkBuy",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountmountparkbuy.go"
+    },
+    "MountName": {
+      "struct_name": "MountName",
+      "rust_struct_name": "MountName",
+      "fields": [
+        {
+          "name_go": "Name",
+          "name_rust": "name",
+          "go_type": "string",
+          "rust_type": "String",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "string",
+          "comment": "Name/label"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountname.go"
+    },
+    "MountRidingState": {
+      "struct_name": "MountRidingState",
+      "rust_struct_name": "MountRidingState",
+      "fields": [
+        {
+          "name_go": "Riding",
+          "name_rust": "riding",
+          "go_type": "bool",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountridingstate.go"
+    },
+    "MountUnequip": {
+      "struct_name": "MountUnequip",
+      "rust_struct_name": "MountUnequip",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountunequip.go"
+    },
+    "MountXP": {
+      "struct_name": "MountXP",
+      "rust_struct_name": "MountXP",
+      "fields": [
+        {
+          "name_go": "Percent",
+          "name_rust": "percent",
+          "go_type": "int",
+          "rust_type": "f64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "f64",
+          "comment": "Percentage (0.0-1.0)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\mountxp.go"
+    },
+    "PartyAccept": {
+      "struct_name": "PartyAccept",
+      "rust_struct_name": "PartyAccept",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyaccept.go"
+    },
+    "PartyCreateError": {
+      "struct_name": "PartyCreateError",
+      "rust_struct_name": "PartyCreateError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partycreateerror.go"
+    },
+    "PartyCreateSuccess": {
+      "struct_name": "PartyCreateSuccess",
+      "rust_struct_name": "PartyCreateSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partycreatesuccess.go"
+    },
+    "PartyFollowError": {
+      "struct_name": "PartyFollowError",
+      "rust_struct_name": "PartyFollowError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyfollowerror.go"
+    },
+    "PartyFollowSuccess": {
+      "struct_name": "PartyFollowSuccess",
+      "rust_struct_name": "PartyFollowSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyfollowsuccess.go"
+    },
+    "PartyInviteError": {
+      "struct_name": "PartyInviteError",
+      "rust_struct_name": "PartyInviteError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyinviteerror.go"
+    },
+    "PartyInviteSuccess": {
+      "struct_name": "PartyInviteSuccess",
+      "rust_struct_name": "PartyInviteSuccess",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyinvitesuccess.go"
+    },
+    "PartyLeader": {
+      "struct_name": "PartyLeader",
+      "rust_struct_name": "PartyLeader",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyleader.go"
+    },
+    "PartyLeave": {
+      "struct_name": "PartyLeave",
+      "rust_struct_name": "PartyLeave",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyleave.go"
+    },
+    "PartyMovement": {
+      "struct_name": "PartyMovement",
+      "rust_struct_name": "PartyMovement",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partymovement.go"
+    },
+    "PartyRefuse": {
+      "struct_name": "PartyRefuse",
+      "rust_struct_name": "PartyRefuse",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\partyrefuse.go"
+    },
+    "QuestsList": {
+      "struct_name": "QuestsList",
+      "rust_struct_name": "QuestsList",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\questslist.go"
+    },
+    "QuestsStep": {
+      "struct_name": "QuestsStep",
+      "rust_struct_name": "QuestsStep",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\questsstep.go"
+    },
+    "SpecializationChange": {
+      "struct_name": "SpecializationChange",
+      "rust_struct_name": "SpecializationChange",
+      "fields": [
+        {
+          "name_go": "Value",
+          "name_rust": "value",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Numeric value"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\specializationchange.go"
+    },
+    "SpecializationSet": {
+      "struct_name": "SpecializationSet",
+      "rust_struct_name": "SpecializationSet",
+      "fields": [
+        {
+          "name_go": "Value",
+          "name_rust": "value",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Numeric value"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\specializationset.go"
+    },
+    "SpellsChangeOption": {
+      "struct_name": "SpellsChangeOption",
+      "rust_struct_name": "SpellsChangeOption",
+      "fields": [
+        {
+          "name_go": "CanUseSeeAllSpell",
+          "name_rust": "can_use_see_all_spell",
+          "go_type": "bool",
+          "rust_type": "bool",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "bool",
+          "comment": ""
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellschangeoption.go"
+    },
+    "SpellsList": {
+      "struct_name": "SpellsList",
+      "rust_struct_name": "SpellsList",
+      "fields": [
+        {
+          "name_go": "Spells",
+          "name_rust": "spells",
+          "go_type": "retro",
+          "rust_type": "Vec<retro>",
+          "is_pointer": false,
+          "is_slice": true,
+          "decoder_hint": "csv_json",
+          "comment": "CSV list (JSON encoded)"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellslist.go"
+    },
+    "SpellsSpellBoost": {
+      "struct_name": "SpellsSpellBoost",
+      "rust_struct_name": "SpellsSpellBoost",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellsspellboost.go"
+    },
+    "SpellsSpellForgetClose": {
+      "struct_name": "SpellsSpellForgetClose",
+      "rust_struct_name": "SpellsSpellForgetClose",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellsspellforgetclose.go"
+    },
+    "SpellsSpellForgetShow": {
+      "struct_name": "SpellsSpellForgetShow",
+      "rust_struct_name": "SpellsSpellForgetShow",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellsspellforgetshow.go"
+    },
+    "SpellsUpgradeSpellError": {
+      "struct_name": "SpellsUpgradeSpellError",
+      "rust_struct_name": "SpellsUpgradeSpellError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellsupgradespellerror.go"
+    },
+    "SpellsUpgradeSpellSuccess": {
+      "struct_name": "SpellsUpgradeSpellSuccess",
+      "rust_struct_name": "SpellsUpgradeSpellSuccess",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        },
+        {
+          "name_go": "Level",
+          "name_rust": "level",
+          "go_type": "int",
+          "rust_type": "i32",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i32",
+          "comment": "Level"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\spellsupgradespellsuccess.go"
+    },
+    "StoragesListAdd": {
+      "struct_name": "StoragesListAdd",
+      "rust_struct_name": "StoragesListAdd",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\storageslistadd.go"
+    },
+    "StoragesListRemove": {
+      "struct_name": "StoragesListRemove",
+      "rust_struct_name": "StoragesListRemove",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\storageslistremove.go"
+    },
+    "StoragesLockedProperty": {
+      "struct_name": "StoragesLockedProperty",
+      "rust_struct_name": "StoragesLockedProperty",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\storageslockedproperty.go"
+    },
+    "SubareasAlignmentModification": {
+      "struct_name": "SubareasAlignmentModification",
+      "rust_struct_name": "SubareasAlignmentModification",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subareasalignmentmodification.go"
+    },
+    "SubareasList": {
+      "struct_name": "SubareasList",
+      "rust_struct_name": "SubareasList",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subareaslist.go"
+    },
+    "SubwayCreate": {
+      "struct_name": "SubwayCreate",
+      "rust_struct_name": "SubwayCreate",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subwaycreate.go"
+    },
+    "SubwayLeave": {
+      "struct_name": "SubwayLeave",
+      "rust_struct_name": "SubwayLeave",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subwayleave.go"
+    },
+    "SubwayPrismCreate": {
+      "struct_name": "SubwayPrismCreate",
+      "rust_struct_name": "SubwayPrismCreate",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subwayprismcreate.go"
+    },
+    "SubwayPrismLeave": {
+      "struct_name": "SubwayPrismLeave",
+      "rust_struct_name": "SubwayPrismLeave",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subwayprismleave.go"
+    },
+    "SubwayUseError": {
+      "struct_name": "SubwayUseError",
+      "rust_struct_name": "SubwayUseError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\subwayuseerror.go"
+    },
+    "TutorialCreate": {
+      "struct_name": "TutorialCreate",
+      "rust_struct_name": "TutorialCreate",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\tutorialcreate.go"
+    },
+    "TutorialGameBegin": {
+      "struct_name": "TutorialGameBegin",
+      "rust_struct_name": "TutorialGameBegin",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\tutorialgamebegin.go"
+    },
+    "TutorialShowTip": {
+      "struct_name": "TutorialShowTip",
+      "rust_struct_name": "TutorialShowTip",
+      "fields": [
+        {
+          "name_go": "Id",
+          "name_rust": "id",
+          "go_type": "int",
+          "rust_type": "i64",
+          "is_pointer": false,
+          "is_slice": false,
+          "decoder_hint": "i64",
+          "comment": "Dofus ID"
+        }
+      ],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\tutorialshowtip.go"
+    },
+    "WaypointsCreate": {
+      "struct_name": "WaypointsCreate",
+      "rust_struct_name": "WaypointsCreate",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\waypointscreate.go"
+    },
+    "WaypointsLeave": {
+      "struct_name": "WaypointsLeave",
+      "rust_struct_name": "WaypointsLeave",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\waypointsleave.go"
+    },
+    "WaypointsUseError": {
+      "struct_name": "WaypointsUseError",
+      "rust_struct_name": "WaypointsUseError",
+      "fields": [],
+      "package": "msgsvr",
+      "file_path": "third_party\\retroproto\\msgsvr\\waypointsuseerror.go"
+    }
+  }
+}

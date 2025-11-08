@@ -1,0 +1,25 @@
+//! Generated parser for ConquestPrismFightAddPlayerRemove
+//! 
+//! This file was automatically generated from Go schema definitions.
+//! Manual modifications may be overwritten.
+
+use crate::retroproto_parsers::parser::common_decode;
+use serde::{Serialize, Deserialize};
+
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
+pub struct ConquestPrismFightAddPlayerRemove {
+
+}
+
+pub fn parse_ConquestPrismFightAddPlayerRemove(payload: &str) -> Result<ConquestPrismFightAddPlayerRemove, String> {
+    let fields = common_decode::split_fields(payload);
+    
+    // Parse fields with safe defaults
+
+    
+    // Create struct instance
+    let result = ConquestPrismFightAddPlayerRemove {, ..Default::default()};
+    
+    Ok(result)
+}
+

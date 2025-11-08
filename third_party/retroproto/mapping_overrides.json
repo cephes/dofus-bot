@@ -1,0 +1,4542 @@
+{
+  "generated_by": "local-rectify-from-go",
+  "source_file": "D:\\WorkDir\\dofus-bot\\third_party\\retroproto\\mappings_go.txt",
+  "entries": [
+    {
+      "prefix": "HC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AksHelloConnect",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "HG",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AksHelloGame",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "p",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AksPong",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "q",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AksQuickPong",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "rping",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AksRPing",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "M",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AksServerMessage",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "k",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AksServerWillDisconnect",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BN",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsNothing",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BAE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsAuthorizedCommandError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BAT",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsAuthorizedCommandSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BAL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsAuthorizedLine",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BAP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsAuthorizedCommandPrompt",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BAC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsAuthorizedCommandClear",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BAIO",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsAuthorizedInterfaceOpen",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BAIC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsAuthorizedInterfaceClose",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BT",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsTime",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsDate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BWE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsWhoIsError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BWK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsWhoIsSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BP+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsSubscriberRestrictionAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BP-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsSubscriberRestrictionRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "BC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsFileCheck",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Bp",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "BasicsAveragePing",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Ac",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCommunity",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Ad",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountPseudo",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AlK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountLoginSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AlE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountLoginError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ALE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharactersListError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ALK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharactersListSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AxE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountServersListError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AxK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountServersListSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AAE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharacterAddError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AAK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharacterAddSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ATE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountTicketResponseError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ATK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountTicketResponseSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AXE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountSelectServerError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AXK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountSelectServerSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AYK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountSelectServerPlainSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ASE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharacterSelectedError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ASK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharacterSelectedSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "As",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountStats",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AN",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountNewLevel",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountRestrictions",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AH",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountHosts",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Ar",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountRescue",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Ag",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountGiftsList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AGE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountGiftStoredError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AGK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountGiftStoredSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Aq",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountQueue",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Af",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountNewQueue",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountRegionalVersion",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "APE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharacterNameGeneratedError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "APK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharacterNameGeneratedSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountKey",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AQ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountSecretQuestion",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ADE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharacterDeleteError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ADK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharacterDeleteSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AM?",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharacterMigrationAskConfirm",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AME",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharacterMigrationError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AMK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountCharacterMigrationSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "AF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountFriendServerList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Am",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "AccountMiniClipInfo",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GCE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameCreateError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GCK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameCreateSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GJ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameJoin",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GamePositionStart",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameReady",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameStartToPlay",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameEnd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GM|-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameMovementRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameMovement",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Gc",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameChallenge",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Gt",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameTeam",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Gf",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameFlag",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GIC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GamePlayersCoordinates",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GIE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameEffect",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GIe",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameClearAllEffect",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GIP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GamePVP",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GDM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameMapData",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GDK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameMapLoaded",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GDC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameCellData",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GDZ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameZoneData",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GDO",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameCellObject",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GDF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameFrameObject2",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GDE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameFrameObjectExternal",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Gd",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameFightChallenge",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GdO",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameFightChallengeUpdateError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GdK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameFightChallengeUpdateSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GTS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameTurnStart",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GTF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameTurnFinish",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GTL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameTurnList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GTM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameTurnMiddle",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GTR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameTurnReady",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GX",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameExtraClip",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Go",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameFightOption",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GO",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameGameOver",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameActions",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GAS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameActionsStart",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "GAF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GameActionsFinish",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "cME",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ChatMessageError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "cMK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ChatMessageSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "cs",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ChatServerMessage",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "cS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ChatSmiley",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "cC+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ChatSubscribeChannelAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "cC-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ChatSubscribeChannelRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "DA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "DialogCustomAction",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "DCE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "DialogCreateError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "DCK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "DialogCreateSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "DQ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "DialogQuestion",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "DV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "DialogLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "DP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "DialogPause",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "IM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "InfosInfoMaps",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "IC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "InfosCompass",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "IH",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "InfosInfoCoordinatesPHighlight",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Im",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "InfosMessage",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "IQ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "InfosQuantity",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ILS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "InfosLifeRestoreTimerStart",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ILF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "InfosLifeRestoreTimerFinish",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "SL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SpellsList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "SLo",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SpellsChangeOption",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "SUE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SpellsUpgradeSpellError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "SUK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SpellsUpgradeSpellSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "SB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SpellsSpellBoost",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "SF+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SpellsSpellForgetShow",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "SF-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SpellsSpellForgetClose",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Oa",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsAccessories",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ODE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsDropError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ODK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsDropSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "OAE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsAddError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "OAK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsAddSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "OC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsChange",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "OR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "OQ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsQuantity",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "OM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsMovement",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "OT",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsTool",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Ow",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsWeight",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "OS+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsItemSetAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "OS-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsItemSetRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "OK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsItemUseCondition",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "OF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ItemsItemFound",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "FAE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "FriendsAddFriendError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "FAK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "FriendsAddFriendSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "FDE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "FriendsRemoveFriendError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "FDK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "FriendsRemoveFriendSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "FL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "FriendsFriendsList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "FS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "FriendsSpouse",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "FO",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "FriendsNotifyChange",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "iAE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "EnemiesAddEnemyError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "iAK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "EnemiesAddEnemySuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "iDE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "EnemiesRemoveEnemyError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "iDK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "EnemiesRemoveEnemySuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "iL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "EnemiesEnemiesList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "KC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "KeyCreate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "KKE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "KeyKeyError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "KKK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "KeyKeySuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "KL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "KeyLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "JS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "JobSkills",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "JX",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "JobXP",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "JN",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "JobLevel",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "JR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "JobRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "JO",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "JobOptions",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ERE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeRequestError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ERK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeRequestSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeReady",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EVE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeLeaveError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EVK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeLeaveSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ECE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeCreateError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ECK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeCreateSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EcE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeCraftError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EcK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeCraftSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EME",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeLocalMovementError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EMK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeLocalMovementSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EmE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeLocalDistantError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EmK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeLocalDistantSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ErE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeCoopMovementError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ErK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeCoopMovementSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EpE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangePayMovementError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EpK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangePayMovementSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EsE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeStorageMovementError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EsK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeStorageMovementSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EiE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangePlayerShopMovementError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EiK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangePlayerShopMovementSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EW",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeCraftPublicMode",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Ee",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeMountStorageAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Ee-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeMountStorageRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Ef",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeMountPark",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Ew",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeMountPods",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ESE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeSellError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ESK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeSellSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EBE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeBuyError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EBK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeBuySuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Eq",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeAskOfflineExchange",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EHSE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeSearchError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EHSK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeSearchSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EHL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeBigStoreTypeItemsList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EHM+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeBigStoreTypeItemsMovementAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EHM-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeBigStoreTypeItemsMovementRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EHl",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeBigStoreItemsList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EHm+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeBigStoreItemsMovementAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EHm-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeBigStoreItemsMovementRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EHP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeBigStoreItemMiddlePriceInBigStore",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EHj+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeCrafterReferenceAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EHj-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeCrafterReferenceRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "EA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeCraftLoop",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Ea",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ExchangeCraftLoopEnd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "hL+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "HousesListAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "hL-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "HousesListRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "hP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "HousesProperties",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "hX",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "HousesLockedProperty",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "hC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "HousesCreate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "hSE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "HousesSellError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "hSK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "HousesSellSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "hBE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "HousesBuyError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "hBK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "HousesBuySuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "hV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "HousesLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "hG",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "HousesGuildInfos",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "sL+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "StoragesListAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "sL-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "StoragesListRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "sX",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "StoragesLockedProperty",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "eUE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "EmotesUseError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "eUK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "EmotesUseSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "eL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "EmotesList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "eA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "EmotesAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "eR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "EmotesRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "eD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "EmotesDirection",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "dCE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "DocumentsCreateError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "dCK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "DocumentsCreateSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "dV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "DocumentsLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gn",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildNew",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gCE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildCreateError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gCK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildCreateSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildStats",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gIG",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildInfosGeneral",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gIM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildInfosMembers",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gIB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildInfosBoosts",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gIF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildInfosMountPark",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gITM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildInfosTaxCollectorsMovement",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gITP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildInfosTaxCollectorsPlayers",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gITp",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildInfosTaxCollectorsAttackers",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gIH",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildInfosHouses",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gJE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildJoinError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gJK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildJoinSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gJC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildJoinDistantSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gJR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildRequestLocal",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gJr",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildRequestDistant",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GuildLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gKE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GildBanError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gKK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GildBanSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gHE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GildHireTaxCollectorError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gHK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GildHireTaxCollectorSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GildTaxCollectorAttacked",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gT",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GildTaxCollectorInfo",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "gU",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "GildUserInterfaceOpen",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "WC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "WaypointsCreate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "WV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "WaypointsLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "WU",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "WaypointsUseError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Wc",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SubwayCreate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Wv",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SubwayLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Wu",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SubwayUseError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Wp",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SubwayPrismCreate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Ww",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SubwayPrismLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "al",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SubareasList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "am",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SubareasAlignmentModification",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "aM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestAreaAlignmentChanged",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "CIJ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestPrismInfosJoined",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "CIV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestPrismInfosClosing",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "CB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestConquestBonus",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "CA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestPrismAttacked",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "CS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestPrismSurvived",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "CD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestPrismDead",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "CP+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestPrismFightAddPlayerAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "CP-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestPrismFightAddPlayerRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Cp+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestPrismFightAddEnemyAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Cp-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestPrismFightAddEnemyRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "CW",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestWorldData",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Cb",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "ConquestConquestBalance",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ZS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SpecializationSet",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ZC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "SpecializationChange",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "fC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "FightsCount",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "fL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "FightsList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "fD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "FightsDetails",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "TC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "TutorialCreate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "TT",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "TutorialShowTip",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "TB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "TutorialGameBegin",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "QL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "QuestsList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "QS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "QuestsStep",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "PIE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "PartyInviteError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "PIK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "PartyInviteSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "PL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "PartyLeader",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "PR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "PartyRefuse",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "PA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "PartyAccept",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "PCE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "PartyCreateError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "PCS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "PartyCreateSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "PV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "PartyLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "PFE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "PartyFollowError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "PFK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "PartyFollowSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "PM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "PartyMovement",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ReE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "MountEquipError",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Re+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "MountEquipSuccess",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Re-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "MountUnequip",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Rx",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "MountXP",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Rn",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "MountName",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Rd",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "MountData",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Rp",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "MountMountPark",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "RD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "MountMountParkBuy",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Rv",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "MountLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "Rr",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "server",
+      "message_name": "MountRidingState",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgSvrId)"
+    },
+    {
+      "prefix": "ping",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AksPing",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "qping",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AksQuickPing",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "rpong",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AksRPong",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "BasicsAuthorizedCommand",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BaM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "BasicsAuthorizedMoveCommand",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BaK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "BasicsAuthorizedKickCommand",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BW",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "BasicsWhoIs",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BQ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "BasicsKick",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BYA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "BasicsAway",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BYI",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "BasicsInvisible",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "BasicsGetDate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "BasicsFileCheckAnswer",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "BasicsSanctionMe",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Bp",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "BasicsRequestAveragePing",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "version",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountVersion",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "credential",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountCredential",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "nickname",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountSetNickname",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountGetCharacters",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "ALf",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountGetCharactersForced",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Ax",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountGetServersList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AX",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountSetServer",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountSearchForFriend",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountSetCharacter",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountAddCharacter",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountDeleteCharacter",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountResetCharacter",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountBoost",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AT",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountSendTicket",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Ar",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountRequestRescue",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Ag",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountGetGifts",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AG",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountAttributeGiftToCharacter",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Af",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountQueuePosition",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountGetRandomCharacterName",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Ak",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountUseKey",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountRequestRegionalVersion",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Ai",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountSendIdentity",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountValidCharacterMigration",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AM-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountDeleteCharacterMigration",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "AM?",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountAskCharacterMigration",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Ap",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "AccountConfiguredPort",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "GC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameCreate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "GQ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameRequestLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Gp",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameSetPlayerPosition",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "GR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameRequestReady",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "GD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameGetMapData",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "GI",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameGetExtraInformations",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Gt",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameTurnEnd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "GT",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameTurnOk",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "GP*",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameAskDisablePVPMode",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "GP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameEnabledPVPMode",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "GF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameFreeMySoul",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Gf",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameSetFlag",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Gdi",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameShowFightChallengeTarget",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "GA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameActionsSendActions",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "GKK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameActionAck",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "GKE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GameActionCancel",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ChatSend",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ChatReportMessage",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "cC+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ChatRequestSubscribeChannelAdd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "cC-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ChatRequestSubscribeChannelRemove",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "BS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ChatUseSmiley",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "DB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "DialogBeginning",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "DC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "DialogCreate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "DV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "DialogRequestLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "DR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "DialogResponse",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "IM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "InfosGetMaps",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Ir",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "InfosSendScreenInfo",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "SM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "SpellsMoveToUsed",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "SB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "SpellsBoost",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "SF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "SpellsForget",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "OM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ItemsRequestMovement",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "OD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ItemsDrop",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Od",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ItemsDestroy",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Ou",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ItemsUseConfirm",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "OU",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ItemsUseNoConfirm",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Ox",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ItemsDissociate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Os",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ItemsSetSkin",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Of",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ItemsFeed",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "FL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FriendsGetFriendsList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "FA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FriendsAddFriend",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "FD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FriendsRemoveFriend",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "FJ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FriendsJoin",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "FJF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FriendsJoinFriend",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "FJC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FriendsCompass",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "FO",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FriendsSetNotifyWhenConnect",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "iL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "EnemiesGetEnemiesList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "iA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "EnemiesAddEnemy",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "iD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "EnemiesRemoveEnemy",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "KV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "KeyRequestLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "KK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "KeySendKey",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "JO",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "JobChangeJobStats",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "ER",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeRequest",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Es",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeShop",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeAccept",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeRequestReady",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EMO",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeMovementItems",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeMovementPay",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EMG",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeMovementKamas",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "ES",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeMovementSell",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeMovementBuy",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EQ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeOfflineExchange",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Eq",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeRequestAskOfflineExchange",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EHT",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeBigStoreType",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EHl",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeBigStoreItemList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EHB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeBigStoreBuy",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EHS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeBigStoreSearch",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EW",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeSetPublicMode",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EJF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeGetCrafterForJob",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Erp",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangePutInShedFromInventory",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Erg",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangePutInInventoryFromShed",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Erc",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangePutInCertificateFromShed",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "ErC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangePutInShedFromCertificate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Efp",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangePutInMountParkFromShed",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Efg",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangePutInShedFromMountPark",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Eff",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeKillMountInPark",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Erf",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeKillMount",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EHP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeGetItemMiddlePriceInBigStore",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeReplayCraft",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EMR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeRepeatCraft",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "EMr",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ExchangeStopRepeatCraft",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "hQ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "HousesKick",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "hV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "HousesRequestLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "hS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "HousesSell",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "hB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "HousesBuy",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "hG",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "HousesState",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "hG+",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "HousesShare",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "hG-",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "HousesUnShare",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "eU",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "EmotesUseEmote",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "eD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "EmotesSetDirection",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "dV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "DocumentsRequestLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gC",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildCreate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildRequestLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gITV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildLeaveTaxInterface",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gJR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildInvite",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gJK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildAcceptInvitation",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gJE",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildRefuseInvitation",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gIG",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildGetInfosGeneral",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gIM",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildGetInfosMembers",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gIB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildGetInfosBoosts",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gIT",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildGetInfosTaxCollector",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gIF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildGetInfosMountPark",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gIH",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildGetInfosGuildHouses",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gK",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildBan",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildChangeMemberProfile",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildBoostCharacteristic",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gb",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildBoostSpell",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gH",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildHireTaxCollector",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gTJ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildJoinTaxCollector",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gTV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildLeaveTaxCollector",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildRemoveTaxCollector",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gh",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildTeleportToGuildHouse",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "gf",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "GuildTeleportToGuildFarm",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "WV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "WaypointsRequestLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "WU",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "WaypointsUse",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Wv",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "SubwayRequestLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Wu",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "SubwayUse",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Ww",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "SubwayRequestPrismLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Wp",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "SubwayPrismUse",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "CB",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ConquestGetAlignedBonus",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "CIJ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ConquestPrismInfosJoin",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "CIV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ConquestPrismInfosLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "CFJ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ConquestPrismFightJoin",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "CFV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ConquestPrismFightLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "CWJ",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ConquestWorldInfosJoin",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "CWV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ConquestWorldInfosLave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "CFS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ConquestSwitchPlaces",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Cb",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "ConquestRequestBalance",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "fL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FightsGetList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "fD",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FightsGetDetails",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "fS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FightsBlockSpectators",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "fP",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FightsBlockJoinerExceptParty",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "fN",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FightsBlockJoiner",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "fH",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "FightsNeedHelp",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "TV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "TutorialEnd",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "QL",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "QuestGetList",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "QS",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "QuestGetStep",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "PI",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "PartyInvite",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "PR",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "PartyRefuseInvitation",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "PA",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "PartyAcceptInvitation",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "PV",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "PartyRequestLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "PF",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "PartyRequestFollow",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "PW",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "PartyWhere",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "PG",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "PartyFollowAll",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Rn",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "MountRename",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Rf",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "MountFree",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Rx",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "MountSetXP",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Rr",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "MountRide",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Rd",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "MountRequestData",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Rp",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "MountParkMountData",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Ro",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "MountRemoveObjectInPark",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Rs",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "MountMountParkSell",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Rb",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "MountRequestMountParkBuy",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Rv",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "MountRequestLeave",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    },
+    {
+      "prefix": "Rc",
+      "detection_type": "literal",
+      "pattern": null,
+      "category": "client",
+      "message_name": "MountCastrate",
+      "example_payload": "",
+      "notes": "extracted from mappings_go.txt (MsgCliId/MsgClid)"
+    }
+  ]
+}

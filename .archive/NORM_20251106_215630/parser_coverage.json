@@ -1,0 +1,5386 @@
+{
+  "summary": {
+    "generated_at": "2025-11-06T20:09:18.285401Z",
+    "ndjson_path": "examples\\pcap\\decoded\\dummy_parsed_new.ndjson",
+    "totals": {
+      "total_rows": 249,
+      "parsed_structured": 155,
+      "parsed_empty": 85,
+      "parsed_null": 9,
+      "parse_error": 9
+    },
+    "message_names_seen": 36,
+    "messages_with_structured_output": [
+      "AccountStats",
+      "AksServerMessage",
+      "FightsCount",
+      "GameActionAck",
+      "GameActions",
+      "GameCreate",
+      "GameCreateSuccess",
+      "GameMapData",
+      "GameMovement",
+      "GameMovementRemove",
+      "InfosLifeRestoreTimerFinish",
+      "InfosMessage",
+      "ItemsQuantity",
+      "ItemsWeight"
+    ],
+    "messages_with_empty_object_output": [
+      "AksServerWillDisconnect",
+      "BasicsNothing",
+      "BasicsTime",
+      "GameActionsFinish",
+      "GameActionsStart",
+      "GameEffect",
+      "GameEnd",
+      "GameFightChallenge",
+      "GameMapLoaded",
+      "GamePlayersCoordinates",
+      "GameSetPlayerPosition",
+      "GameStartToPlay",
+      "GameTurnFinish",
+      "GameTurnList",
+      "GameTurnMiddle",
+      "GameTurnReady",
+      "GameTurnStart",
+      "HousesLockedProperty",
+      "InfosLifeRestoreTimerStart"
+    ],
+    "messages_with_null_output_only": [
+      "BasicsDate",
+      "ExchangeCraftPublicMode",
+      "GameReady"
+    ],
+    "rust_messages_indexed": 452,
+    "registry_names_count": 467
+  },
+  "by_message": [
+    {
+      "message_name": "AccountAddCharacter",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountAddCharacter.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountAskCharacterMigration",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountAskCharacterMigration.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountAttributeGiftToCharacter",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountAttributeGiftToCharacter.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountBoost",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountBoost.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCharacterAddError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCharacterAddError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCharacterAddSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCharacterAddSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCharacterDeleteError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCharacterDeleteError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCharacterDeleteSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCharacterDeleteSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCharacterMigrationError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCharacterMigrationError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCharacterMigrationSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCharacterMigrationSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCharacterNameGeneratedError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCharacterNameGeneratedError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCharacterNameGeneratedSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCharacterNameGeneratedSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCharacterSelectedError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCharacterSelectedError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCharacterSelectedSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCharacterSelectedSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCharactersListError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCharactersListError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCharactersListSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCharactersListSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCommunity",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCommunity.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountConfiguredPort",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountConfiguredPort.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountCredential",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountCredential.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountDeleteCharacter",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountDeleteCharacter.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountDeleteCharacterMigration",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountDeleteCharacterMigration.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountGetCharacters",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountGetCharacters.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountGetCharactersForced",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountGetCharactersForced.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountGetGifts",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountGetGifts.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountGetRandomCharacterName",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountGetRandomCharacterName.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountGetServersList",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountGetServersList.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountGiftStoredError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountGiftStoredError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountGiftStoredSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountGiftStoredSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountHosts",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountHosts.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountKey",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountKey.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountLoginError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountLoginError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountLoginSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountLoginSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountMiniClipInfo",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountMiniClipInfo.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountNewLevel",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountNewLevel.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountPseudo",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountPseudo.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountQueue",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountQueue.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountQueuePosition",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountQueuePosition.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountRequestRegionalVersion",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountRequestRegionalVersion.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountRequestRescue",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountRequestRescue.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountResetCharacter",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountResetCharacter.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountSearchForFriend",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountSearchForFriend.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountSecretQuestion",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountSecretQuestion.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountSelectServerError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountSelectServerError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountSelectServerPlainSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountSelectServerPlainSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountSelectServerSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountSelectServerSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountSendIdentity",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountSendIdentity.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountSendTicket",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountSendTicket.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountServersListError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountServersListError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountServersListSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountServersListSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountSetCharacter",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountSetCharacter.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountSetNickname",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountSetNickname.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountSetServer",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountSetServer.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountStats",
+      "prefixes_sample": [
+        "As"
+      ],
+      "ndjson_counts": {
+        "structured": 12
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountStats.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 12,
+      "example_fields_sample": [
+        "alignment",
+        "alignmentEnabled",
+        "alignmentLevel",
+        "bonusPoints",
+        "bonusPointsSpell",
+        "discernment",
+        "disgrace",
+        "energy",
+        "energyMax",
+        "fakeAlignment",
+        "grade",
+        "honour",
+        "initiative",
+        "kama",
+        "lP",
+        "lPMax",
+        "xP",
+        "xPHigh",
+        "xPLow"
+      ]
+    },
+    {
+      "message_name": "AccountTicketResponseError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountTicketResponseError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountTicketResponseSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountTicketResponseSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountUseKey",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountUseKey.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountValidCharacterMigration",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountValidCharacterMigration.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AccountVersion",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AccountVersion.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AksHelloConnect",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AksHelloConnect.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AksHelloGame",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AksHelloGame.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AksPing",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AksPing.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AksPong",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AksPong.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AksQuickPing",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AksQuickPing.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AksQuickPong",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AksQuickPong.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AksRPing",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AksRPing.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AksRPong",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AksRPong.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "AksServerMessage",
+      "prefixes_sample": [
+        "M"
+      ],
+      "ndjson_counts": {
+        "structured": 3
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AksServerMessage.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 3,
+      "example_fields_sample": [
+        "value"
+      ]
+    },
+    {
+      "message_name": "AksServerWillDisconnect",
+      "prefixes_sample": [
+        "k"
+      ],
+      "ndjson_counts": {
+        "empty": 1
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\AksServerWillDisconnect.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 1,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsAuthorizedCommand",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsAuthorizedCommand.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsAuthorizedCommandClear",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsAuthorizedCommandClear.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsAuthorizedCommandError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsAuthorizedCommandError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsAuthorizedCommandPrompt",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsAuthorizedCommandPrompt.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsAuthorizedCommandSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsAuthorizedCommandSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsAuthorizedInterfaceClose",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsAuthorizedInterfaceClose.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsAuthorizedInterfaceOpen",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsAuthorizedInterfaceOpen.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsAuthorizedKickCommand",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsAuthorizedKickCommand.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsAuthorizedLine",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsAuthorizedLine.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsAuthorizedMoveCommand",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsAuthorizedMoveCommand.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsAway",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsAway.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsDate",
+      "prefixes_sample": [
+        "BD"
+      ],
+      "ndjson_counts": {
+        "null": 1
+      },
+      "rust_file": null,
+      "has_parse_fn": false,
+      "registered_in_registry": false,
+      "examples_seen": 1,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsFileCheckAnswer",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsFileCheckAnswer.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsGetDate",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsGetDate.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsInvisible",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsInvisible.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsKick",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsKick.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsNothing",
+      "prefixes_sample": [
+        "BN"
+      ],
+      "ndjson_counts": {
+        "empty": 9
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsNothing.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 9,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsRequestAveragePing",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsRequestAveragePing.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsSanctionMe",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsSanctionMe.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsSubscriberRestrictionAdd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsSubscriberRestrictionAdd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsSubscriberRestrictionRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsSubscriberRestrictionRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsTime",
+      "prefixes_sample": [
+        "BT"
+      ],
+      "ndjson_counts": {
+        "empty": 2
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsTime.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 2,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsWhoIs",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsWhoIs.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsWhoIsError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsWhoIsError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "BasicsWhoIsSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\BasicsWhoIsSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ChatMessageError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ChatMessageError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ChatMessageSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ChatMessageSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ChatReportMessage",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ChatReportMessage.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ChatRequestSubscribeChannelAdd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ChatRequestSubscribeChannelAdd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ChatRequestSubscribeChannelRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ChatRequestSubscribeChannelRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ChatSend",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ChatSend.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ChatServerMessage",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ChatServerMessage.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ChatSmiley",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ChatSmiley.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ChatUseSmiley",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ChatUseSmiley.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "CliAction_0",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\CliAction_0.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "CliAction_1",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\CliAction_1.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "CliAction_2",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\CliAction_2.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "CliAction_900",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\CliAction_900.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "CliAction_901",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\CliAction_901.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "CliAction_902",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\CliAction_902.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "CliAction_903",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\CliAction_903.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestAreaAlignmentChanged",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestAreaAlignmentChanged.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestGetAlignedBonus",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestGetAlignedBonus.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestPrismAttacked",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestPrismAttacked.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestPrismDead",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestPrismDead.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestPrismFightAddEnemyAdd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestPrismFightAddEnemyAdd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestPrismFightAddEnemyRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestPrismFightAddEnemyRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestPrismFightAddPlayerAdd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestPrismFightAddPlayerAdd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestPrismFightAddPlayerRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestPrismFightAddPlayerRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestPrismFightJoin",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestPrismFightJoin.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestPrismFightLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestPrismFightLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestPrismInfosJoin",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestPrismInfosJoin.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestPrismInfosLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestPrismInfosLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestPrismSurvived",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestPrismSurvived.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestRequestBalance",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestRequestBalance.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestSwitchPlaces",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestSwitchPlaces.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestWorldData",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestWorldData.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestWorldInfosJoin",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestWorldInfosJoin.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ConquestWorldInfosLave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ConquestWorldInfosLave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "DialogBeginning",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\DialogBeginning.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "DialogCreate",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\DialogCreate.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "DialogCreateError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\DialogCreateError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "DialogCreateSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\DialogCreateSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "DialogCustomAction",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\DialogCustomAction.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "DialogPause",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\DialogPause.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "DialogQuestion",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\DialogQuestion.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "DialogRequestLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\DialogRequestLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "DialogResponse",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\DialogResponse.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "DocumentsCreateError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\DocumentsCreateError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "DocumentsCreateSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\DocumentsCreateSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "DocumentsRequestLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\DocumentsRequestLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EmotesAdd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EmotesAdd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EmotesList",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EmotesList.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EmotesRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EmotesRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EmotesSetDirection",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EmotesSetDirection.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EmotesUseEmote",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EmotesUseEmote.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EmotesUseError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EmotesUseError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EmotesUseSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EmotesUseSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EnemiesAddEnemy",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EnemiesAddEnemy.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EnemiesAddEnemyError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EnemiesAddEnemyError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EnemiesAddEnemySuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EnemiesAddEnemySuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EnemiesGetEnemiesList",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EnemiesGetEnemiesList.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EnemiesRemoveEnemy",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EnemiesRemoveEnemy.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EnemiesRemoveEnemyError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EnemiesRemoveEnemyError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "EnemiesRemoveEnemySuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\EnemiesRemoveEnemySuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeAccept",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeAccept.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeBigStoreBuy",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeBigStoreBuy.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeBigStoreItemList",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeBigStoreItemList.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeBigStoreItemsMovementAdd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeBigStoreItemsMovementAdd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeBigStoreItemsMovementRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeBigStoreItemsMovementRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeBigStoreSearch",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeBigStoreSearch.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeBigStoreType",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeBigStoreType.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeBigStoreTypeItemsList",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeBigStoreTypeItemsList.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeBigStoreTypeItemsMovementAdd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeBigStoreTypeItemsMovementAdd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeBigStoreTypeItemsMovementRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeBigStoreTypeItemsMovementRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeBuyError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeBuyError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeBuySuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeBuySuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeCoopMovementError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeCoopMovementError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeCoopMovementSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeCoopMovementSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeCraftError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeCraftError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeCraftLoopEnd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeCraftLoopEnd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeCraftPublicMode",
+      "prefixes_sample": [
+        "EW"
+      ],
+      "ndjson_counts": {
+        "null": 2
+      },
+      "rust_file": null,
+      "has_parse_fn": false,
+      "registered_in_registry": false,
+      "examples_seen": 2,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeCraftSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeCraftSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeCrafterReferenceAdd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeCrafterReferenceAdd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeCrafterReferenceRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeCrafterReferenceRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeCreateError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeCreateError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeCreateSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeCreateSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeGetCrafterForJob",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeGetCrafterForJob.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeGetItemMiddlePriceInBigStore",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeGetItemMiddlePriceInBigStore.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeKillMount",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeKillMount.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeKillMountInPark",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeKillMountInPark.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeLeaveError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeLeaveError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeLeaveSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeLeaveSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeLocalDistantError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeLocalDistantError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeLocalDistantSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeLocalDistantSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeLocalMovementError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeLocalMovementError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeLocalMovementSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeLocalMovementSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeMountPark",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeMountPark.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeMountPods",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeMountPods.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeMountStorageAdd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeMountStorageAdd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeMountStorageRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeMountStorageRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeMovementBuy",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeMovementBuy.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeMovementItems",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeMovementItems.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeMovementKamas",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeMovementKamas.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeMovementPay",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeMovementPay.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeMovementSell",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeMovementSell.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeOfflineExchange",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeOfflineExchange.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangePayMovementError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangePayMovementError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangePayMovementSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangePayMovementSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangePlayerShopMovementError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangePlayerShopMovementError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangePlayerShopMovementSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangePlayerShopMovementSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangePutInCertificateFromShed",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangePutInCertificateFromShed.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangePutInInventoryFromShed",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangePutInInventoryFromShed.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangePutInMountParkFromShed",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangePutInMountParkFromShed.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangePutInShedFromCertificate",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangePutInShedFromCertificate.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangePutInShedFromInventory",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangePutInShedFromInventory.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangePutInShedFromMountPark",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangePutInShedFromMountPark.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeRepeatCraft",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeRepeatCraft.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeReplayCraft",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeReplayCraft.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeRequest",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeRequest.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeRequestAskOfflineExchange",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeRequestAskOfflineExchange.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeRequestError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeRequestError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeRequestReady",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeRequestReady.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeRequestSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeRequestSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeSearchError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeSearchError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeSearchSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeSearchSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeSellError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeSellError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeSellSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeSellSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeSetPublicMode",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeSetPublicMode.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeShop",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeShop.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeStopRepeatCraft",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeStopRepeatCraft.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeStorageMovementError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeStorageMovementError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ExchangeStorageMovementSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ExchangeStorageMovementSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FightsBlockJoiner",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FightsBlockJoiner.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FightsBlockJoinerExceptParty",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FightsBlockJoinerExceptParty.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FightsBlockSpectators",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FightsBlockSpectators.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FightsCount",
+      "prefixes_sample": [
+        "fC"
+      ],
+      "ndjson_counts": {
+        "structured": 2
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FightsCount.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 2,
+      "example_fields_sample": [
+        "value"
+      ]
+    },
+    {
+      "message_name": "FightsGetDetails",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FightsGetDetails.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FightsGetList",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FightsGetList.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FightsNeedHelp",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FightsNeedHelp.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FriendsAddFriend",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FriendsAddFriend.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FriendsAddFriendError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FriendsAddFriendError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FriendsAddFriendSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FriendsAddFriendSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FriendsCompass",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FriendsCompass.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FriendsGetFriendsList",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FriendsGetFriendsList.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FriendsJoin",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FriendsJoin.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FriendsJoinFriend",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FriendsJoinFriend.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FriendsRemoveFriend",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FriendsRemoveFriend.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FriendsRemoveFriendError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FriendsRemoveFriendError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FriendsRemoveFriendSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FriendsRemoveFriendSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FriendsSetNotifyWhenConnect",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FriendsSetNotifyWhenConnect.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "FriendsSpouse",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\FriendsSpouse.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameActionAck",
+      "prefixes_sample": [
+        "GKK"
+      ],
+      "ndjson_counts": {
+        "structured": 13
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameActionAck.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 13,
+      "example_fields_sample": [
+        "id"
+      ]
+    },
+    {
+      "message_name": "GameActionCancel",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameActionCancel.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameAction_0",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_0.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameAction_1",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_1.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameAction_2",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_2.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameAction_900",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_900.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameAction_901",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_901.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameAction_902",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_902.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameAction_903",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_903.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameActions",
+      "prefixes_sample": [
+        "GA"
+      ],
+      "ndjson_counts": {
+        "structured": 88,
+        "null": 4
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\handwritten\\GameActions.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 92,
+      "example_fields_sample": [
+        "action_code",
+        "rest"
+      ]
+    },
+    {
+      "message_name": "GameActionsFinish",
+      "prefixes_sample": [
+        "GAF"
+      ],
+      "ndjson_counts": {
+        "empty": 9
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameActionsFinish.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 9,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameActionsSendActions",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameActionsSendActions.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameActionsStart",
+      "prefixes_sample": [
+        "GAS"
+      ],
+      "ndjson_counts": {
+        "empty": 10
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameActionsStart.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 10,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameAskDisablePVPMode",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameAskDisablePVPMode.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameCellData",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameCellData.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameCellObject",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameCellObject.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameChallenge",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameChallenge.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameClearAllEffect",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameClearAllEffect.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameCreate",
+      "prefixes_sample": [
+        "GC"
+      ],
+      "ndjson_counts": {
+        "structured": 1
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameCreate.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 1,
+      "example_fields_sample": [
+        "type"
+      ]
+    },
+    {
+      "message_name": "GameCreateError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameCreateError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameCreateSuccess",
+      "prefixes_sample": [
+        "GCK"
+      ],
+      "ndjson_counts": {
+        "structured": 1
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameCreateSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 1,
+      "example_fields_sample": [
+        "type"
+      ]
+    },
+    {
+      "message_name": "GameEffect",
+      "prefixes_sample": [
+        "GIE"
+      ],
+      "ndjson_counts": {
+        "empty": 9
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\handwritten\\GameEffect.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": true,
+      "examples_seen": 9,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameEnabledPVPMode",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameEnabledPVPMode.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameEnd",
+      "prefixes_sample": [
+        "GE"
+      ],
+      "ndjson_counts": {
+        "empty": 1
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameEnd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 1,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameExtraClip",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameExtraClip.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameFightChallenge",
+      "prefixes_sample": [
+        "Gd"
+      ],
+      "ndjson_counts": {
+        "empty": 1
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameFightChallenge.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 1,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameFightChallengeUpdateError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameFightChallengeUpdateError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameFightChallengeUpdateSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameFightChallengeUpdateSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameFightOption",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameFightOption.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameFrameObject2",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameFrameObject2.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameFrameObjectExternal",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameFrameObjectExternal.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameFreeMySoul",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameFreeMySoul.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameGameOver",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameGameOver.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameGetExtraInformations",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameGetExtraInformations.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameGetMapData",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameGetMapData.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameJoin",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameJoin.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameMapData",
+      "prefixes_sample": [
+        "GDM"
+      ],
+      "ndjson_counts": {
+        "structured": 2
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameMapData.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 2,
+      "example_fields_sample": [
+        "id",
+        "key",
+        "name"
+      ]
+    },
+    {
+      "message_name": "GameMapLoaded",
+      "prefixes_sample": [
+        "GDK"
+      ],
+      "ndjson_counts": {
+        "empty": 2
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameMapLoaded.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 2,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameMovement",
+      "prefixes_sample": [
+        "GM"
+      ],
+      "ndjson_counts": {
+        "structured": 14
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameMovement.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 14,
+      "example_fields_sample": [
+        "sprites"
+      ]
+    },
+    {
+      "message_name": "GameMovementRemove",
+      "prefixes_sample": [
+        "GM|-"
+      ],
+      "ndjson_counts": {
+        "structured": 1
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameMovementRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 1,
+      "example_fields_sample": [
+        "id"
+      ]
+    },
+    {
+      "message_name": "GamePVP",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GamePVP.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GamePlayersCoordinates",
+      "prefixes_sample": [
+        "GIC"
+      ],
+      "ndjson_counts": {
+        "empty": 3
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GamePlayersCoordinates.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 3,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameReady",
+      "prefixes_sample": [
+        "GR"
+      ],
+      "ndjson_counts": {
+        "null": 2
+      },
+      "rust_file": null,
+      "has_parse_fn": false,
+      "registered_in_registry": false,
+      "examples_seen": 2,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameRequestLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameRequestLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameRequestReady",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameRequestReady.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameSetFlag",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameSetFlag.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameSetPlayerPosition",
+      "prefixes_sample": [
+        "Gp"
+      ],
+      "ndjson_counts": {
+        "empty": 2
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameSetPlayerPosition.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 2,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameShowFightChallengeTarget",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameShowFightChallengeTarget.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameStartToPlay",
+      "prefixes_sample": [
+        "GS"
+      ],
+      "ndjson_counts": {
+        "empty": 1
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameStartToPlay.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 1,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameTurnEnd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameTurnEnd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameTurnFinish",
+      "prefixes_sample": [
+        "GTF"
+      ],
+      "ndjson_counts": {
+        "empty": 7
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameTurnFinish.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 7,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameTurnList",
+      "prefixes_sample": [
+        "GTL"
+      ],
+      "ndjson_counts": {
+        "empty": 1
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameTurnList.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 1,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameTurnMiddle",
+      "prefixes_sample": [
+        "GTM"
+      ],
+      "ndjson_counts": {
+        "empty": 9
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameTurnMiddle.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 9,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameTurnOk",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameTurnOk.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameTurnReady",
+      "prefixes_sample": [
+        "GTR"
+      ],
+      "ndjson_counts": {
+        "empty": 8
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameTurnReady.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 8,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameTurnStart",
+      "prefixes_sample": [
+        "GTS"
+      ],
+      "ndjson_counts": {
+        "empty": 8
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameTurnStart.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 8,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GameZoneData",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GameZoneData.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GildBanError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GildBanError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GildBanSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GildBanSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GildHireTaxCollectorError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GildHireTaxCollectorError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GildHireTaxCollectorSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GildHireTaxCollectorSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GildTaxCollectorAttacked",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GildTaxCollectorAttacked.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GildTaxCollectorInfo",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GildTaxCollectorInfo.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GildUserInterfaceOpen",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GildUserInterfaceOpen.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildAcceptInvitation",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildAcceptInvitation.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildBan",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildBan.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildBoostCharacteristic",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildBoostCharacteristic.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildBoostSpell",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildBoostSpell.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildChangeMemberProfile",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildChangeMemberProfile.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildCreate",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildCreate.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildCreateError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildCreateError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildCreateSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildCreateSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildGetInfosBoosts",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildGetInfosBoosts.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildGetInfosGeneral",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildGetInfosGeneral.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildGetInfosGuildHouses",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildGetInfosGuildHouses.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildGetInfosMembers",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildGetInfosMembers.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildGetInfosMountPark",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildGetInfosMountPark.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildGetInfosTaxCollector",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildGetInfosTaxCollector.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildHireTaxCollector",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildHireTaxCollector.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildInfosTaxCollectorsAttackers",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildInfosTaxCollectorsAttackers.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildInfosTaxCollectorsMovement",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildInfosTaxCollectorsMovement.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildInfosTaxCollectorsPlayers",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildInfosTaxCollectorsPlayers.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildInvite",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildInvite.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildJoinDistantSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildJoinDistantSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildJoinTaxCollector",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildJoinTaxCollector.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildLeaveTaxCollector",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildLeaveTaxCollector.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildLeaveTaxInterface",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildLeaveTaxInterface.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildNew",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildNew.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildRefuseInvitation",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildRefuseInvitation.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildRemoveTaxCollector",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildRemoveTaxCollector.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildRequestDistant",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildRequestDistant.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildRequestLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildRequestLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildStats",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildStats.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildTeleportToGuildFarm",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildTeleportToGuildFarm.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "GuildTeleportToGuildHouse",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\GuildTeleportToGuildHouse.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesBuy",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesBuy.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesBuyError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesBuyError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesBuySuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesBuySuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesCreate",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesCreate.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesKick",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesKick.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesListAdd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesListAdd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesListRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesListRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesLockedProperty",
+      "prefixes_sample": [
+        "hX"
+      ],
+      "ndjson_counts": {
+        "empty": 1
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesLockedProperty.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 1,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesProperties",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesProperties.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesRequestLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesRequestLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesSell",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesSell.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesSellError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesSellError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesSellSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesSellSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesShare",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesShare.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesState",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesState.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "HousesUnShare",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\HousesUnShare.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "InfosCompass",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\InfosCompass.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "InfosGetMaps",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\InfosGetMaps.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "InfosInfoCoordinatesPHighlight",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\InfosInfoCoordinatesPHighlight.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "InfosLifeRestoreTimerFinish",
+      "prefixes_sample": [
+        "ILF"
+      ],
+      "ndjson_counts": {
+        "structured": 1
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\InfosLifeRestoreTimerFinish.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 1,
+      "example_fields_sample": [
+        "restored"
+      ]
+    },
+    {
+      "message_name": "InfosLifeRestoreTimerStart",
+      "prefixes_sample": [
+        "ILS"
+      ],
+      "ndjson_counts": {
+        "empty": 1
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\InfosLifeRestoreTimerStart.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 1,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "InfosMessage",
+      "prefixes_sample": [
+        "Im"
+      ],
+      "ndjson_counts": {
+        "structured": 3
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\InfosMessage.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 3,
+      "example_fields_sample": [
+        "chatId"
+      ]
+    },
+    {
+      "message_name": "InfosQuantity",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\InfosQuantity.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "InfosSendScreenInfo",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\InfosSendScreenInfo.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsAccessories",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsAccessories.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsAddError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsAddError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsAddSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsAddSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsChange",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsChange.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsDestroy",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsDestroy.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsDissociate",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsDissociate.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsDrop",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsDrop.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsDropError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsDropError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsDropSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsDropSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsFeed",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsFeed.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsItemFound",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsItemFound.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsItemSetAdd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsItemSetAdd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsItemSetRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsItemSetRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsItemUseCondition",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsItemUseCondition.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsQuantity",
+      "prefixes_sample": [
+        "OQ"
+      ],
+      "ndjson_counts": {
+        "structured": 3
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsQuantity.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 3,
+      "example_fields_sample": [
+        "id",
+        "quantity"
+      ]
+    },
+    {
+      "message_name": "ItemsRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsRequestMovement",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsRequestMovement.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsSetSkin",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsSetSkin.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsTool",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsTool.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsUseConfirm",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsUseConfirm.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsUseNoConfirm",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsUseNoConfirm.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "ItemsWeight",
+      "prefixes_sample": [
+        "Ow"
+      ],
+      "ndjson_counts": {
+        "structured": 11
+      },
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\ItemsWeight.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 11,
+      "example_fields_sample": [
+        "current",
+        "max"
+      ]
+    },
+    {
+      "message_name": "JobChangeJobStats",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\JobChangeJobStats.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "JobLevel",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\JobLevel.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "JobRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\JobRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "JobSkills",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\JobSkills.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "JobXP",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\JobXP.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "KeyCreate",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\KeyCreate.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "KeyKeyError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\KeyKeyError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "KeyKeySuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\KeyKeySuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "KeyLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\KeyLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "KeyRequestLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\KeyRequestLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "KeySendKey",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\KeySendKey.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountCastrate",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountCastrate.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountEquipError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountEquipError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountEquipSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountEquipSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountFree",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountFree.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountMountParkBuy",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountMountParkBuy.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountMountParkSell",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountMountParkSell.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountParkMountData",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountParkMountData.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountRemoveObjectInPark",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountRemoveObjectInPark.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountRename",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountRename.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountRequestData",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountRequestData.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountRequestLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountRequestLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountRequestMountParkBuy",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountRequestMountParkBuy.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountRide",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountRide.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountSetXP",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountSetXP.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "MountUnequip",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\MountUnequip.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyAcceptInvitation",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyAcceptInvitation.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyCreateError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyCreateError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyCreateSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyCreateSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyFollowAll",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyFollowAll.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyFollowError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyFollowError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyFollowSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyFollowSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyInvite",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyInvite.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyInviteError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyInviteError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyInviteSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyInviteSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyLeader",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyLeader.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyMovement",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyMovement.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyRefuseInvitation",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyRefuseInvitation.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyRequestFollow",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyRequestFollow.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyRequestLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyRequestLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "PartyWhere",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\PartyWhere.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "QuestGetList",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\QuestGetList.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "QuestGetStep",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\QuestGetStep.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SpecializationChange",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SpecializationChange.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SpecializationSet",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SpecializationSet.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SpellsBoost",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SpellsBoost.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SpellsChangeOption",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SpellsChangeOption.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SpellsForget",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SpellsForget.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SpellsList",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SpellsList.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SpellsMoveToUsed",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SpellsMoveToUsed.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SpellsSpellForgetClose",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SpellsSpellForgetClose.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SpellsSpellForgetShow",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SpellsSpellForgetShow.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SpellsUpgradeSpellError",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SpellsUpgradeSpellError.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SpellsUpgradeSpellSuccess",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SpellsUpgradeSpellSuccess.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "StoragesListAdd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\StoragesListAdd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "StoragesListRemove",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\StoragesListRemove.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "StoragesLockedProperty",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\StoragesLockedProperty.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SubareasAlignmentModification",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SubareasAlignmentModification.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SubareasList",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SubareasList.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SubwayCreate",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SubwayCreate.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SubwayPrismUse",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SubwayPrismUse.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SubwayRequestLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SubwayRequestLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SubwayRequestPrismLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SubwayRequestPrismLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "SubwayUse",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\SubwayUse.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "TutorialCreate",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\TutorialCreate.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "TutorialEnd",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\TutorialEnd.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "TutorialGameBegin",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\TutorialGameBegin.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "TutorialShowTip",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\TutorialShowTip.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "WaypointsCreate",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\WaypointsCreate.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "WaypointsRequestLeave",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\WaypointsRequestLeave.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "WaypointsUse",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\generated\\WaypointsUse.rs",
+      "has_parse_fn": true,
+      "registered_in_registry": true,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    },
+    {
+      "message_name": "mod",
+      "prefixes_sample": [],
+      "ndjson_counts": {},
+      "rust_file": "core\\src\\retroproto_parsers\\handwritten\\mod.rs",
+      "has_parse_fn": false,
+      "registered_in_registry": false,
+      "examples_seen": 0,
+      "example_fields_sample": []
+    }
+  ],
+  "by_prefix": {
+    "GM": {
+      "structured": 14
+    },
+    "M": {
+      "structured": 3
+    },
+    "GA": {
+      "structured": 88,
+      "null": 4
+    },
+    "GM|-": {
+      "structured": 1
+    },
+    "GDM": {
+      "structured": 2
+    },
+    "BT": {
+      "empty": 2
+    },
+    "fC": {
+      "structured": 2
+    },
+    "GDK": {
+      "empty": 2
+    },
+    "EW": {
+      "null": 2
+    },
+    "ILF": {
+      "structured": 1
+    },
+    "Im": {
+      "structured": 3
+    },
+    "GIC": {
+      "empty": 3
+    },
+    "GR": {
+      "null": 2
+    },
+    "GS": {
+      "empty": 1
+    },
+    "GTL": {
+      "empty": 1
+    },
+    "Gd": {
+      "empty": 1
+    },
+    "GTM": {
+      "empty": 9
+    },
+    "GTS": {
+      "empty": 8
+    },
+    "As": {
+      "structured": 12
+    },
+    "GAS": {
+      "empty": 10
+    },
+    "GAF": {
+      "empty": 9
+    },
+    "BN": {
+      "empty": 9
+    },
+    "GTF": {
+      "empty": 7
+    },
+    "GTR": {
+      "empty": 8
+    },
+    "GIE": {
+      "empty": 9
+    },
+    "BD": {
+      "null": 1
+    },
+    "Ow": {
+      "structured": 11
+    },
+    "OQ": {
+      "structured": 3
+    },
+    "GE": {
+      "empty": 1
+    },
+    "GCK": {
+      "structured": 1
+    },
+    "ILS": {
+      "empty": 1
+    },
+    "GKK": {
+      "structured": 13
+    },
+    "Gp": {
+      "empty": 2
+    },
+    "hX": {
+      "empty": 1
+    },
+    "k": {
+      "empty": 1
+    },
+    "GC": {
+      "structured": 1
+    }
+  },
+  "registry_names": [
+    "AccountAddCharacter",
+    "AccountAskCharacterMigration",
+    "AccountAttributeGiftToCharacter",
+    "AccountBoost",
+    "AccountCharacterAddError",
+    "AccountCharacterAddSuccess",
+    "AccountCharacterDeleteError",
+    "AccountCharacterDeleteSuccess",
+    "AccountCharacterMigrationError",
+    "AccountCharacterMigrationSuccess",
+    "AccountCharacterNameGeneratedError",
+    "AccountCharacterNameGeneratedSuccess",
+    "AccountCharacterSelectedError",
+    "AccountCharacterSelectedSuccess",
+    "AccountCharactersListError",
+    "AccountCharactersListSuccess",
+    "AccountCommunity",
+    "AccountConfiguredPort",
+    "AccountCredential",
+    "AccountDeleteCharacter",
+    "AccountDeleteCharacterMigration",
+    "AccountGetCharacters",
+    "AccountGetCharactersForced",
+    "AccountGetGifts",
+    "AccountGetRandomCharacterName",
+    "AccountGetServersList",
+    "AccountGiftStoredError",
+    "AccountGiftStoredSuccess",
+    "AccountHosts",
+    "AccountKey",
+    "AccountLoginError",
+    "AccountLoginSuccess",
+    "AccountMiniClipInfo",
+    "AccountNewLevel",
+    "AccountPseudo",
+    "AccountQueue",
+    "AccountQueuePosition",
+    "AccountRequestRegionalVersion",
+    "AccountRequestRescue",
+    "AccountResetCharacter",
+    "AccountSearchForFriend",
+    "AccountSecretQuestion",
+    "AccountSelectServerError",
+    "AccountSelectServerPlainSuccess",
+    "AccountSelectServerSuccess",
+    "AccountSendIdentity",
+    "AccountSendTicket",
+    "AccountServersListError",
+    "AccountServersListSuccess",
+    "AccountSetCharacter",
+    "AccountSetNickname",
+    "AccountSetServer",
+    "AccountStats",
+    "AccountTicketResponseError",
+    "AccountTicketResponseSuccess",
+    "AccountUseKey",
+    "AccountValidCharacterMigration",
+    "AccountVersion",
+    "AksHelloConnect",
+    "AksHelloGame",
+    "AksPing",
+    "AksPong",
+    "AksQuickPing",
+    "AksQuickPong",
+    "AksRPing",
+    "AksRPong",
+    "AksServerMessage",
+    "AksServerWillDisconnect",
+    "BasicsAuthorizedCommand",
+    "BasicsAuthorizedCommandClear",
+    "BasicsAuthorizedCommandError",
+    "BasicsAuthorizedCommandPrompt",
+    "BasicsAuthorizedCommandSuccess",
+    "BasicsAuthorizedInterfaceClose",
+    "BasicsAuthorizedInterfaceOpen",
+    "BasicsAuthorizedKickCommand",
+    "BasicsAuthorizedLine",
+    "BasicsAuthorizedMoveCommand",
+    "BasicsAway",
+    "BasicsFileCheckAnswer",
+    "BasicsGetDate",
+    "BasicsInvisible",
+    "BasicsKick",
+    "BasicsNothing",
+    "BasicsRequestAveragePing",
+    "BasicsSanctionMe",
+    "BasicsSubscriberRestrictionAdd",
+    "BasicsSubscriberRestrictionRemove",
+    "BasicsTime",
+    "BasicsWhoIs",
+    "BasicsWhoIsError",
+    "BasicsWhoIsSuccess",
+    "ChatMessageError",
+    "ChatMessageSuccess",
+    "ChatReportMessage",
+    "ChatRequestSubscribeChannelAdd",
+    "ChatRequestSubscribeChannelRemove",
+    "ChatSend",
+    "ChatServerMessage",
+    "ChatSmiley",
+    "ChatUseSmiley",
+    "CliAction_0",
+    "CliAction_1",
+    "CliAction_2",
+    "CliAction_900",
+    "CliAction_901",
+    "CliAction_902",
+    "CliAction_903",
+    "ConquestAreaAlignmentChanged",
+    "ConquestGetAlignedBonus",
+    "ConquestPrismAttacked",
+    "ConquestPrismDead",
+    "ConquestPrismFightAddEnemyAdd",
+    "ConquestPrismFightAddEnemyRemove",
+    "ConquestPrismFightAddPlayerAdd",
+    "ConquestPrismFightAddPlayerRemove",
+    "ConquestPrismFightJoin",
+    "ConquestPrismFightLeave",
+    "ConquestPrismInfosJoin",
+    "ConquestPrismInfosLeave",
+    "ConquestPrismSurvived",
+    "ConquestRequestBalance",
+    "ConquestSwitchPlaces",
+    "ConquestWorldData",
+    "ConquestWorldInfosJoin",
+    "ConquestWorldInfosLave",
+    "DialogBeginning",
+    "DialogCreate",
+    "DialogCreateError",
+    "DialogCreateSuccess",
+    "DialogCustomAction",
+    "DialogPause",
+    "DialogQuestion",
+    "DialogRequestLeave",
+    "DialogResponse",
+    "DocumentsCreateError",
+    "DocumentsCreateSuccess",
+    "DocumentsRequestLeave",
+    "EmotesAdd",
+    "EmotesList",
+    "EmotesRemove",
+    "EmotesSetDirection",
+    "EmotesUseEmote",
+    "EmotesUseError",
+    "EmotesUseSuccess",
+    "EnemiesAddEnemy",
+    "EnemiesAddEnemyError",
+    "EnemiesAddEnemySuccess",
+    "EnemiesGetEnemiesList",
+    "EnemiesRemoveEnemy",
+    "EnemiesRemoveEnemyError",
+    "EnemiesRemoveEnemySuccess",
+    "ExchangeAccept",
+    "ExchangeBigStoreBuy",
+    "ExchangeBigStoreItemList",
+    "ExchangeBigStoreItemsMovementAdd",
+    "ExchangeBigStoreItemsMovementRemove",
+    "ExchangeBigStoreSearch",
+    "ExchangeBigStoreType",
+    "ExchangeBigStoreTypeItemsList",
+    "ExchangeBigStoreTypeItemsMovementAdd",
+    "ExchangeBigStoreTypeItemsMovementRemove",
+    "ExchangeBuyError",
+    "ExchangeBuySuccess",
+    "ExchangeCoopMovementError",
+    "ExchangeCoopMovementSuccess",
+    "ExchangeCraftError",
+    "ExchangeCraftLoopEnd",
+    "ExchangeCraftSuccess",
+    "ExchangeCrafterReferenceAdd",
+    "ExchangeCrafterReferenceRemove",
+    "ExchangeCreateError",
+    "ExchangeCreateSuccess",
+    "ExchangeGetCrafterForJob",
+    "ExchangeGetItemMiddlePriceInBigStore",
+    "ExchangeKillMount",
+    "ExchangeKillMountInPark",
+    "ExchangeLeave",
+    "ExchangeLeaveError",
+    "ExchangeLeaveSuccess",
+    "ExchangeLocalDistantError",
+    "ExchangeLocalDistantSuccess",
+    "ExchangeLocalMovementError",
+    "ExchangeLocalMovementSuccess",
+    "ExchangeMountPark",
+    "ExchangeMountPods",
+    "ExchangeMountStorageAdd",
+    "ExchangeMountStorageRemove",
+    "ExchangeMovementBuy",
+    "ExchangeMovementItems",
+    "ExchangeMovementKamas",
+    "ExchangeMovementPay",
+    "ExchangeMovementSell",
+    "ExchangeOfflineExchange",
+    "ExchangePayMovementError",
+    "ExchangePayMovementSuccess",
+    "ExchangePlayerShopMovementError",
+    "ExchangePlayerShopMovementSuccess",
+    "ExchangePutInCertificateFromShed",
+    "ExchangePutInInventoryFromShed",
+    "ExchangePutInMountParkFromShed",
+    "ExchangePutInShedFromCertificate",
+    "ExchangePutInShedFromInventory",
+    "ExchangePutInShedFromMountPark",
+    "ExchangeRepeatCraft",
+    "ExchangeReplayCraft",
+    "ExchangeRequest",
+    "ExchangeRequestAskOfflineExchange",
+    "ExchangeRequestError",
+    "ExchangeRequestReady",
+    "ExchangeRequestSuccess",
+    "ExchangeSearchError",
+    "ExchangeSearchSuccess",
+    "ExchangeSellError",
+    "ExchangeSellSuccess",
+    "ExchangeSetPublicMode",
+    "ExchangeShop",
+    "ExchangeStopRepeatCraft",
+    "ExchangeStorageMovementError",
+    "ExchangeStorageMovementSuccess",
+    "FightsBlockJoiner",
+    "FightsBlockJoinerExceptParty",
+    "FightsBlockSpectators",
+    "FightsCount",
+    "FightsGetDetails",
+    "FightsGetList",
+    "FightsNeedHelp",
+    "FriendsAddFriend",
+    "FriendsAddFriendError",
+    "FriendsAddFriendSuccess",
+    "FriendsCompass",
+    "FriendsGetFriendsList",
+    "FriendsJoin",
+    "FriendsJoinFriend",
+    "FriendsRemoveFriend",
+    "FriendsRemoveFriendError",
+    "FriendsRemoveFriendSuccess",
+    "FriendsSetNotifyWhenConnect",
+    "FriendsSpouse",
+    "GameActionAck",
+    "GameActionCancel",
+    "GameAction_0",
+    "GameAction_1",
+    "GameAction_2",
+    "GameAction_900",
+    "GameAction_901",
+    "GameAction_902",
+    "GameAction_903",
+    "GameActions",
+    "GameActionsFinish",
+    "GameActionsSendActions",
+    "GameActionsStart",
+    "GameAskDisablePVPMode",
+    "GameCellData",
+    "GameCellObject",
+    "GameChallenge",
+    "GameClearAllEffect",
+    "GameCreate",
+    "GameCreateError",
+    "GameCreateSuccess",
+    "GameEffect",
+    "GameEnabledPVPMode",
+    "GameEnd",
+    "GameExtraClip",
+    "GameFightChallenge",
+    "GameFightChallengeUpdateError",
+    "GameFightChallengeUpdateSuccess",
+    "GameFightOption",
+    "GameFrameObject2",
+    "GameFrameObjectExternal",
+    "GameFreeMySoul",
+    "GameGameOver",
+    "GameGetExtraInformations",
+    "GameGetMapData",
+    "GameJoin",
+    "GameLeave",
+    "GameMapData",
+    "GameMapLoaded",
+    "GameMovement",
+    "GameMovementRemove",
+    "GamePVP",
+    "GamePlayersCoordinates",
+    "GameRequestLeave",
+    "GameRequestReady",
+    "GameSetFlag",
+    "GameSetPlayerPosition",
+    "GameShowFightChallengeTarget",
+    "GameStartToPlay",
+    "GameTurnEnd",
+    "GameTurnFinish",
+    "GameTurnList",
+    "GameTurnMiddle",
+    "GameTurnOk",
+    "GameTurnReady",
+    "GameTurnStart",
+    "GameZoneData",
+    "GildBanError",
+    "GildBanSuccess",
+    "GildHireTaxCollectorError",
+    "GildHireTaxCollectorSuccess",
+    "GildTaxCollectorAttacked",
+    "GildTaxCollectorInfo",
+    "GildUserInterfaceOpen",
+    "GuildAcceptInvitation",
+    "GuildBan",
+    "GuildBoostCharacteristic",
+    "GuildBoostSpell",
+    "GuildChangeMemberProfile",
+    "GuildCreate",
+    "GuildCreateError",
+    "GuildCreateSuccess",
+    "GuildGetInfosBoosts",
+    "GuildGetInfosGeneral",
+    "GuildGetInfosGuildHouses",
+    "GuildGetInfosMembers",
+    "GuildGetInfosMountPark",
+    "GuildGetInfosTaxCollector",
+    "GuildHireTaxCollector",
+    "GuildInfosTaxCollectorsAttackers",
+    "GuildInfosTaxCollectorsMovement",
+    "GuildInfosTaxCollectorsPlayers",
+    "GuildInvite",
+    "GuildJoinDistantSuccess",
+    "GuildJoinTaxCollector",
+    "GuildLeaveTaxCollector",
+    "GuildLeaveTaxInterface",
+    "GuildNew",
+    "GuildRefuseInvitation",
+    "GuildRemoveTaxCollector",
+    "GuildRequestDistant",
+    "GuildRequestLeave",
+    "GuildStats",
+    "GuildTeleportToGuildFarm",
+    "GuildTeleportToGuildHouse",
+    "HousesBuy",
+    "HousesBuyError",
+    "HousesBuySuccess",
+    "HousesCreate",
+    "HousesKick",
+    "HousesListAdd",
+    "HousesListRemove",
+    "HousesLockedProperty",
+    "HousesProperties",
+    "HousesRequestLeave",
+    "HousesSell",
+    "HousesSellError",
+    "HousesSellSuccess",
+    "HousesShare",
+    "HousesState",
+    "HousesUnShare",
+    "InfosCompass",
+    "InfosGetMaps",
+    "InfosInfoCoordinatesPHighlight",
+    "InfosLifeRestoreTimerFinish",
+    "InfosLifeRestoreTimerStart",
+    "InfosMessage",
+    "InfosQuantity",
+    "InfosSendScreenInfo",
+    "ItemsAccessories",
+    "ItemsAddError",
+    "ItemsAddSuccess",
+    "ItemsChange",
+    "ItemsDestroy",
+    "ItemsDissociate",
+    "ItemsDrop",
+    "ItemsDropError",
+    "ItemsDropSuccess",
+    "ItemsFeed",
+    "ItemsItemFound",
+    "ItemsItemSetAdd",
+    "ItemsItemSetRemove",
+    "ItemsItemUseCondition",
+    "ItemsQuantity",
+    "ItemsRemove",
+    "ItemsRequestMovement",
+    "ItemsSetSkin",
+    "ItemsTool",
+    "ItemsUseConfirm",
+    "ItemsUseNoConfirm",
+    "ItemsWeight",
+    "JobChangeJobStats",
+    "JobLevel",
+    "JobRemove",
+    "JobSkills",
+    "JobXP",
+    "KeyCreate",
+    "KeyKeyError",
+    "KeyKeySuccess",
+    "KeyLeave",
+    "KeyRequestLeave",
+    "KeySendKey",
+    "MountCastrate",
+    "MountEquipError",
+    "MountEquipSuccess",
+    "MountFree",
+    "MountMountParkBuy",
+    "MountMountParkSell",
+    "MountParkMountData",
+    "MountRemoveObjectInPark",
+    "MountRename",
+    "MountRequestData",
+    "MountRequestLeave",
+    "MountRequestMountParkBuy",
+    "MountRide",
+    "MountSetXP",
+    "MountUnequip",
+    "PartyAcceptInvitation",
+    "PartyCreateError",
+    "PartyCreateSuccess",
+    "PartyFollowAll",
+    "PartyFollowError",
+    "PartyFollowSuccess",
+    "PartyInvite",
+    "PartyInviteError",
+    "PartyInviteSuccess",
+    "PartyLeader",
+    "PartyMovement",
+    "PartyRefuseInvitation",
+    "PartyRequestFollow",
+    "PartyRequestLeave",
+    "PartyWhere",
+    "QuestGetList",
+    "QuestGetStep",
+    "SpecializationChange",
+    "SpecializationSet",
+    "SpellsBoost",
+    "SpellsChangeOption",
+    "SpellsForget",
+    "SpellsList",
+    "SpellsMoveToUsed",
+    "SpellsSpellForgetClose",
+    "SpellsSpellForgetShow",
+    "SpellsUpgradeSpellError",
+    "SpellsUpgradeSpellSuccess",
+    "StoragesListAdd",
+    "StoragesListRemove",
+    "StoragesLockedProperty",
+    "SubareasAlignmentModification",
+    "SubareasList",
+    "SubwayCreate",
+    "SubwayPrismUse",
+    "SubwayRequestLeave",
+    "SubwayRequestPrismLeave",
+    "SubwayUse",
+    "TutorialCreate",
+    "TutorialEnd",
+    "TutorialGameBegin",
+    "TutorialShowTip",
+    "WaypointsCreate",
+    "WaypointsRequestLeave",
+    "WaypointsUse",
+    "account_add_character",
+    "cli_action_0",
+    "cli_action_1",
+    "cli_action_2",
+    "cli_action_900",
+    "cli_action_901",
+    "cli_action_902",
+    "cli_action_903",
+    "game_action_0",
+    "game_action_1",
+    "game_action_2",
+    "game_action_900",
+    "game_action_901",
+    "game_action_902",
+    "game_action_903",
+    "game_actions"
+  ]
+}

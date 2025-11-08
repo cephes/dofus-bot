@@ -1,0 +1,25 @@
+//! Generated parser for InfosCompass
+//! 
+//! This file was automatically generated from Go schema definitions.
+//! Manual modifications may be overwritten.
+
+use crate::retroproto_parsers::parser::common_decode;
+use serde::{Serialize, Deserialize};
+
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
+pub struct InfosCompass {
+
+}
+
+pub fn parse_InfosCompass(payload: &str) -> Result<InfosCompass, String> {
+    let fields = common_decode::split_fields(payload);
+    
+    // Parse fields with safe defaults
+
+    
+    // Create struct instance
+    let result = InfosCompass {, ..Default::default()};
+    
+    Ok(result)
+}
+

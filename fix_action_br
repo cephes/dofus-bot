@@ -1,0 +1,29 @@
+import os
+from pathlib import Path
+
+# Fix extra closing braces in action files
+actions_dir = Path("core/src/retroproto_parsers/generated/actions")
+
+fixed_files = 0
+
+for rs_file in actions_dir.rglob("*.rs"):
+    try:
+        with open(rs_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        original_content = content
+        
+        # Fix the extra closing brace at the end
+        if content.strip().endswith('}}'):
+            content = content.strip()[:-1]  # Remove one closing brace
+        
+        if content != original_content:
+            with open(rs_file, 'w', encoding='utf-8') as f:
+                f.write(content)
+            print(f"Fixed: {rs_file}")
+            fixed_files += 1
+            
+    except Exception as e:
+        print(f"Error processing {rs_file}: {e}")
+
+print(f"Fixed {fixed_files} action files")

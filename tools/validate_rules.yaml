@@ -1,0 +1,62 @@
+---
+global:
+  allow_empty_messages: []   # message_names allowed to have {} parsed payloads
+  fail_on:
+    parsed_null: true
+    parsed_empty_object: true
+    parse_error_present: true
+messages:
+  BasicsTime:
+    required: [Value]
+    types: { Value: int_or_str }    # allow either unix ts int or ISO string
+  FightsCount:
+    required: [value, Value]
+    any_of_required_sets:
+      - [value]    # some parsers output lowercase
+      - [Value]    # some parsers output PascalCase
+    types: { value: int, Value: int }
+  GameMapData:
+    required: [id, key, name]
+    any_of_required_sets:
+      - [id, key, name]
+      - [Id, Key, Name]
+    types: { id: int, key: str, name: str, Id: int, Key: str, Name: str }
+  GameMovement:
+    required: [sprites, Sprites]
+    any_of_required_sets:
+      - [sprites]
+      - [Sprites]
+    types: { sprites: list_or_str, Sprites: list_or_str }
+  GameMovementRemove:
+    required: [id, Id]
+    any_of_required_sets:
+      - [id]
+      - [Id]
+    types: { id: int, Id: int }
+  AksServerMessage:
+    required: [value, Value]
+    any_of_required_sets:
+      - [value]
+      - [Value]
+    types: { value: str, Value: str }
+  InfosMessage:
+    required: [chat_id, ChatId, messages, Messages]
+    any_of_required_sets:
+      - [chat_id, messages]
+      - [ChatId, Messages]
+    types: { chat_id: int, ChatId: int, messages: list_or_str, Messages: list_or_str }
+  ItemsQuantity:
+    required: [id, quantity, Id, Quantity]
+    any_of_required_sets:
+      - [id, quantity]
+      - [Id, Quantity]
+    types: { id: int, quantity: int, Id: int, Quantity: int }
+  ItemsWeight:
+    required: [current, max, Current, Max]
+    any_of_required_sets:
+      - [current, max]
+      - [Current, Max]
+    types: { current: int, max: int, Current: int, Max: int }
+  GameActions:
+    required: [action_code]
+    types: { action_code: int }

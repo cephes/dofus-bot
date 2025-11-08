@@ -1,0 +1,677 @@
+{
+  "when": "2025-11-06 19:33:55",
+  "cwd": "d:\\WorkDir\\dofus-bot",
+  "errors": [],
+  "repo_root": "d:\\WorkDir\\dofus-bot",
+  "versions": {
+    "rustc": {
+      "cmd": "rustc -V",
+      "code": 0,
+      "stdout": "rustc 1.91.0 (f8297e351 2025-10-28)",
+      "stderr": ""
+    },
+    "cargo": {
+      "cmd": "cargo -V",
+      "code": 0,
+      "stdout": "cargo 1.91.0 (ea2d97820 2025-10-10)",
+      "stderr": ""
+    },
+    "python": {
+      "cmd": "python --version",
+      "code": 0,
+      "stdout": "Python 3.14.0",
+      "stderr": ""
+    },
+    "go": {
+      "cmd": "go version",
+      "code": 1,
+      "stdout": "",
+      "stderr": "'go' is not recognized as an internal or external command,\noperable program or batch file."
+    },
+    "git": {
+      "cmd": "git --version",
+      "code": 0,
+      "stdout": "git version 2.51.2.windows.1",
+      "stderr": ""
+    }
+  },
+  "trees": {
+    ".": {
+      "exists": true,
+      "files": 5000,
+      "dirs": 670,
+      "total_bytes": 22731923,
+      "sample": [
+        ".venv\\.gitignore",
+        ".venv\\Lib\\site-packages\\__pycache__\\typing_extensions.cpython-314.pyc",
+        ".venv\\Lib\\site-packages\\annotated_doc-0.0.3.dist-info\\INSTALLER",
+        ".venv\\Lib\\site-packages\\annotated_doc-0.0.3.dist-info\\METADATA",
+        ".venv\\Lib\\site-packages\\annotated_doc-0.0.3.dist-info\\RECORD",
+        ".venv\\Lib\\site-packages\\annotated_doc-0.0.3.dist-info\\WHEEL",
+        ".venv\\Lib\\site-packages\\annotated_doc-0.0.3.dist-info\\licenses\\LICENSE",
+        ".venv\\Lib\\site-packages\\annotated_doc\\__init__.py",
+        ".venv\\Lib\\site-packages\\annotated_doc\\__pycache__\\__init__.cpython-314.pyc",
+        ".venv\\Lib\\site-packages\\annotated_doc\\__pycache__\\main.cpython-314.pyc",
+        ".venv\\Lib\\site-packages\\annotated_doc\\main.py",
+        ".venv\\Lib\\site-packages\\annotated_doc\\py.typed",
+        ".venv\\Lib\\site-packages\\annotated_types-0.7.0.dist-info\\INSTALLER",
+        ".venv\\Lib\\site-packages\\annotated_types-0.7.0.dist-info\\METADATA",
+        ".venv\\Lib\\site-packages\\annotated_types-0.7.0.dist-info\\RECORD",
+        ".venv\\Lib\\site-packages\\annotated_types-0.7.0.dist-info\\WHEEL",
+        ".venv\\Lib\\site-packages\\annotated_types-0.7.0.dist-info\\licenses\\LICENSE",
+        ".venv\\Lib\\site-packages\\annotated_types\\__init__.py",
+        ".venv\\Lib\\site-packages\\annotated_types\\__pycache__\\__init__.cpython-314.pyc",
+        ".venv\\Lib\\site-packages\\annotated_types\\__pycache__\\test_cases.cpython-314.pyc"
+      ]
+    },
+    "core": {
+      "exists": true,
+      "files": 2184,
+      "dirs": 277,
+      "total_bytes": 27757214,
+      "sample": [
+        "core\\Cargo.lock",
+        "core\\Cargo.toml",
+        "core\\README.md",
+        "core\\comprehensive_fix.py",
+        "core\\dummy.pcap",
+        "core\\fix_all",
+        "core\\fix_all_remaining",
+        "core\\fix_all_syntax.py",
+        "core\\fix_double_braces.py",
+        "core\\fix_double_braces_simple.py",
+        "core\\fix_double_delimiters.py",
+        "core\\fix_extra_parentheses.py",
+        "core\\fix_missing_braces.py",
+        "core\\fix_missing_parentheses_semicol",
+        "core\\fix_missing_parentheses_semicolons.py",
+        "core\\fix_missing_semicolons.py",
+        "core\\fix_ok_expressions.py",
+        "core\\fix_ok_expressions_precise.py",
+        "core\\fix_ok_expressions_v2.py",
+        "core\\fix_specific_double_braces.py"
+      ]
+    },
+    "core/src": {
+      "exists": true,
+      "files": 478,
+      "dirs": 7,
+      "total_bytes": 370201,
+      "sample": [
+        "core\\src\\bin\\parse_messages.rs",
+        "core\\src\\bin\\pcap2flow.rs",
+        "core\\src\\bin\\reassemble.rs",
+        "core\\src\\dofus_framing.rs",
+        "core\\src\\dofus_mapping.rs",
+        "core\\src\\dofus_mapping_ext.rs",
+        "core\\src\\dofus_mapping_types.rs",
+        "core\\src\\dofus_proto.rs",
+        "core\\src\\lib.rs",
+        "core\\src\\main.rs",
+        "core\\src\\parser\\mod.rs",
+        "core\\src\\parser\\prefix_scan.rs",
+        "core\\src\\parser\\reassembly.rs",
+        "core\\src\\parser\\splitter.rs",
+        "core\\src\\retroproto",
+        "core\\src\\retroproto_",
+        "core\\src\\retroproto_parsers\\generated\\Account",
+        "core\\src\\retroproto_parsers\\generated\\AccountAddCharacter.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountAskCharacter",
+        "core\\src\\retroproto_parsers\\generated\\AccountAskCharacterMigration"
+      ]
+    },
+    "core/src/bin": {
+      "exists": true,
+      "files": 3,
+      "dirs": 1,
+      "total_bytes": 24074,
+      "sample": [
+        "core\\src\\bin\\parse_messages.rs",
+        "core\\src\\bin\\pcap2flow.rs",
+        "core\\src\\bin\\reassemble.rs",
+        "core\\src\\bin\\parse_messages.rs",
+        "core\\src\\bin\\pcap2flow.rs",
+        "core\\src\\bin\\reassemble.rs"
+      ]
+    },
+    "core/src/retroproto_parsers": {
+      "exists": true,
+      "files": 462,
+      "dirs": 4,
+      "total_bytes": 300540,
+      "sample": [
+        "core\\src\\retroproto_parsers\\generated\\Account",
+        "core\\src\\retroproto_parsers\\generated\\AccountAddCharacter.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountAskCharacter",
+        "core\\src\\retroproto_parsers\\generated\\AccountAskCharacterMigration",
+        "core\\src\\retroproto_parsers\\generated\\AccountAskCharacterMigration.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountAttributeGiftToCharacter.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountBoost.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterAddError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterAddSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterDeleteError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterDeleteSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterMigrationError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterMigrationSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterNameGeneratedError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterNameGeneratedSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterSelectedError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterSelectedSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharactersListError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharactersListSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCommunity.rs"
+      ]
+    },
+    "core/src/retroproto_parsers/generated": {
+      "exists": true,
+      "files": 457,
+      "dirs": 2,
+      "total_bytes": 115727,
+      "sample": [
+        "core\\src\\retroproto_parsers\\generated\\Account",
+        "core\\src\\retroproto_parsers\\generated\\AccountAddCharacter.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountAskCharacter",
+        "core\\src\\retroproto_parsers\\generated\\AccountAskCharacterMigration",
+        "core\\src\\retroproto_parsers\\generated\\AccountAskCharacterMigration.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountAttributeGiftToCharacter.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountBoost.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterAddError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterAddSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterDeleteError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterDeleteSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterMigrationError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterMigrationSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterNameGeneratedError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterNameGeneratedSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterSelectedError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterSelectedSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharactersListError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharactersListSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCommunity.rs"
+      ]
+    },
+    "core/src/retroproto_parsers/handwritten": {
+      "exists": true,
+      "files": 3,
+      "dirs": 1,
+      "total_bytes": 8310,
+      "sample": [
+        "core\\src\\retroproto_parsers\\handwritten\\GameActions.rs",
+        "core\\src\\retroproto_parsers\\handwritten\\GameEffect.rs",
+        "core\\src\\retroproto_parsers\\handwritten\\mod.rs",
+        "core\\src\\retroproto_parsers\\handwritten\\GameActions.rs",
+        "core\\src\\retroproto_parsers\\handwritten\\GameEffect.rs",
+        "core\\src\\retroproto_parsers\\handwritten\\mod.rs"
+      ]
+    },
+    "core/target/release": {
+      "exists": true,
+      "files": 612,
+      "dirs": 121,
+      "total_bytes": 27673013,
+      "sample": [
+        "core\\target\\release\\.cargo-lock",
+        "core\\target\\release\\.fingerprint\\aho-corasick-44fd382148fbe705\\dep-lib-aho_corasick",
+        "core\\target\\release\\.fingerprint\\aho-corasick-44fd382148fbe705\\invoked.timestamp",
+        "core\\target\\release\\.fingerprint\\aho-corasick-44fd382148fbe705\\lib-aho_corasick",
+        "core\\target\\release\\.fingerprint\\aho-corasick-44fd382148fbe705\\lib-aho_corasick.json",
+        "core\\target\\release\\.fingerprint\\aho-corasick-c0bab61e37b16cbd\\dep-lib-aho_corasick",
+        "core\\target\\release\\.fingerprint\\aho-corasick-c0bab61e37b16cbd\\invoked.timestamp",
+        "core\\target\\release\\.fingerprint\\aho-corasick-c0bab61e37b16cbd\\lib-aho_corasick",
+        "core\\target\\release\\.fingerprint\\aho-corasick-c0bab61e37b16cbd\\lib-aho_corasick.json",
+        "core\\target\\release\\.fingerprint\\anstream-c6ded74c523b28b9\\dep-lib-anstream",
+        "core\\target\\release\\.fingerprint\\anstream-c6ded74c523b28b9\\invoked.timestamp",
+        "core\\target\\release\\.fingerprint\\anstream-c6ded74c523b28b9\\lib-anstream",
+        "core\\target\\release\\.fingerprint\\anstream-c6ded74c523b28b9\\lib-anstream.json",
+        "core\\target\\release\\.fingerprint\\anstyle-6357e80b4866bb61\\dep-lib-anstyle",
+        "core\\target\\release\\.fingerprint\\anstyle-6357e80b4866bb61\\invoked.timestamp",
+        "core\\target\\release\\.fingerprint\\anstyle-6357e80b4866bb61\\lib-anstyle",
+        "core\\target\\release\\.fingerprint\\anstyle-6357e80b4866bb61\\lib-anstyle.json",
+        "core\\target\\release\\.fingerprint\\anstyle-parse-537db6ff7148dfb9\\dep-lib-anstyle_parse",
+        "core\\target\\release\\.fingerprint\\anstyle-parse-537db6ff7148dfb9\\invoked.timestamp",
+        "core\\target\\release\\.fingerprint\\anstyle-parse-537db6ff7148dfb9\\lib-anstyle_parse"
+      ]
+    },
+    "tools": {
+      "exists": true,
+      "files": 13,
+      "dirs": 3,
+      "total_bytes": 151820,
+      "sample": [
+        "tools\\find_plaintext_flow.py",
+        "tools\\gen_parser_registry.py",
+        "tools\\generate_prefix_counts.py",
+        "tools\\infer_retroproto_mapping.py",
+        "tools\\list_structs.py",
+        "tools\\regen_and_parse.py",
+        "tools\\retroproto_porter\\main.go",
+        "tools\\retroproto_porter\\run_porter.sh",
+        "tools\\retroproto_porter_py\\porter.py",
+        "tools\\retroproto_porter_py\\porter.py.bak",
+        "tools\\retroproto_porter_py\\porter.py.pre_regex_fix.bak",
+        "tools\\retroproto_porter_py\\run_porter.ps1",
+        "tools\\silence_snake_warnings.py",
+        "tools\\find_plaintext_flow.py",
+        "tools\\gen_parser_registry.py",
+        "tools\\generate_prefix_counts.py",
+        "tools\\infer_retroproto_mapping.py",
+        "tools\\list_structs.py",
+        "tools\\regen_and_parse.py",
+        "tools\\retroproto_porter\\main.go"
+      ]
+    },
+    "tools/retroproto_porter_py": {
+      "exists": true,
+      "files": 4,
+      "dirs": 1,
+      "total_bytes": 92626,
+      "sample": [
+        "tools\\retroproto_porter_py\\porter.py",
+        "tools\\retroproto_porter_py\\porter.py.bak",
+        "tools\\retroproto_porter_py\\porter.py.pre_regex_fix.bak",
+        "tools\\retroproto_porter_py\\run_porter.ps1",
+        "tools\\retroproto_porter_py\\porter.py",
+        "tools\\retroproto_porter_py\\porter.py.bak",
+        "tools\\retroproto_porter_py\\porter.py.pre_regex_fix.bak",
+        "tools\\retroproto_porter_py\\run_porter.ps1"
+      ]
+    },
+    "tools/retroproto_porter": {
+      "exists": true,
+      "files": 2,
+      "dirs": 1,
+      "total_bytes": 21590,
+      "sample": [
+        "tools\\retroproto_porter\\main.go",
+        "tools\\retroproto_porter\\run_porter.sh",
+        "tools\\retroproto_porter\\main.go",
+        "tools\\retroproto_porter\\run_porter.sh"
+      ]
+    },
+    "scripts": {
+      "exists": true,
+      "files": 3,
+      "dirs": 1,
+      "total_bytes": 27048,
+      "sample": [
+        "scripts\\diagnose_repo.py",
+        "scripts\\run_dummy_parsing.ps1",
+        "scripts\\run_dummy_pipeline.py",
+        "scripts\\diagnose_repo.py",
+        "scripts\\run_dummy_parsing.ps1",
+        "scripts\\run_dummy_pipeline.py"
+      ]
+    },
+    "examples": {
+      "exists": true,
+      "files": 22,
+      "dirs": 4,
+      "total_bytes": 1838113,
+      "sample": [
+        "examples\\pcap\\decoded\\_plaintext_flow_probe.json",
+        "examples\\pcap\\decoded\\decoder_run_stderr.log",
+        "examples\\pcap\\decoded\\decoder_run_stdout.log",
+        "examples\\pcap\\decoded\\dummy_parsed.json",
+        "examples\\pcap\\decoded\\dummy_parsed.ndjson",
+        "examples\\pcap\\decoded\\dummy_parsed_new.json",
+        "examples\\pcap\\decoded\\dummy_parsed_new.ndjson",
+        "examples\\pcap\\decoded\\dummy_reassembled.json",
+        "examples\\pcap\\decoded\\flow_dummy_decoded.json",
+        "examples\\pcap\\decoded\\flow_dummy_parsed_summary.json",
+        "examples\\pcap\\decoded\\flow_ported_parsed.json",
+        "examples\\pcap\\decoded\\flow_reassembled.ndjson",
+        "examples\\pcap\\decoded\\flow_reassembled_decoded.json",
+        "examples\\pcap\\decoded\\flow_reassembled_named_summary.json",
+        "examples\\pcap\\decoded\\flow_reassembled_with_names.json",
+        "examples\\pcap\\decoded\\none_continuation_analysis.json",
+        "examples\\pcap\\decoded\\none_continuation_examples.json",
+        "examples\\pcap\\decoded\\reassemble_quick_summary.json",
+        "examples\\pcap\\decoded\\reassemble_run_stderr.log",
+        "examples\\pcap\\decoded\\reassemble_run_stdout.log"
+      ]
+    },
+    "examples/pcap": {
+      "exists": true,
+      "files": 22,
+      "dirs": 3,
+      "total_bytes": 1838113,
+      "sample": [
+        "examples\\pcap\\decoded\\_plaintext_flow_probe.json",
+        "examples\\pcap\\decoded\\decoder_run_stderr.log",
+        "examples\\pcap\\decoded\\decoder_run_stdout.log",
+        "examples\\pcap\\decoded\\dummy_parsed.json",
+        "examples\\pcap\\decoded\\dummy_parsed.ndjson",
+        "examples\\pcap\\decoded\\dummy_parsed_new.json",
+        "examples\\pcap\\decoded\\dummy_parsed_new.ndjson",
+        "examples\\pcap\\decoded\\dummy_reassembled.json",
+        "examples\\pcap\\decoded\\flow_dummy_decoded.json",
+        "examples\\pcap\\decoded\\flow_dummy_parsed_summary.json",
+        "examples\\pcap\\decoded\\flow_ported_parsed.json",
+        "examples\\pcap\\decoded\\flow_reassembled.ndjson",
+        "examples\\pcap\\decoded\\flow_reassembled_decoded.json",
+        "examples\\pcap\\decoded\\flow_reassembled_named_summary.json",
+        "examples\\pcap\\decoded\\flow_reassembled_with_names.json",
+        "examples\\pcap\\decoded\\none_continuation_analysis.json",
+        "examples\\pcap\\decoded\\none_continuation_examples.json",
+        "examples\\pcap\\decoded\\reassemble_quick_summary.json",
+        "examples\\pcap\\decoded\\reassemble_run_stderr.log",
+        "examples\\pcap\\decoded\\reassemble_run_stdout.log"
+      ]
+    },
+    "examples/pcap/flows": {
+      "exists": true,
+      "files": 1,
+      "dirs": 1,
+      "total_bytes": 57122,
+      "sample": [
+        "examples\\pcap\\flows\\flow_000_TCP_192.168.1.8_2485_52.214.173.25_443.bin",
+        "examples\\pcap\\flows\\flow_000_TCP_192.168.1.8_2485_52.214.173.25_443.bin"
+      ]
+    },
+    "examples/pcap/decoded": {
+      "exists": true,
+      "files": 21,
+      "dirs": 1,
+      "total_bytes": 1809552,
+      "sample": [
+        "examples\\pcap\\decoded\\_plaintext_flow_probe.json",
+        "examples\\pcap\\decoded\\decoder_run_stderr.log",
+        "examples\\pcap\\decoded\\decoder_run_stdout.log",
+        "examples\\pcap\\decoded\\dummy_parsed.json",
+        "examples\\pcap\\decoded\\dummy_parsed.ndjson",
+        "examples\\pcap\\decoded\\dummy_parsed_new.json",
+        "examples\\pcap\\decoded\\dummy_parsed_new.ndjson",
+        "examples\\pcap\\decoded\\dummy_reassembled.json",
+        "examples\\pcap\\decoded\\flow_dummy_decoded.json",
+        "examples\\pcap\\decoded\\flow_dummy_parsed_summary.json",
+        "examples\\pcap\\decoded\\flow_ported_parsed.json",
+        "examples\\pcap\\decoded\\flow_reassembled.ndjson",
+        "examples\\pcap\\decoded\\flow_reassembled_decoded.json",
+        "examples\\pcap\\decoded\\flow_reassembled_named_summary.json",
+        "examples\\pcap\\decoded\\flow_reassembled_with_names.json",
+        "examples\\pcap\\decoded\\none_continuation_analysis.json",
+        "examples\\pcap\\decoded\\none_continuation_examples.json",
+        "examples\\pcap\\decoded\\reassemble_quick_summary.json",
+        "examples\\pcap\\decoded\\reassemble_run_stderr.log",
+        "examples\\pcap\\decoded\\reassemble_run_stdout.log"
+      ]
+    },
+    "third_party": {
+      "exists": true,
+      "files": 553,
+      "dirs": 10,
+      "total_bytes": 67713,
+      "sample": [
+        "third_party\\retroproto\\.gitignore",
+        "third_party\\retroproto\\LICENSE",
+        "third_party\\retroproto\\MAPPING_REPORT.md",
+        "third_party\\retroproto\\README.md",
+        "third_party\\retroproto\\assets\\conn.puml",
+        "third_party\\retroproto\\assets\\template.msgcli.txt",
+        "third_party\\retroproto\\assets\\template.msgsvr.txt",
+        "third_party\\retroproto\\cmd\\delgen\\main.go",
+        "third_party\\retroproto\\cmd\\genmsgs\\main.go",
+        "third_party\\retroproto\\crypto.go",
+        "third_party\\retroproto\\enum\\accountcharacteradderrorreason.go",
+        "third_party\\retroproto\\enum\\accountcharacternamegeneratederrorreason.go",
+        "third_party\\retroproto\\enum\\accountloginerrorreason.go",
+        "third_party\\retroproto\\enum\\accountselectservererrorreason.go",
+        "third_party\\retroproto\\enum\\basicssubscriberrestrictionadddialogid.go",
+        "third_party\\retroproto\\enum\\chatmessageerrorreason.go",
+        "third_party\\retroproto\\enum\\exchangerequesterrorreason.go",
+        "third_party\\retroproto\\enum\\gameactionchallengejoinerrorreason.go",
+        "third_party\\retroproto\\enum\\gameactiontype.go",
+        "third_party\\retroproto\\enum\\gamecreatetype.go"
+      ]
+    },
+    "third_party/retroproto": {
+      "exists": true,
+      "files": 553,
+      "dirs": 9,
+      "total_bytes": 67713,
+      "sample": [
+        "third_party\\retroproto\\.gitignore",
+        "third_party\\retroproto\\LICENSE",
+        "third_party\\retroproto\\MAPPING_REPORT.md",
+        "third_party\\retroproto\\README.md",
+        "third_party\\retroproto\\assets\\conn.puml",
+        "third_party\\retroproto\\assets\\template.msgcli.txt",
+        "third_party\\retroproto\\assets\\template.msgsvr.txt",
+        "third_party\\retroproto\\cmd\\delgen\\main.go",
+        "third_party\\retroproto\\cmd\\genmsgs\\main.go",
+        "third_party\\retroproto\\crypto.go",
+        "third_party\\retroproto\\enum\\accountcharacteradderrorreason.go",
+        "third_party\\retroproto\\enum\\accountcharacternamegeneratederrorreason.go",
+        "third_party\\retroproto\\enum\\accountloginerrorreason.go",
+        "third_party\\retroproto\\enum\\accountselectservererrorreason.go",
+        "third_party\\retroproto\\enum\\basicssubscriberrestrictionadddialogid.go",
+        "third_party\\retroproto\\enum\\chatmessageerrorreason.go",
+        "third_party\\retroproto\\enum\\exchangerequesterrorreason.go",
+        "third_party\\retroproto\\enum\\gameactionchallengejoinerrorreason.go",
+        "third_party\\retroproto\\enum\\gameactiontype.go",
+        "third_party\\retroproto\\enum\\gamecreatetype.go"
+      ]
+    },
+    "third_party/retroproto/msgsvr": {
+      "exists": true,
+      "files": 309,
+      "dirs": 1,
+      "total_bytes": 38719,
+      "sample": [
+        "third_party\\retroproto\\msgsvr\\accountcharacteradderror.go",
+        "third_party\\retroproto\\msgsvr\\accountcharacteraddsuccess.go",
+        "third_party\\retroproto\\msgsvr\\accountcharacterdeleteerror.go",
+        "third_party\\retroproto\\msgsvr\\accountcharacterdeletesuccess.go",
+        "third_party\\retroproto\\msgsvr\\accountcharactermigrationaskconfirm.go",
+        "third_party\\retroproto\\msgsvr\\accountcharactermigrationerror.go",
+        "third_party\\retroproto\\msgsvr\\accountcharactermigrationsuccess.go",
+        "third_party\\retroproto\\msgsvr\\accountcharacternamegeneratederror.go",
+        "third_party\\retroproto\\msgsvr\\accountcharacternamegeneratedsuccess.go",
+        "third_party\\retroproto\\msgsvr\\accountcharacterselectederror.go",
+        "third_party\\retroproto\\msgsvr\\accountcharacterselectedsuccess.go",
+        "third_party\\retroproto\\msgsvr\\accountcharacterslisterror.go",
+        "third_party\\retroproto\\msgsvr\\accountcharacterslistsuccess.go",
+        "third_party\\retroproto\\msgsvr\\accountcommunity.go",
+        "third_party\\retroproto\\msgsvr\\accountfriendserverlist.go",
+        "third_party\\retroproto\\msgsvr\\accountgiftslist.go",
+        "third_party\\retroproto\\msgsvr\\accountgiftstorederror.go",
+        "third_party\\retroproto\\msgsvr\\accountgiftstoredsuccess.go",
+        "third_party\\retroproto\\msgsvr\\accounthosts.go",
+        "third_party\\retroproto\\msgsvr\\accountkey.go"
+      ]
+    },
+    "third_party/retroproto/msgcli": {
+      "exists": true,
+      "files": 195,
+      "dirs": 1,
+      "total_bytes": 35330,
+      "sample": [
+        "third_party\\retroproto\\msgcli\\accountaddcharacter.go",
+        "third_party\\retroproto\\msgcli\\accountaskcharactermigration.go",
+        "third_party\\retroproto\\msgcli\\accountattributegifttocharacter.go",
+        "third_party\\retroproto\\msgcli\\accountboost.go",
+        "third_party\\retroproto\\msgcli\\accountconfiguredport.go",
+        "third_party\\retroproto\\msgcli\\accountcredential.go",
+        "third_party\\retroproto\\msgcli\\accountdeletecharacter.go",
+        "third_party\\retroproto\\msgcli\\accountdeletecharactermigration.go",
+        "third_party\\retroproto\\msgcli\\accountgetcharacters.go",
+        "third_party\\retroproto\\msgcli\\accountgetcharactersforced.go",
+        "third_party\\retroproto\\msgcli\\accountgetgifts.go",
+        "third_party\\retroproto\\msgcli\\accountgetrandomcharactername.go",
+        "third_party\\retroproto\\msgcli\\accountgetserverslist.go",
+        "third_party\\retroproto\\msgcli\\accountqueueposition.go",
+        "third_party\\retroproto\\msgcli\\accountrequestregionalversion.go",
+        "third_party\\retroproto\\msgcli\\accountrequestrescue.go",
+        "third_party\\retroproto\\msgcli\\accountresetcharacter.go",
+        "third_party\\retroproto\\msgcli\\accountsearchforfriend.go",
+        "third_party\\retroproto\\msgcli\\accountsendidentity.go",
+        "third_party\\retroproto\\msgcli\\accountsendticket.go"
+      ]
+    }
+  },
+  "key_files": {
+    "core/Cargo.toml": true,
+    "core/src/retroproto_parsers/mod.rs": true,
+    "tools/gen_parser_registry.py": true,
+    "tools/retroproto_porter_py/porter.py": true,
+    "tools/retroproto_porter/main.go": true,
+    "third_party/retroproto/mapping_overrides.json": true,
+    "third_party/retroproto/mappings_go.txt": true,
+    "examples/pcap/dummy.pcap": false,
+    "examples/pcap/decoded/dummy_reassembled.json": true
+  },
+  "generated_parsers": {
+    "count_rs": 437,
+    "sample_first_10": [
+      "core\\src\\retroproto_parsers\\generated\\AccountAddCharacter.rs",
+      "core\\src\\retroproto_parsers\\generated\\AccountAskCharacterMigration.rs",
+      "core\\src\\retroproto_parsers\\generated\\AccountAttributeGiftToCharacter.rs",
+      "core\\src\\retroproto_parsers\\generated\\AccountBoost.rs",
+      "core\\src\\retroproto_parsers\\generated\\AccountCharacterAddError.rs",
+      "core\\src\\retroproto_parsers\\generated\\AccountCharacterAddSuccess.rs",
+      "core\\src\\retroproto_parsers\\generated\\AccountCharacterDeleteError.rs",
+      "core\\src\\retroproto_parsers\\generated\\AccountCharacterDeleteSuccess.rs",
+      "core\\src\\retroproto_parsers\\generated\\AccountCharacterMigrationError.rs",
+      "core\\src\\retroproto_parsers\\generated\\AccountCharacterMigrationSuccess.rs"
+    ],
+    "sample_last_10": [
+      "core\\src\\retroproto_parsers\\generated\\SubwayRequestPrismLeave.rs",
+      "core\\src\\retroproto_parsers\\generated\\SubwayUse.rs",
+      "core\\src\\retroproto_parsers\\generated\\TutorialCreate.rs",
+      "core\\src\\retroproto_parsers\\generated\\TutorialEnd.rs",
+      "core\\src\\retroproto_parsers\\generated\\TutorialGameBegin.rs",
+      "core\\src\\retroproto_parsers\\generated\\TutorialShowTip.rs",
+      "core\\src\\retroproto_parsers\\generated\\WaypointsCreate.rs",
+      "core\\src\\retroproto_parsers\\generated\\WaypointsRequestLeave.rs",
+      "core\\src\\retroproto_parsers\\generated\\WaypointsUse.rs",
+      "core\\src\\retroproto_parsers\\generated\\mod.rs"
+    ]
+  },
+  "counts": {
+    "pub_structs": {
+      "files_scanned": 437,
+      "matches": 436,
+      "sample_files": [
+        "core\\src\\retroproto_parsers\\generated\\AccountAddCharacter.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountAskCharacterMigration.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountAttributeGiftToCharacter.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountBoost.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterAddError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterAddSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterDeleteError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterDeleteSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterMigrationError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterMigrationSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterNameGeneratedError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterNameGeneratedSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterSelectedError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterSelectedSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharactersListError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharactersListSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCommunity.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountConfiguredPort.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCredential.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountDeleteCharacter.rs"
+      ]
+    },
+    "parse_functions": {
+      "files_scanned": 440,
+      "matches": 438,
+      "sample_files": [
+        "core\\src\\retroproto_parsers\\generated\\AccountAddCharacter.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountAskCharacterMigration.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountAttributeGiftToCharacter.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountBoost.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterAddError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterAddSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterDeleteError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterDeleteSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterMigrationError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterMigrationSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterNameGeneratedError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterNameGeneratedSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterSelectedError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharacterSelectedSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharactersListError.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCharactersListSuccess.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCommunity.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountConfiguredPort.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountCredential.rs",
+        "core\\src\\retroproto_parsers\\generated\\AccountDeleteCharacter.rs"
+      ]
+    }
+  },
+  "registry_probe": {
+    "files_scanned": 471,
+    "matches": 0,
+    "sample_files": []
+  },
+  "cargo_metadata": {
+    "cmd": "cargo metadata --no-deps -q",
+    "code": 0,
+    "stdout": "{\"packages\":[{\"name\":\"dofus-core\",\"version\":\"0.1.0\",\"id\":\"path+file:///D:/WorkDir/dofus-bot/core#dofus-core@0.1.0\",\"license\":null,\"license_file\":null,\"description\":null,\"source\":null,\"dependencies\":[{\"name\":\"anyhow\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"byteorder\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.4\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"clap\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^4.0\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[\"derive\"],\"target\":null,\"registry\":null},{\"name\":\"hex\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^0.4\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"once_cell\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.19\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"pcap\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.1\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"regex\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.10\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"serde\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[\"derive\"],\"target\":null,\"registry\":null},{\"name\":\"serde_json\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null}],\"targets\":[{\"kind\":[\"lib\"],\"crate_types\":[\"lib\"],\"name\":\"dofus_core\",\"src_path\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\src\\\\lib.rs\",\"edition\":\"2021\",\"doc\":true,\"doctest\":true,\"test\":true},{\"kind\":[\"bin\"],\"crate_types\":[\"bin\"],\"name\":\"dofus-core\",\"src_path\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\src\\\\main.rs\",\"edition\":\"2021\",\"doc\":true,\"doctest\":false,\"test\":true},{\"kind\":[\"bin\"],\"crate_types\":[\"bin\"],\"name\":\"parse_messages\",\"src_path\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\src\\\\bin\\\\parse_messages.rs\",\"edition\":\"2021\",\"doc\":true,\"doctest\":false,\"test\":true},{\"kind\":[\"bin\"],\"crate_types\":[\"bin\"],\"name\":\"pcap2flow\",\"src_path\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\src\\\\bin\\\\pcap2flow.rs\",\"edition\":\"2021\",\"doc\":true,\"doctest\":false,\"test\":true},{\"kind\":[\"bin\"],\"crate_types\":[\"bin\"],\"name\":\"reassemble\",\"src_path\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\src\\\\bin\\\\reassemble.rs\",\"edition\":\"2021\",\"doc\":true,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"framing_tests\",\"src_path\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\tests\\\\framing_tests.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"mapping_module_tests\",\"src_path\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\tests\\\\mapping_module_tests.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"mapping_tests\",\"src_path\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\tests\\\\mapping_tests.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"reassembly_tests\",\"src_path\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\tests\\\\reassembly_tests.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"splitter_tests\",\"src_path\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\tests\\\\splitter_tests.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true}],\"features\":{},\"manifest_path\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\Cargo.toml\",\"metadata\":null,\"publish\":null,\"authors\":[],\"categories\":[],\"keywords\":[],\"readme\":\"README.md\",\"repository\":null,\"homepage\":null,\"documentation\":null,\"edition\":\"2021\",\"links\":null,\"default_run\":null,\"rust_version\":null}],\"workspace_members\":[\"path+file:///D:/WorkDir/dofus-bot/core#dofus-core@0.1.0\"],\"workspace_default_members\":[\"path+file:///D:/WorkDir/dofus-bot/core#dofus-core@0.1.0\"],\"resolve\":null,\"target_directory\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\target\",\"build_directory\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\\\\target\",\"version\":1,\"workspace_root\":\"d:\\\\WorkDir\\\\dofus-bot\\\\core\",\"metadata\":null}",
+    "stderr": ""
+  },
+  "binaries": {
+    "reassemble": {
+      "exists": true,
+      "help": {
+        "cmd": "\"d:\\WorkDir\\dofus-bot\\core\\target\\release\\reassemble.exe\" --help",
+        "code": 0,
+        "stdout": "Dofus Retro stream reassembly (whitelist-based)\n\nUsage: reassemble.exe --input <INPUT> --output <OUTPUT>\n\nOptions:\n      --input <INPUT>    \n      --output <OUTPUT>  \n  -h, --help             Print help\n  -V, --version          Print version",
+        "stderr": ""
+      }
+    },
+    "parse_messages": {
+      "exists": true,
+      "help": {
+        "cmd": "\"d:\\WorkDir\\dofus-bot\\core\\target\\release\\parse_messages.exe\" --help",
+        "code": 101,
+        "stdout": "",
+        "stderr": "thread 'main' (51172) panicked at src\\bin\\parse_messages.rs:62:43:\nread reassembled json: Os { code: 2, kind: NotFound, message: \"The system cannot find the file specified.\" }\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace"
+      }
+    },
+    "pcap2flow": {
+      "exists": true,
+      "help": {
+        "cmd": "\"d:\\WorkDir\\dofus-bot\\core\\target\\release\\pcap2flow.exe\" --help",
+        "code": 3221225781,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  },
+  "parsed_ndjson_peek": [
+    {
+      "path": "examples\\pcap\\decoded\\dummy_parsed.ndjson",
+      "first_lines": [
+        "{\"frame_index\":0,\"prefix\":\"GM\",\"message_name\":\"GameMovement\",\"parsed\":null,\"parse_error\":\"unknown message: Parser for dofus_core::retroproto_parsers::generated::GameMovement not implemented\",\"extra_preview\":\"GM|~303;5;0;160042728;Blacklist-[\"}",
+        "{\"frame_index\":1,\"prefix\":\"M\",\"message_name\":\"AksServerMessage\",\"parsed\":null,\"parse_error\":\"unknown message: Parser for dofus_core::retroproto_parsers::generated::AksServerMessage not implemented\",\"extra_preview\":\"M10];10,85;101^100;1;1,0,1,160042927;ffffff;75293d;cc9b52;2d13,2ce3,2dc1,,;1;;;Irae;8,9lhpx,2w,5rw20;0;60,75293d,cc9b52,\"}",
+        "{\"frame_index\":2,\"prefix\":\"GA\",\"message_name\":\"GameActions\",\"parsed\":null,\"parse_error\":\"unknown message: Parser for dofus_core::retroproto_parsers::generated::GameActions not implemented\",\"extra_preview\":\"GA0;1;121339587;aeVfeGgdjfcRgcofaw\"}",
+        "{\"frame_index\":3,\"prefix\":\"GA\",\"message_name\":\"GameActions\",\"parsed\":null,\"parse_error\":\"unknown message: Parser for dofus_core::retroproto_parsers::generated::GameActions not implemented\",\"extra_preview\":\"GA0;1;121347699;aeVeeUdfkcgedgUchl\"}",
+        "{\"frame_index\":4,\"prefix\":\"GM|-\",\"message_name\":\"GameMovementRemove\",\"parsed\":null,\"parse_error\":\"unknown message: Parser for dofus_core::retroproto_parsers::generated::GameMovementRemove not implemented\",\"extra_preview\":\"GM|-121339587\"}"
+      ]
+    },
+    {
+      "path": "examples\\pcap\\decoded\\dummy_parsed_new.ndjson",
+      "first_lines": [
+        "{\"frame_index\":0,\"prefix\":\"GM\",\"message_name\":\"GameMovement\",\"parsed\":{\"sprites\":\"~303;5;0;160042728;Blacklist-[\"},\"parse_error\":null,\"extra_preview\":\"~303;5;0;160042728;Blacklist-[\"}",
+        "{\"frame_index\":1,\"prefix\":\"M\",\"message_name\":\"AksServerMessage\",\"parsed\":{\"value\":\"10];10,85;101^100;1;1,0,1,160042927;ffffff;75293d;cc9b52;2d13,2ce3,2dc1,,;1;;;Irae;8,9lhpx,2w,5rw20;0;60,75293d,cc9b52,cc9b52;;0;\"},\"parse_error\":null,\"extra_preview\":\"10];10,85;101^100;1;1,0,1,160042927;ffffff;75293d;cc9b52;2d13,2ce3,2dc1,,;1;;;Irae;8,9lhpx,2w,5rw20;0;60,75293d,cc9b52,c\"}",
+        "{\"frame_index\":2,\"prefix\":\"GA\",\"message_name\":\"GameActions\",\"parsed\":{\"action_code\":0,\"rest\":\"1;121339587;aeVfeGgdjfcRgcofaw\"},\"parse_error\":null,\"extra_preview\":\"0;1;121339587;aeVfeGgdjfcRgcofaw\"}",
+        "{\"frame_index\":3,\"prefix\":\"GA\",\"message_name\":\"GameActions\",\"parsed\":{\"action_code\":0,\"rest\":\"1;121347699;aeVeeUdfkcgedgUchl\"},\"parse_error\":null,\"extra_preview\":\"0;1;121347699;aeVeeUdfkcgedgUchl\"}",
+        "{\"frame_index\":4,\"prefix\":\"GM|-\",\"message_name\":\"GameMovementRemove\",\"parsed\":{\"id\":121339587},\"parse_error\":null,\"extra_preview\":\"121339587\"}"
+      ]
+    }
+  ],
+  "reassembled_info": {
+    "path": "examples\\pcap\\decoded\\dummy_reassembled.json",
+    "len": 249,
+    "first_entry_keys": [
+      "frame_index",
+      "length",
+      "message_prefix",
+      "message_name",
+      "payload_hex"
+    ]
+  }
+}

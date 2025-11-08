@@ -1,0 +1,1335 @@
+{
+  "entries": [
+    {
+      "prefix": "ping",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 65,
+      "pattern": null,
+      "example_payload": "ping",
+      "notes": ""
+    },
+    {
+      "prefix": "qping",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 66,
+      "pattern": null,
+      "example_payload": "qping",
+      "notes": ""
+    },
+    {
+      "prefix": "rpong",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 67,
+      "pattern": null,
+      "example_payload": "rpong",
+      "notes": ""
+    },
+    {
+      "prefix": "BA",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 69,
+      "pattern": null,
+      "example_payload": "BA",
+      "notes": ""
+    },
+    {
+      "prefix": "BaM",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 70,
+      "pattern": null,
+      "example_payload": "BaM",
+      "notes": ""
+    },
+    {
+      "prefix": "BaK",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 71,
+      "pattern": null,
+      "example_payload": "BaK",
+      "notes": ""
+    },
+    {
+      "prefix": "BW",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 72,
+      "pattern": null,
+      "example_payload": "BW",
+      "notes": ""
+    },
+    {
+      "prefix": "BQ",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 73,
+      "pattern": null,
+      "example_payload": "BQ",
+      "notes": ""
+    },
+    {
+      "prefix": "BYA",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 74,
+      "pattern": null,
+      "example_payload": "BYA",
+      "notes": ""
+    },
+    {
+      "prefix": "BYI",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 75,
+      "pattern": null,
+      "example_payload": "BYI",
+      "notes": ""
+    },
+    {
+      "prefix": "BD",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 76,
+      "pattern": null,
+      "example_payload": "BD",
+      "notes": ""
+    },
+    {
+      "prefix": "BC",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 77,
+      "pattern": null,
+      "example_payload": "BC",
+      "notes": ""
+    },
+    {
+      "prefix": "BK",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 78,
+      "pattern": null,
+      "example_payload": "BK",
+      "notes": ""
+    },
+    {
+      "prefix": "Bp",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 79,
+      "pattern": null,
+      "example_payload": "Bp",
+      "notes": ""
+    },
+    {
+      "prefix": "version",
+      "category": "client",
+      "detection_type": "regex",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 46,
+      "pattern": "^\\d+\\.\\d+\\.\\d+(\\.\\d+)?s?e?$",
+      "example_payload": "1.29.1",
+      "notes": "regex-based detection for version messages"
+    },
+    {
+      "prefix": "credential",
+      "category": "client",
+      "detection_type": "regex",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 53,
+      "pattern": "^[\\w\\d-@]{1,20}\\n#\\d[\\w\\d-_]+$",
+      "example_payload": "user\n#123abc",
+      "notes": "regex-based detection for credential messages"
+    },
+    {
+      "prefix": "AL",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 84,
+      "pattern": null,
+      "example_payload": "AL",
+      "notes": ""
+    },
+    {
+      "prefix": "ALf",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 85,
+      "pattern": null,
+      "example_payload": "ALf",
+      "notes": ""
+    },
+    {
+      "prefix": "Ax",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 86,
+      "pattern": null,
+      "example_payload": "Ax",
+      "notes": ""
+    },
+    {
+      "prefix": "AX",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 87,
+      "pattern": null,
+      "example_payload": "AX",
+      "notes": ""
+    },
+    {
+      "prefix": "AF",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 88,
+      "pattern": null,
+      "example_payload": "AF",
+      "notes": ""
+    },
+    {
+      "prefix": "AS",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 89,
+      "pattern": null,
+      "example_payload": "AS",
+      "notes": ""
+    },
+    {
+      "prefix": "AA",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 90,
+      "pattern": null,
+      "example_payload": "AAXxRamboPLxX|1|0|3635424|855309|16053493",
+      "notes": ""
+    },
+    {
+      "prefix": "AD",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 91,
+      "pattern": null,
+      "example_payload": "AD",
+      "notes": ""
+    },
+    {
+      "prefix": "AR",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 92,
+      "pattern": null,
+      "example_payload": "AR",
+      "notes": ""
+    },
+    {
+      "prefix": "AB",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 93,
+      "pattern": null,
+      "example_payload": "AB",
+      "notes": ""
+    },
+    {
+      "prefix": "AT",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 94,
+      "pattern": null,
+      "example_payload": "AT",
+      "notes": ""
+    },
+    {
+      "prefix": "Ar",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 95,
+      "pattern": null,
+      "example_payload": "Ar",
+      "notes": ""
+    },
+    {
+      "prefix": "Ag",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 96,
+      "pattern": null,
+      "example_payload": "Ag",
+      "notes": ""
+    },
+    {
+      "prefix": "AG",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 97,
+      "pattern": null,
+      "example_payload": "AG",
+      "notes": ""
+    },
+    {
+      "prefix": "Af",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 98,
+      "pattern": null,
+      "example_payload": "Af",
+      "notes": ""
+    },
+    {
+      "prefix": "AP",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 99,
+      "pattern": null,
+      "example_payload": "AP",
+      "notes": ""
+    },
+    {
+      "prefix": "Ak",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 100,
+      "pattern": null,
+      "example_payload": "Ak",
+      "notes": ""
+    },
+    {
+      "prefix": "AV",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 101,
+      "pattern": null,
+      "example_payload": "AV",
+      "notes": ""
+    },
+    {
+      "prefix": "Ai",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 102,
+      "pattern": null,
+      "example_payload": "Ai",
+      "notes": ""
+    },
+    {
+      "prefix": "AM",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 103,
+      "pattern": null,
+      "example_payload": "AM",
+      "notes": ""
+    },
+    {
+      "prefix": "AM-",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 104,
+      "pattern": null,
+      "example_payload": "AM-",
+      "notes": ""
+    },
+    {
+      "prefix": "AM?",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 105,
+      "pattern": null,
+      "example_payload": "AM?",
+      "notes": ""
+    },
+    {
+      "prefix": "Ap",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 106,
+      "pattern": null,
+      "example_payload": "Ap",
+      "notes": ""
+    },
+    {
+      "prefix": "GC",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 108,
+      "pattern": null,
+      "example_payload": "GC",
+      "notes": ""
+    },
+    {
+      "prefix": "GQ",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 109,
+      "pattern": null,
+      "example_payload": "GQ",
+      "notes": ""
+    },
+    {
+      "prefix": "Gp",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 110,
+      "pattern": null,
+      "example_payload": "Gp",
+      "notes": ""
+    },
+    {
+      "prefix": "GR",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 111,
+      "pattern": null,
+      "example_payload": "GR",
+      "notes": ""
+    },
+    {
+      "prefix": "GD",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 112,
+      "pattern": null,
+      "example_payload": "GD",
+      "notes": ""
+    },
+    {
+      "prefix": "GI",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 113,
+      "pattern": null,
+      "example_payload": "GI",
+      "notes": ""
+    },
+    {
+      "prefix": "Gt",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 114,
+      "pattern": null,
+      "example_payload": "Gt",
+      "notes": ""
+    },
+    {
+      "prefix": "GT",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 115,
+      "pattern": null,
+      "example_payload": "GT",
+      "notes": ""
+    },
+    {
+      "prefix": "GP*",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 116,
+      "pattern": null,
+      "example_payload": "GP*",
+      "notes": ""
+    },
+    {
+      "prefix": "GP",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 117,
+      "pattern": null,
+      "example_payload": "GP",
+      "notes": ""
+    },
+    {
+      "prefix": "GF",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 118,
+      "pattern": null,
+      "example_payload": "GF",
+      "notes": ""
+    },
+    {
+      "prefix": "Gf",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 119,
+      "pattern": null,
+      "example_payload": "Gf",
+      "notes": ""
+    },
+    {
+      "prefix": "Gdi",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 120,
+      "pattern": null,
+      "example_payload": "Gdi",
+      "notes": ""
+    },
+    {
+      "prefix": "GA",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 122,
+      "pattern": null,
+      "example_payload": "GA",
+      "notes": ""
+    },
+    {
+      "prefix": "GKK",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 123,
+      "pattern": null,
+      "example_payload": "GKK",
+      "notes": ""
+    },
+    {
+      "prefix": "GKE",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 124,
+      "pattern": null,
+      "example_payload": "GKE",
+      "notes": ""
+    },
+    {
+      "prefix": "BM",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 126,
+      "pattern": null,
+      "example_payload": "BM",
+      "notes": ""
+    },
+    {
+      "prefix": "BR",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 127,
+      "pattern": null,
+      "example_payload": "BR",
+      "notes": ""
+    },
+    {
+      "prefix": "cC+",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 128,
+      "pattern": null,
+      "example_payload": "cC+",
+      "notes": ""
+    },
+    {
+      "prefix": "cC-",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 129,
+      "pattern": null,
+      "example_payload": "cC-",
+      "notes": ""
+    },
+    {
+      "prefix": "BS",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 130,
+      "pattern": null,
+      "example_payload": "BS",
+      "notes": ""
+    },
+    {
+      "prefix": "DB",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 132,
+      "pattern": null,
+      "example_payload": "DB",
+      "notes": ""
+    },
+    {
+      "prefix": "DC",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 133,
+      "pattern": null,
+      "example_payload": "DC",
+      "notes": ""
+    },
+    {
+      "prefix": "DV",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 134,
+      "pattern": null,
+      "example_payload": "DV",
+      "notes": ""
+    },
+    {
+      "prefix": "DR",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 135,
+      "pattern": null,
+      "example_payload": "DR",
+      "notes": ""
+    },
+    {
+      "prefix": "IM",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 137,
+      "pattern": null,
+      "example_payload": "IM",
+      "notes": ""
+    },
+    {
+      "prefix": "Ir",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 138,
+      "pattern": null,
+      "example_payload": "Ir",
+      "notes": ""
+    },
+    {
+      "prefix": "SM",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 140,
+      "pattern": null,
+      "example_payload": "SM",
+      "notes": ""
+    },
+    {
+      "prefix": "SB",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 141,
+      "pattern": null,
+      "example_payload": "SB",
+      "notes": ""
+    },
+    {
+      "prefix": "SF",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 142,
+      "pattern": null,
+      "example_payload": "SF",
+      "notes": ""
+    },
+    {
+      "prefix": "OM",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 144,
+      "pattern": null,
+      "example_payload": "OM",
+      "notes": ""
+    },
+    {
+      "prefix": "OD",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 145,
+      "pattern": null,
+      "example_payload": "OD",
+      "notes": ""
+    },
+    {
+      "prefix": "Od",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 146,
+      "pattern": null,
+      "example_payload": "Od",
+      "notes": ""
+    },
+    {
+      "prefix": "Ou",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 147,
+      "pattern": null,
+      "example_payload": "Ou",
+      "notes": ""
+    },
+    {
+      "prefix": "OU",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 148,
+      "pattern": null,
+      "example_payload": "OU",
+      "notes": ""
+    },
+    {
+      "prefix": "Ox",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 149,
+      "pattern": null,
+      "example_payload": "Ox",
+      "notes": ""
+    },
+    {
+      "prefix": "Os",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 150,
+      "pattern": null,
+      "example_payload": "Os",
+      "notes": ""
+    },
+    {
+      "prefix": "Of",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 151,
+      "pattern": null,
+      "example_payload": "Of",
+      "notes": ""
+    },
+    {
+      "prefix": "FL",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 153,
+      "pattern": null,
+      "example_payload": "FL",
+      "notes": ""
+    },
+    {
+      "prefix": "FA",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 154,
+      "pattern": null,
+      "example_payload": "FA",
+      "notes": ""
+    },
+    {
+      "prefix": "FD",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 155,
+      "pattern": null,
+      "example_payload": "FD",
+      "notes": ""
+    },
+    {
+      "prefix": "FJ",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 156,
+      "pattern": null,
+      "example_payload": "FJ",
+      "notes": ""
+    },
+    {
+      "prefix": "FJF",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 157,
+      "pattern": null,
+      "example_payload": "FJF",
+      "notes": ""
+    },
+    {
+      "prefix": "FJC",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 158,
+      "pattern": null,
+      "example_payload": "FJC",
+      "notes": ""
+    },
+    {
+      "prefix": "FO",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 159,
+      "pattern": null,
+      "example_payload": "FO",
+      "notes": ""
+    },
+    {
+      "prefix": "iL",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 161,
+      "pattern": null,
+      "example_payload": "iL",
+      "notes": ""
+    },
+    {
+      "prefix": "iA",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 162,
+      "pattern": null,
+      "example_payload": "iA",
+      "notes": ""
+    },
+    {
+      "prefix": "iD",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 163,
+      "pattern": null,
+      "example_payload": "iD",
+      "notes": ""
+    },
+    {
+      "prefix": "KV",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 165,
+      "pattern": null,
+      "example_payload": "KV",
+      "notes": ""
+    },
+    {
+      "prefix": "KK",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 166,
+      "pattern": null,
+      "example_payload": "KK",
+      "notes": ""
+    },
+    {
+      "prefix": "JO",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 168,
+      "pattern": null,
+      "example_payload": "JO",
+      "notes": ""
+    },
+    {
+      "prefix": "EV",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 170,
+      "pattern": null,
+      "example_payload": "EV",
+      "notes": ""
+    },
+    {
+      "prefix": "ER",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 171,
+      "pattern": null,
+      "example_payload": "ER",
+      "notes": ""
+    },
+    {
+      "prefix": "Es",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 172,
+      "pattern": null,
+      "example_payload": "Es",
+      "notes": ""
+    },
+    {
+      "prefix": "EA",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 173,
+      "pattern": null,
+      "example_payload": "EA",
+      "notes": ""
+    },
+    {
+      "prefix": "EK",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 174,
+      "pattern": null,
+      "example_payload": "EK",
+      "notes": ""
+    },
+    {
+      "prefix": "EMO",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 175,
+      "pattern": null,
+      "example_payload": "EMO",
+      "notes": ""
+    },
+    {
+      "prefix": "EP",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 176,
+      "pattern": null,
+      "example_payload": "EP",
+      "notes": ""
+    },
+    {
+      "prefix": "EMG",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 177,
+      "pattern": null,
+      "example_payload": "EMG",
+      "notes": ""
+    },
+    {
+      "prefix": "ES",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 178,
+      "pattern": null,
+      "example_payload": "ES",
+      "notes": ""
+    },
+    {
+      "prefix": "EB",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 179,
+      "pattern": null,
+      "example_payload": "EB",
+      "notes": ""
+    },
+    {
+      "prefix": "EQ",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 180,
+      "pattern": null,
+      "example_payload": "EQ",
+      "notes": ""
+    },
+    {
+      "prefix": "Eq",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 181,
+      "pattern": null,
+      "example_payload": "Eq",
+      "notes": ""
+    },
+    {
+      "prefix": "EHT",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 182,
+      "pattern": null,
+      "example_payload": "EHT",
+      "notes": ""
+    },
+    {
+      "prefix": "EHl",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 183,
+      "pattern": null,
+      "example_payload": "EHl",
+      "notes": ""
+    },
+    {
+      "prefix": "EHB",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 184,
+      "pattern": null,
+      "example_payload": "EHB",
+      "notes": ""
+    },
+    {
+      "prefix": "EHS",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 185,
+      "pattern": null,
+      "example_payload": "EHS",
+      "notes": ""
+    },
+    {
+      "prefix": "EW",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 186,
+      "pattern": null,
+      "example_payload": "EW",
+      "notes": ""
+    },
+    {
+      "prefix": "EJF",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 187,
+      "pattern": null,
+      "example_payload": "EJF",
+      "notes": ""
+    },
+    {
+      "prefix": "Erp",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 188,
+      "pattern": null,
+      "example_payload": "Erp",
+      "notes": ""
+    },
+    {
+      "prefix": "Erg",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 189,
+      "pattern": null,
+      "example_payload": "Erg",
+      "notes": ""
+    },
+    {
+      "prefix": "Erc",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 190,
+      "pattern": null,
+      "example_payload": "Erc",
+      "notes": ""
+    },
+    {
+      "prefix": "ErC",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 191,
+      "pattern": null,
+      "example_payload": "ErC",
+      "notes": ""
+    },
+    {
+      "prefix": "Efp",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 192,
+      "pattern": null,
+      "example_payload": "Efp",
+      "notes": ""
+    },
+    {
+      "prefix": "Efg",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 193,
+      "pattern": null,
+      "example_payload": "Efg",
+      "notes": ""
+    },
+    {
+      "prefix": "Eff",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 194,
+      "pattern": null,
+      "example_payload": "Eff",
+      "notes": ""
+    },
+    {
+      "prefix": "Erf",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 195,
+      "pattern": null,
+      "example_payload": "Erf",
+      "notes": ""
+    },
+    {
+      "prefix": "EHP",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 196,
+      "pattern": null,
+      "example_payload": "EHP",
+      "notes": ""
+    },
+    {
+      "prefix": "EL",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 197,
+      "pattern": null,
+      "example_payload": "EL",
+      "notes": ""
+    },
+    {
+      "prefix": "EMR",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 198,
+      "pattern": null,
+      "example_payload": "EMR",
+      "notes": ""
+    },
+    {
+      "prefix": "EMr",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 199,
+      "pattern": null,
+      "example_payload": "EMr",
+      "notes": ""
+    },
+    {
+      "prefix": "hQ",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 201,
+      "pattern": null,
+      "example_payload": "hQ",
+      "notes": ""
+    },
+    {
+      "prefix": "hV",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 202,
+      "pattern": null,
+      "example_payload": "hV",
+      "notes": ""
+    },
+    {
+      "prefix": "hS",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 203,
+      "pattern": null,
+      "example_payload": "hS",
+      "notes": ""
+    },
+    {
+      "prefix": "hB",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 204,
+      "pattern": null,
+      "example_payload": "hB",
+      "notes": ""
+    },
+    {
+      "prefix": "hG",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 205,
+      "pattern": null,
+      "example_payload": "hG",
+      "notes": ""
+    },
+    {
+      "prefix": "hG+",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 206,
+      "pattern": null,
+      "example_payload": "hG+",
+      "notes": ""
+    },
+    {
+      "prefix": "hG-",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 207,
+      "pattern": null,
+      "example_payload": "hG-",
+      "notes": ""
+    },
+    {
+      "prefix": "eU",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 209,
+      "pattern": null,
+      "example_payload": "eU",
+      "notes": ""
+    },
+    {
+      "prefix": "eD",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 210,
+      "pattern": null,
+      "example_payload": "eD",
+      "notes": ""
+    },
+    {
+      "prefix": "dV",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 212,
+      "pattern": null,
+      "example_payload": "dV",
+      "notes": ""
+    },
+    {
+      "prefix": "gC",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 214,
+      "pattern": null,
+      "example_payload": "gC",
+      "notes": ""
+    },
+    {
+      "prefix": "gV",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 215,
+      "pattern": null,
+      "example_payload": "gV",
+      "notes": ""
+    },
+    {
+      "prefix": "gITV",
+      "category": "client",
+      "detection_type": "literal",
+      "source_file": "dofus-retro-bot/third_party/retroproto/msgcli.go",
+      "source_line": 216,
+      "pattern": null,
+      "example_payload": "gITV",
+      "notes": ""
+    }
+  ]
+}
+     

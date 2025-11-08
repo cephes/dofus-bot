@@ -1,0 +1,12 @@
+Parser Registry Preview
+Generated: 2025-11-06 19:02:33 UTC
+
+Total Registered Parsers: 0
+
+Sample Registry Entries:
+
+Registry Analysis:
+[]
+
+Generated Parser Files: 437
+Handwritten Parser Files: 3

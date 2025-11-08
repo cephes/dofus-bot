@@ -1,0 +1,22 @@
+@startuml Sequence Diagram - UI Automation Fallback
+participant "UI Trigger" as Trigger
+participant "Orchestrator" as Orchestrator
+participant "UI Automation Worker (OpenCV)" as Worker
+participant "Input Simulator" as Simulator
+participant "Client UI" as UI
+participant "Orchestrator" as Feedback
+
+Trigger -> Orchestrator: UI Event Detected
+Orchestrator -> Worker: Request Automation
+Worker -> Worker: Capture Screen (OpenCV)
+Worker -> Worker: Analyze UI Elements
+Worker -> Simulator: Generate Input Events
+Simulator -> UI: Simulate Mouse/Keyboard
+UI -> UI: Process Input
+UI -> Worker: Visual Feedback (if applicable)
+Worker -> Orchestrator: Automation Result
+Orchestrator -> Feedback: Update State/Decision
+
+note right: Feedback loop allows iterative adjustments based on UI response.
+
+@enduml

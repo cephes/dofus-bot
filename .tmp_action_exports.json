@@ -1,0 +1,25 @@
+{
+  "exports": [
+    "parse_GameAction_1",
+    "parse_GameAction_2",
+    "parse_GameAction_900",
+    "parse_GameAction_901",
+    "parse_GameAction_902",
+    "parse_GameAction_903"
+  ],
+  "alias_map": {
+    "parse_GameAction_903": "parse_GameAction_903",
+    "parse_gameaction_903": "parse_GameAction_903",
+    "parse_GameAction_1": "parse_GameAction_1",
+    "parse_gameaction_1": "parse_GameAction_1",
+    "parse_GameAction_900": "parse_GameAction_900",
+    "parse_gameaction_900": "parse_GameAction_900",
+    "parse_GameAction_2": "parse_GameAction_2",
+    "parse_gameaction_2": "parse_GameAction_2",
+    "parse_GameAction_902": "parse_GameAction_902",
+    "parse_gameaction_902": "parse_GameAction_902",
+    "parse_GameAction_901": "parse_GameAction_901",
+    "parse_gameaction_901": "parse_GameAction_901"
+  },
+  "module_path": "crate::retroproto_parsers::generated::actions"
+}

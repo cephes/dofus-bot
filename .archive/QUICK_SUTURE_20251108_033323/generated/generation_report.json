@@ -1,0 +1,62 @@
+{
+  "discovered_structs": 6,
+  "generated_files": 6,
+  "structs": {
+    "GameActionsActionMovement": {
+      "fields": {
+        "id": "i64",
+        "sprite_id": "i64"
+      },
+      "action_code": 1,
+      "go_struct_name": "GameActionsActionMovement"
+    },
+    "GameActionsActionLoadGameMap": {
+      "fields": {
+        "sprite_id": "i64",
+        "cinematic": "i64"
+      },
+      "action_code": 2,
+      "go_struct_name": "GameActionsActionLoadGameMap"
+    },
+    "GameActionsActionChallenge": {
+      "fields": {
+        "challenger_id": "i64",
+        "challenged_id": "i64"
+      },
+      "action_code": 900,
+      "go_struct_name": "GameActionsActionChallenge"
+    },
+    "GameActionsActionChallengeAccept": {
+      "fields": {
+        "challenger_id": "i64",
+        "challenged_id": "i64"
+      },
+      "action_code": 901,
+      "go_struct_name": "GameActionsActionChallengeAccept"
+    },
+    "GameActionsActionChallengeRefuse": {
+      "fields": {
+        "challenger_id": "i64",
+        "challenged_id": "i64"
+      },
+      "action_code": 902,
+      "go_struct_name": "GameActionsActionChallengeRefuse"
+    },
+    "GameActionsActionChallengeJoin": {
+      "fields": {
+        "challenger_id": "i64",
+        "error_reason": "char"
+      },
+      "action_code": 903,
+      "go_struct_name": "GameActionsActionChallengeJoin"
+    }
+  },
+  "generated_files_list": [
+    "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_1.rs",
+    "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_2.rs",
+    "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_900.rs",
+    "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_901.rs",
+    "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_902.rs",
+    "core\\src\\retroproto_parsers\\generated\\actions\\GameAction_903.rs"
+  ]
+}

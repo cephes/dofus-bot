@@ -1,0 +1,61 @@
+# Binaries
+/bin/
+bin/
+
+# Cargo
+/target/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Output files that can be regenerated
+examples/pcap/decoded/dummy_go.ndjson
+examples/pcap/decoded/dummy_go.json
+go_rust_diff.json
+GO_RUST_DIFF.md
+TOP_MISMATCHES_TABLE.md
+
+# Registry files that can be regenerated
+tools/go_baseline/registry.go
+
+# Test files
+*.test
+*.test.*

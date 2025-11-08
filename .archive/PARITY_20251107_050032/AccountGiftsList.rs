@@ -1,0 +1,24 @@
+//! Generated parser for AccountGiftsList
+//! 
+//! This file was automatically generated from Go schema definitions.
+//! Manual modifications may be overwritten.
+
+use crate::retroproto_parsers::parser::common_decode;
+
+#[derive(Debug, Clone, Default, serde::Serialize, serde:: Deserialize)]
+pub struct AccountGiftsList {
+
+}
+
+pub fn parse_AccountGiftsList(payload: &str) -> Result<AccountGiftsList, String> {
+    let _fields = common_decode::split_fields(payload);
+    
+    // Parse fields with safe defaults
+
+    
+    // Create struct instance
+    let result = AccountGiftsList {
+    };
+    
+    Ok(result)
+}

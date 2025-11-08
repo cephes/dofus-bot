@@ -1,0 +1,10 @@
+{"prefix": "AKS", "payload": "Server maintenance in 5 minutes"}
+{"prefix": "BT", "payload": "2023|11|25"}
+{"prefix": "gT", "payload": "1609459200000"}
+{"prefix": "GDM", "payload": "|12345|TestMap|abc123key"}
+{"prefix": "GM", "payload": "+320;0;0;1;1^100*;1;1,2,3;accessories"}
+{"prefix": "GM|-", "payload": "42"}
+{"prefix": "ILRTS", "payload": "5000"}
+{"prefix": "IM", "payload": "1Hello|World|Test"}
+{"prefix": "IQ", "payload": "192837|100"}
+{"prefix": "IW", "payload": "75|100"}

@@ -1,0 +1,97 @@
+#!/usr/bin/env python3
+"""
+Final comprehensive fix for all remaining compilation errors.
+This addresses variable name mismatches and type issues.
+"""
+
+import os
+import re
+import glob
+from pathlib import Path
+
+def fix_field_to_variable_mappings(content, filename):
+    """Fix field names that should map to different variable names"""
+    
+    # Common field-to-variable mappings based on the error patterns
+    mappings = {
+        # Field name -> Variable name
+        'action_rtype': 'action_type',
+        'item_rtype': 'item_type', 
+        'type_player_exchange': 'player_exchange_type',
+        'r#crate': 'crate',
+        'challenge_refr#use': 'challenge_refr_use',
+        'refring_target': 'referencing_target',
+        'pvirgin': 'p_virgin',
+    }
+    
+    # Apply mappings
+    for field_name, var_name in mappings.items():
+        # Handle struct field assignments
+        content = re.sub(rf'\b{field_name}\b', var_name, content)
+    
+    return content
+
+def fix_type_definitions(content, filename):
+    """Fix type definitions that are incorrect"""
+    
+    # Fix the rune type - should be a numeric type
+    if 'rune' in content:
+        # Replace rune with u8 for channel types
+        content = re.sub(r'\brune\b', 'u8', content)
+    
+    return content
+
+def fix_generic_parameters(content, filename):
+    """Fix generic parameter issues"""
+    
+    # Remove generic parameters that are not needed
+    content = re.sub(r'<(\w+)>', '', content)
+    
+    return content
+
+def main():
+    """Fix all remaining compilation issues"""
+    base_dir = Path("src/retroproto_parsers/generated")
+    
+    # Count files processed
+    processed = 0
+    errors = []
+    
+    # Find all .rs files
+    rs_files = list(base_dir.rglob("*.rs"))
+    
+    print(f"Processing {len(rs_files)} Rust files for final fixes...")
+    
+    for file_path in rs_files:
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                original_content = f.read()
+            
+            # Apply all fixes
+            fixed_content = fix_field_to_variable_mappings(original_content, file_path.name)
+            fixed_content = fix_type_definitions(fixed_content, file_path.name)
+            fixed_content = fix_generic_parameters(fixed_content, file_path.name)
+            
+            # Check if changes were made
+            if fixed_content != original_content:
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    f.write(fixed_content)
+                processed += 1
+                print(f"Fixed: {file_path.relative_to(base_dir)}")
+        
+        except Exception as e:
+            errors.append(f"Error processing {file_path}: {e}")
+    
+    print(f"\nFinal fixes completed!")
+    print(f"Files fixed: {processed}")
+    print(f"Total files: {len(rs_files)}")
+    
+    if errors:
+        print(f"\nErrors encountered:")
+        for error in errors:
+            print(f"  {error}")
+    
+    return processed
+
+if __name__ == "__main__":
+    main()

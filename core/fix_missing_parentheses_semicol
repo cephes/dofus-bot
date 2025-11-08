@@ -1,0 +1,90 @@
+#!/usr/bin/env python3
+"""
+Fix missing closing parentheses and semicolons for all Ok() expressions.
+"""
+
+import os
+import re
+from pathlib import Path
+
+def fix_missing_parentheses_semicolons_comprehensive(file_path):
+    """Fix missing closing parentheses and semicolons comprehensively."""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        original_content = content
+        
+        # Pattern 1: Ok(... that ends with just } without ) and ;
+        content = re.sub(
+            r'Ok\(([^)]*)\s*\}\s*$',
+            r'Ok(\1);',
+            content,
+            flags=re.MULTILINE
+        )
+        
+        # Pattern 2: Ok(...} at end of line without ) and ;
+        content = re.sub(
+            r'Ok\(([^)]*)\}\s*$',
+            r'Ok(\1);',
+            content,
+            flags=re.MULTILINE
+        )
+        
+        # Pattern 3: Ok(...unwrap_or_default() } -> Ok(...unwrap_or_default());
+        content = re.sub(
+            r'unwrap_or_default\(\)\s*\}\s*$',
+            r'unwrap_or_default());',
+            content,
+            flags=re.MULTILINE
+        )
+        
+        # Pattern 4: Ok( with content ending in } without ) and ;
+        lines = content.split('\n')
+        for i, line in enumerate(lines):
+            if 'Ok(' in line and line.strip().endswith('}') and not line.strip().endswith('});'):
+                # Remove trailing } and add ); 
+                line = line.rstrip('}')
+                line = line + '});'
+                lines[i] = line
+        
+        content = '\n'.join(lines)
+        
+        # If content changed, write it back
+        if content != original_content:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+            return True
+        return False
+        
+    except Exception as e:
+        print(f"Error processing {file_path}: {e}")
+        return False
+
+def main():
+    """Fix missing parentheses and semicolons comprehensively."""
+    generated_dir = Path('src/retroproto_parsers/generated')
+    
+    if not generated_dir.exists():
+        print(f"Generated directory {generated_dir} does not exist")
+        return
+    
+    # Get all .rs files in generated directory
+    rs_files = list(generated_dir.glob('*.rs'))
+    
+    if not rs_files:
+        print("No .rs files found in generated directory")
+        return
+    
+    print(f"Found {len(rs_files)} .rs files to process")
+    
+    fixed_files = 0
+    for file_path in rs_files:
+        if fix_missing_parentheses_semicolons_comprehensive(file_path):
+            print(f"Fixed missing parentheses/semicolons in: {file_path}")
+            fixed_files += 1
+    
+    print(f"\nComprehensive fixes applied to {fixed_files} files")
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,560 @@
+	AksHelloConnect         MsgSvrId = "HC"
+	AksHelloGame            MsgSvrId = "HG"
+	AksPong                 MsgSvrId = "p"
+	AksQuickPong            MsgSvrId = "q"
+	AksRPing                MsgSvrId = "rping"
+	AksServerMessage        MsgSvrId = "M"
+	AksServerWillDisconnect MsgSvrId = "k"
+
+	BasicsNothing                     MsgSvrId = "BN"
+	BasicsAuthorizedCommandError      MsgSvrId = "BAE"
+	BasicsAuthorizedCommandSuccess    MsgSvrId = "BAT"
+	BasicsAuthorizedLine              MsgSvrId = "BAL"
+	BasicsAuthorizedCommandPrompt     MsgSvrId = "BAP"
+	BasicsAuthorizedCommandClear      MsgSvrId = "BAC"
+	BasicsAuthorizedInterfaceOpen     MsgSvrId = "BAIO"
+	BasicsAuthorizedInterfaceClose    MsgSvrId = "BAIC"
+	BasicsTime                        MsgSvrId = "BT"
+	BasicsDate                        MsgSvrId = "BD"
+	BasicsWhoIsError                  MsgSvrId = "BWE"
+	BasicsWhoIsSuccess                MsgSvrId = "BWK"
+	BasicsSubscriberRestrictionAdd    MsgSvrId = "BP+"
+	BasicsSubscriberRestrictionRemove MsgSvrId = "BP-"
+	BasicsFileCheck                   MsgSvrId = "BC"
+	BasicsAveragePing                 MsgSvrId = "Bp"
+
+	AccountCommunity                     MsgSvrId = "Ac"
+	AccountPseudo                        MsgSvrId = "Ad"
+	AccountLoginSuccess                  MsgSvrId = "AlK"
+	AccountLoginError                    MsgSvrId = "AlE"
+	AccountCharactersListError           MsgSvrId = "ALE"
+	AccountCharactersListSuccess         MsgSvrId = "ALK"
+	AccountServersListError              MsgSvrId = "AxE"
+	AccountServersListSuccess            MsgSvrId = "AxK"
+	AccountCharacterAddError             MsgSvrId = "AAE"
+	AccountCharacterAddSuccess           MsgSvrId = "AAK"
+	AccountTicketResponseError           MsgSvrId = "ATE"
+	AccountTicketResponseSuccess         MsgSvrId = "ATK"
+	AccountSelectServerError             MsgSvrId = "AXE"
+	AccountSelectServerSuccess           MsgSvrId = "AXK"
+	AccountSelectServerPlainSuccess      MsgSvrId = "AYK"
+	AccountCharacterSelectedError        MsgSvrId = "ASE"
+	AccountCharacterSelectedSuccess      MsgSvrId = "ASK"
+	AccountStats                         MsgSvrId = "As"
+	AccountNewLevel                      MsgSvrId = "AN"
+	AccountRestrictions                  MsgSvrId = "AR"
+	AccountHosts                         MsgSvrId = "AH"
+	AccountRescue                        MsgSvrId = "Ar"
+	AccountGiftsList                     MsgSvrId = "Ag"
+	AccountGiftStoredError               MsgSvrId = "AGE"
+	AccountGiftStoredSuccess             MsgSvrId = "AGK"
+	AccountQueue                         MsgSvrId = "Aq"
+	AccountNewQueue                      MsgSvrId = "Af"
+	AccountRegionalVersion               MsgSvrId = "AV"
+	AccountCharacterNameGeneratedError   MsgSvrId = "APE"
+	AccountCharacterNameGeneratedSuccess MsgSvrId = "APK"
+	AccountKey                           MsgSvrId = "AK"
+	AccountSecretQuestion                MsgSvrId = "AQ"
+	AccountCharacterDeleteError          MsgSvrId = "ADE"
+	AccountCharacterDeleteSuccess        MsgSvrId = "ADK"
+	AccountCharacterMigrationAskConfirm  MsgSvrId = "AM?"
+	AccountCharacterMigrationError       MsgSvrId = "AME"
+	AccountCharacterMigrationSuccess     MsgSvrId = "AMK"
+	AccountFriendServerList              MsgSvrId = "AF"
+	AccountMiniClipInfo                  MsgSvrId = "Am"
+
+	GameCreateError                 MsgSvrId = "GCE"
+	GameCreateSuccess               MsgSvrId = "GCK"
+	GameJoin                        MsgSvrId = "GJ"
+	GamePositionStart               MsgSvrId = "GP"
+	GameReady                       MsgSvrId = "GR"
+	GameStartToPlay                 MsgSvrId = "GS"
+	GameEnd                         MsgSvrId = "GE"
+	GameMovementRemove              MsgSvrId = "GM|-"
+	GameMovement                    MsgSvrId = "GM"
+	GameChallenge                   MsgSvrId = "Gc"
+	GameTeam                        MsgSvrId = "Gt"
+	GameLeave                       MsgSvrId = "GV"
+	GameFlag                        MsgSvrId = "Gf"
+	GamePlayersCoordinates          MsgSvrId = "GIC"
+	GameEffect                      MsgSvrId = "GIE"
+	GameClearAllEffect              MsgSvrId = "GIe"
+	GamePVP                         MsgSvrId = "GIP"
+	GameMapData                     MsgSvrId = "GDM"
+	GameMapLoaded                   MsgSvrId = "GDK"
+	GameCellData                    MsgSvrId = "GDC"
+	GameZoneData                    MsgSvrId = "GDZ"
+	GameCellObject                  MsgSvrId = "GDO"
+	GameFrameObject2                MsgSvrId = "GDF"
+	GameFrameObjectExternal         MsgSvrId = "GDE"
+	GameFightChallenge              MsgSvrId = "Gd"
+	GameFightChallengeUpdateError   MsgSvrId = "GdO"
+	GameFightChallengeUpdateSuccess MsgSvrId = "GdK"
+	GameTurnStart                   MsgSvrId = "GTS"
+	GameTurnFinish                  MsgSvrId = "GTF"
+	GameTurnList                    MsgSvrId = "GTL"
+	GameTurnMiddle                  MsgSvrId = "GTM"
+	GameTurnReady                   MsgSvrId = "GTR"
+	GameExtraClip                   MsgSvrId = "GX"
+	GameFightOption                 MsgSvrId = "Go"
+	GameGameOver                    MsgSvrId = "GO"
+
+	GameActions       MsgSvrId = "GA"
+	GameActionsStart  MsgSvrId = "GAS"
+	GameActionsFinish MsgSvrId = "GAF"
+
+	ChatMessageError           MsgSvrId = "cME"
+	ChatMessageSuccess         MsgSvrId = "cMK"
+	ChatServerMessage          MsgSvrId = "cs"
+	ChatSmiley                 MsgSvrId = "cS"
+	ChatSubscribeChannelAdd    MsgSvrId = "cC+"
+	ChatSubscribeChannelRemove MsgSvrId = "cC-"
+
+	DialogCustomAction  MsgSvrId = "DA"
+	DialogCreateError   MsgSvrId = "DCE"
+	DialogCreateSuccess MsgSvrId = "DCK"
+	DialogQuestion      MsgSvrId = "DQ"
+	DialogLeave         MsgSvrId = "DV"
+	DialogPause         MsgSvrId = "DP"
+
+	InfosInfoMaps                  MsgSvrId = "IM"
+	InfosCompass                   MsgSvrId = "IC"
+	InfosInfoCoordinatesPHighlight MsgSvrId = "IH"
+	InfosMessage                   MsgSvrId = "Im"
+	InfosQuantity                  MsgSvrId = "IQ"
+	InfosLifeRestoreTimerStart     MsgSvrId = "ILS"
+	InfosLifeRestoreTimerFinish    MsgSvrId = "ILF"
+
+	SpellsList                MsgSvrId = "SL"
+	SpellsChangeOption        MsgSvrId = "SLo"
+	SpellsUpgradeSpellError   MsgSvrId = "SUE"
+	SpellsUpgradeSpellSuccess MsgSvrId = "SUK"
+	SpellsSpellBoost          MsgSvrId = "SB"
+	SpellsSpellForgetShow     MsgSvrId = "SF+"
+	SpellsSpellForgetClose    MsgSvrId = "SF-"
+
+	ItemsAccessories      MsgSvrId = "Oa"
+	ItemsDropError        MsgSvrId = "ODE"
+	ItemsDropSuccess      MsgSvrId = "ODK"
+	ItemsAddError         MsgSvrId = "OAE"
+	ItemsAddSuccess       MsgSvrId = "OAK"
+	ItemsChange           MsgSvrId = "OC"
+	ItemsRemove           MsgSvrId = "OR"
+	ItemsQuantity         MsgSvrId = "OQ"
+	ItemsMovement         MsgSvrId = "OM"
+	ItemsTool             MsgSvrId = "OT"
+	ItemsWeight           MsgSvrId = "Ow"
+	ItemsItemSetAdd       MsgSvrId = "OS+"
+	ItemsItemSetRemove    MsgSvrId = "OS-"
+	ItemsItemUseCondition MsgSvrId = "OK"
+	ItemsItemFound        MsgSvrId = "OF"
+
+	FriendsAddFriendError      MsgSvrId = "FAE"
+	FriendsAddFriendSuccess    MsgSvrId = "FAK"
+	FriendsRemoveFriendError   MsgSvrId = "FDE"
+	FriendsRemoveFriendSuccess MsgSvrId = "FDK"
+	FriendsFriendsList         MsgSvrId = "FL"
+	FriendsSpouse              MsgSvrId = "FS"
+	FriendsNotifyChange        MsgSvrId = "FO"
+
+	EnemiesAddEnemyError      MsgSvrId = "iAE"
+	EnemiesAddEnemySuccess    MsgSvrId = "iAK"
+	EnemiesRemoveEnemyError   MsgSvrId = "iDE"
+	EnemiesRemoveEnemySuccess MsgSvrId = "iDK"
+	EnemiesEnemiesList        MsgSvrId = "iL"
+
+	KeyCreate     MsgSvrId = "KC"
+	KeyKeyError   MsgSvrId = "KKE"
+	KeyKeySuccess MsgSvrId = "KKK"
+	KeyLeave      MsgSvrId = "KL"
+
+	JobSkills  MsgSvrId = "JS"
+	JobXP      MsgSvrId = "JX"
+	JobLevel   MsgSvrId = "JN"
+	JobRemove  MsgSvrId = "JR"
+	JobOptions MsgSvrId = "JO"
+
+	ExchangeRequestError                      MsgSvrId = "ERE"
+	ExchangeRequestSuccess                    MsgSvrId = "ERK"
+	ExchangeReady                             MsgSvrId = "EK"
+	ExchangeLeaveError                        MsgSvrId = "EVE"
+	ExchangeLeaveSuccess                      MsgSvrId = "EVK"
+	ExchangeCreateError                       MsgSvrId = "ECE"
+	ExchangeCreateSuccess                     MsgSvrId = "ECK"
+	ExchangeCraftError                        MsgSvrId = "EcE"
+	ExchangeCraftSuccess                      MsgSvrId = "EcK"
+	ExchangeLocalMovementError                MsgSvrId = "EME"
+	ExchangeLocalMovementSuccess              MsgSvrId = "EMK"
+	ExchangeLocalDistantError                 MsgSvrId = "EmE"
+	ExchangeLocalDistantSuccess               MsgSvrId = "EmK"
+	ExchangeCoopMovementError                 MsgSvrId = "ErE"
+	ExchangeCoopMovementSuccess               MsgSvrId = "ErK"
+	ExchangePayMovementError                  MsgSvrId = "EpE"
+	ExchangePayMovementSuccess                MsgSvrId = "EpK"
+	ExchangeStorageMovementError              MsgSvrId = "EsE"
+	ExchangeStorageMovementSuccess            MsgSvrId = "EsK"
+	ExchangePlayerShopMovementError           MsgSvrId = "EiE"
+	ExchangePlayerShopMovementSuccess         MsgSvrId = "EiK"
+	ExchangeCraftPublicMode                   MsgSvrId = "EW"
+	ExchangeMountStorageAdd                   MsgSvrId = "Ee"
+	ExchangeMountStorageRemove                MsgSvrId = "Ee-"
+	ExchangeMountPark                         MsgSvrId = "Ef"
+	ExchangeMountPods                         MsgSvrId = "Ew"
+	ExchangeList                              MsgSvrId = "EL"
+	ExchangeSellError                         MsgSvrId = "ESE"
+	ExchangeSellSuccess                       MsgSvrId = "ESK"
+	ExchangeBuyError                          MsgSvrId = "EBE"
+	ExchangeBuySuccess                        MsgSvrId = "EBK"
+	ExchangeAskOfflineExchange                MsgSvrId = "Eq"
+	ExchangeSearchError                       MsgSvrId = "EHSE"
+	ExchangeSearchSuccess                     MsgSvrId = "EHSK"
+	ExchangeBigStoreTypeItemsList             MsgSvrId = "EHL"
+	ExchangeBigStoreTypeItemsMovementAdd      MsgSvrId = "EHM+"
+	ExchangeBigStoreTypeItemsMovementRemove   MsgSvrId = "EHM-"
+	ExchangeBigStoreItemsList                 MsgSvrId = "EHl"
+	ExchangeBigStoreItemsMovementAdd          MsgSvrId = "EHm+"
+	ExchangeBigStoreItemsMovementRemove       MsgSvrId = "EHm-"
+	ExchangeBigStoreItemMiddlePriceInBigStore MsgSvrId = "EHP"
+	ExchangeCrafterReferenceAdd               MsgSvrId = "EHj+"
+	ExchangeCrafterReferenceRemove            MsgSvrId = "EHj-"
+	ExchangeCraftLoop                         MsgSvrId = "EA"
+	ExchangeCraftLoopEnd                      MsgSvrId = "Ea"
+
+	HousesListAdd        MsgSvrId = "hL+"
+	HousesListRemove     MsgSvrId = "hL-"
+	HousesProperties     MsgSvrId = "hP"
+	HousesLockedProperty MsgSvrId = "hX"
+	HousesCreate         MsgSvrId = "hC"
+	HousesSellError      MsgSvrId = "hSE"
+	HousesSellSuccess    MsgSvrId = "hSK"
+	HousesBuyError       MsgSvrId = "hBE"
+	HousesBuySuccess     MsgSvrId = "hBK"
+	HousesLeave          MsgSvrId = "hV"
+	HousesGuildInfos     MsgSvrId = "hG"
+
+	StoragesListAdd        MsgSvrId = "sL+"
+	StoragesListRemove     MsgSvrId = "sL-"
+	StoragesLockedProperty MsgSvrId = "sX"
+
+	EmotesUseError   MsgSvrId = "eUE"
+	EmotesUseSuccess MsgSvrId = "eUK"
+	EmotesList       MsgSvrId = "eL"
+	EmotesAdd        MsgSvrId = "eA"
+	EmotesRemove     MsgSvrId = "eR"
+	EmotesDirection  MsgSvrId = "eD"
+
+	DocumentsCreateError   MsgSvrId = "dCE"
+	DocumentsCreateSuccess MsgSvrId = "dCK"
+	DocumentsLeave         MsgSvrId = "dV"
+
+	GuildNew                         MsgSvrId = "gn"
+	GuildCreateError                 MsgSvrId = "gCE"
+	GuildCreateSuccess               MsgSvrId = "gCK"
+	GuildStats                       MsgSvrId = "gS"
+	GuildInfosGeneral                MsgSvrId = "gIG"
+	GuildInfosMembers                MsgSvrId = "gIM"
+	GuildInfosBoosts                 MsgSvrId = "gIB"
+	GuildInfosMountPark              MsgSvrId = "gIF"
+	GuildInfosTaxCollectorsMovement  MsgSvrId = "gITM"
+	GuildInfosTaxCollectorsPlayers   MsgSvrId = "gITP"
+	GuildInfosTaxCollectorsAttackers MsgSvrId = "gITp"
+	GuildInfosHouses                 MsgSvrId = "gIH"
+	GuildJoinError                   MsgSvrId = "gJE"
+	GuildJoinSuccess                 MsgSvrId = "gJK"
+	GuildJoinDistantSuccess          MsgSvrId = "gJC"
+	GuildRequestLocal                MsgSvrId = "gJR"
+	GuildRequestDistant              MsgSvrId = "gJr"
+	GuildLeave                       MsgSvrId = "gV"
+	GildBanError                     MsgSvrId = "gKE"
+	GildBanSuccess                   MsgSvrId = "gKK"
+	GildHireTaxCollectorError        MsgSvrId = "gHE"
+	GildHireTaxCollectorSuccess      MsgSvrId = "gHK"
+	GildTaxCollectorAttacked         MsgSvrId = "gA"
+	GildTaxCollectorInfo             MsgSvrId = "gT"
+	GildUserInterfaceOpen            MsgSvrId = "gU"
+
+	WaypointsCreate   MsgSvrId = "WC"
+	WaypointsLeave    MsgSvrId = "WV"
+	WaypointsUseError MsgSvrId = "WU"
+
+	SubwayCreate      MsgSvrId = "Wc"
+	SubwayLeave       MsgSvrId = "Wv"
+	SubwayUseError    MsgSvrId = "Wu"
+	SubwayPrismCreate MsgSvrId = "Wp"
+	SubwayPrismLeave  MsgSvrId = "Ww"
+
+	SubareasList                  MsgSvrId = "al"
+	SubareasAlignmentModification MsgSvrId = "am"
+
+	ConquestAreaAlignmentChanged      MsgSvrId = "aM"
+	ConquestPrismInfosJoined          MsgSvrId = "CIJ"
+	ConquestPrismInfosClosing         MsgSvrId = "CIV"
+	ConquestConquestBonus             MsgSvrId = "CB"
+	ConquestPrismAttacked             MsgSvrId = "CA"
+	ConquestPrismSurvived             MsgSvrId = "CS"
+	ConquestPrismDead                 MsgSvrId = "CD"
+	ConquestPrismFightAddPlayerAdd    MsgSvrId = "CP+"
+	ConquestPrismFightAddPlayerRemove MsgSvrId = "CP-"
+	ConquestPrismFightAddEnemyAdd     MsgSvrId = "Cp+"
+	ConquestPrismFightAddEnemyRemove  MsgSvrId = "Cp-"
+	ConquestWorldData                 MsgSvrId = "CW"
+	ConquestConquestBalance           MsgSvrId = "Cb"
+
+	SpecializationSet    MsgSvrId = "ZS"
+	SpecializationChange MsgSvrId = "ZC"
+
+	FightsCount   MsgSvrId = "fC"
+	FightsList    MsgSvrId = "fL"
+	FightsDetails MsgSvrId = "fD"
+
+	TutorialCreate    MsgSvrId = "TC"
+	TutorialShowTip   MsgSvrId = "TT"
+	TutorialGameBegin MsgSvrId = "TB"
+
+	QuestsList MsgSvrId = "QL"
+	QuestsStep MsgSvrId = "QS"
+
+	PartyInviteError   MsgSvrId = "PIE"
+	PartyInviteSuccess MsgSvrId = "PIK"
+	PartyLeader        MsgSvrId = "PL"
+	PartyRefuse        MsgSvrId = "PR"
+	PartyAccept        MsgSvrId = "PA"
+	PartyCreateError   MsgSvrId = "PCE"
+	PartyCreateSuccess MsgSvrId = "PCS"
+	PartyLeave         MsgSvrId = "PV"
+	PartyFollowError   MsgSvrId = "PFE"
+	PartyFollowSuccess MsgSvrId = "PFK"
+	PartyMovement      MsgSvrId = "PM"
+
+	MountEquipError   MsgSvrId = "ReE"
+	MountEquipSuccess MsgSvrId = "Re+"
+	MountUnequip      MsgSvrId = "Re-"
+	MountXP           MsgSvrId = "Rx"
+	MountName         MsgSvrId = "Rn"
+	MountData         MsgSvrId = "Rd"
+	MountMountPark    MsgSvrId = "Rp"
+	MountMountParkBuy MsgSvrId = "RD"
+	MountLeave        MsgSvrId = "Rv"
+	MountRidingState  MsgSvrId = "Rr"
+
+    	AksPing      = MsgCliId("ping")
+	AksQuickPing = MsgCliId("qping")
+	AksRPong     = MsgCliId("rpong")
+
+	BasicsAuthorizedCommand     = MsgCliId("BA")
+	BasicsAuthorizedMoveCommand = MsgCliId("BaM")
+	BasicsAuthorizedKickCommand = MsgCliId("BaK")
+	BasicsWhoIs                 = MsgCliId("BW")
+	BasicsKick                  = MsgCliId("BQ")
+	BasicsAway                  = MsgCliId("BYA")
+	BasicsInvisible             = MsgCliId("BYI")
+	BasicsGetDate               = MsgCliId("BD")
+	BasicsFileCheckAnswer       = MsgCliId("BC")
+	BasicsSanctionMe            = MsgCliId("BK")
+	BasicsRequestAveragePing    = MsgCliId("Bp")
+
+	AccountVersion                  = MsgCliId("version")
+	AccountCredential               = MsgCliId("credential")
+	AccountSetNickname              = MsgCliId("nickname")
+	AccountGetCharacters            = MsgCliId("AL")
+	AccountGetCharactersForced      = MsgCliId("ALf")
+	AccountGetServersList           = MsgCliId("Ax")
+	AccountSetServer                = MsgCliId("AX")
+	AccountSearchForFriend          = MsgCliId("AF")
+	AccountSetCharacter             = MsgCliId("AS")
+	AccountAddCharacter             = MsgCliId("AA")
+	AccountDeleteCharacter          = MsgCliId("AD")
+	AccountResetCharacter           = MsgCliId("AR")
+	AccountBoost                    = MsgCliId("AB")
+	AccountSendTicket               = MsgCliId("AT")
+	AccountRequestRescue            = MsgCliId("Ar")
+	AccountGetGifts                 = MsgCliId("Ag")
+	AccountAttributeGiftToCharacter = MsgCliId("AG")
+	AccountQueuePosition            = MsgCliId("Af")
+	AccountGetRandomCharacterName   = MsgCliId("AP")
+	AccountUseKey                   = MsgCliId("Ak")
+	AccountRequestRegionalVersion   = MsgCliId("AV")
+	AccountSendIdentity             = MsgCliId("Ai")
+	AccountValidCharacterMigration  = MsgCliId("AM")
+	AccountDeleteCharacterMigration = MsgCliId("AM-")
+	AccountAskCharacterMigration    = MsgCliId("AM?")
+	AccountConfiguredPort           = MsgCliId("Ap")
+
+	GameCreate                   = MsgCliId("GC")
+	GameRequestLeave             = MsgCliId("GQ")
+	GameSetPlayerPosition        = MsgCliId("Gp")
+	GameRequestReady             = MsgCliId("GR")
+	GameGetMapData               = MsgCliId("GD")
+	GameGetExtraInformations     = MsgCliId("GI")
+	GameTurnEnd                  = MsgCliId("Gt")
+	GameTurnOk                   = MsgCliId("GT")
+	GameAskDisablePVPMode        = MsgCliId("GP*")
+	GameEnabledPVPMode           = MsgCliId("GP")
+	GameFreeMySoul               = MsgCliId("GF")
+	GameSetFlag                  = MsgCliId("Gf")
+	GameShowFightChallengeTarget = MsgCliId("Gdi")
+
+	GameActionsSendActions = MsgCliId("GA")
+	GameActionAck          = MsgCliId("GKK")
+	GameActionCancel       = MsgCliId("GKE")
+
+	ChatSend                          = MsgCliId("BM")
+	ChatReportMessage                 = MsgCliId("BR")
+	ChatRequestSubscribeChannelAdd    = MsgCliId("cC+")
+	ChatRequestSubscribeChannelRemove = MsgCliId("cC-")
+	ChatUseSmiley                     = MsgCliId("BS")
+
+	DialogBeginning    = MsgCliId("DB")
+	DialogCreate       = MsgCliId("DC")
+	DialogRequestLeave = MsgCliId("DV")
+	DialogResponse     = MsgCliId("DR")
+
+	InfosGetMaps        = MsgCliId("IM")
+	InfosSendScreenInfo = MsgCliId("Ir")
+
+	SpellsMoveToUsed = MsgCliId("SM")
+	SpellsBoost      = MsgCliId("SB")
+	SpellsForget     = MsgCliId("SF")
+
+	ItemsRequestMovement = MsgCliId("OM")
+	ItemsDrop            = MsgCliId("OD")
+	ItemsDestroy         = MsgCliId("Od")
+	ItemsUseConfirm      = MsgCliId("Ou")
+	ItemsUseNoConfirm    = MsgCliId("OU")
+	ItemsDissociate      = MsgCliId("Ox")
+	ItemsSetSkin         = MsgCliId("Os")
+	ItemsFeed            = MsgCliId("Of")
+
+	FriendsGetFriendsList       = MsgCliId("FL")
+	FriendsAddFriend            = MsgCliId("FA")
+	FriendsRemoveFriend         = MsgCliId("FD")
+	FriendsJoin                 = MsgCliId("FJ")
+	FriendsJoinFriend           = MsgCliId("FJF")
+	FriendsCompass              = MsgCliId("FJC")
+	FriendsSetNotifyWhenConnect = MsgCliId("FO")
+
+	EnemiesGetEnemiesList = MsgCliId("iL")
+	EnemiesAddEnemy       = MsgCliId("iA")
+	EnemiesRemoveEnemy    = MsgCliId("iD")
+
+	KeyRequestLeave = MsgCliId("KV")
+	KeySendKey      = MsgCliId("KK")
+
+	JobChangeJobStats = MsgCliId("JO")
+
+	ExchangeLeave                        = MsgCliId("EV")
+	ExchangeRequest                      = MsgCliId("ER")
+	ExchangeShop                         = MsgCliId("Es")
+	ExchangeAccept                       = MsgCliId("EA")
+	ExchangeRequestReady                 = MsgCliId("EK")
+	ExchangeMovementItems                = MsgCliId("EMO")
+	ExchangeMovementPay                  = MsgCliId("EP")
+	ExchangeMovementKamas                = MsgCliId("EMG")
+	ExchangeMovementSell                 = MsgCliId("ES")
+	ExchangeMovementBuy                  = MsgCliId("EB")
+	ExchangeOfflineExchange              = MsgCliId("EQ")
+	ExchangeRequestAskOfflineExchange    = MsgCliId("Eq")
+	ExchangeBigStoreType                 = MsgCliId("EHT")
+	ExchangeBigStoreItemList             = MsgCliId("EHl")
+	ExchangeBigStoreBuy                  = MsgCliId("EHB")
+	ExchangeBigStoreSearch               = MsgCliId("EHS")
+	ExchangeSetPublicMode                = MsgCliId("EW")
+	ExchangeGetCrafterForJob             = MsgCliId("EJF")
+	ExchangePutInShedFromInventory       = MsgCliId("Erp")
+	ExchangePutInInventoryFromShed       = MsgCliId("Erg")
+	ExchangePutInCertificateFromShed     = MsgCliId("Erc")
+	ExchangePutInShedFromCertificate     = MsgCliId("ErC")
+	ExchangePutInMountParkFromShed       = MsgCliId("Efp")
+	ExchangePutInShedFromMountPark       = MsgCliId("Efg")
+	ExchangeKillMountInPark              = MsgCliId("Eff")
+	ExchangeKillMount                    = MsgCliId("Erf")
+	ExchangeGetItemMiddlePriceInBigStore = MsgCliId("EHP")
+	ExchangeReplayCraft                  = MsgCliId("EL")
+	ExchangeRepeatCraft                  = MsgCliId("EMR")
+	ExchangeStopRepeatCraft              = MsgCliId("EMr")
+
+	HousesKick         = MsgCliId("hQ")
+	HousesRequestLeave = MsgCliId("hV")
+	HousesSell         = MsgCliId("hS")
+	HousesBuy          = MsgCliId("hB")
+	HousesState        = MsgCliId("hG") // get state or set rights
+	HousesShare        = MsgCliId("hG+")
+	HousesUnShare      = MsgCliId("hG-")
+
+	EmotesUseEmote     = MsgCliId("eU")
+	EmotesSetDirection = MsgCliId("eD")
+
+	DocumentsRequestLeave = MsgCliId("dV")
+
+	GuildCreate               = MsgCliId("gC")
+	GuildRequestLeave         = MsgCliId("gV")
+	GuildLeaveTaxInterface    = MsgCliId("gITV")
+	GuildInvite               = MsgCliId("gJR")
+	GuildAcceptInvitation     = MsgCliId("gJK")
+	GuildRefuseInvitation     = MsgCliId("gJE")
+	GuildGetInfosGeneral      = MsgCliId("gIG")
+	GuildGetInfosMembers      = MsgCliId("gIM")
+	GuildGetInfosBoosts       = MsgCliId("gIB")
+	GuildGetInfosTaxCollector = MsgCliId("gIT")
+	GuildGetInfosMountPark    = MsgCliId("gIF")
+	GuildGetInfosGuildHouses  = MsgCliId("gIH")
+	GuildBan                  = MsgCliId("gK")
+	GuildChangeMemberProfile  = MsgCliId("gP")
+	GuildBoostCharacteristic  = MsgCliId("gB")
+	GuildBoostSpell           = MsgCliId("gb")
+	GuildHireTaxCollector     = MsgCliId("gH")
+	GuildJoinTaxCollector     = MsgCliId("gTJ")
+	GuildLeaveTaxCollector    = MsgCliId("gTV")
+	GuildRemoveTaxCollector   = MsgCliId("gF")
+	GuildTeleportToGuildHouse = MsgCliId("gh")
+	GuildTeleportToGuildFarm  = MsgCliId("gf")
+
+	WaypointsRequestLeave = MsgCliId("WV")
+	WaypointsUse          = MsgCliId("WU")
+
+	SubwayRequestLeave      = MsgCliId("Wv")
+	SubwayUse               = MsgCliId("Wu")
+	SubwayRequestPrismLeave = MsgCliId("Ww")
+	SubwayPrismUse          = MsgCliId("Wp")
+
+	ConquestGetAlignedBonus = MsgCliId("CB")
+	ConquestPrismInfosJoin  = MsgCliId("CIJ")
+	ConquestPrismInfosLeave = MsgCliId("CIV")
+	ConquestPrismFightJoin  = MsgCliId("CFJ")
+	ConquestPrismFightLeave = MsgCliId("CFV")
+	ConquestWorldInfosJoin  = MsgCliId("CWJ")
+	ConquestWorldInfosLave  = MsgCliId("CWV")
+	ConquestSwitchPlaces    = MsgCliId("CFS")
+	ConquestRequestBalance  = MsgCliId("Cb")
+
+	FightsGetList                = MsgCliId("fL")
+	FightsGetDetails             = MsgCliId("fD")
+	FightsBlockSpectators        = MsgCliId("fS")
+	FightsBlockJoinerExceptParty = MsgCliId("fP")
+	FightsBlockJoiner            = MsgCliId("fN")
+	FightsNeedHelp               = MsgCliId("fH")
+
+	TutorialEnd = MsgCliId("TV")
+
+	QuestGetList = MsgCliId("QL")
+	QuestGetStep = MsgCliId("QS")
+
+	PartyInvite           = MsgCliId("PI")
+	PartyRefuseInvitation = MsgCliId("PR")
+	PartyAcceptInvitation = MsgCliId("PA")
+	PartyRequestLeave     = MsgCliId("PV")
+	PartyRequestFollow    = MsgCliId("PF")
+	PartyWhere            = MsgCliId("PW")
+	PartyFollowAll        = MsgCliId("PG")
+
+	MountRename              = MsgCliId("Rn")
+	MountFree                = MsgCliId("Rf")
+	MountSetXP               = MsgCliId("Rx")
+	MountRide                = MsgCliId("Rr")
+	MountRequestData         = MsgCliId("Rd")
+	MountParkMountData       = MsgCliId("Rp")
+	MountRemoveObjectInPark  = MsgCliId("Ro")
+	MountMountParkSell       = MsgCliId("Rs")
+	MountRequestMountParkBuy = MsgCliId("Rb")
+	MountRequestLeave        = MsgCliId("Rv")
+	MountCastrate            = MsgCliId("Rc")

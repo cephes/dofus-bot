@@ -1,0 +1,3167 @@
+{
+  "analysis": {
+    "authoritative_core": {
+      "core_metadata": {
+        "packages": [
+          {
+            "name": "dofus-core",
+            "version": "0.1.0",
+            "id": "path+file:///D:/WorkDir/dofus-bot/core#dofus-core@0.1.0",
+            "license": null,
+            "license_file": null,
+            "description": null,
+            "source": null,
+            "dependencies": [
+              {
+                "name": "anyhow",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.0",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "byteorder",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.4",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "clap",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^4.0",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [
+                  "derive"
+                ],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "hex",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^0.4",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "once_cell",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.19",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "pcap",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.1",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "regex",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.10",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "serde",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.0",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [
+                  "derive"
+                ],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "serde_json",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.0",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              }
+            ],
+            "targets": [
+              {
+                "kind": [
+                  "lib"
+                ],
+                "crate_types": [
+                  "lib"
+                ],
+                "name": "dofus_core",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\src\\lib.rs",
+                "edition": "2021",
+                "doc": true,
+                "doctest": true,
+                "test": true
+              },
+              {
+                "kind": [
+                  "bin"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "dofus-core",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\src\\main.rs",
+                "edition": "2021",
+                "doc": true,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "bin"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "parse_messages",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\src\\bin\\parse_messages.rs",
+                "edition": "2021",
+                "doc": true,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "bin"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "pcap2flow",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\src\\bin\\pcap2flow.rs",
+                "edition": "2021",
+                "doc": true,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "bin"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "reassemble",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\src\\bin\\reassemble.rs",
+                "edition": "2021",
+                "doc": true,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "test"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "framing_tests",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\tests\\framing_tests.rs",
+                "edition": "2021",
+                "doc": false,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "test"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "mapping_module_tests",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\tests\\mapping_module_tests.rs",
+                "edition": "2021",
+                "doc": false,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "test"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "mapping_tests",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\tests\\mapping_tests.rs",
+                "edition": "2021",
+                "doc": false,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "test"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "reassembly_tests",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\tests\\reassembly_tests.rs",
+                "edition": "2021",
+                "doc": false,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "test"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "splitter_tests",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\tests\\splitter_tests.rs",
+                "edition": "2021",
+                "doc": false,
+                "doctest": false,
+                "test": true
+              }
+            ],
+            "features": {},
+            "manifest_path": "d:\\WorkDir\\dofus-bot\\core\\Cargo.toml",
+            "metadata": null,
+            "publish": null,
+            "authors": [],
+            "categories": [],
+            "keywords": [],
+            "readme": "README.md",
+            "repository": null,
+            "homepage": null,
+            "documentation": null,
+            "edition": "2021",
+            "links": null,
+            "default_run": null,
+            "rust_version": null
+          }
+        ],
+        "workspace_members": [
+          "path+file:///D:/WorkDir/dofus-bot/core#dofus-core@0.1.0"
+        ],
+        "workspace_default_members": [
+          "path+file:///D:/WorkDir/dofus-bot/core#dofus-core@0.1.0"
+        ],
+        "resolve": null,
+        "target_directory": "d:\\WorkDir\\dofus-bot\\core\\target",
+        "build_directory": "d:\\WorkDir\\dofus-bot\\core\\target",
+        "version": 1,
+        "workspace_root": "d:\\WorkDir\\dofus-bot\\core",
+        "metadata": null
+      },
+      "binary_timestamps": {
+        "core/target/release/parse_messages.exe": 1762389552.1330936,
+        "core/target/release/reassemble.exe": 1762389552.1945713,
+        "core/target/release/pcap2flow.exe": 1762366749.1805258,
+        "core/target/release/dofus-core.exe": 1762389552.298707
+      },
+      "authoritative_core": "core/",
+      "reasoning": [
+        "Core has more recent build: core/target/release/dofus-core.exe (timestamp: 1762389552.298707)",
+        "dofus-retro-bot/core also contains Rust code but lacks recent builds"
+      ]
+    },
+    "parser_inventory": {
+      "total_parsers": 440,
+      "generated_parsers": 437,
+      "handwritten_parsers": 3,
+      "missing_declarations": [],
+      "mod_declarations": {
+        "mod.rs": {
+          "declared_modules": [
+            "GameActions"
+          ],
+          "line_count": 1
+        }
+      }
+    },
+    "retroproto_trees": {
+      "trees_found": [
+        {
+          "path": "third_party/retroproto",
+          "file_count": 553,
+          "files": [
+            ".gitignore",
+            "assets",
+            "cmd",
+            "crypto.go",
+            "enum",
+            "go.mod",
+            "go.sum",
+            "LICENSE",
+            "mapping.json",
+            "mappings_go.txt",
+            "mapping_overrides.json",
+            "MAPPING_REPORT.md",
+            "msgcli",
+            "msgcli.go",
+            "msgsvr",
+            "msgsvr.go",
+            "README.md",
+            "retroproto.go",
+            "typ",
+            "typ.go"
+          ]
+        },
+        {
+          "path": "dofus-retro-bot/third_party/retroproto",
+          "file_count": 579,
+          "files": [
+            ".git",
+            ".gitignore",
+            "assets",
+            "cmd",
+            "crypto.go",
+            "enum",
+            "go.mod",
+            "go.sum",
+            "LICENSE",
+            "mapping.json",
+            "MAPPING_REPORT.md",
+            "msgcli",
+            "msgcli.go",
+            "msgsvr",
+            "msgsvr.go",
+            "README.md",
+            "retroproto.go",
+            "typ",
+            "typ.go"
+          ]
+        }
+      ],
+      "canonical_path": "third_party/retroproto",
+      "redundant_paths": [
+        "dofus-retro-bot/third_party/retroproto"
+      ]
+    },
+    "registry_preview": {
+      "total_registered": 0,
+      "sample_entries": [],
+      "missing_from_registry": [],
+      "registry_gaps": []
+    }
+  },
+  "raw_data": {
+    "cargo_metadata": {
+      "root_metadata": null,
+      "core_metadata": {
+        "packages": [
+          {
+            "name": "dofus-core",
+            "version": "0.1.0",
+            "id": "path+file:///D:/WorkDir/dofus-bot/core#dofus-core@0.1.0",
+            "license": null,
+            "license_file": null,
+            "description": null,
+            "source": null,
+            "dependencies": [
+              {
+                "name": "anyhow",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.0",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "byteorder",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.4",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "clap",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^4.0",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [
+                  "derive"
+                ],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "hex",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^0.4",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "once_cell",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.19",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "pcap",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.1",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "regex",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.10",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "serde",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.0",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [
+                  "derive"
+                ],
+                "target": null,
+                "registry": null
+              },
+              {
+                "name": "serde_json",
+                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "req": "^1.0",
+                "kind": null,
+                "rename": null,
+                "optional": false,
+                "uses_default_features": true,
+                "features": [],
+                "target": null,
+                "registry": null
+              }
+            ],
+            "targets": [
+              {
+                "kind": [
+                  "lib"
+                ],
+                "crate_types": [
+                  "lib"
+                ],
+                "name": "dofus_core",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\src\\lib.rs",
+                "edition": "2021",
+                "doc": true,
+                "doctest": true,
+                "test": true
+              },
+              {
+                "kind": [
+                  "bin"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "dofus-core",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\src\\main.rs",
+                "edition": "2021",
+                "doc": true,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "bin"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "parse_messages",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\src\\bin\\parse_messages.rs",
+                "edition": "2021",
+                "doc": true,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "bin"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "pcap2flow",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\src\\bin\\pcap2flow.rs",
+                "edition": "2021",
+                "doc": true,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "bin"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "reassemble",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\src\\bin\\reassemble.rs",
+                "edition": "2021",
+                "doc": true,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "test"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "framing_tests",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\tests\\framing_tests.rs",
+                "edition": "2021",
+                "doc": false,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "test"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "mapping_module_tests",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\tests\\mapping_module_tests.rs",
+                "edition": "2021",
+                "doc": false,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "test"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "mapping_tests",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\tests\\mapping_tests.rs",
+                "edition": "2021",
+                "doc": false,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "test"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "reassembly_tests",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\tests\\reassembly_tests.rs",
+                "edition": "2021",
+                "doc": false,
+                "doctest": false,
+                "test": true
+              },
+              {
+                "kind": [
+                  "test"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "splitter_tests",
+                "src_path": "d:\\WorkDir\\dofus-bot\\core\\tests\\splitter_tests.rs",
+                "edition": "2021",
+                "doc": false,
+                "doctest": false,
+                "test": true
+              }
+            ],
+            "features": {},
+            "manifest_path": "d:\\WorkDir\\dofus-bot\\core\\Cargo.toml",
+            "metadata": null,
+            "publish": null,
+            "authors": [],
+            "categories": [],
+            "keywords": [],
+            "readme": "README.md",
+            "repository": null,
+            "homepage": null,
+            "documentation": null,
+            "edition": "2021",
+            "links": null,
+            "default_run": null,
+            "rust_version": null
+          }
+        ],
+        "workspace_members": [
+          "path+file:///D:/WorkDir/dofus-bot/core#dofus-core@0.1.0"
+        ],
+        "workspace_default_members": [
+          "path+file:///D:/WorkDir/dofus-bot/core#dofus-core@0.1.0"
+        ],
+        "resolve": null,
+        "target_directory": "d:\\WorkDir\\dofus-bot\\core\\target",
+        "build_directory": "d:\\WorkDir\\dofus-bot\\core\\target",
+        "version": 1,
+        "workspace_root": "d:\\WorkDir\\dofus-bot\\core",
+        "metadata": null
+      },
+      "sub_core_metadata": {
+        "packages": [
+          {
+            "name": "core",
+            "version": "0.1.0",
+            "id": "path+file:///D:/WorkDir/dofus-bot/dofus-retro-bot/core#0.1.0",
+            "license": null,
+            "license_file": null,
+            "description": null,
+            "source": null,
+            "dependencies": [],
+            "targets": [
+              {
+                "kind": [
+                  "bin"
+                ],
+                "crate_types": [
+                  "bin"
+                ],
+                "name": "core",
+                "src_path": "d:\\WorkDir\\dofus-bot\\dofus-retro-bot\\core\\src\\main.rs",
+                "edition": "2024",
+                "doc": true,
+                "doctest": false,
+                "test": true
+              }
+            ],
+            "features": {},
+            "manifest_path": "d:\\WorkDir\\dofus-bot\\dofus-retro-bot\\core\\Cargo.toml",
+            "metadata": null,
+            "publish": null,
+            "authors": [],
+            "categories": [],
+            "keywords": [],
+            "readme": null,
+            "repository": null,
+            "homepage": null,
+            "documentation": null,
+            "edition": "2024",
+            "links": null,
+            "default_run": null,
+            "rust_version": null
+          }
+        ],
+        "workspace_members": [
+          "path+file:///D:/WorkDir/dofus-bot/dofus-retro-bot/core#0.1.0"
+        ],
+        "workspace_default_members": [
+          "path+file:///D:/WorkDir/dofus-bot/dofus-retro-bot/core#0.1.0"
+        ],
+        "resolve": null,
+        "target_directory": "d:\\WorkDir\\dofus-bot\\dofus-retro-bot\\core\\target",
+        "build_directory": "d:\\WorkDir\\dofus-bot\\dofus-retro-bot\\core\\target",
+        "version": 1,
+        "workspace_root": "d:\\WorkDir\\dofus-bot\\dofus-retro-bot\\core",
+        "metadata": null
+      },
+      "binary_timestamps": {
+        "core/target/release/parse_messages.exe": 1762389552.1330936,
+        "core/target/release/reassemble.exe": 1762389552.1945713,
+        "core/target/release/pcap2flow.exe": 1762366749.1805258,
+        "core/target/release/dofus-core.exe": 1762389552.298707
+      }
+    },
+    "parser_topology": {
+      "generated_parsers": {
+        "AccountAddCharacter.rs": {
+          "has_struct": true,
+          "has_parse_fn": false,
+          "size_bytes": 1088
+        },
+        "AccountAskCharacterMigration.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 679
+        },
+        "AccountAttributeGiftToCharacter.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 697
+        },
+        "AccountBoost.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 596
+        },
+        "AccountCharacterAddError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 663
+        },
+        "AccountCharacterAddSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 667
+        },
+        "AccountCharacterDeleteError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 673
+        },
+        "AccountCharacterDeleteSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 685
+        },
+        "AccountCharacterMigrationError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 691
+        },
+        "AccountCharacterMigrationSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 703
+        },
+        "AccountCharacterNameGeneratedError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 750
+        },
+        "AccountCharacterNameGeneratedSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 743
+        },
+        "AccountCharacterSelectedError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 685
+        },
+        "AccountCharacterSelectedSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 1367
+        },
+        "AccountCharactersListError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 667
+        },
+        "AccountCharactersListSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 726
+        },
+        "AccountCommunity.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 616
+        },
+        "AccountConfiguredPort.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "AccountCredential.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 817
+        },
+        "AccountDeleteCharacter.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 757
+        },
+        "AccountDeleteCharacterMigration.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 697
+        },
+        "AccountGetCharacters.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "AccountGetCharactersForced.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 667
+        },
+        "AccountGetGifts.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 596
+        },
+        "AccountGetRandomCharacterName.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 685
+        },
+        "AccountGetServersList.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "AccountGiftStoredError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "AccountGiftStoredSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "AccountHosts.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "AccountKey.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "AccountLoginError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 699
+        },
+        "AccountLoginSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "AccountMiniClipInfo.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 625
+        },
+        "AccountNewLevel.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 615
+        },
+        "AccountPseudo.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 584
+        },
+        "AccountQueue.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 600
+        },
+        "AccountQueuePosition.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "AccountRequestRegionalVersion.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 685
+        },
+        "AccountRequestRescue.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "AccountResetCharacter.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "AccountSearchForFriend.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "AccountSecretQuestion.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 640
+        },
+        "AccountSelectServerError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 748
+        },
+        "AccountSelectServerPlainSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 878
+        },
+        "AccountSelectServerSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 843
+        },
+        "AccountSendIdentity.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 620
+        },
+        "AccountSendTicket.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 614
+        },
+        "AccountServersListError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "AccountServersListSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 661
+        },
+        "AccountSetCharacter.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "AccountSetNickname.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "AccountSetServer.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 616
+        },
+        "AccountStats.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 2555
+        },
+        "AccountTicketResponseError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 667
+        },
+        "AccountTicketResponseSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 706
+        },
+        "AccountUseKey.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "AccountValidCharacterMigration.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 691
+        },
+        "AccountVersion.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 1110
+        },
+        "AksHelloConnect.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 596
+        },
+        "AksHelloGame.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "AksPing.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 553
+        },
+        "AksPong.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 553
+        },
+        "AksQuickPing.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "AksQuickPong.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "AksRPing.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 549
+        },
+        "AksRPong.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 559
+        },
+        "AksServerMessage.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 605
+        },
+        "AksServerWillDisconnect.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "BasicsAuthorizedCommand.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "BasicsAuthorizedCommandClear.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 679
+        },
+        "BasicsAuthorizedCommandError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 679
+        },
+        "BasicsAuthorizedCommandPrompt.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 685
+        },
+        "BasicsAuthorizedCommandSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 691
+        },
+        "BasicsAuthorizedInterfaceClose.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 691
+        },
+        "BasicsAuthorizedInterfaceOpen.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 685
+        },
+        "BasicsAuthorizedKickCommand.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 673
+        },
+        "BasicsAuthorizedLine.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "BasicsAuthorizedMoveCommand.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 673
+        },
+        "BasicsAway.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "BasicsFileCheckAnswer.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "BasicsGetDate.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "BasicsInvisible.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 601
+        },
+        "BasicsKick.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "BasicsNothing.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "BasicsRequestAveragePing.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "BasicsSanctionMe.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "BasicsSubscriberRestrictionAdd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 726
+        },
+        "BasicsSubscriberRestrictionRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 709
+        },
+        "BasicsTime.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "BasicsWhoIs.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "BasicsWhoIsError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "BasicsWhoIsSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "ChatMessageError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "ChatMessageSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 902
+        },
+        "ChatReportMessage.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "ChatRequestSubscribeChannelAdd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 709
+        },
+        "ChatRequestSubscribeChannelRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 730
+        },
+        "ChatSend.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 658
+        },
+        "ChatServerMessage.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 616
+        },
+        "ChatSmiley.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "ChatUseSmiley.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "ConquestAreaAlignmentChanged.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 679
+        },
+        "ConquestGetAlignedBonus.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "ConquestPrismAttacked.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "ConquestPrismDead.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "ConquestPrismFightAddEnemyAdd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 685
+        },
+        "ConquestPrismFightAddEnemyRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 703
+        },
+        "ConquestPrismFightAddPlayerAdd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 691
+        },
+        "ConquestPrismFightAddPlayerRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 709
+        },
+        "ConquestPrismFightJoin.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "ConquestPrismFightLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "ConquestPrismInfosJoin.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "ConquestPrismInfosLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "ConquestPrismSurvived.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "ConquestRequestBalance.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "ConquestSwitchPlaces.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "ConquestWorldData.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "ConquestWorldInfosJoin.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "ConquestWorldInfosLave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "DialogBeginning.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 615
+        },
+        "DialogCreate.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 594
+        },
+        "DialogCreateError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "DialogCreateSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "DialogCustomAction.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "DialogPause.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "DialogQuestion.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 806
+        },
+        "DialogRequestLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "DialogResponse.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 718
+        },
+        "DocumentsCreateError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "DocumentsCreateSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "DocumentsRequestLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "EmotesAdd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 565
+        },
+        "EmotesList.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 565
+        },
+        "EmotesRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "EmotesSetDirection.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 632
+        },
+        "EmotesUseEmote.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "EmotesUseError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "EmotesUseSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "EnemiesAddEnemy.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 601
+        },
+        "EnemiesAddEnemyError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "EnemiesAddEnemySuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "EnemiesGetEnemiesList.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "EnemiesRemoveEnemy.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "EnemiesRemoveEnemyError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "EnemiesRemoveEnemySuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 661
+        },
+        "ExchangeAccept.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "ExchangeBigStoreBuy.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 865
+        },
+        "ExchangeBigStoreItemList.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 696
+        },
+        "ExchangeBigStoreItemsMovementAdd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 703
+        },
+        "ExchangeBigStoreItemsMovementRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 721
+        },
+        "ExchangeBigStoreSearch.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 674
+        },
+        "ExchangeBigStoreType.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "ExchangeBigStoreTypeItemsList.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 716
+        },
+        "ExchangeBigStoreTypeItemsMovementAdd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 727
+        },
+        "ExchangeBigStoreTypeItemsMovementRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 745
+        },
+        "ExchangeBuyError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "ExchangeBuySuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "ExchangeCoopMovementError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 661
+        },
+        "ExchangeCoopMovementSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 673
+        },
+        "ExchangeCrafterReferenceAdd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 673
+        },
+        "ExchangeCrafterReferenceRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 691
+        },
+        "ExchangeCraftError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "ExchangeCraftLoopEnd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "ExchangeCraftSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "ExchangeCreateError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 625
+        },
+        "ExchangeCreateSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 731
+        },
+        "ExchangeGetCrafterForJob.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "ExchangeGetItemMiddlePriceInBigStore.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 772
+        },
+        "ExchangeKillMount.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "ExchangeKillMountInPark.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "ExchangeLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "ExchangeLeaveError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "ExchangeLeaveSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 666
+        },
+        "ExchangeLocalDistantError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 661
+        },
+        "ExchangeLocalDistantSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 673
+        },
+        "ExchangeLocalMovementError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 667
+        },
+        "ExchangeLocalMovementSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 679
+        },
+        "ExchangeMountPark.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "ExchangeMountPods.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "ExchangeMountStorageAdd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 665
+        },
+        "ExchangeMountStorageRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 696
+        },
+        "ExchangeMovementBuy.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 625
+        },
+        "ExchangeMovementItems.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "ExchangeMovementKamas.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "ExchangeMovementPay.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 625
+        },
+        "ExchangeMovementSell.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "ExchangeOfflineExchange.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "ExchangePayMovementError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "ExchangePayMovementSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 667
+        },
+        "ExchangePlayerShopMovementError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 697
+        },
+        "ExchangePlayerShopMovementSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 709
+        },
+        "ExchangePutInCertificateFromShed.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 738
+        },
+        "ExchangePutInInventoryFromShed.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 724
+        },
+        "ExchangePutInMountParkFromShed.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 724
+        },
+        "ExchangePutInShedFromCertificate.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 750
+        },
+        "ExchangePutInShedFromInventory.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 724
+        },
+        "ExchangePutInShedFromMountPark.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 724
+        },
+        "ExchangeRepeatCraft.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 625
+        },
+        "ExchangeReplayCraft.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 625
+        },
+        "ExchangeRequest.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 811
+        },
+        "ExchangeRequestAskOfflineExchange.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 709
+        },
+        "ExchangeRequestError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 635
+        },
+        "ExchangeRequestReady.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "ExchangeRequestSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "ExchangeSearchError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 625
+        },
+        "ExchangeSearchSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "ExchangeSellError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "ExchangeSellSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 625
+        },
+        "ExchangeSetPublicMode.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "ExchangeShop.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "ExchangeStopRepeatCraft.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "ExchangeStorageMovementError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 679
+        },
+        "ExchangeStorageMovementSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 691
+        },
+        "FightsBlockJoiner.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "FightsBlockJoinerExceptParty.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 679
+        },
+        "FightsBlockSpectators.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "FightsCount.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 587
+        },
+        "FightsGetDetails.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "FightsGetList.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "FightsNeedHelp.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "FriendsAddFriend.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "FriendsAddFriendError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "FriendsAddFriendSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "FriendsCompass.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "FriendsGetFriendsList.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "FriendsJoin.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "FriendsJoinFriend.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "FriendsRemoveFriend.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 625
+        },
+        "FriendsRemoveFriendError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "FriendsRemoveFriendSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 667
+        },
+        "FriendsSetNotifyWhenConnect.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 673
+        },
+        "FriendsSpouse.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "GameActionAck.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "GameActionCancel.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 703
+        },
+        "GameActionsFinish.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "GameActionsSendActions.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 1116
+        },
+        "GameActionsStart.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "GameAskDisablePVPMode.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "GameCellData.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "GameCellObject.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "GameChallenge.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "GameClearAllEffect.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "GameCreate.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 580
+        },
+        "GameCreateError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 601
+        },
+        "GameCreateSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 629
+        },
+        "GameEffect.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "GameEnabledPVPMode.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "GameEnd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 553
+        },
+        "GameExtraClip.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "GameFightChallenge.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "GameFightChallengeUpdateError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 685
+        },
+        "GameFightChallengeUpdateSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 697
+        },
+        "GameFightOption.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 601
+        },
+        "GameFrameObject2.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "GameFrameObjectExternal.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "GameFreeMySoul.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "GameGameOver.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "GameGetExtraInformations.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "GameGetMapData.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "GameJoin.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 559
+        },
+        "GameLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 565
+        },
+        "GameMapData.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 745
+        },
+        "GameMapLoaded.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "GameMovement.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 581
+        },
+        "GameMovementRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 630
+        },
+        "GamePlayersCoordinates.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "GamePVP.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 553
+        },
+        "GameRequestLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "GameRequestReady.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "GameSetFlag.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "GameSetPlayerPosition.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "GameShowFightChallengeTarget.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 679
+        },
+        "GameStartToPlay.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 601
+        },
+        "GameTurnEnd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "GameTurnFinish.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "GameTurnList.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "GameTurnMiddle.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "GameTurnOk.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "GameTurnReady.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "GameTurnStart.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "GameZoneData.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "GildBanError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "GildBanSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "GildHireTaxCollectorError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 661
+        },
+        "GildHireTaxCollectorSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 673
+        },
+        "GildTaxCollectorAttacked.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "GildTaxCollectorInfo.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "GildUserInterfaceOpen.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "GuildAcceptInvitation.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "GuildBan.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 559
+        },
+        "GuildBoostCharacteristic.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "GuildBoostSpell.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 601
+        },
+        "GuildChangeMemberProfile.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "GuildCreate.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "GuildCreateError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "GuildCreateSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "GuildGetInfosBoosts.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 625
+        },
+        "GuildGetInfosGeneral.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "GuildGetInfosGuildHouses.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "GuildGetInfosMembers.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "GuildGetInfosMountPark.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "GuildGetInfosTaxCollector.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 661
+        },
+        "GuildHireTaxCollector.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "GuildInfosTaxCollectorsAttackers.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 703
+        },
+        "GuildInfosTaxCollectorsMovement.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 697
+        },
+        "GuildInfosTaxCollectorsPlayers.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 691
+        },
+        "GuildInvite.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "GuildJoinDistantSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "GuildJoinTaxCollector.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "GuildLeaveTaxCollector.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "GuildLeaveTaxInterface.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "GuildNew.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 559
+        },
+        "GuildRefuseInvitation.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "GuildRemoveTaxCollector.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "GuildRequestDistant.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 625
+        },
+        "GuildRequestLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "GuildStats.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "GuildTeleportToGuildFarm.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "GuildTeleportToGuildHouse.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 661
+        },
+        "HousesBuy.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 565
+        },
+        "HousesBuyError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "HousesBuySuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "HousesCreate.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "HousesKick.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "HousesListAdd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "HousesListRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "HousesLockedProperty.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 631
+        },
+        "HousesProperties.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "HousesRequestLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "HousesSell.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "HousesSellError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 601
+        },
+        "HousesSellSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "HousesShare.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "HousesState.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "HousesUnShare.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "InfosCompass.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "InfosGetMaps.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "InfosInfoCoordinatesPHighlight.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 691
+        },
+        "InfosLifeRestoreTimerFinish.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 705
+        },
+        "InfosLifeRestoreTimerStart.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 667
+        },
+        "InfosMessage.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 596
+        },
+        "InfosQuantity.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "InfosSendScreenInfo.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 863
+        },
+        "ItemsAccessories.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 616
+        },
+        "ItemsAddError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 586
+        },
+        "ItemsAddSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 598
+        },
+        "ItemsChange.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "ItemsDestroy.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 696
+        },
+        "ItemsDissociate.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 601
+        },
+        "ItemsDrop.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 675
+        },
+        "ItemsDropError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "ItemsDropSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "ItemsFeed.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 565
+        },
+        "ItemsItemFound.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "ItemsItemSetAdd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 718
+        },
+        "ItemsItemSetRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 630
+        },
+        "ItemsItemUseCondition.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "ItemsQuantity.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 703
+        },
+        "ItemsRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 581
+        },
+        "ItemsRequestMovement.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 752
+        },
+        "ItemsSetSkin.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "ItemsTool.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 573
+        },
+        "ItemsUseConfirm.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 817
+        },
+        "ItemsUseNoConfirm.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 831
+        },
+        "ItemsWeight.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 689
+        },
+        "JobChangeJobStats.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "JobLevel.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 559
+        },
+        "JobRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 565
+        },
+        "JobSkills.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 565
+        },
+        "JobXP.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 541
+        },
+        "KeyCreate.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 565
+        },
+        "KeyKeyError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "KeyKeySuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "KeyLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 559
+        },
+        "KeyRequestLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 601
+        },
+        "KeySendKey.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "mod.rs": {
+          "has_struct": false,
+          "has_parse_fn": false,
+          "size_bytes": 13450
+        },
+        "MountCastrate.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "MountEquipError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 600
+        },
+        "MountEquipSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "MountFree.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 565
+        },
+        "MountMountParkBuy.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "MountMountParkSell.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "MountParkMountData.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "MountRemoveObjectInPark.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "MountRename.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 568
+        },
+        "MountRequestData.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 616
+        },
+        "MountRequestLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "MountRequestMountParkBuy.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 655
+        },
+        "MountRide.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 565
+        },
+        "MountSetXP.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "MountUnequip.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "PartyAcceptInvitation.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "PartyCreateError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "PartyCreateSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "PartyFollowAll.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "PartyFollowError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "PartyFollowSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "PartyInvite.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "PartyInviteError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 607
+        },
+        "PartyInviteSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "PartyLeader.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "PartyMovement.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 589
+        },
+        "PartyRefuseInvitation.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "PartyRequestFollow.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "PartyRequestLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "PartyWhere.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "QuestGetList.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "QuestGetStep.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "SpecializationChange.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 650
+        },
+        "SpecializationSet.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 629
+        },
+        "SpellsBoost.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 581
+        },
+        "SpellsChangeOption.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 650
+        },
+        "SpellsForget.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 588
+        },
+        "SpellsList.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 571
+        },
+        "SpellsMoveToUsed.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 724
+        },
+        "SpellsSpellForgetClose.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "SpellsSpellForgetShow.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "SpellsUpgradeSpellError.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "SpellsUpgradeSpellSuccess.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 781
+        },
+        "StoragesListAdd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 601
+        },
+        "StoragesListRemove.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "StoragesLockedProperty.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 643
+        },
+        "SubareasAlignmentModification.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 685
+        },
+        "SubareasList.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "SubwayCreate.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        },
+        "SubwayPrismUse.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "SubwayRequestLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 619
+        },
+        "SubwayRequestPrismLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 649
+        },
+        "SubwayUse.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 565
+        },
+        "TutorialCreate.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 595
+        },
+        "TutorialEnd.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 577
+        },
+        "TutorialGameBegin.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 613
+        },
+        "TutorialShowTip.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 609
+        },
+        "WaypointsCreate.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 601
+        },
+        "WaypointsRequestLeave.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 637
+        },
+        "WaypointsUse.rs": {
+          "has_struct": true,
+          "has_parse_fn": true,
+          "size_bytes": 583
+        }
+      },
+      "handwritten_parsers": {
+        "GameActions.rs": {
+          "parse_functions": [
+            "pub fn parse_game_actions(extra: &str) -> Result<GameActions, String> {"
+          ],
+          "size_bytes": 2259
+        },
+        "GameEffect.rs": {
+          "parse_functions": [
+            "pub fn parse_game_effect(extra: &str) -> Result<GameEffect, String> {"
+          ],
+          "size_bytes": 1759
+        },
+        "mod.rs": {
+          "parse_functions": [],
+          "size_bytes": 20
+        }
+      },
+      "mod_rs_analysis": {
+        "mod.rs": {
+          "declared_modules": [
+            "GameActions"
+          ],
+          "line_count": 1
+        }
+      },
+      "structure_mismatches": []
+    },
+    "registry_analysis": {
+      "registry_tools": {
+        "found": true,
+        "import_patterns": [
+          "    imports = [f'use crate::retroproto_parsers::generated::{s}::parse_{s};' for s in stems]"
+        ],
+        "ga_mentions": [
+          "        \"GameActions\": \"wrap_game_actions\",",
+          "pub fn wrap_game_actions(payload: &str) -> Result<serde_json::Value, String> {",
+          "    match crate::retroproto_parsers::handwritten::GameActions::parse_game_actions(payload) {",
+          "use crate::retroproto_parsers::handwritten::GameActions;"
+        ],
+        "size_bytes": 4401
+      },
+      "game_actions_analysis": {
+        "has_parse_GameActions": false,
+        "parse_functions": [],
+        "schema_fields": [
+          "pub action_code: i64,",
+          "/// The rest of the payload (after the first ';'), kept as a raw string for now.",
+          "pub rest: String,",
+          "let code_str = it.next().ok_or(\"missing action_code\")?.trim();",
+          "let action_code = code_str.parse::<i64>()",
+          ".map_err(|e| format!(\"invalid action_code: {e}\"))?;",
+          "let rest = it.next().unwrap_or(\"\").to_string();",
+          "Ok(GameActions { action_code, rest })",
+          "\"action_code\": m.action_code,",
+          "\"rest\": m.rest,",
+          "pub fn route_game_action(action_code: i64, rest: &str) -> Result<serde_json::Value, String> {",
+          "match action_code {",
+          "0 => Ok(game_action_0_to_json(&parse_game_action_0(rest)?)),",
+          "1 => Ok(game_action_1_to_json(&parse_game_action_1(rest)?)),",
+          "2 => Ok(game_action_2_to_json(&parse_game_action_2(rest)?)),",
+          "900 => Ok(game_action_900_to_json(&parse_game_action_900(rest)?)),",
+          "901 => Ok(game_action_901_to_json(&parse_game_action_901(rest)?)),",
+          "902 => Ok(game_action_902_to_json(&parse_game_action_902(rest)?)),",
+          "903 => Ok(game_action_903_to_json(&parse_game_action_903(rest)?)),",
+          "\"action_code\": action_code,",
+          "\"unparsed_rest\": rest,"
+        ],
+        "size_bytes": 2259
+      },
+      "static_registries": [
+        {
+          "file": "core/src\\dofus_mapping.rs",
+          "pattern": "once_cell::sync::Lazy",
+          "line_count": 115
+        },
+        {
+          "file": "core/src\\retroproto_parsers\\registry.rs",
+          "pattern": "once_cell::sync::Lazy",
+          "line_count": 3623
+        }
+      ],
+      "registry_preview": {
+        "total_registrations_estimated": 0,
+        "sample_entries": []
+      }
+    },
+    "duplicate_trees": {
+      "retroproto_trees": {
+        "third_party/retroproto": {
+          "exists": true,
+          "file_count": 553,
+          "root_files": [
+            ".gitignore",
+            "assets",
+            "cmd",
+            "crypto.go",
+            "enum",
+            "go.mod",
+            "go.sum",
+            "LICENSE",
+            "mapping.json",
+            "mappings_go.txt",
+            "mapping_overrides.json",
+            "MAPPING_REPORT.md",
+            "msgcli",
+            "msgcli.go",
+            "msgsvr",
+            "msgsvr.go",
+            "README.md",
+            "retroproto.go",
+            "typ",
+            "typ.go"
+          ]
+        },
+        "dofus-retro-bot/third_party/retroproto": {
+          "exists": true,
+          "file_count": 579,
+          "root_files": [
+            ".git",
+            ".gitignore",
+            "assets",
+            "cmd",
+            "crypto.go",
+            "enum",
+            "go.mod",
+            "go.sum",
+            "LICENSE",
+            "mapping.json",
+            "MAPPING_REPORT.md",
+            "msgcli",
+            "msgcli.go",
+            "msgsvr",
+            "msgsvr.go",
+            "README.md",
+            "retroproto.go",
+            "typ",
+            "typ.go"
+          ]
+        }
+      },
+      "example_paths": {
+        "examples/pcap/flows": {
+          "exists": true,
+          "file_count": 1,
+          "files": [
+            "flow_000_TCP_192.168.1.8_2485_52.214.173.25_443.bin"
+          ]
+        },
+        "examples/pcap/decoded": {
+          "exists": true,
+          "file_count": 21,
+          "files": [
+            "decoder_run_stderr.log",
+            "decoder_run_stdout.log",
+            "dummy_parsed.json",
+            "dummy_parsed.ndjson",
+            "dummy_parsed_new.json",
+            "dummy_parsed_new.ndjson",
+            "dummy_reassembled.json",
+            "flow_dummy_decoded.json",
+            "flow_dummy_parsed_summary.json",
+            "flow_ported_parsed.json",
+            "flow_reassembled.ndjson",
+            "flow_reassembled_decoded.json",
+            "flow_reassembled_named_summary.json",
+            "flow_reassembled_with_names.json",
+            "none_continuation_analysis.json",
+            "none_continuation_examples.json",
+            "reassemble_quick_summary.json",
+            "reassemble_run_stderr.log",
+            "reassemble_run_stdout.log",
+            "unknown_prefix_examples.json",
+            "_plaintext_flow_probe.json"
+          ]
+        },
+        "orchestrator/examples/pcap/flows": {
+          "exists": true,
+          "file_count": 1,
+          "files": [
+            "flow_000_TCP_192.168.1.8_2485_52.214.173.25_443.bin"
+          ]
+        },
+        "dofus-retro-bot/examples/pcap/flows": {
+          "exists": false
+        },
+        "dofus-retro-bot/examples/pcap/decoded": {
+          "exists": false
+        }
+      },
+      "file_comparison": {}
+    },
+    "cli_expectations": {
+      "parse_messages_args": {
+        "uses_positional": false,
+        "uses_flags": true,
+        "arg_count": 0
+      },
+      "reassemble_flags": {
+        "uses_flags": false,
+        "flag_count": 0
+      },
+      "pcap2flow_flags": {
+        "uses_flags": false,
+        "flag_count": 0
+      },
+      "pipeline_scripts": [
+        {
+          "path": "scripts/run_dummy_pipeline.py",
+          "mentions_parse_messages": true,
+          "mentions_reassemble": true,
+          "mentions_pcap2flow": true
+        },
+        {
+          "path": "scripts/run_dummy_parsing.ps1",
+          "mentions_parse_messages": true,
+          "mentions_reassemble": true,
+          "mentions_pcap2flow": true
+        }
+      ]
+    },
+    "timestamp": "2025-11-06T19:00:13"
+  },
+  "generated_at": "2025-11-06T19:02:33.717254+00:00Z"
+}

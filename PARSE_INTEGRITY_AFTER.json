@@ -1,0 +1,1293 @@
+{
+  "timestamp": "2025-11-07T22:58:14.319087",
+  "input_file": "examples/pcap/decoded/dummy_parsed_all.ndjson",
+  "rules_file": "tools/validate_rules.yaml",
+  "summary": {
+    "total_rows": 249,
+    "parsed_ok": 146,
+    "parsed_empty_object": 86,
+    "parsed_null": 0,
+    "parse_error_present": 17
+  },
+  "per_message": {
+    "GameMovement": {
+      "total": 14,
+      "parsed_ok": 14,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    },
+    "AksServerMessage": {
+      "total": 3,
+      "parsed_ok": 3,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 3
+    },
+    "GameActions": {
+      "total": 92,
+      "parsed_ok": 88,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 4,
+      "violations": 4
+    },
+    "GameMovementRemove": {
+      "total": 1,
+      "parsed_ok": 1,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    },
+    "GameMapData": {
+      "total": 2,
+      "parsed_ok": 2,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    },
+    "BasicsTime": {
+      "total": 2,
+      "parsed_ok": 2,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 2
+    },
+    "FightsCount": {
+      "total": 2,
+      "parsed_ok": 2,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    },
+    "GameMapLoaded": {
+      "total": 2,
+      "parsed_ok": 0,
+      "parsed_empty_object": 2,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 2
+    },
+    "ExchangeCraftPublicMode": {
+      "total": 2,
+      "parsed_ok": 0,
+      "parsed_empty_object": 2,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 2
+    },
+    "InfosLifeRestoreTimerFinish": {
+      "total": 1,
+      "parsed_ok": 1,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    },
+    "InfosMessage": {
+      "total": 3,
+      "parsed_ok": 3,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    },
+    "GamePlayersCoordinates": {
+      "total": 3,
+      "parsed_ok": 0,
+      "parsed_empty_object": 3,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 3
+    },
+    "GameReady": {
+      "total": 2,
+      "parsed_ok": 0,
+      "parsed_empty_object": 2,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 2
+    },
+    "GameStartToPlay": {
+      "total": 1,
+      "parsed_ok": 0,
+      "parsed_empty_object": 1,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 1
+    },
+    "GameTurnList": {
+      "total": 1,
+      "parsed_ok": 0,
+      "parsed_empty_object": 1,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 1
+    },
+    "GameFightChallenge": {
+      "total": 1,
+      "parsed_ok": 0,
+      "parsed_empty_object": 1,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 1
+    },
+    "GameTurnMiddle": {
+      "total": 9,
+      "parsed_ok": 0,
+      "parsed_empty_object": 9,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 9
+    },
+    "GameTurnStart": {
+      "total": 8,
+      "parsed_ok": 0,
+      "parsed_empty_object": 8,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 8
+    },
+    "AccountStats": {
+      "total": 12,
+      "parsed_ok": 12,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    },
+    "GameActionsStart": {
+      "total": 10,
+      "parsed_ok": 0,
+      "parsed_empty_object": 10,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 10
+    },
+    "GameActionsFinish": {
+      "total": 9,
+      "parsed_ok": 0,
+      "parsed_empty_object": 9,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 9
+    },
+    "BasicsNothing": {
+      "total": 9,
+      "parsed_ok": 0,
+      "parsed_empty_object": 9,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 9
+    },
+    "GameTurnFinish": {
+      "total": 7,
+      "parsed_ok": 0,
+      "parsed_empty_object": 7,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 7
+    },
+    "GameTurnReady": {
+      "total": 8,
+      "parsed_ok": 0,
+      "parsed_empty_object": 8,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 8
+    },
+    "GameEffect": {
+      "total": 9,
+      "parsed_ok": 0,
+      "parsed_empty_object": 9,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 9
+    },
+    "BasicsDate": {
+      "total": 1,
+      "parsed_ok": 1,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    },
+    "ItemsWeight": {
+      "total": 11,
+      "parsed_ok": 11,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    },
+    "ItemsQuantity": {
+      "total": 3,
+      "parsed_ok": 3,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    },
+    "GameEnd": {
+      "total": 1,
+      "parsed_ok": 0,
+      "parsed_empty_object": 1,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 1
+    },
+    "GameCreateSuccess": {
+      "total": 1,
+      "parsed_ok": 1,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    },
+    "InfosLifeRestoreTimerStart": {
+      "total": 1,
+      "parsed_ok": 1,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    },
+    "GameActionAck": {
+      "total": 13,
+      "parsed_ok": 0,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 13,
+      "violations": 13
+    },
+    "GameSetPlayerPosition": {
+      "total": 2,
+      "parsed_ok": 0,
+      "parsed_empty_object": 2,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 2
+    },
+    "HousesLockedProperty": {
+      "total": 1,
+      "parsed_ok": 0,
+      "parsed_empty_object": 1,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 1
+    },
+    "AksServerWillDisconnect": {
+      "total": 1,
+      "parsed_ok": 0,
+      "parsed_empty_object": 1,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 1
+    },
+    "GameCreate": {
+      "total": 1,
+      "parsed_ok": 1,
+      "parsed_empty_object": 0,
+      "parsed_null": 0,
+      "parse_error_present": 0,
+      "violations": 0
+    }
+  },
+  "violations": [
+    {
+      "frame_index": 1,
+      "prefix": "M",
+      "message_name": "AksServerMessage",
+      "status": "fail",
+      "reasons": [
+        "type_mismatch: value expected str, got int"
+      ]
+    },
+    {
+      "frame_index": 8,
+      "prefix": "BT",
+      "message_name": "BasicsTime",
+      "status": "fail",
+      "reasons": [
+        "missing_required_field: Value"
+      ]
+    },
+    {
+      "frame_index": 14,
+      "prefix": "GDK",
+      "message_name": "GameMapLoaded",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 15,
+      "prefix": "EW",
+      "message_name": "ExchangeCraftPublicMode",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 28,
+      "prefix": "GIC",
+      "message_name": "GamePlayersCoordinates",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 29,
+      "prefix": "GIC",
+      "message_name": "GamePlayersCoordinates",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 30,
+      "prefix": "GR",
+      "message_name": "GameReady",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 31,
+      "prefix": "GIC",
+      "message_name": "GamePlayersCoordinates",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 32,
+      "prefix": "GS",
+      "message_name": "GameStartToPlay",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 33,
+      "prefix": "GTL",
+      "message_name": "GameTurnList",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 34,
+      "prefix": "Gd",
+      "message_name": "GameFightChallenge",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 35,
+      "prefix": "GTM",
+      "message_name": "GameTurnMiddle",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 36,
+      "prefix": "GTS",
+      "message_name": "GameTurnStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 38,
+      "prefix": "GAS",
+      "message_name": "GameActionsStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 50,
+      "prefix": "GAF",
+      "message_name": "GameActionsFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 51,
+      "prefix": "BN",
+      "message_name": "BasicsNothing",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 53,
+      "prefix": "GAS",
+      "message_name": "GameActionsStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 57,
+      "prefix": "GAF",
+      "message_name": "GameActionsFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 58,
+      "prefix": "BN",
+      "message_name": "BasicsNothing",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 60,
+      "prefix": "GAS",
+      "message_name": "GameActionsStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 63,
+      "prefix": "GAF",
+      "message_name": "GameActionsFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 64,
+      "prefix": "BN",
+      "message_name": "BasicsNothing",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 65,
+      "prefix": "GAS",
+      "message_name": "GameActionsStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 69,
+      "prefix": "GAF",
+      "message_name": "GameActionsFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 70,
+      "prefix": "BN",
+      "message_name": "BasicsNothing",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 71,
+      "prefix": "GTF",
+      "message_name": "GameTurnFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 73,
+      "prefix": "GTR",
+      "message_name": "GameTurnReady",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 74,
+      "prefix": "GTM",
+      "message_name": "GameTurnMiddle",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 75,
+      "prefix": "GTS",
+      "message_name": "GameTurnStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 83,
+      "prefix": "GTF",
+      "message_name": "GameTurnFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 84,
+      "prefix": "GTR",
+      "message_name": "GameTurnReady",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 85,
+      "prefix": "GTM",
+      "message_name": "GameTurnMiddle",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 86,
+      "prefix": "GTS",
+      "message_name": "GameTurnStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 88,
+      "prefix": "GIE",
+      "message_name": "GameEffect",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 92,
+      "prefix": "GTF",
+      "message_name": "GameTurnFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 93,
+      "prefix": "GTR",
+      "message_name": "GameTurnReady",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 94,
+      "prefix": "GTM",
+      "message_name": "GameTurnMiddle",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 95,
+      "prefix": "GTS",
+      "message_name": "GameTurnStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 98,
+      "prefix": "GTF",
+      "message_name": "GameTurnFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 99,
+      "prefix": "GTR",
+      "message_name": "GameTurnReady",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 100,
+      "prefix": "GTM",
+      "message_name": "GameTurnMiddle",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 101,
+      "prefix": "GTS",
+      "message_name": "GameTurnStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 103,
+      "prefix": "GAS",
+      "message_name": "GameActionsStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 105,
+      "prefix": "GIE",
+      "message_name": "GameEffect",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 107,
+      "prefix": "GAF",
+      "message_name": "GameActionsFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 109,
+      "prefix": "BN",
+      "message_name": "BasicsNothing",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 111,
+      "prefix": "GAS",
+      "message_name": "GameActionsStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 113,
+      "prefix": "GIE",
+      "message_name": "GameEffect",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 115,
+      "prefix": "GIE",
+      "message_name": "GameEffect",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 117,
+      "prefix": "GIE",
+      "message_name": "GameEffect",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 119,
+      "prefix": "GIE",
+      "message_name": "GameEffect",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 121,
+      "prefix": "GIE",
+      "message_name": "GameEffect",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 123,
+      "prefix": "GAF",
+      "message_name": "GameActionsFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 124,
+      "prefix": "BN",
+      "message_name": "BasicsNothing",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 126,
+      "prefix": "GAS",
+      "message_name": "GameActionsStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 132,
+      "prefix": "GIE",
+      "message_name": "GameEffect",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 134,
+      "prefix": "GAF",
+      "message_name": "GameActionsFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 135,
+      "prefix": "BN",
+      "message_name": "BasicsNothing",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 136,
+      "prefix": "GAS",
+      "message_name": "GameActionsStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 139,
+      "prefix": "GAF",
+      "message_name": "GameActionsFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 140,
+      "prefix": "BN",
+      "message_name": "BasicsNothing",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 141,
+      "prefix": "GTF",
+      "message_name": "GameTurnFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 143,
+      "prefix": "GTR",
+      "message_name": "GameTurnReady",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 144,
+      "prefix": "GTM",
+      "message_name": "GameTurnMiddle",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 147,
+      "prefix": "GTS",
+      "message_name": "GameTurnStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 152,
+      "prefix": "GIE",
+      "message_name": "GameEffect",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 155,
+      "prefix": "GTF",
+      "message_name": "GameTurnFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 156,
+      "prefix": "GTR",
+      "message_name": "GameTurnReady",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 157,
+      "prefix": "GTM",
+      "message_name": "GameTurnMiddle",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 160,
+      "prefix": "GTS",
+      "message_name": "GameTurnStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 163,
+      "prefix": "GTF",
+      "message_name": "GameTurnFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 164,
+      "prefix": "GTR",
+      "message_name": "GameTurnReady",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 165,
+      "prefix": "GTM",
+      "message_name": "GameTurnMiddle",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 169,
+      "prefix": "GTR",
+      "message_name": "GameTurnReady",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 170,
+      "prefix": "GTM",
+      "message_name": "GameTurnMiddle",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 171,
+      "prefix": "GTS",
+      "message_name": "GameTurnStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 173,
+      "prefix": "GAS",
+      "message_name": "GameActionsStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 179,
+      "prefix": "GAF",
+      "message_name": "GameActionsFinish",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 180,
+      "prefix": "BN",
+      "message_name": "BasicsNothing",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 182,
+      "prefix": "GAS",
+      "message_name": "GameActionsStart",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 200,
+      "prefix": "GE",
+      "message_name": "GameEnd",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 206,
+      "prefix": "BT",
+      "message_name": "BasicsTime",
+      "status": "fail",
+      "reasons": [
+        "missing_required_field: Value"
+      ]
+    },
+    {
+      "frame_index": 212,
+      "prefix": "GDK",
+      "message_name": "GameMapLoaded",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 213,
+      "prefix": "EW",
+      "message_name": "ExchangeCraftPublicMode",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 216,
+      "prefix": "M",
+      "message_name": "AksServerMessage",
+      "status": "fail",
+      "reasons": [
+        "type_mismatch: value expected str, got int"
+      ]
+    },
+    {
+      "frame_index": 217,
+      "prefix": "GA",
+      "message_name": "GameActions",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: invalid action_code: invalid digit found in string",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 218,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 219,
+      "prefix": "GA",
+      "message_name": "GameActions",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: invalid action_code: invalid digit found in string",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 220,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 221,
+      "prefix": "M",
+      "message_name": "AksServerMessage",
+      "status": "fail",
+      "reasons": [
+        "type_mismatch: value expected str, got int"
+      ]
+    },
+    {
+      "frame_index": 222,
+      "prefix": "Gp",
+      "message_name": "GameSetPlayerPosition",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 223,
+      "prefix": "Gp",
+      "message_name": "GameSetPlayerPosition",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 224,
+      "prefix": "GR",
+      "message_name": "GameReady",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 226,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 228,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 230,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 231,
+      "prefix": "GA",
+      "message_name": "GameActions",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: invalid action_code: invalid digit found in string",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 232,
+      "prefix": "hX",
+      "message_name": "HousesLockedProperty",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 233,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 234,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 236,
+      "prefix": "k",
+      "message_name": "AksServerWillDisconnect",
+      "status": "fail",
+      "reasons": [
+        "parsed_empty_object"
+      ]
+    },
+    {
+      "frame_index": 237,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 239,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 241,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 242,
+      "prefix": "GA",
+      "message_name": "GameActions",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: invalid action_code: invalid digit found in string",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 243,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 244,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    },
+    {
+      "frame_index": 246,
+      "prefix": "GKK",
+      "message_name": "GameActionAck",
+      "status": "fail",
+      "reasons": [
+        "parse_error_present: no parser registered for GameActionAck",
+        "parsed_null"
+      ]
+    }
+  ]
+}

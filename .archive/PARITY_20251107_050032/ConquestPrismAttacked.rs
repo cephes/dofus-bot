@@ -1,0 +1,24 @@
+//! Generated parser for ConquestPrismAttacked
+//! 
+//! This file was automatically generated from Go schema definitions.
+//! Manual modifications may be overwritten.
+
+use crate::retroproto_parsers::parser::common_decode;
+
+#[derive(Debug, Clone, Default, serde::Serialize, serde:: Deserialize)]
+pub struct ConquestPrismAttacked {
+
+}
+
+pub fn parse_ConquestPrismAttacked(payload: &str) -> Result<ConquestPrismAttacked, String> {
+    let _fields = common_decode::split_fields(payload);
+    
+    // Parse fields with safe defaults
+
+    
+    // Create struct instance
+    let result = ConquestPrismAttacked {
+    };
+    
+    Ok(result)
+}

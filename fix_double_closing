@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+"""Fix the specific pattern of }} to }) in Ok() statements"""
+
+import os
+import re
+from pathlib import Path
+
+def fix_double_closing_in_file(file_path):
+    """Fix double closing braces in a single Rust file"""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        original_content = content
+        
+        # Fix the specific pattern: }} -> })
+        content = re.sub(r'\}\}\)', '})', content)
+        
+        if content != original_content:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+            return True
+        return False
+        
+    except Exception as e:
+        print(f"Error processing {file_path}: {e}")
+        return False
+
+def main():
+    # Find all generated Rust files
+    generated_dir = Path("core/src/retroproto_parsers/generated")
+    
+    if not generated_dir.exists():
+        print(f"Directory {generated_dir} does not exist")
+        return
+    
+    fixed_count = 0
+    total_files = 0
+    
+    # Process all .rs files recursively
+    for rust_file in generated_dir.rglob("*.rs"):
+        total_files += 1
+        if fix_double_closing_in_file(rust_file):
+            print(f"Fixed: {rust_file}")
+            fixed_count += 1
+    
+    print(f"Fixed double closing braces in {fixed_count}/{total_files} files")
+
+if __name__ == "__main__":
+    main()

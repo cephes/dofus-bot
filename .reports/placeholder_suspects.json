@@ -1,0 +1,4199 @@
+{
+  "root": "D:\\WorkDir\\dofus-bot",
+  "suspects": [
+    {
+      "file": "scripts\\run_pcap_final.ps1",
+      "score": 72,
+      "matches": [
+        {
+          "line": 5,
+          "content": "Write-Host \"================= JOHN.PCAP ANALYSIS =================\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 6,
+          "content": "Write-Host \"Input PCAP: $PcapPath\"",
+          "score": 1
+        },
+        {
+          "line": 12,
+          "content": "Write-Host \"Base name: $base\"",
+          "score": 1
+        },
+        {
+          "line": 13,
+          "content": "Write-Host \"Output directory: $decDir\"",
+          "score": 1
+        },
+        {
+          "line": 14,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 16,
+          "content": "# 1) Simulate Rust pipeline",
+          "score": 2
+        },
+        {
+          "line": 17,
+          "content": "Write-Host \"[1/5] SIMULATING: Rust decode pipeline\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 24,
+          "content": "{`\"frame_index`\":1,`\"message_name`\":`\"AccountLoginSuccess`\",`\"parsed_data`\":{`\"ticket`\":`\"sample`\",`\"account_id`\":123}}",
+          "score": 2
+        },
+        {
+          "line": 25,
+          "content": "{`\"frame_index`\":2,`\"message_name`\":`\"GameCreateSuccess`\",`\"parsed_data`\":{`\"type`\":`\"character`\",`\"id`\":456}}",
+          "score": 2
+        },
+        {
+          "line": 26,
+          "content": "{`\"frame_index`\":3,`\"message_name`\":`\"ChatMessageSuccess`\",`\"parsed_data`\":{`\"channel`\":`\"general`\",`\"message`\":`\"Hello world`\"}}",
+          "score": 2
+        },
+        {
+          "line": 27,
+          "content": "\"@ | Out-File -FilePath $rustNdjson -Encoding UTF8",
+          "score": 1
+        },
+        {
+          "line": 31,
+          "content": "  {`\"frame_index`\":1,`\"message_name`\":`\"AccountLoginSuccess`\",`\"parsed_data`\":{`\"ticket`\":`\"sample`\",`\"account_id`\":123}},",
+          "score": 2
+        },
+        {
+          "line": 32,
+          "content": "  {`\"frame_index`\":2,`\"message_name`\":`\"GameCreateSuccess`\",`\"parsed_data`\":{`\"type`\":`\"character`\",`\"id`\":456}},",
+          "score": 2
+        },
+        {
+          "line": 33,
+          "content": "  {`\"frame_index`\":3,`\"message_name`\":`\"ChatMessageSuccess`\",`\"parsed_data`\":{`\"channel`\":`\"general`\",`\"message`\":`\"Hello world`\"}}",
+          "score": 2
+        },
+        {
+          "line": 35,
+          "content": "\"@ | Out-File -FilePath $rustJson -Encoding UTF8",
+          "score": 1
+        },
+        {
+          "line": 37,
+          "content": "Write-Host \"  Created sample Rust NDJSON: $rustNdjson\"",
+          "score": 1
+        },
+        {
+          "line": 38,
+          "content": "Write-Host \"  Created sample Rust JSON: $rustJson\"",
+          "score": 1
+        },
+        {
+          "line": 40,
+          "content": "# 2) Go baseline simulation",
+          "score": 2
+        },
+        {
+          "line": 41,
+          "content": "Write-Host \"[2/5] GOING: Go baseline analysis\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 47,
+          "content": "{`\"frame_index`\":1,`\"message_name`\":`\"AccountLoginSuccess`\",`\"parsed_data`\":{`\"ticket`\":`\"sample_go`\",`\"account_id`\":123}}",
+          "score": 4
+        },
+        {
+          "line": 48,
+          "content": "{`\"frame_index`\":2,`\"message_name`\":`\"GameCreateSuccess`\",`\"parsed_data`\":{`\"type`\":`\"character_go`\",`\"id`\":456}}",
+          "score": 2
+        },
+        {
+          "line": 49,
+          "content": "{`\"frame_index`\":3,`\"message_name`\":`\"ChatMessageSuccess`\",`\"parsed_data`\":{`\"channel`\":`\"general`\",`\"message`\":`\"Hello world from Go`\"}}",
+          "score": 4
+        },
+        {
+          "line": 50,
+          "content": "\"@ | Out-File -FilePath $goNdjson -Encoding UTF8",
+          "score": 1
+        },
+        {
+          "line": 52,
+          "content": "Write-Host \"  Created sample Go NDJSON: $goNdjson\"",
+          "score": 1
+        },
+        {
+          "line": 54,
+          "content": "# 3) Deep diff simulation",
+          "score": 2
+        },
+        {
+          "line": 55,
+          "content": "Write-Host \"[3/5] ANALYZING: Go-Rust deep diff\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 65,
+          "content": "$diffJson | Out-File -FilePath \"go_rust_diff.json\" -Encoding UTF8",
+          "score": 1
+        },
+        {
+          "line": 78,
+          "content": "$diffMd | Out-File -FilePath \"GO_RUST_DIFF.md\" -Encoding UTF8",
+          "score": 1
+        },
+        {
+          "line": 79,
+          "content": "Write-Host \"  Created sample diff: go_rust_diff.json / GO_RUST_DIFF.md\"",
+          "score": 1
+        },
+        {
+          "line": 81,
+          "content": "# 4) Parse integrity validator simulation",
+          "score": 2
+        },
+        {
+          "line": 82,
+          "content": "Write-Host \"[4/5] VALIDATING: Parse integrity check\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 91,
+          "content": "$intgJson | Out-File -FilePath \"PARSE_INTEGRITY.json\" -Encoding UTF8",
+          "score": 1
+        },
+        {
+          "line": 107,
+          "content": "$intgMd | Out-File -FilePath \"PARSE_INTEGRITY.md\" -Encoding UTF8",
+          "score": 1
+        },
+        {
+          "line": 108,
+          "content": "Write-Host \"  Created sample integrity: PARSE_INTEGRITY.json / PARSE_INTEGRITY.md\"",
+          "score": 1
+        },
+        {
+          "line": 111,
+          "content": "Write-Host \"[5/5] SUMMARIZING: Results dashboard\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 113,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 114,
+          "content": "Write-Host \"================= JOHN.PCAP REPORT =================\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 115,
+          "content": "Write-Host \"Input frames        : 3\"",
+          "score": 1
+        },
+        {
+          "line": 116,
+          "content": "Write-Host \"Go-Rust matches     : 2  (66.7%)\"",
+          "score": 1
+        },
+        {
+          "line": 117,
+          "content": "Write-Host \"Go-Rust mismatches  : 1\"",
+          "score": 1
+        },
+        {
+          "line": 118,
+          "content": "Write-Host \"Integrity violations: 2\"",
+          "score": 1
+        },
+        {
+          "line": 119,
+          "content": "Write-Host \" - empty objects    : 1\"",
+          "score": 1
+        },
+        {
+          "line": 120,
+          "content": "Write-Host \" - parse errors     : 0\"",
+          "score": 1
+        },
+        {
+          "line": 121,
+          "content": "Write-Host \" - missing fields   : 1\"",
+          "score": 1
+        },
+        {
+          "line": 122,
+          "content": "Write-Host \" - type mismatch    : 0\"",
+          "score": 1
+        },
+        {
+          "line": 123,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 124,
+          "content": "Write-Host \"Artifacts generated:\"",
+          "score": 1
+        },
+        {
+          "line": 125,
+          "content": "Write-Host \" - Rust NDJSON      : $rustNdjson\"",
+          "score": 1
+        },
+        {
+          "line": 126,
+          "content": "Write-Host \" - Go   NDJSON      : $goNdjson\"",
+          "score": 1
+        },
+        {
+          "line": 127,
+          "content": "Write-Host \" - Diff (json/md)   : go_rust_diff.json / GO_RUST_DIFF.md\"",
+          "score": 1
+        },
+        {
+          "line": 128,
+          "content": "Write-Host \" - Integrity (json/md): PARSE_INTEGRITY.json / PARSE_INTEGRITY.md\"",
+          "score": 1
+        },
+        {
+          "line": 129,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 130,
+          "content": "Write-Host \"Complete pcap analysis pipeline executed successfully!\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 132,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 133,
+          "content": "Write-Host \"================= PIPELINE COMPLETE =================\" -ForegroundColor Green",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_pcap_simplified.ps1",
+      "score": 66,
+      "matches": [
+        {
+          "line": 9,
+          "content": "  Write-Host \"> $cmd\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 12,
+          "content": "    Write-Host \"Warning: Command failed but continuing... $cmd\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 20,
+          "content": "Write-Host \"================= JOHN.PCAP ANALYSIS =================\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 21,
+          "content": "Write-Host \"Input PCAP: $PcapPath\"",
+          "score": 1
+        },
+        {
+          "line": 22,
+          "content": "Write-Host \"Base name: $base\"",
+          "score": 1
+        },
+        {
+          "line": 23,
+          "content": "Write-Host \"Output directory: $decDir\"",
+          "score": 1
+        },
+        {
+          "line": 24,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 26,
+          "content": "# 1) Simulate Rust pipeline (since build is broken, create sample data)",
+          "score": 2
+        },
+        {
+          "line": 28,
+          "content": "  Write-Host \"[1/5] SIMULATING: Rust decode pipeline\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 32,
+          "content": "    @{ frame_index=1; message_name=\"AccountLoginSuccess\"; parsed_data=@{ticket=\"sample\"; account_id=123} },",
+          "score": 2
+        },
+        {
+          "line": 33,
+          "content": "    @{ frame_index=2; message_name=\"GameCreateSuccess\"; parsed_data=@{type=\"character\"; id=456} },",
+          "score": 2
+        },
+        {
+          "line": 34,
+          "content": "    @{ frame_index=3; message_name=\"ChatMessageSuccess\"; parsed_data=@{channel=\"general\"; message=\"Hello world\"} }",
+          "score": 2
+        },
+        {
+          "line": 38,
+          "content": "  $sampleData | ConvertTo-Json -Compress | Out-File -FilePath $rustNdjson -Encoding UTF8",
+          "score": 2
+        },
+        {
+          "line": 39,
+          "content": "  Write-Host \"  Created sample Rust NDJSON: $rustNdjson\"",
+          "score": 1
+        },
+        {
+          "line": 42,
+          "content": "  $sampleData | ConvertTo-Json | Out-File -FilePath $rustJson -Encoding UTF8",
+          "score": 2
+        },
+        {
+          "line": 43,
+          "content": "  Write-Host \"  Created sample Rust JSON: $rustJson\"",
+          "score": 1
+        },
+        {
+          "line": 48,
+          "content": "  Write-Host \"[2/5] GOING: Go baseline analysis\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 55,
+          "content": "    Write-Host \"  Go baseline NDJSON: $goNdjson\"",
+          "score": 1
+        },
+        {
+          "line": 59,
+          "content": "      @{ frame_index=1; message_name=\"AccountLoginSuccess\"; parsed_data=@{ticket=\"sample_go\"; account_id=123} },",
+          "score": 4
+        },
+        {
+          "line": 60,
+          "content": "      @{ frame_index=2; message_name=\"GameCreateSuccess\"; parsed_data=@{type=\"character_go\"; id=456} },",
+          "score": 2
+        },
+        {
+          "line": 61,
+          "content": "      @{ frame_index=3; message_name=\"ChatMessageSuccess\"; parsed_data=@{channel=\"general\"; message=\"Hello world from Go\"} }",
+          "score": 4
+        },
+        {
+          "line": 63,
+          "content": "    $goSampleData | ConvertTo-Json -Compress | Out-File -FilePath $goNdjson -Encoding UTF8",
+          "score": 2
+        },
+        {
+          "line": 64,
+          "content": "    Write-Host \"  Created sample Go NDJSON: $goNdjson (using sample data)\"",
+          "score": 1
+        },
+        {
+          "line": 69,
+          "content": "Write-Host \"[3/5] ANALYZING: Go↔Rust deep diff\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 85,
+          "content": "  $diffData | ConvertTo-Json | Out-File -FilePath \"go_rust_diff.json\" -Encoding UTF8",
+          "score": 2
+        },
+        {
+          "line": 94,
+          "content": "\" | Out-File -FilePath \"GO_RUST_DIFF.md\" -Encoding UTF8",
+          "score": 1
+        },
+        {
+          "line": 95,
+          "content": "  Write-Host \"  Created sample diff: go_rust_diff.json / GO_RUST_DIFF.md\"",
+          "score": 1
+        },
+        {
+          "line": 99,
+          "content": "Write-Host \"[4/5] VALIDATING: Parse integrity check\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 118,
+          "content": "  $intgData | ConvertTo-Json | Out-File -FilePath \"PARSE_INTEGRITY.json\" -Encoding UTF8",
+          "score": 2
+        },
+        {
+          "line": 130,
+          "content": "\" | Out-File -FilePath \"PARSE_INTEGRITY.md\" -Encoding UTF8",
+          "score": 1
+        },
+        {
+          "line": 131,
+          "content": "  Write-Host \"  Created sample integrity: PARSE_INTEGRITY.json / PARSE_INTEGRITY.md\"",
+          "score": 1
+        },
+        {
+          "line": 135,
+          "content": "Write-Host \"[5/5] SUMMARIZING: Results dashboard\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 151,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 152,
+          "content": "Write-Host \"================= JOHN.PCAP REPORT =================\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 153,
+          "content": "Write-Host \"Input frames        : $($diff.total_rows)\"",
+          "score": 1
+        },
+        {
+          "line": 154,
+          "content": "Write-Host \"Go-Rust matches     : $($diff.matches)  ($matchPercent%)\"",
+          "score": 1
+        },
+        {
+          "line": 155,
+          "content": "Write-Host \"Go-Rust mismatches  : $($diff.mismatches)\"",
+          "score": 1
+        },
+        {
+          "line": 156,
+          "content": "Write-Host \"Integrity violations: $($intg.violations_total)\"",
+          "score": 1
+        },
+        {
+          "line": 157,
+          "content": "Write-Host \" - empty objects    : $($intg.categories.parsed_empty_object)\"",
+          "score": 1
+        },
+        {
+          "line": 158,
+          "content": "Write-Host \" - parse errors     : $($intg.categories.parse_error_present)\"",
+          "score": 1
+        },
+        {
+          "line": 159,
+          "content": "Write-Host \" - missing fields   : $($intg.categories.missing_required_field)\"",
+          "score": 1
+        },
+        {
+          "line": 160,
+          "content": "Write-Host \" - type mismatch    : $($intg.categories.type_mismatch)\"",
+          "score": 1
+        },
+        {
+          "line": 161,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 162,
+          "content": "Write-Host \"Artifacts generated:\"",
+          "score": 1
+        },
+        {
+          "line": 163,
+          "content": "Write-Host \" - Rust NDJSON      : $(Join-Path $decDir ($base + \"_parsed_all.ndjson\"))\"",
+          "score": 1
+        },
+        {
+          "line": 164,
+          "content": "Write-Host \" - Go   NDJSON      : $(Join-Path $decDir ($base + \"_go_strict.ndjson\"))\"",
+          "score": 1
+        },
+        {
+          "line": 165,
+          "content": "Write-Host \" - Diff (json/md)   : go_rust_diff.json / GO_RUST_DIFF.md\"",
+          "score": 1
+        },
+        {
+          "line": 166,
+          "content": "Write-Host \" - Integrity (json/md): PARSE_INTEGRITY.json / PARSE_INTEGRITY.md\"",
+          "score": 1
+        },
+        {
+          "line": 167,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 168,
+          "content": "Write-Host \"✓ Complete pcap analysis pipeline executed successfully!\" -ForegroundColor Green",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_go_baseline.ps1",
+      "score": 64,
+      "matches": [
+        {
+          "line": 28,
+          "content": "$RustInput = Join-Path $ExamplesDir \"pcap\\decoded\\dummy_parsed_new.ndjson\"",
+          "score": 1
+        },
+        {
+          "line": 29,
+          "content": "$GoOutputNdjson = Join-Path $ExamplesDir \"pcap\\decoded\\dummy_go.ndjson\"",
+          "score": 2
+        },
+        {
+          "line": 30,
+          "content": "$GoOutputJson = Join-Path $ExamplesDir \"pcap\\decoded\\dummy_go.json\"",
+          "score": 1
+        },
+        {
+          "line": 37,
+          "content": "Write-Host \"========================================\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 38,
+          "content": "Write-Host \"Go Baseline Parser Pipeline\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 39,
+          "content": "Write-Host \"========================================\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 40,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 43,
+          "content": "Write-Host \"Step 1: Checking Go installation...\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 47,
+          "content": "        Write-Host \"✅ Go found: $goVersion\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 52,
+          "content": "    Write-Host \"❌ Go not found or not in PATH\" -ForegroundColor Red",
+          "score": 1
+        },
+        {
+          "line": 53,
+          "content": "    Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 54,
+          "content": "    Write-Host \"To install Go:\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 55,
+          "content": "    Write-Host \"1. Download from https://golang.org/dl/\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 56,
+          "content": "    Write-Host \"2. Install and add to PATH\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 57,
+          "content": "    Write-Host \"3. Restart your terminal\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 58,
+          "content": "    Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 59,
+          "content": "    Write-Host \"The Go baseline tools have been created but cannot be run without Go.\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 60,
+          "content": "    Write-Host \"You can run the pipeline manually after installing Go.\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 66,
+          "content": "    Write-Host \"Creating bin directory: $BinDir\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 71,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 72,
+          "content": "Write-Host \"Step 2: Generating Go parser registry...\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 79,
+          "content": "    Write-Host \"✅ Registry generated successfully\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 85,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 86,
+          "content": "Write-Host \"Step 3: Building Go binary...\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 93,
+          "content": "    Write-Host \"✅ Go binary built successfully: $GoBinary\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 100,
+          "content": "    Write-Host \"❌ Input file not found: $RustInput\" -ForegroundColor Red",
+          "score": 1
+        },
+        {
+          "line": 101,
+          "content": "    Write-Host \"Make sure you have run the Rust parser first to generate this file.\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 106,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 107,
+          "content": "Write-Host \"Step 4: Running Go parser...\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 108,
+          "content": "Write-Host \"Input: $RustInput\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 109,
+          "content": "Write-Host \"Output NDJSON: $GoOutputNdjson\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 110,
+          "content": "Write-Host \"Output JSON: $GoOutputJson\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 111,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 115,
+          "content": "    Write-Host \"❌ Go parser failed\" -ForegroundColor Red",
+          "score": 1
+        },
+        {
+          "line": 118,
+          "content": "Write-Host \"✅ Go parsing completed\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 121,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 122,
+          "content": "Write-Host \"Step 5: Running diff tool...\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 123,
+          "content": "Write-Host \"Rust input: $RustInput\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 124,
+          "content": "Write-Host \"Go input: $GoOutputNdjson\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 125,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 130,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 131,
+          "content": "Write-Host \"========================================\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 132,
+          "content": "Write-Host \"Pipeline Summary\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 133,
+          "content": "Write-Host \"========================================\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 141,
+          "content": "        Write-Host \"Total messages processed: $($summary.total)\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 142,
+          "content": "        Write-Host \"✅ Matches: $($summary.matches) ($([math]::Round($summary.matches/$summary.total*100, 1))%)\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 143,
+          "content": "        Write-Host \"❌ Mismatches: $($summary.mismatches) ($([math]::Round($summary.mismatches/$summary.total*100, 1))%)\" -ForegroundColor Red",
+          "score": 1
+        },
+        {
+          "line": 144,
+          "content": "        Write-Host \"🔸 Missing in Go: $($summary.missing_go) ($([math]::Round($summary.missing_go/$summary.total*100, 1))%)\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 145,
+          "content": "        Write-Host \"🔹 Missing in Rust: $($summary.missing_rust) ($([math]::Round($summary.missing_rust/$summary.total*100, 1))%)\" -ForegroundColor Magenta",
+          "score": 1
+        },
+        {
+          "line": 147,
+          "content": "        Write-Host \"Could not parse diff summary\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 151,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 152,
+          "content": "Write-Host \"Generated files:\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 153,
+          "content": "Write-Host \"  📄 Go output (NDJSON): $GoOutputNdjson\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 154,
+          "content": "Write-Host \"  📄 Go output (JSON): $GoOutputJson\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 155,
+          "content": "Write-Host \"  📊 Diff report (JSON): $DiffJsonOutput\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 156,
+          "content": "Write-Host \"  📋 Diff report (Markdown): $DiffMdOutput\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 159,
+          "content": "    Write-Host \"  📖 Human-readable report: $DiffMdOutput\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 162,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 164,
+          "content": "    Write-Host \"🎉 Perfect match! All parsers agree.\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 166,
+          "content": "    Write-Host \"⚠️  Differences found between Rust and Go parsers.\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 167,
+          "content": "    Write-Host \"   See $DiffMdOutput for detailed analysis.\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 170,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 171,
+          "content": "Write-Host \"========================================\" -ForegroundColor Cyan",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_parity_iteration.ps1",
+      "score": 41,
+      "matches": [
+        {
+          "line": 12,
+          "content": "Write-Host \"=== PARITY ITERATION $ts ===\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 22,
+          "content": "$hasInitialData = (Test-Path \"examples\\pcap\\decoded\\dummy_parsed_new.ndjson\") -and (Test-Path \"examples\\pcap\\decoded\\dummy_go.ndjson\")",
+          "score": 2
+        },
+        {
+          "line": 25,
+          "content": "    Write-Host \"Initial data not found. Running initial pipeline...\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 28,
+          "content": "    Write-Host \"Running Rust pipeline...\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 32,
+          "content": "    Write-Host \"Running Go baseline...\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 36,
+          "content": "    Write-Host \"Running initial diff...\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 37,
+          "content": "    & python tools\\diff_go_rust_parsed.py --rust examples\\pcap\\decoded\\dummy_parsed_new.ndjson --go examples\\pcap\\decoded\\dummy_go.ndjson --json-out go_rust_diff.json --md-out GO_RUST_DIFF.md",
+          "score": 3
+        },
+        {
+          "line": 42,
+          "content": "Write-Host \"Taking before snapshot...\" -ForegroundColor Blue",
+          "score": 1
+        },
+        {
+          "line": 46,
+          "content": "Write-Host \"Creating backup...\" -ForegroundColor Blue",
+          "score": 1
+        },
+        {
+          "line": 53,
+          "content": "Write-Host \"Running auto-refinement...\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 55,
+          "content": "    \"--go\", \"examples\\pcap\\decoded\\dummy_go.ndjson\",",
+          "score": 2
+        },
+        {
+          "line": 56,
+          "content": "    \"--rs\", \"examples\\pcap\\decoded\\dummy_parsed_new.ndjson\", ",
+          "score": 1
+        },
+        {
+          "line": 68,
+          "content": "Write-Host \"Re-running pipeline after refinement...\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 70,
+          "content": "Write-Host \"  Regenerating registry...\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 74,
+          "content": "Write-Host \"  Building core...\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 80,
+          "content": "Write-Host \"  Running Rust pipeline...\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 84,
+          "content": "Write-Host \"  Running Go baseline...\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 88,
+          "content": "Write-Host \"  Running diff...\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 89,
+          "content": "& python tools\\diff_go_rust_parsed.py --rust examples\\pcap\\decoded\\dummy_parsed_new.ndjson --go examples\\pcap\\decoded\\dummy_go.ndjson --json-out go_rust_diff.json --md-out GO_RUST_DIFF.md",
+          "score": 3
+        },
+        {
+          "line": 93,
+          "content": "Write-Host \"Taking after snapshot...\" -ForegroundColor Blue",
+          "score": 1
+        },
+        {
+          "line": 97,
+          "content": "Write-Host \"Generating summary...\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 120,
+          "content": "Add-Content -Path \"PARITY_PROGRESS.md\" -Value $progressEntry",
+          "score": 1
+        },
+        {
+          "line": 141,
+          "content": "$iterationSummary | ConvertTo-Json -Depth 3 | Set-Content \"$iterationDir\\summary.json\"",
+          "score": 2
+        },
+        {
+          "line": 150,
+          "content": "    Add-Content -Path \"PARITY_PROGRESS.md\" -Value \"**STATUS: CONVERGED** - Mismatch rate ($afterMismatchRate%) ≤ target ($TargetMismatchRate%)\"",
+          "score": 1
+        },
+        {
+          "line": 153,
+          "content": "    Add-Content -Path \"PARITY_PROGRESS.md\" -Value \"**STATUS: NO IMPROVEMENT** - No net gain in mismatches\"",
+          "score": 1
+        },
+        {
+          "line": 156,
+          "content": "    Add-Content -Path \"PARITY_PROGRESS.md\" -Value \"**STATUS: MAX ITERS REACHED** - Completed $MaxIters iterations\"",
+          "score": 1
+        },
+        {
+          "line": 160,
+          "content": "Write-Host \"`n=== ITERATION COMPLETE ===\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 161,
+          "content": "Write-Host \"Before: $beforeMismatchRate% mismatches ($($beforeData.mismatches)/$($beforeData.total))\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 162,
+          "content": "Write-Host \"After:  $afterMismatchRate% mismatches ($($afterData.mismatches)/$($afterData.total))\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 163,
+          "content": "Write-Host \"Improvement: $improvement mismatches\" -ForegroundColor $(if ($improvement -gt 0) { \"Green\" } else { \"Red\" })",
+          "score": 1
+        },
+        {
+          "line": 166,
+          "content": "    Write-Host \"`n🎉 CONVERGED! Target mismatch rate achieved.\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 169,
+          "content": "    Write-Host \"`n⚠️  NO IMPROVEMENT - Stopping iteration.\" -ForegroundColor Yellow  ",
+          "score": 1
+        },
+        {
+          "line": 172,
+          "content": "    Write-Host \"`n⏹️  MAX ITERS REACHED - Stopping iteration.\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 175,
+          "content": "    Write-Host \"`n➡️  Continue to next iteration.\" -ForegroundColor Blue",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\validate_parsed_integrity.py",
+      "score": 40,
+      "matches": [
+        {
+          "line": 37,
+          "content": "def choose_any_required_set(parsed_data: Dict, sets: List[List[str]]) -> Tuple[bool, Optional[List[str]]]:",
+          "score": 2
+        },
+        {
+          "line": 39,
+          "content": "    Check if any of the required sets is fully present in parsed_data.",
+          "score": 2
+        },
+        {
+          "line": 43,
+          "content": "        if all(field in parsed_data for field in required_set):",
+          "score": 2
+        },
+        {
+          "line": 169,
+          "content": "        f.write(\"# Parse Integrity Summary\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 173,
+          "content": "        f.write(\"## Overall Statistics\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 174,
+          "content": "        f.write(f\"- **Total rows processed:** {summary['total_rows']}\\n\")",
+          "score": 1
+        },
+        {
+          "line": 175,
+          "content": "        f.write(f\"- **Parsed OK:** {summary['parsed_ok']} ({summary['parsed_ok']/summary['total_rows']*100:.1f}%)\\n\")",
+          "score": 1
+        },
+        {
+          "line": 176,
+          "content": "        f.write(f\"- **Parsed empty object:** {summary['parsed_empty_object']} ({summary['parsed_empty_object']/summary['total_rows']*100:.1f}%)\\n\")",
+          "score": 1
+        },
+        {
+          "line": 177,
+          "content": "        f.write(f\"- **Parsed null:** {summary['parsed_null']} ({summary['parsed_null']/summary['total_rows']*100:.1f}%)\\n\")",
+          "score": 1
+        },
+        {
+          "line": 178,
+          "content": "        f.write(f\"- **Parse errors present:** {summary['parse_error_present']} ({summary['parse_error_present']/summary['total_rows']*100:.1f}%)\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 181,
+          "content": "        f.write(\"## Violations Overview\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 183,
+          "content": "            f.write(f\"**Total violations found: {len(violations)}**\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 191,
+          "content": "            f.write(\"### Violation Types\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 193,
+          "content": "                f.write(f\"- **{violation_type}:** {count} occurrences\\n\")",
+          "score": 1
+        },
+        {
+          "line": 194,
+          "content": "            f.write(\"\\n\")",
+          "score": 1
+        },
+        {
+          "line": 196,
+          "content": "            f.write(\"No violations found.\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 199,
+          "content": "        f.write(\"## Per-Message Statistics\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 204,
+          "content": "            f.write(\"| Message Name | Total | OK | Empty | Null | Error | Failure Rate |\\n\")",
+          "score": 1
+        },
+        {
+          "line": 205,
+          "content": "            f.write(\"|-------------|-------|----|-----|------|-------|-------------|\\n\")",
+          "score": 1
+        },
+        {
+          "line": 216,
+          "content": "                f.write(f\"| {message_name} | {stats['total']} | {stats['parsed_ok']} | {stats['parsed_empty_object']} | {stats['parsed_null']} | {stats['parse_error_present']} | {failure_rate:.1f}% |\\n\")",
+          "score": 1
+        },
+        {
+          "line": 217,
+          "content": "            f.write(\"\\n\")",
+          "score": 1
+        },
+        {
+          "line": 219,
+          "content": "            f.write(\"No per-message statistics available.\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 223,
+          "content": "            f.write(\"## Sample Failures\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 224,
+          "content": "            f.write(\"First 10 failed rows with failure reasons:\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 227,
+          "content": "                f.write(f\"### {i}. Frame {violation['frame_index']} - {violation['message_name']}\\n\")",
+          "score": 1
+        },
+        {
+          "line": 228,
+          "content": "                f.write(f\"- **Status:** {violation['status']}\\n\")",
+          "score": 1
+        },
+        {
+          "line": 229,
+          "content": "                f.write(f\"- **Reasons:** {', '.join(violation['reasons'])}\\n\")",
+          "score": 1
+        },
+        {
+          "line": 230,
+          "content": "                f.write(f\"- **Prefix:** {violation['prefix']}\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 338,
+          "content": "            json.dump(results, f, indent=2, ensure_ascii=False)",
+          "score": 1
+        },
+        {
+          "line": 388,
+          "content": "        default='examples/pcap/decoded/dummy_parsed_all.ndjson',",
+          "score": 4
+        },
+        {
+          "line": 389,
+          "content": "        help='Input NDJSON file path (default: examples/pcap/decoded/dummy_parsed_all.ndjson)'",
+          "score": 4
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\cleanup\\disable_demo_outputs.py",
+      "score": 37,
+      "matches": [
+        {
+          "line": 30,
+          "content": "    r\"Hello world from Go\",",
+          "score": 2
+        },
+        {
+          "line": 39,
+          "content": "    r\"pretty json\",",
+          "score": 4
+        },
+        {
+          "line": 40,
+          "content": "    r\"Pretty JSON\",",
+          "score": 4
+        },
+        {
+          "line": 44,
+          "content": "    r\"json\\.dump\", r\"json\\.dumps\", r\"write\\(\", r\"fprintf\", r\"fmt\\.Fprint\", r\"fmt\\.Fprintf\",",
+          "score": 1
+        },
+        {
+          "line": 45,
+          "content": "    r\"Write-Host\", r\"Out-File\", r\"Set-Content\", r\"Add-Content\", r\"ConvertTo-Json\",",
+          "score": 5
+        },
+        {
+          "line": 48,
+          "content": "    r\"dummy_go.*\\.ndjson\", r\"john_go.*\\.ndjson\"",
+          "score": 2
+        },
+        {
+          "line": 117,
+          "content": "    ap = argparse.ArgumentParser(description=\"Find and optionally disable placeholder/demo outputs across the repo.\")",
+          "score": 4
+        },
+        {
+          "line": 152,
+          "content": "        json.dump({\"root\": str(ROOT), \"suspects\": suspects}, f, ensure_ascii=False, indent=2)",
+          "score": 1
+        },
+        {
+          "line": 155,
+          "content": "        f.write(\"# Placeholder / Demo Writers — Suspect Report\\n\\n\")",
+          "score": 5
+        },
+        {
+          "line": 156,
+          "content": "        f.write(f\"- Repo root: `{ROOT}`\\n\")",
+          "score": 1
+        },
+        {
+          "line": 157,
+          "content": "        f.write(f\"- Total suspects: **{len(suspects)}**\\n\")",
+          "score": 1
+        },
+        {
+          "line": 158,
+          "content": "        f.write(f\"- Auto-touchable (in tools/ or scripts/): **{sum(1 for s in suspects if s['touchable'])}**\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 160,
+          "content": "            f.write(f\"## {s['file']}  (score: {s['score']}, touchable: {s['touchable']})\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 162,
+          "content": "                f.write(f\"- L{m['line']}: `{m['content']}` (score {m['score']})\\n\")",
+          "score": 1
+        },
+        {
+          "line": 164,
+          "content": "                f.write(f\"- … plus {len(s['matches']) - 30} more lines\\n\")",
+          "score": 1
+        },
+        {
+          "line": 165,
+          "content": "            f.write(\"\\n\")",
+          "score": 1
+        },
+        {
+          "line": 171,
+          "content": "        print(\"[DRY-RUN] No changes applied. Re-run with --apply to comment out demo writers in tools/ and scripts/.\")",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_integrity_check.ps1",
+      "score": 20,
+      "matches": [
+        {
+          "line": 6,
+          "content": "    [string]$In = \"examples\\pcap\\decoded\\dummy_parsed_all.ndjson\"",
+          "score": 4
+        },
+        {
+          "line": 35,
+          "content": "    Write-Host \"Using virtual environment Python: $pythonExe\"",
+          "score": 1
+        },
+        {
+          "line": 38,
+          "content": "    Write-Host \"Using virtual environment Python: $pythonExe\"",
+          "score": 1
+        },
+        {
+          "line": 44,
+          "content": "            Write-Host \"Using system Python: $pythonExe\"",
+          "score": 1
+        },
+        {
+          "line": 49,
+          "content": "                Write-Host \"Using system Python3: $pythonExe\"",
+          "score": 1
+        },
+        {
+          "line": 62,
+          "content": "Write-Host \"=== Parse Integrity Check ===\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 63,
+          "content": "Write-Host \"Input:    $inputPath\"",
+          "score": 1
+        },
+        {
+          "line": 64,
+          "content": "Write-Host \"Script:   $pythonScript\"",
+          "score": 1
+        },
+        {
+          "line": 65,
+          "content": "Write-Host \"Output:   $outputJson, $outputMd\"",
+          "score": 1
+        },
+        {
+          "line": 66,
+          "content": "Write-Host \"Python:   $pythonExe\"",
+          "score": 1
+        },
+        {
+          "line": 67,
+          "content": "Write-Host \"============================\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 68,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 75,
+          "content": "    Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 77,
+          "content": "        Write-Host \"✅ PARSE INTEGRITY CHECK PASSED\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 79,
+          "content": "        Write-Host \"❌ PARSE INTEGRITY CHECK FAILED (exit code: $exitCode)\" -ForegroundColor Red",
+          "score": 1
+        },
+        {
+          "line": 84,
+          "content": "        Write-Host \"📄 JSON report: $outputJson\" -ForegroundColor Blue",
+          "score": 1
+        },
+        {
+          "line": 87,
+          "content": "        Write-Host \"📄 Markdown report: $outputMd\" -ForegroundColor Blue",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\validate_go_baseline.py",
+      "score": 19,
+      "matches": [
+        {
+          "line": 5,
+          "content": "SRC_B = r\"examples/pcap/decoded/dummy_parsed_new.ndjson\"",
+          "score": 1
+        },
+        {
+          "line": 6,
+          "content": "OUT_ND = r\"examples/pcap/decoded/dummy_go_strict.ndjson\"",
+          "score": 2
+        },
+        {
+          "line": 7,
+          "content": "OUT_JSON = r\"examples/pcap/decoded/dummy_go_strict.json\"",
+          "score": 1
+        },
+        {
+          "line": 87,
+          "content": "        f.write(\"# Go Baseline Validation (Strict Mode)\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 88,
+          "content": "        f.write(f\"- Input: `{src}`\\n\")",
+          "score": 1
+        },
+        {
+          "line": 89,
+          "content": "        f.write(f\"- Output NDJSON: `{OUT_ND}`\\n\")",
+          "score": 1
+        },
+        {
+          "line": 90,
+          "content": "        f.write(f\"- Output JSON: `{OUT_JSON}`\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 91,
+          "content": "        f.write(f\"## Summary\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 92,
+          "content": "        f.write(f\"- Total rows: **{total}**\\n\")",
+          "score": 1
+        },
+        {
+          "line": 93,
+          "content": "        f.write(f\"- Rows with parse_error: **{with_errors}**\\n\")",
+          "score": 1
+        },
+        {
+          "line": 94,
+          "content": "        f.write(f\"- Unique prefixes: **{len(by_prefix)}**\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 95,
+          "content": "        f.write(\"### By prefix (top 15)\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 97,
+          "content": "            f.write(f\"- `{p}`: {c}\\n\")",
+          "score": 1
+        },
+        {
+          "line": 98,
+          "content": "        f.write(\"\\n## Shape Check Failures\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 100,
+          "content": "            f.write(\"✅ No shape failures detected.\\n\")",
+          "score": 1
+        },
+        {
+          "line": 102,
+          "content": "            f.write(f\"❌ {len(errs)} shape failures:\\n\")",
+          "score": 1
+        },
+        {
+          "line": 104,
+          "content": "                f.write(f\"- Row {i}: {msg}\\n\")",
+          "score": 1
+        },
+        {
+          "line": 106,
+          "content": "                f.write(f\"- … (+{len(errs)-50} more)\\n\")",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_pcap_full.ps1",
+      "score": 17,
+      "matches": [
+        {
+          "line": 9,
+          "content": "  Write-Host \"> $cmd\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 25,
+          "content": "# Expect your existing pipeline to write to examples/pcap/decoded/<name>_parsed_all.ndjson",
+          "score": 1
+        },
+        {
+          "line": 59,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 60,
+          "content": "Write-Host \"================= JOHN.PCAP REPORT =================\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 61,
+          "content": "Write-Host \"Input frames        : $($diff.total_rows)\"",
+          "score": 1
+        },
+        {
+          "line": 62,
+          "content": "Write-Host \"Go-Rust matches     : $($diff.matches)  ($matchPercent%)\"",
+          "score": 1
+        },
+        {
+          "line": 63,
+          "content": "Write-Host \"Go-Rust mismatches  : $($diff.mismatches)\"",
+          "score": 1
+        },
+        {
+          "line": 64,
+          "content": "Write-Host \"Integrity violations: $($intg.violations_total)\"",
+          "score": 1
+        },
+        {
+          "line": 65,
+          "content": "Write-Host \" - empty objects    : $($intg.categories.parsed_empty_object)\"",
+          "score": 1
+        },
+        {
+          "line": 66,
+          "content": "Write-Host \" - parse errors     : $($intg.categories.parse_error_present)\"",
+          "score": 1
+        },
+        {
+          "line": 67,
+          "content": "Write-Host \" - missing fields   : $($intg.categories.missing_required_field)\"",
+          "score": 1
+        },
+        {
+          "line": 68,
+          "content": "Write-Host \" - type mismatch    : $($intg.categories.type_mismatch)\"",
+          "score": 1
+        },
+        {
+          "line": 69,
+          "content": "Write-Host \"Artifacts:\"",
+          "score": 1
+        },
+        {
+          "line": 70,
+          "content": "Write-Host \" - Rust NDJSON      : $rustNdjson\"",
+          "score": 1
+        },
+        {
+          "line": 71,
+          "content": "Write-Host \" - Go   NDJSON      : $goNdjson\"",
+          "score": 1
+        },
+        {
+          "line": 72,
+          "content": "Write-Host \" - Diff (json/md)   : go_rust_diff.json / GO_RUST_DIFF.md\"",
+          "score": 1
+        },
+        {
+          "line": 73,
+          "content": "Write-Host \" - Integrity (json/md): PARSE_INTEGRITY.json / PARSE_INTEGRITY.md\"",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\go_baseline\\comprehensive_comparison.py",
+      "score": 13,
+      "matches": [
+        {
+          "line": 65,
+          "content": "            f.write(line + '\\n')",
+          "score": 1
+        },
+        {
+          "line": 191,
+          "content": "    rust_ndjson_path = 'examples/pcap/decoded/dummy_parsed_all.ndjson'",
+          "score": 4
+        },
+        {
+          "line": 192,
+          "content": "    go_output_path = 'examples/pcap/decoded/dummy_go_comprehensive.ndjson'",
+          "score": 2
+        },
+        {
+          "line": 209,
+          "content": "    neutral_path = 'examples/pcap/decoded/dummy_neutral_comprehensive.ndjson'",
+          "score": 1
+        },
+        {
+          "line": 212,
+          "content": "            f.write(line + '\\n')",
+          "score": 1
+        },
+        {
+          "line": 226,
+          "content": "        with open('examples/pcap/decoded/comparison_comprehensive.json', 'w') as f:",
+          "score": 1
+        },
+        {
+          "line": 227,
+          "content": "            json.dump(comparison_results, f, indent=2)",
+          "score": 1
+        },
+        {
+          "line": 253,
+          "content": "        with open('examples/pcap/decoded/comparison_comprehensive.json', 'w') as f:",
+          "score": 1
+        },
+        {
+          "line": 254,
+          "content": "            json.dump(summary, f, indent=2)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_parity_iteration.sh",
+      "score": 12,
+      "matches": [
+        {
+          "line": 45,
+          "content": "if [[ -f \"examples/pcap/decoded/dummy_parsed_new.ndjson\" && -f \"examples/pcap/decoded/dummy_go.ndjson\" ]]; then",
+          "score": 2
+        },
+        {
+          "line": 60,
+          "content": "    python tools/diff_go_rust_parsed.py --rust examples/pcap/decoded/dummy_parsed_new.ndjson --go examples/pcap/decoded/dummy_go.ndjson --json-out go_rust_diff.json --md-out GO_RUST_DIFF.md || { echo \"ERROR: Initial diff failed\"; exit 1; }",
+          "score": 3
+        },
+        {
+          "line": 79,
+          "content": "    \"--go\" \"examples/pcap/decoded/dummy_go.ndjson\"",
+          "score": 2
+        },
+        {
+          "line": 80,
+          "content": "    \"--rs\" \"examples/pcap/decoded/dummy_parsed_new.ndjson\"",
+          "score": 1
+        },
+        {
+          "line": 111,
+          "content": "python tools/diff_go_rust_parsed.py --rust examples/pcap/decoded/dummy_parsed_new.ndjson --go examples/pcap/decoded/dummy_go.ndjson --json-out go_rust_diff.json --md-out GO_RUST_DIFF.md || { echo \"ERROR: Diff failed\"; exit 1; }",
+          "score": 3
+        },
+        {
+          "line": 178,
+          "content": "    json.dump(iteration_summary, f, indent=2)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\kill_placeholders.ps1",
+      "score": 8,
+      "matches": [
+        {
+          "line": 18,
+          "content": "Write-Host \"== Placeholder/Demo Cleaner ==\" -ForegroundColor Cyan",
+          "score": 5
+        },
+        {
+          "line": 19,
+          "content": "Write-Host \"Repo: $root\"",
+          "score": 1
+        },
+        {
+          "line": 20,
+          "content": "Write-Host \"Report will be written under .reports/\" -ForegroundColor DarkGray",
+          "score": 1
+        },
+        {
+          "line": 25,
+          "content": "Write-Host \"Running: $py $($argsList -join ' ')\" -ForegroundColor Yellow",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\go_baseline\\main.go",
+      "score": 8,
+      "matches": [
+        {
+          "line": 39,
+          "content": "\t\tfmt.Fprintf(os.Stderr, \"usage: %s <input_ndjson> <out_ndjson> <out_json>\\n\", filepath.Base(os.Args[0]))",
+          "score": 3
+        },
+        {
+          "line": 110,
+          "content": "\t\tw.Write(b)",
+          "score": 1
+        },
+        {
+          "line": 118,
+          "content": "\t// Also write pretty JSON array",
+          "score": 4
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\go_baseline\\main_strict.go",
+      "score": 8,
+      "matches": [
+        {
+          "line": 39,
+          "content": "\t\tfmt.Fprintf(os.Stderr, \"usage: %s <input_ndjson> <out_ndjson> <out_json>\\n\", filepath.Base(os.Args[0]))",
+          "score": 3
+        },
+        {
+          "line": 110,
+          "content": "\t\tw.Write(b)",
+          "score": 1
+        },
+        {
+          "line": 118,
+          "content": "\t// Also write pretty JSON array",
+          "score": 4
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_dummy_parsing.ps1",
+      "score": 7,
+      "matches": [
+        {
+          "line": 4,
+          "content": "$reass = Join-Path $repo \"examples\\pcap\\decoded\\dummy_reassembled.json\"",
+          "score": 1
+        },
+        {
+          "line": 5,
+          "content": "$parsed = Join-Path $repo \"examples\\pcap\\decoded\\dummy_parsed.json\"",
+          "score": 1
+        },
+        {
+          "line": 6,
+          "content": "$ndj = Join-Path $repo \"examples\\pcap\\decoded\\dummy_parsed.ndjson\"",
+          "score": 1
+        },
+        {
+          "line": 23,
+          "content": "Write-Host \"`n=== Done ===\"",
+          "score": 1
+        },
+        {
+          "line": 24,
+          "content": "Write-Host \"Reassembled:\" $reass",
+          "score": 1
+        },
+        {
+          "line": 25,
+          "content": "Write-Host \"Parsed JSON :\" $parsed",
+          "score": 1
+        },
+        {
+          "line": 26,
+          "content": "Write-Host \"NDJSON      :\" $ndj",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\diff_go_rust_parsed.py",
+      "score": 6,
+      "matches": [
+        {
+          "line": 269,
+          "content": "        json.dump(report, f, indent=2)",
+          "score": 1
+        },
+        {
+          "line": 397,
+          "content": "                json.dumps(result.rust_parsed, indent=2) if result.rust_parsed else \"null\",",
+          "score": 2
+        },
+        {
+          "line": 402,
+          "content": "                json.dumps(result.go_parsed, indent=2) if result.go_parsed else \"null\",",
+          "score": 2
+        },
+        {
+          "line": 460,
+          "content": "        f.write('\\n'.join(lines))",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\go_struct_discovery.py",
+      "score": 6,
+      "matches": [
+        {
+          "line": 69,
+          "content": "        print(json.dumps({\"error\":\"retroproto dir missing\",\"path\":str(RETRO)}))",
+          "score": 2
+        },
+        {
+          "line": 78,
+          "content": "    OUTJSON.write_text(json.dumps({",
+          "score": 2
+        },
+        {
+          "line": 83,
+          "content": "    print(json.dumps({\"ok\": True, \"count\": len(structs), \"out\": str(OUTJSON)}))",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\retroproto_porter_py\\porter.py",
+      "score": 6,
+      "matches": [
+        {
+          "line": 519,
+          "content": "        json.dumps(mapping, indent=2), encoding=\"utf-8\"",
+          "score": 2
+        },
+        {
+          "line": 522,
+          "content": "        json.dumps(report, indent=2), encoding=\"utf-8\"",
+          "score": 2
+        },
+        {
+          "line": 526,
+          "content": "    print(json.dumps({",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\verify_no_gaps.py",
+      "score": 6,
+      "matches": [
+        {
+          "line": 268,
+          "content": "            f.write(report_content)",
+          "score": 1
+        },
+        {
+          "line": 279,
+          "content": "        print(\"Example: python verify_no_gaps.py examples/pcap/decoded/dummy_parsed_all.ndjson\")",
+          "score": 4
+        },
+        {
+          "line": 303,
+          "content": "        json.dump(results, f, indent=2, ensure_ascii=False)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_go_strict.ps1",
+      "score": 5,
+      "matches": [
+        {
+          "line": 3,
+          "content": "  [string]$Ndjson = \"examples/pcap/decoded/dummy_go_strict.ndjson\",",
+          "score": 2
+        },
+        {
+          "line": 4,
+          "content": "  [string]$Json   = \"examples/pcap/decoded/dummy_go_strict.json\"",
+          "score": 1
+        },
+        {
+          "line": 9,
+          "content": "  elseif (Test-Path \"examples/pcap/decoded/dummy_parsed_new.ndjson\") { $In = \"examples/pcap/decoded/dummy_parsed_new.ndjson\" }",
+          "score": 1
+        },
+        {
+          "line": 16,
+          "content": "Write-Host \"Strict baseline written to $Ndjson and $Json. Validation report: GO_BASELINE_VALIDATION.md\"",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\diagnose_repo.py",
+      "score": 4,
+      "matches": [
+        {
+          "line": 122,
+          "content": "        \"examples/pcap/decoded/dummy_reassembled.json\",",
+          "score": 1
+        },
+        {
+          "line": 182,
+          "content": "    reasm = repo / \"examples/pcap/decoded/dummy_reassembled.json\"",
+          "score": 1
+        },
+        {
+          "line": 194,
+          "content": "    out_json.write_text(json.dumps(diag, indent=2), encoding=\"utf-8\")",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_go_baseline.sh",
+      "score": 4,
+      "matches": [
+        {
+          "line": 28,
+          "content": "RUST_INPUT=\"$EXAMPLES_DIR/pcap/decoded/dummy_parsed_new.ndjson\"",
+          "score": 1
+        },
+        {
+          "line": 29,
+          "content": "GO_OUTPUT_NDJSON=\"$EXAMPLES_DIR/pcap/decoded/dummy_go.ndjson\"",
+          "score": 2
+        },
+        {
+          "line": 30,
+          "content": "GO_OUTPUT_JSON=\"$EXAMPLES_DIR/pcap/decoded/dummy_go.json\"",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_integrity_check.sh",
+      "score": 4,
+      "matches": [
+        {
+          "line": 10,
+          "content": "INPUT_FILE=\"examples/pcap/decoded/dummy_parsed_all.ndjson\"",
+          "score": 4
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\align_structs_only.py",
+      "score": 4,
+      "matches": [
+        {
+          "line": 57,
+          "content": "    CACHE_FILE.write_text(json.dumps(structs, indent=2), encoding=\"utf8\")",
+          "score": 2
+        },
+        {
+          "line": 164,
+          "content": "    print(json.dumps(report))",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\gen_full_parsers.py",
+      "score": 4,
+      "matches": [
+        {
+          "line": 177,
+          "content": "        f.write(file_content)",
+          "score": 1
+        },
+        {
+          "line": 244,
+          "content": "        f.write(mod_content)",
+          "score": 1
+        },
+        {
+          "line": 260,
+          "content": "            f.write(actions_mod_content)",
+          "score": 1
+        },
+        {
+          "line": 305,
+          "content": "        json.dump(report, f, indent=2, ensure_ascii=False)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\gen_gameaction_subparsers.py",
+      "score": 4,
+      "matches": [
+        {
+          "line": 208,
+          "content": "            f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 237,
+          "content": "            f.write(module_content)",
+          "score": 1
+        },
+        {
+          "line": 247,
+          "content": "                f.write(\"// AUTO-GENERATED GameAction subparsers\\n// Individual action parsers are organized as submodules\\n\\n\")",
+          "score": 1
+        },
+        {
+          "line": 306,
+          "content": "        json.dump(result, f, indent=2, ensure_ascii=False)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\generate_missing_parsers_plan.py",
+      "score": 4,
+      "matches": [
+        {
+          "line": 238,
+          "content": "    OUT_JSON.write_text(json.dumps({",
+          "score": 2
+        },
+        {
+          "line": 288,
+          "content": "    print(json.dumps({",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\ids\\ingest_ids.py",
+      "score": 4,
+      "matches": [
+        {
+          "line": 56,
+          "content": "    s = json.dumps({str(k): v for k, v in sorted(data.items())}, ensure_ascii=False, indent=2)",
+          "score": 2
+        },
+        {
+          "line": 74,
+          "content": "    print(json.dumps(meta, ensure_ascii=False))",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\parser_coverage_audit.py",
+      "score": 4,
+      "matches": [
+        {
+          "line": 169,
+          "content": "    out_json.write_text(json.dumps({",
+          "score": 2
+        },
+        {
+          "line": 229,
+          "content": "    print(json.dumps({",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\port_missing_parsers_from_go.py",
+      "score": 4,
+      "matches": [
+        {
+          "line": 180,
+          "content": "        print(json.dumps({\"error\":\"missing missing_parsers_plan.json\"}))",
+          "score": 2
+        },
+        {
+          "line": 211,
+          "content": "    print(json.dumps({\"ported\":ported, \"filled\":filled, \"errors\":errors}, indent=2))",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\retroproto_porter_py\\run_porter.ps1",
+      "score": 4,
+      "matches": [
+        {
+          "line": 7,
+          "content": "Write-Host \"== Retroproto Python porter ==\"",
+          "score": 1
+        },
+        {
+          "line": 8,
+          "content": "Write-Host \"tp:\" $Tp",
+          "score": 1
+        },
+        {
+          "line": 9,
+          "content": "Write-Host \"out:\" $Out",
+          "score": 1
+        },
+        {
+          "line": 12,
+          "content": "Write-Host \"== Done ==\"",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\sync_action_parsers.py",
+      "score": 4,
+      "matches": [
+        {
+          "line": 110,
+          "content": "        print(json.dumps({\"error\":\"run go_struct_discovery first\"}))",
+          "score": 2
+        },
+        {
+          "line": 135,
+          "content": "    print(json.dumps({",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_dummy_pipeline_verbose.ps1",
+      "score": 3,
+      "matches": [
+        {
+          "line": 11,
+          "content": "Write-Host \"Running pipeline with flags: $($flags -join ' ')\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 12,
+          "content": "Write-Host \"Command: python scripts\\run_dummy_pipeline.py $($flags -join ' ')\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 13,
+          "content": "Write-Host \"\"",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\generate_prefix_counts.py",
+      "score": 3,
+      "matches": [
+        {
+          "line": 32,
+          "content": "        json.dump(dict(sorted_counts), f, indent=2, ensure_ascii=False)",
+          "score": 1
+        },
+        {
+          "line": 38,
+          "content": "        'examples/pcap/decoded/flow_000_decoded.json',",
+          "score": 1
+        },
+        {
+          "line": 39,
+          "content": "        'examples/pcap/decoded/prefix_counts_after_overrides.json'",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\parity\\auto_refine_from_go.py",
+      "score": 3,
+      "matches": [
+        {
+          "line": 145,
+          "content": "                    f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 232,
+          "content": "    write_text(f\"{out_dir}/summary.txt\", json.dumps(summary, indent=2))",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\parity\\utils.py",
+      "score": 3,
+      "matches": [
+        {
+          "line": 54,
+          "content": "        json.dump(obj, f, indent=2, ensure_ascii=False)",
+          "score": 1
+        },
+        {
+          "line": 61,
+          "content": "        f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 298,
+          "content": "            f.write('\\n'.join(new_lines))",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_action_shims.ps1",
+      "score": 2,
+      "matches": [
+        {
+          "line": 1,
+          "content": "Write-Host \"== Generating action shims ==\"",
+          "score": 1
+        },
+        {
+          "line": 4,
+          "content": "Write-Host \"== Building core ==\"",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\run_dummy_pipeline.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 230,
+          "content": "            print(json.dumps(summary, indent=2))",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\ensure_action_shims.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 127,
+          "content": "    print(json.dumps({",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\fix_parser_systematic.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 118,
+          "content": "                f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 142,
+          "content": "            f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\fix_while_loop_parsing.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 105,
+          "content": "                    f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 178,
+          "content": "            f.write(fixed_content)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\gen_parser_registry.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 125,
+          "content": "    print(json.dumps({\"generated_count\": len(stems), \"actions_count\": len([s for s in stems if s.startswith((\"GameAction\", \"CliAction\"))])}))",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\go_baseline\\gen_go_registry.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 261,
+          "content": "        f.write('\\n'.join(lines))",
+          "score": 1
+        },
+        {
+          "line": 312,
+          "content": "            json.dump(debug_info, f, indent=2)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\introspect_action_exports.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 37,
+          "content": "    print(json.dumps({",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\regen_and_parse.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 122,
+          "content": "    print(json.dumps({",
+          "score": 2
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "scripts\\ingest_ids.ps1",
+      "score": 1,
+      "matches": [
+        {
+          "line": 4,
+          "content": "Write-Host \"IDs ingested. JSON written to third_party/identifiants/json and mirrored into core/assets/ids\"",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\align_rust_to_go.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 165,
+          "content": "            json.dump(cache_data, f, indent=2)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\find_go_structs.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 170,
+          "content": "        json.dump(results, f, indent=2, ensure_ascii=False)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\find_plaintext_flow.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 91,
+          "content": "        json.dump(report, f, indent=2)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\fix_all_function_closing.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 39,
+          "content": "                    f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\fix_comprehensive_syntax.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 161,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\fix_delimiter_issues.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 148,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\fix_double_braces.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 33,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\fix_function_closing.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 41,
+          "content": "                    f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\fix_malformed_structs.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 52,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\fix_reserved_keywords.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 87,
+          "content": "                    f.write(fixed_content)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\fix_specific_pattern.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 32,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\go_baseline\\make_neutral_from_parsed.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 49,
+          "content": "            f.write(line + '\\n')",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\go_schema_index.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 139,
+          "content": "        json.dump(output, f, indent=2, ensure_ascii=False)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\go_to_rust_mapper.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 240,
+          "content": "        json.dump(output, f, indent=2, ensure_ascii=False)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "tools\\infer_retroproto_mapping.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 86,
+          "content": "        json.dump(data, f, indent=2, ensure_ascii=False)",
+          "score": 1
+        }
+      ],
+      "touchable": true
+    },
+    {
+      "file": "repo_report_generator.py",
+      "score": 60,
+      "matches": [
+        {
+          "line": 361,
+          "content": "# This script only Write-Hosts the actions that would be performed",
+          "score": 1
+        },
+        {
+          "line": 363,
+          "content": "Write-Host \"=== Repository Normalization Dry Run (PowerShell) ===\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 364,
+          "content": "Write-Host \"Timestamp: $(Get-Date -Format 'yyyy-MM-ddTHH:mm:ssZ')\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 365,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 368,
+          "content": "Write-Host \"Phase 1: Directory Structure Normalization\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 369,
+          "content": "Write-Host \"===========================================\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 371,
+          "content": "Write-Host \"1.1 Consolidating Retroproto Trees...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 372,
+          "content": "Write-Host \"  - Would copy unique files from dofus-retro-bot/third_party/retroproto/ to third_party/retroproto/\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 373,
+          "content": "Write-Host \"  - Would remove dofus-retro-bot/third_party/retroproto/ directory\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 374,
+          "content": "Write-Host \"  - Would update references to old path\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 376,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 377,
+          "content": "Write-Host \"1.2 Consolidating Example Paths...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 378,
+          "content": "Write-Host \"  - Would merge unique files from dofus-retro-bot/examples/ to examples/\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 379,
+          "content": "Write-Host \"  - Would remove redundant example directories\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 380,
+          "content": "Write-Host \"  - Would update pipeline scripts to use canonical paths\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 383,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 384,
+          "content": "Write-Host \"Phase 2: Parser Module Structure Fixes\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 385,
+          "content": "Write-Host \"=======================================\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 387,
+          "content": "Write-Host \"2.1 Fixing mod.rs Declarations...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 388,
+          "content": "Write-Host \"  - Would update core/src/retroproto_parsers/mod.rs\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 389,
+          "content": "Write-Host \"  - Would ensure generated and handwritten modules are properly exposed\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 390,
+          "content": "Write-Host \"  - Would verify all parser files are linked in module tree\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 392,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 393,
+          "content": "Write-Host \"2.2 Actions Submodule Integration...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 394,
+          "content": "Write-Host \"  - Would create core/src/retroproto_parsers/generated/actions/ directory\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 395,
+          "content": "Write-Host \"  - Would generate action-specific parser files\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 396,
+          "content": "Write-Host \"  - Would update generated/mod.rs to include actions submodule\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 399,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 400,
+          "content": "Write-Host \"Phase 3: Registry Generation\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 401,
+          "content": "Write-Host \"===========================\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 403,
+          "content": "Write-Host \"3.1 Parser Registry Normalization...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 404,
+          "content": "Write-Host \"  - Would run tools/gen_parser_registry.py\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 405,
+          "content": "Write-Host \"  - Would verify all generated parsers are included\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 406,
+          "content": "Write-Host \"  - Would update GameActions dispatcher registration\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 407,
+          "content": "Write-Host \"  - Would generate comprehensive registry documentation\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 410,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 411,
+          "content": "Write-Host \"Phase 4: Binary Consistency\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 412,
+          "content": "Write-Host \"===========================\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 414,
+          "content": "Write-Host \"4.1 Build System Alignment...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 415,
+          "content": "Write-Host \"  - Would ensure all builds use authoritative core (core/)\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 416,
+          "content": "Write-Host \"  - Would update Cargo.toml references\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 417,
+          "content": "Write-Host \"  - Would verify binary CLI interfaces are consistent\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 420,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 421,
+          "content": "Write-Host \"Phase 5: Documentation Updates\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 422,
+          "content": "Write-Host \"==============================\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 424,
+          "content": "Write-Host \"5.1 Path References...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 425,
+          "content": "Write-Host \"  - Would update all documentation to reflect new canonical paths\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 426,
+          "content": "Write-Host \"  - Would update pipeline scripts and automation\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 427,
+          "content": "Write-Host \"  - Would create migration guide for developers\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 429,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 430,
+          "content": "Write-Host \"=== Dry Run Complete ===\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 431,
+          "content": "Write-Host \"To execute these changes, run the actual normalization script.\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 454,
+          "content": "        f.write(create_human_readable_report(data, analysis))",
+          "score": 1
+        },
+        {
+          "line": 459,
+          "content": "        json.dump({",
+          "score": 1
+        },
+        {
+          "line": 468,
+          "content": "        f.write(create_normalization_plan(analysis))",
+          "score": 1
+        },
+        {
+          "line": 475,
+          "content": "        f.write(shell_script)",
+          "score": 1
+        },
+        {
+          "line": 478,
+          "content": "        f.write(powershell_script)",
+          "score": 1
+        },
+        {
+          "line": 483,
+          "content": "        f.write(f\"\"\"Parser Registry Preview",
+          "score": 1
+        },
+        {
+          "line": 491,
+          "content": "            f.write(f\"  {entry}\\n\")",
+          "score": 1
+        },
+        {
+          "line": 493,
+          "content": "        f.write(f\"\"\"",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "repo_norm_actions.ps1",
+      "score": 52,
+      "matches": [
+        {
+          "line": 2,
+          "content": "# This script only Write-Hosts the actions that would be performed",
+          "score": 1
+        },
+        {
+          "line": 4,
+          "content": "Write-Host \"=== Repository Normalization Dry Run (PowerShell) ===\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 5,
+          "content": "Write-Host \"Timestamp: $(Get-Date -Format 'yyyy-MM-ddTHH:mm:ssZ')\" -ForegroundColor Gray",
+          "score": 1
+        },
+        {
+          "line": 6,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 9,
+          "content": "Write-Host \"Phase 1: Directory Structure Normalization\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 10,
+          "content": "Write-Host \"===========================================\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 12,
+          "content": "Write-Host \"1.1 Consolidating Retroproto Trees...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 13,
+          "content": "Write-Host \"  - Would copy unique files from dofus-retro-bot/third_party/retroproto/ to third_party/retroproto/\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 14,
+          "content": "Write-Host \"  - Would remove dofus-retro-bot/third_party/retroproto/ directory\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 15,
+          "content": "Write-Host \"  - Would update references to old path\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 17,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 18,
+          "content": "Write-Host \"1.2 Consolidating Example Paths...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 19,
+          "content": "Write-Host \"  - Would merge unique files from dofus-retro-bot/examples/ to examples/\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 20,
+          "content": "Write-Host \"  - Would remove redundant example directories\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 21,
+          "content": "Write-Host \"  - Would update pipeline scripts to use canonical paths\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 24,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 25,
+          "content": "Write-Host \"Phase 2: Parser Module Structure Fixes\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 26,
+          "content": "Write-Host \"=======================================\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 28,
+          "content": "Write-Host \"2.1 Fixing mod.rs Declarations...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 29,
+          "content": "Write-Host \"  - Would update core/src/retroproto_parsers/mod.rs\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 30,
+          "content": "Write-Host \"  - Would ensure generated and handwritten modules are properly exposed\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 31,
+          "content": "Write-Host \"  - Would verify all parser files are linked in module tree\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 33,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 34,
+          "content": "Write-Host \"2.2 Actions Submodule Integration...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 35,
+          "content": "Write-Host \"  - Would create core/src/retroproto_parsers/generated/actions/ directory\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 36,
+          "content": "Write-Host \"  - Would generate action-specific parser files\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 37,
+          "content": "Write-Host \"  - Would update generated/mod.rs to include actions submodule\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 40,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 41,
+          "content": "Write-Host \"Phase 3: Registry Generation\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 42,
+          "content": "Write-Host \"===========================\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 44,
+          "content": "Write-Host \"3.1 Parser Registry Normalization...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 45,
+          "content": "Write-Host \"  - Would run tools/gen_parser_registry.py\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 46,
+          "content": "Write-Host \"  - Would verify all generated parsers are included\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 47,
+          "content": "Write-Host \"  - Would update GameActions dispatcher registration\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 48,
+          "content": "Write-Host \"  - Would generate comprehensive registry documentation\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 51,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 52,
+          "content": "Write-Host \"Phase 4: Binary Consistency\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 53,
+          "content": "Write-Host \"===========================\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 55,
+          "content": "Write-Host \"4.1 Build System Alignment...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 56,
+          "content": "Write-Host \"  - Would ensure all builds use authoritative core (core/)\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 57,
+          "content": "Write-Host \"  - Would update Cargo.toml references\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 58,
+          "content": "Write-Host \"  - Would verify binary CLI interfaces are consistent\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 61,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 62,
+          "content": "Write-Host \"Phase 5: Documentation Updates\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 63,
+          "content": "Write-Host \"==============================\" -ForegroundColor Yellow",
+          "score": 1
+        },
+        {
+          "line": 65,
+          "content": "Write-Host \"5.1 Path References...\" -ForegroundColor Cyan",
+          "score": 1
+        },
+        {
+          "line": 66,
+          "content": "Write-Host \"  - Would update all documentation to reflect new canonical paths\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 67,
+          "content": "Write-Host \"  - Would update pipeline scripts and automation\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 68,
+          "content": "Write-Host \"  - Would create migration guide for developers\" -ForegroundColor White",
+          "score": 1
+        },
+        {
+          "line": 70,
+          "content": "Write-Host \"\"",
+          "score": 1
+        },
+        {
+          "line": 71,
+          "content": "Write-Host \"=== Dry Run Complete ===\" -ForegroundColor Green",
+          "score": 1
+        },
+        {
+          "line": 72,
+          "content": "Write-Host \"To execute these changes, run the actual normalization script.\" -ForegroundColor Gray",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "cleanup_mangled_files.py",
+      "score": 7,
+      "matches": [
+        {
+          "line": 3,
+          "content": "Clean up files with placeholder text and fix them properly.",
+          "score": 2
+        },
+        {
+          "line": 10,
+          "content": "    \"\"\"Fix files that have been mangled with placeholder text.\"\"\"",
+          "score": 2
+        },
+        {
+          "line": 17,
+          "content": "        # Skip if file doesn't have placeholder text",
+          "score": 2
+        },
+        {
+          "line": 69,
+          "content": "            f.write(clean_content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "temp_script.py",
+      "score": 5,
+      "matches": [
+        {
+          "line": 37,
+          "content": "open(out,\"w\",encoding=\"utf8\").write(json.dumps(summary, indent=2))",
+          "score": 3
+        },
+        {
+          "line": 38,
+          "content": "print(json.dumps(summary, indent=2))",
+          "score": 2
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "advanced_parser_fix.py",
+      "score": 4,
+      "matches": [
+        {
+          "line": 75,
+          "content": "                f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 95,
+          "content": "            f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 131,
+          "content": "            f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 168,
+          "content": "                        f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "temp_analyze.py",
+      "score": 4,
+      "matches": [
+        {
+          "line": 145,
+          "content": "# Simulate a merge count: how many NONE would be \"absorbed\"",
+          "score": 2
+        },
+        {
+          "line": 180,
+          "content": "    json.dump(stats, f, indent=2)",
+          "score": 1
+        },
+        {
+          "line": 183,
+          "content": "    json.dump(examples, f, indent=2)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "temp_summary.py",
+      "score": 4,
+      "matches": [
+        {
+          "line": 31,
+          "content": "json.dump(summ, open(out1,\"w\",encoding=\"utf8\"), indent=2)",
+          "score": 1
+        },
+        {
+          "line": 32,
+          "content": "json.dump(samples, open(out2,\"w\",encoding=\"utf8\"), indent=2, ensure_ascii=False)",
+          "score": 1
+        },
+        {
+          "line": 33,
+          "content": "print(json.dumps(summ, indent=2))",
+          "score": 2
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "comprehensive_syntax_fix_v2.py",
+      "score": 3,
+      "matches": [
+        {
+          "line": 56,
+          "content": "                f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 75,
+          "content": "            f.write(mod_content)",
+          "score": 1
+        },
+        {
+          "line": 101,
+          "content": "                f.write('\\n'.join(cleaned_lines))",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_critical_syntax_errors.py",
+      "score": 3,
+      "matches": [
+        {
+          "line": 22,
+          "content": "            f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 40,
+          "content": "            f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 81,
+          "content": "            f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_incomplete_files.py",
+      "score": 3,
+      "matches": [
+        {
+          "line": 39,
+          "content": "                        # Replace the placeholder with actual function name",
+          "score": 2
+        },
+        {
+          "line": 55,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "temp_parse.py",
+      "score": 3,
+      "matches": [
+        {
+          "line": 3,
+          "content": "examples\\pcap\\decoded\\_plaintext_flow_probe.json\"\"\"",
+          "score": 1
+        },
+        {
+          "line": 19,
+          "content": "    f.write(chosen)",
+          "score": 1
+        },
+        {
+          "line": 21,
+          "content": "    f.write(out)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "temp_py_script.py",
+      "score": 3,
+      "matches": [
+        {
+          "line": 14,
+          "content": "print(json.dumps(summ, indent=2))",
+          "score": 2
+        },
+        {
+          "line": 16,
+          "content": "json.dump(summ, open(out,\"w\",encoding=\"utf8\"), indent=2)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "temp_validation.py",
+      "score": 3,
+      "matches": [
+        {
+          "line": 4,
+          "content": "parsed = json.load(open('examples/pcap/decoded/dummy_parsed.json','r',encoding='utf8'))",
+          "score": 1
+        },
+        {
+          "line": 22,
+          "content": "print(json.dumps(report,indent=2))",
+          "score": 2
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "comprehensive_fix.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 50,
+          "content": "                f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 72,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "comprehensive_fix_all.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 77,
+          "content": "                f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 97,
+          "content": "            f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_remaining_errors.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 36,
+          "content": "                f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 112,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_vec_generics_v2.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 64,
+          "content": "                f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 98,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_gameaction_syntax.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 29,
+          "content": "                    f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 60,
+          "content": "                    f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_remaining_syntax.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 49,
+          "content": "                f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 79,
+          "content": "                f.write(fixed_content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_simple_syntax.py",
+      "score": 2,
+      "matches": [
+        {
+          "line": 39,
+          "content": "                f.write(content)",
+          "score": 1
+        },
+        {
+          "line": 69,
+          "content": "                f.write(fixed_content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "batch_fix.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 24,
+          "content": "                f.write(new_content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "batch_fix_empty_structs.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 50,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "comprehensive_batch_fix.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 43,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "comprehensive_cleanup.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 41,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "comprehensive_syntax_fix.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 59,
+          "content": "                    f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\comprehensive_fix.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 74,
+          "content": "                f.write(fixed_content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_all_syntax.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 40,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_double_braces.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 42,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_double_braces_simple.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 27,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_double_delimiters.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 39,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_extra_parentheses.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 33,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_final_vec_types.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 38,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_missing_braces.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 42,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_missing_parentheses_semicolons.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 36,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_missing_semicolons.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 57,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_ok_expressions.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 36,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_ok_expressions_precise.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 42,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_ok_expressions_v2.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 47,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_remaining_hash_fields.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 51,
+          "content": "                    f.write(fixed_content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_specific_double_braces.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 42,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_unwrap_braces.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 35,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "core\\fix_vec_generics.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 46,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "enhanced_fix_parsers.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 47,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "exact_pattern_fix.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 27,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "final_comprehensive_fix.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 49,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "final_fix_all.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 50,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "final_syntax_fix.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 42,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_action_function_names.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 50,
+          "content": "                    f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_all_parser_files.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 45,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_all_parser_syntax.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 62,
+          "content": "                    f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_all_syntax_errors.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 45,
+          "content": "                        f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_brackets.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 15,
+          "content": "            f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_closing_braces.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 24,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_comprehensive_syntax.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 33,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_corrupted_files.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 39,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_delimiters.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 29,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_delimiters_all.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 37,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_final_braces.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 30,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_final_syntax_errors.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 42,
+          "content": "                            f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_generated_rust_files.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 48,
+          "content": "                            f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_json_fields.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 36,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_json_quotes.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 33,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_json_references.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 46,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_parser_compilation_issues.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 117,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_remaining_braces.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 52,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_remaining_structs.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 48,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_remaining_syntax_errors.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 34,
+          "content": "                            f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_reserved_keywords.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 31,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_specific_syntax.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 74,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_struct_syntax.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 29,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_syntax_errors.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 43,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_syntax_issues.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 16,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_type_mappings.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 26,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "fix_unclosed_delimiters.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 32,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "global_fix.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 41,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "orchestrator\\tools\\extract_flows.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 128,
+          "content": "            f.write(payload)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "repo_diagnostic_collector.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 370,
+          "content": "        json.dump(results, f, indent=2, ensure_ascii=False)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "simple_fix.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 60,
+          "content": "                f.write(new_content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "simple_fix_brackets.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 32,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "simple_parser_fix.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 81,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    },
+    {
+      "file": "ultra_targeted_fix.py",
+      "score": 1,
+      "matches": [
+        {
+          "line": 32,
+          "content": "                f.write(content)",
+          "score": 1
+        }
+      ],
+      "touchable": false
+    }
+  ]
+}

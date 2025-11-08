@@ -1,0 +1,27 @@
+//! Generated parser for ChatRequestSubscribeChannelRemove
+//! 
+//! This file was automatically generated from Go schema definitions.
+//! Manual modifications may be overwritten.
+
+use crate::retroproto_parsers::parser::common_decode;
+use serde::{Serialize, Deserialize};
+
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
+pub struct ChatRequestSubscribeChannelRemove {
+    /// CSV list (JSON encoded)
+    pub channels: Vec<rune>,
+}
+
+pub fn parse_ChatRequestSubscribeChannelRemove(payload: &str) -> Result<ChatRequestSubscribeChannelRemove, String> {
+    let fields = common_decode::split_fields(payload);
+    
+    // Parse fields with safe defaults
+        let channels = common_decode::parse_string_list(fields.get(i).unwrap_or(&""));
+    
+    // Create struct instance
+    let result = ChatRequestSubscribeChannelRemove {
+        channels,  ..Default::default()};
+    
+    Ok(result)
+}
+

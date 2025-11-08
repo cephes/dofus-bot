@@ -1,0 +1,51 @@
+{
+  "total": 249,
+  "matches": 19,
+  "mismatches": 230,
+  "missing_in_go": 0,
+  "missing_in_rust": 0,
+  "mismatch_rate": 0.9236947791164659,
+  "top_mismatch_messages": [
+    {
+      "name": "GameActions",
+      "count": 92
+    },
+    {
+      "name": "GameMovement",
+      "count": 14
+    },
+    {
+      "name": "GameActionAck",
+      "count": 13
+    },
+    {
+      "name": "AccountStats",
+      "count": 12
+    },
+    {
+      "name": "ItemsWeight",
+      "count": 11
+    },
+    {
+      "name": "GameActionsStart",
+      "count": 10
+    },
+    {
+      "name": "GameTurnMiddle",
+      "count": 9
+    },
+    {
+      "name": "GameActionsFinish",
+      "count": 9
+    },
+    {
+      "name": "GameEffect",
+      "count": 9
+    },
+    {
+      "name": "GameTurnStart",
+      "count": 8
+    }
+  ],
+  "timestamp": "20251107_050141"
+}

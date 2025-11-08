@@ -1,0 +1,177 @@
+# PowerShell script to run parity iteration
+param(
+    [int]$MaxIters = 5,
+    [int]$TargetMismatchRate = 5,  # percentage
+    [switch]$DryRun
+)
+
+$ErrorActionPreference = "Stop"
+
+# Get timestamp for this iteration
+$ts = Get-Date -Format "yyyyMMdd_HHmmss"
+Write-Host "=== PARITY ITERATION $ts ===" -ForegroundColor Cyan
+
+# Setup directories
+$iterationDir = ".parity/iter_$ts"
+$backupDir = ".archive/PARITY_$ts"
+New-Item -ItemType Directory -Force -Path $iterationDir
+New-Item -ItemType Directory -Force -Path ".archive"
+New-Item -ItemType Directory -Force -Path ".parity"
+
+# Check if we have initial data
+$hasInitialData = Test-Path "examples\pcap\decoded\dummy_parsed_new.ndjson" -and Test-Path "examples\pcap\decoded\dummy_go.ndjson"
+
+if (-not $hasInitialData) {
+    Write-Host "Initial data not found. Running initial pipeline..." -ForegroundColor Yellow
+    
+    # Run initial pipeline
+    Write-Host "Running Rust pipeline..." -ForegroundColor Green
+    & python scripts/run_dummy_parsing.ps1
+    if ($LASTEXITCODE -ne 0) { Write-Error "Rust pipeline failed" }
+    
+    Write-Host "Running Go baseline..." -ForegroundColor Green
+    & powershell -NoProfile -ExecutionPolicy Bypass -File scripts\run_go_baseline.ps1
+    if ($LASTEXITCODE -ne 0) { Write-Error "Go baseline failed" }
+    
+    Write-Host "Running initial diff..." -ForegroundColor Green
+    & python tools\diff_go_rust_parsed.py --rust examples\pcap\decoded\dummy_parsed_new.ndjson --go examples\pcap\decoded\dummy_go.ndjson --json-out go_rust_diff.json --md-out GO_RUST_DIFF.md
+    if ($LASTEXITCODE -ne 0) { Write-Error "Initial diff failed" }
+}
+
+# Take before snapshot
+Write-Host "Taking before snapshot..." -ForegroundColor Blue
+Copy-Item "go_rust_diff.json" "$iterationDir\before.json"
+
+# Create backup
+Write-Host "Creating backup..." -ForegroundColor Blue
+if (Test-Path "core\src\retroproto_parsers\generated") {
+    if (Test-Path $backupDir) { Remove-Item $backupDir -Recurse -Force }
+    Copy-Item -Recurse "core\src\retroproto_parsers\generated" $backupDir
+}
+
+# Run auto-refinement
+Write-Host "Running auto-refinement..." -ForegroundColor Green
+$refineArgs = @(
+    "--go", "examples\pcap\decoded\dummy_go.ndjson",
+    "--rs", "examples\pcap\decoded\dummy_parsed_new.ndjson", 
+    "--diff", "go_rust_diff.json",
+    "--core", "core",
+    "--out", $iterationDir,
+    "--max-files", "50"
+)
+if ($DryRun) { $refineArgs += "--dry-run" }
+
+& python tools\parity\auto_refine_from_go.py @refineArgs
+if ($LASTEXITCODE -ne 0) { Write-Warning "Auto-refinement had issues but continuing..." }
+
+# Re-run full pipeline
+Write-Host "Re-running pipeline after refinement..." -ForegroundColor Green
+
+Write-Host "  Regenerating registry..." -ForegroundColor Gray
+& python tools\gen_parser_registry.py
+if ($LASTEXITCODE -ne 0) { Write-Warning "Registry regeneration failed" }
+
+Write-Host "  Building core..." -ForegroundColor Gray
+Set-Location "core"
+& cargo build --release
+if ($LASTEXITCODE -ne 0) { Write-Error "Core build failed" }
+Set-Location ".."
+
+Write-Host "  Running Rust pipeline..." -ForegroundColor Gray
+& python scripts/run_dummy_parsing.ps1
+if ($LASTEXITCODE -ne 0) { Write-Warning "Rust pipeline failed" }
+
+Write-Host "  Running Go baseline..." -ForegroundColor Gray
+& powershell -NoProfile -ExecutionPolicy Bypass -File scripts\run_go_baseline.ps1
+if ($LASTEXITCODE -ne 0) { Write-Warning "Go baseline failed" }
+
+Write-Host "  Running diff..." -ForegroundColor Gray
+& python tools\diff_go_rust_parsed.py --rust examples\pcap\decoded\dummy_parsed_new.ndjson --go examples\pcap\decoded\dummy_go.ndjson --json-out go_rust_diff.json --md-out GO_RUST_DIFF.md
+if ($LASTEXITCODE -ne 0) { Write-Error "Diff failed" }
+
+# Take after snapshot
+Write-Host "Taking after snapshot..." -ForegroundColor Blue
+Copy-Item "go_rust_diff.json" "$iterationDir\after.json"
+
+# Generate summary
+Write-Host "Generating summary..." -ForegroundColor Green
+& python tools\parity\summarize_diff.py --diff "go_rust_diff.json" --out-json "$iterationDir\summary.json" --out-md "$iterationDir\summary.txt"
+$summary = Get-Content "$iterationDir\summary.json" | ConvertFrom-Json
+
+# Load before/after for comparison
+$beforeData = Get-Content "$iterationDir\before.json" | ConvertFrom-Json
+$afterData = Get-Content "$iterationDir\after.json" | ConvertFrom-Json
+
+$beforeMismatchRate = [math]::Round(($beforeData.mismatches / $beforeData.total) * 100, 2)
+$afterMismatchRate = [math]::Round(($afterData.mismatches / $afterData.total) * 100, 2)
+$improvement = $beforeData.mismatches - $afterData.mismatches
+
+# Append to progress log
+$progressEntry = @"
+### Iteration $ts
+- **Before:** $beforeMismatchRate% mismatches ($($beforeData.mismatches)/$($beforeData.total))
+- **After:** $afterMismatchRate% mismatches ($($afterData.mismatches)/$($afterData.total))  
+- **Improvement:** $improvement mismatches
+- **Patched files:** $($summary.patched_files.Count)
+- **Top issues:** $($summary.top_mismatch_messages[0..2] | ForEach-Object { "$($_.name): $($_.count)" } -join ", ")
+
+"@
+
+Add-Content -Path "PARITY_PROGRESS.md" -Value $progressEntry
+
+# Write summary to iteration directory
+$iterationSummary = @{
+    timestamp = $ts
+    before = @{
+        total = $beforeData.total
+        mismatches = $beforeData.mismatches
+        mismatch_rate = $beforeMismatchRate
+    }
+    after = @{
+        total = $afterData.total  
+        mismatches = $afterData.mismatches
+        mismatch_rate = $afterMismatchRate
+    }
+    improvement = @{
+        mismatch_count = $improvement
+        mismatch_rate_change = $beforeMismatchRate - $afterMismatchRate
+    }
+    patched_files = $summary.patched_files
+}
+$iterationSummary | ConvertTo-Json -Depth 3 | Set-Content "$iterationDir\summary.json"
+
+# Check stop conditions
+$converged = $false
+$noImprovement = $false
+$maxItersReached = $false
+
+if ($afterMismatchRate -le $TargetMismatchRate) {
+    $converged = $true
+    Add-Content -Path "PARITY_PROGRESS.md" -Value "**STATUS: CONVERGED** - Mismatch rate ($afterMismatchRate%) ≤ target ($TargetMismatchRate%)"
+} elseif ($improvement -le 0) {
+    $noImprovement = $true  
+    Add-Content -Path "PARITY_PROGRESS.md" -Value "**STATUS: NO IMPROVEMENT** - No net gain in mismatches"
+} elseif ($MaxIters -and $MaxIters -eq 1) {
+    $maxItersReached = $true
+    Add-Content -Path "PARITY_PROGRESS.md" -Value "**STATUS: MAX ITERS REACHED** - Completed $MaxIters iterations"
+}
+
+# Final output
+Write-Host "`n=== ITERATION COMPLETE ===" -ForegroundColor Cyan
+Write-Host "Before: $beforeMismatchRate% mismatches ($($beforeData.mismatches)/$($beforeData.total))" -ForegroundColor Yellow
+Write-Host "After:  $afterMismatchRate% mismatches ($($afterData.mismatches)/$($afterData.total))" -ForegroundColor Green
+Write-Host "Improvement: $improvement mismatches" -ForegroundColor $(if ($improvement -gt 0) { "Green" } else { "Red" })
+
+if ($converged) { 
+    Write-Host "`n🎉 CONVERGED! Target mismatch rate achieved." -ForegroundColor Green
+    exit 0
+} elseif ($noImprovement) {
+    Write-Host "`n⚠️  NO IMPROVEMENT - Stopping iteration." -ForegroundColor Yellow  
+    exit 0
+} elseif ($maxItersReached) {
+    Write-Host "`n⏹️  MAX ITERS REACHED - Stopping iteration." -ForegroundColor Yellow
+    exit 0
+} else {
+    Write-Host "`n➡️  Continue to next iteration." -ForegroundColor Blue
+    exit 0
+}
